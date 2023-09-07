@@ -98,7 +98,7 @@
         Custom ITS is_guest_user field
     - name: register_client_id
       level: custom
-      type: date
+      type: keyword
       short: Custom ITS register_client_id field
       description: >
         Custom ITS register_client_id field

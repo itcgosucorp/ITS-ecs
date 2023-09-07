@@ -851,12 +851,13 @@ user:
       dashed_name: user-changes-its-register-client-id
       description: Custom ITS register_client_id field
       flat_name: user.changes.its.register_client_id
+      ignore_above: 1024
       level: custom
       name: register_client_id
       normalize: []
       original_fieldset: user_its
       short: Custom ITS register_client_id field
-      type: date
+      type: keyword
     user.changes.its.updated_at:
       dashed_name: user-changes-its-updated-at
       description: Custom ITS updated_at field
@@ -1451,12 +1452,13 @@ user:
       dashed_name: user-effective-its-register-client-id
       description: Custom ITS register_client_id field
       flat_name: user.effective.its.register_client_id
+      ignore_above: 1024
       level: custom
       name: register_client_id
       normalize: []
       original_fieldset: user_its
       short: Custom ITS register_client_id field
-      type: date
+      type: keyword
     user.effective.its.updated_at:
       dashed_name: user-effective-its-updated-at
       description: Custom ITS updated_at field
@@ -2022,12 +2024,13 @@ user:
       dashed_name: user-its-register-client-id
       description: Custom ITS register_client_id field
       flat_name: user.its.register_client_id
+      ignore_above: 1024
       level: custom
       name: register_client_id
       normalize: []
       original_fieldset: user_its
       short: Custom ITS register_client_id field
-      type: date
+      type: keyword
     user.its.updated_at:
       dashed_name: user-its-updated-at
       description: Custom ITS updated_at field
@@ -2608,12 +2611,13 @@ user:
       dashed_name: user-target-its-register-client-id
       description: Custom ITS register_client_id field
       flat_name: user.target.its.register_client_id
+      ignore_above: 1024
       level: custom
       name: register_client_id
       normalize: []
       original_fieldset: user_its
       short: Custom ITS register_client_id field
-      type: date
+      type: keyword
     user.target.its.updated_at:
       dashed_name: user-target-its-updated-at
       description: Custom ITS updated_at field

@@ -4,32 +4,21 @@
     "ecs_version": "8.9.0"
   },
   "composed_of": [
-    "ecs_8.9.0_its",
-    "ecs_8.9.0_base",
-    "ecs_8.9.0_ecs",
-    "ecs_8.9.0_event",
-    "ecs_8.9.0_user",
-    "ecs_8.9.0_related",
-    "ecs_8.9.0_client"
+    "user_profile_its",
+    "user_profile_base",
+    "user_profile_ecs",
+    "user_profile_event",
+    "user_profile_user",
+    "user_profile_related",
+    "user_profile_client"
   ],
   "index_patterns": [
-    "try-ecs-*"
+    "user_profile_*"
   ],
   "priority": 1,
   "template": {
     "mappings": {
-      "date_detection": false,
-      "dynamic_templates": [
-        {
-          "strings_as_keyword": {
-            "mapping": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "match_mapping_type": "string"
-          }
-        }
-      ]
+      "dynamic": false
     },
     "settings": {
       "index": {

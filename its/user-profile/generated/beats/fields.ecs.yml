@@ -519,7 +519,8 @@
       default_field: false
     - name: changes.its.register_client_id
       level: custom
-      type: date
+      type: keyword
+      ignore_above: 1024
       description: Custom ITS register_client_id field
       default_field: false
     - name: changes.its.updated_at
@@ -860,7 +861,8 @@
       default_field: false
     - name: effective.its.register_client_id
       level: custom
-      type: date
+      type: keyword
+      ignore_above: 1024
       description: Custom ITS register_client_id field
       default_field: false
     - name: effective.its.updated_at
@@ -1180,7 +1182,8 @@
       default_field: false
     - name: its.register_client_id
       level: custom
-      type: date
+      type: keyword
+      ignore_above: 1024
       description: Custom ITS register_client_id field
       default_field: false
     - name: its.updated_at
@@ -1514,7 +1517,8 @@
       default_field: false
     - name: target.its.register_client_id
       level: custom
-      type: date
+      type: keyword
+      ignore_above: 1024
       description: Custom ITS register_client_id field
       default_field: false
     - name: target.its.updated_at
