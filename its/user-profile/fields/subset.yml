@@ -1,0 +1,32 @@
+---
+name: user-profile
+fields:
+  # Project's custom fields
+  its:
+    fields:
+      id: {}
+
+  # ECS basic fields
+  base:
+    fields: "*"
+  ecs:
+    fields: "*"
+  event:
+    fields:
+      original: {}
+
+  # ECS user fields
+  user:
+    fields: "*"
+      
+  # Network fields to capture IPs, geo and stuff
+  related:
+    fields:
+      ip: {}
+      user: {}
+  client:
+    fields:
+      ip: {}
+      geo:
+        fields: "*"
+

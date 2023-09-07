@@ -1,0 +1,110 @@
+---
+- name: user_its
+  title: User ITS
+  type: group
+  group: 2
+  short: Custom User ITS field
+  description: >
+    Custom ITS field
+  reusable:
+    top_level: false
+    expected:
+      - at: user
+        as: its
+  fields:
+    - name: email_verified
+      level: custom
+      type: boolean
+      short: Custom ITS email_verified field
+      description: >
+        Custom ITS email_verified field
+    - name: created_at
+      level: custom
+      type: date
+      short: Custom ITS created_at field
+      description: >
+        Custom ITS created_at field
+    - name: updated_at
+      level: custom
+      type: date
+      short: Custom ITS updated_at field
+      description: >
+        Custom ITS updated_at field
+    - name: birthday
+      level: custom
+      type: date
+      short: Custom ITS birthday field
+      description: >
+        Custom ITS birthday field
+    - name: phone.country
+      level: custom
+      type: keyword
+      short: Custom ITS phone country field
+      description: >
+        Custom ITS phone country field
+    - name: phone.country_calling_code
+      level: custom
+      type: keyword
+      short: Custom ITS phone country_calling_code field
+      description: >
+        Custom ITS phone country_calling_code field
+    - name: phone.number
+      level: custom
+      type: keyword
+      short: Custom ITS phone number field
+      description: >
+        Custom ITS phone number field
+    - name: phone.national_number
+      level: custom
+      type: keyword
+      short: Custom ITS phone national_number field
+      description: >
+        Custom ITS phone national_number field
+    - name: phone.extension
+      level: custom
+      type: keyword
+      short: Custom ITS phone extension field
+      description: >
+        Custom ITS phone extension field
+    - name: phone_verified
+      level: custom
+      type: boolean
+      short: Custom ITS phone_verified field
+      description: >
+        Custom ITS phone_verified field
+    - name: gender
+      level: custom
+      type: keyword
+      short: Custom ITS gender field
+      description: >
+        Custom ITS gender field
+    - name: login_at
+      level: custom
+      type: date
+      short: Custom ITS login_at field
+      description: >
+        Custom ITS login_at field
+    - name: delete_at
+      level: custom
+      type: date
+      short: Custom ITS delete_at field
+      description: >
+        Custom ITS delete_at field
+    - name: is_guest_user
+      level: custom
+      type: boolean
+      short: Custom ITS is_guest_user field
+      description: >
+        Custom ITS is_guest_user field
+    - name: register_client_id
+      level: custom
+      type: date
+      short: Custom ITS register_client_id field
+      description: >
+        Custom ITS register_client_id field
+    - name: identities
+      level: custom
+      type: nested
+      short: Custom ITS identities field
+      description: >
+        Custom ITS identities field
