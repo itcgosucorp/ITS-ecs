@@ -12,8 +12,7 @@ fields:
   ecs:
     fields: "*"
   event:
-    fields:
-      original: {}
+    fields: "*"
 
   # ECS user fields
   user:
@@ -21,12 +20,7 @@ fields:
       
   # Network fields to capture IPs, geo and stuff
   related:
-    fields:
-      ip: {}
-      user: {}
+    fields: "*"
   client:
-    fields:
-      ip: {}
-      geo:
-        fields: "*"
+    fields: "*"
 
