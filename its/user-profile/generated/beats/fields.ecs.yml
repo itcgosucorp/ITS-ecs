@@ -735,19 +735,6 @@
         are a common use case for this field.'
       example: https://mysystem.example.com/alert/5271dedb-f5b0-4218-87f0-4ac4870a38fe
       default_field: false
-  - name: its
-    title: ITS
-    group: 2
-    description: Common ITS custom field
-    type: group
-    default_field: true
-    fields:
-    - name: id
-      level: extended
-      type: keyword
-      ignore_above: 1024
-      description: Record's ID in ITS
-      default_field: false
   - name: related
     title: Related
     group: 2

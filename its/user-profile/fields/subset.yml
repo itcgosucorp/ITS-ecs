@@ -1,11 +1,6 @@
 ---
 name: user-profile
 fields:
-  # Project's custom fields
-  its:
-    fields:
-      id: {}
-
   # ECS basic fields
   base:
     fields: "*"
@@ -23,4 +18,3 @@ fields:
     fields: "*"
   client:
     fields: "*"
-

@@ -74,7 +74,6 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.timezone,keyword,extended,,,Event time zone.
 8.9.0,true,event,event.type,keyword,core,array,,Event type. The third categorization field in the hierarchy.
 8.9.0,true,event,event.url,keyword,extended,,https://mysystem.example.com/alert/5271dedb-f5b0-4218-87f0-4ac4870a38fe,Event investigation URL
-8.9.0,true,its,its.id,keyword,extended,,,Record's ID in ITS
 8.9.0,true,related,related.hash,keyword,extended,array,,All the hashes seen on your event.
 8.9.0,true,related,related.hosts,keyword,extended,array,,All the host identifiers seen on your event.
 8.9.0,true,related,related.ip,ip,extended,array,,All of the IPs seen on your event.

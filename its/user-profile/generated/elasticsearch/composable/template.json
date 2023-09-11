@@ -4,7 +4,6 @@
     "ecs_version": "8.9.0"
   },
   "composed_of": [
-    "user_profile_its",
     "ecs_8.9.0_base",
     "ecs_8.9.0_ecs",
     "ecs_8.9.0_event",

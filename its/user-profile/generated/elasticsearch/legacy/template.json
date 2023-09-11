@@ -315,14 +315,6 @@
           }
         }
       },
-      "its": {
-        "properties": {
-          "id": {
-            "ignore_above": 1024,
-            "type": "keyword"
-          }
-        }
-      },
       "labels": {
         "type": "object"
       },

@@ -1433,16 +1433,6 @@ event.url:
   normalize: []
   short: Event investigation URL
   type: keyword
-its.id:
-  dashed_name: its-id
-  description: Record's ID in ITS
-  flat_name: its.id
-  ignore_above: 1024
-  level: extended
-  name: id
-  normalize: []
-  short: Record's ID in ITS
-  type: keyword
 labels:
   dashed_name: labels
   description: 'Custom key/value pairs.

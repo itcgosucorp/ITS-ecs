@@ -1571,25 +1571,6 @@ event:
   short: Fields breaking down the event details.
   title: Event
   type: group
-its:
-  description: Common ITS custom field
-  fields:
-    its.id:
-      dashed_name: its-id
-      description: Record's ID in ITS
-      flat_name: its.id
-      ignore_above: 1024
-      level: extended
-      name: id
-      normalize: []
-      short: Record's ID in ITS
-      type: keyword
-  group: 2
-  name: its
-  prefix: its.
-  short: Common ITS custom field
-  title: ITS
-  type: group
 related:
   description: 'This field set is meant to facilitate pivoting around a piece of data.
 
