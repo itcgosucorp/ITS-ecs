@@ -9,8 +9,7 @@
           "limit": 1000
         }
       },
-      "refresh_interval": "2s",
-      "default_pipeline": "user_profile"
+      "refresh_interval": "2s"
     }
   }
 }

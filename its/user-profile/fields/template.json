@@ -9,8 +9,7 @@
           "total_fields": {
             "limit": 2000
           }
-        },
-        "default_pipeline": "user_profile"
+        }
       }
     }
   }
