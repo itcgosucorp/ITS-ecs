@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 scripts/generator.py --template-settings-legacy its/user-profile/fields/template-legacy.json --template-settings its/user-profile/fields/template.json --mapping-settings its/user-profile/fields/mapping.json --include its/user-profile/fields/custom/ --subset its/user-profile/fields/subset.yml --out its/user-profile/
+python3 scripts/generator.py --force-docs --template-settings-legacy its/user-profile/fields/template-legacy.json --template-settings its/user-profile/fields/template.json --mapping-settings its/user-profile/fields/mapping.json --include its/user-profile/fields/custom/ --subset its/user-profile/fields/subset.yml --out its/user-profile/
