@@ -90,21 +90,39 @@
       short: Custom ITS delete_at field
       description: >
         Custom ITS delete_at field
-    - name: is_guest_user
+    - name: is_guest
       level: custom
       type: boolean
-      short: Custom ITS is_guest_user field
+      short: Custom ITS is_guest field
       description: >
-        Custom ITS is_guest_user field
-    - name: register_client_id
+        Custom ITS is_guest field
+    - name: register_app_id
       level: custom
       type: keyword
-      short: Custom ITS register_client_id field
+      short: Custom ITS register_app_id field
       description: >
-        Custom ITS register_client_id field
+        Custom ITS register_app_id field
+    - name: register_project_id
+      level: custom
+      type: keyword
+      short: Custom ITS register_project_id field
+      description: >
+        Custom ITS register_project_id field
     - name: identities
       level: custom
       type: nested
       short: Custom ITS identities field
       description: >
         Custom ITS identities field
+    - name: status
+      level: custom
+      type: keyword
+      short: Custom ITS status field
+      description: >
+        Custom ITS status field
+    - name: nemo_address
+      level: custom
+      type: keyword
+      short: Custom ITS nemo_address field
+      description: >
+        Custom ITS nemo_address field

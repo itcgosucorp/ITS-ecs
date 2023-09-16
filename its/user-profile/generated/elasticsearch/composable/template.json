@@ -17,12 +17,20 @@
   "priority": 1,
   "template": {
     "mappings": {
-      "dynamic": false
+      "dynamic_templates": [
+        {
+          "labels_as_keyword": {
+            "mapping": {
+              "type": "keyword"
+            },
+            "path_match": "labels.*"
+          }
+        }
+      ]
     },
     "settings": {
       "index": {
         "codec": "best_compression",
-        "default_pipeline": "user_profile",
         "mapping": {
           "total_fields": {
             "limit": 2000

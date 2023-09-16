@@ -1,6 +1,5 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-user.html",
     "ecs_version": "8.9.0"
   },
   "template": {
@@ -156,11 +155,15 @@
                       },
                       "type": "nested"
                     },
-                    "is_guest_user": {
+                    "is_guest": {
                       "type": "boolean"
                     },
                     "login_at": {
                       "type": "date"
+                    },
+                    "nemo_address": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
                     },
                     "phone": {
                       "properties": {
@@ -189,7 +192,15 @@
                     "phone_verified": {
                       "type": "boolean"
                     },
-                    "register_client_id": {
+                    "register_app_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "register_project_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "status": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     },
@@ -389,11 +400,15 @@
                       },
                       "type": "nested"
                     },
-                    "is_guest_user": {
+                    "is_guest": {
                       "type": "boolean"
                     },
                     "login_at": {
                       "type": "date"
+                    },
+                    "nemo_address": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
                     },
                     "phone": {
                       "properties": {
@@ -422,7 +437,15 @@
                     "phone_verified": {
                       "type": "boolean"
                     },
-                    "register_client_id": {
+                    "register_app_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "register_project_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "status": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     },
@@ -612,11 +635,15 @@
                   },
                   "type": "nested"
                 },
-                "is_guest_user": {
+                "is_guest": {
                   "type": "boolean"
                 },
                 "login_at": {
                   "type": "date"
+                },
+                "nemo_address": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
                 },
                 "phone": {
                   "properties": {
@@ -645,7 +672,15 @@
                 "phone_verified": {
                   "type": "boolean"
                 },
-                "register_client_id": {
+                "register_app_id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "register_project_id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
+                "status": {
                   "ignore_above": 1024,
                   "type": "keyword"
                 },
@@ -839,11 +874,15 @@
                       },
                       "type": "nested"
                     },
-                    "is_guest_user": {
+                    "is_guest": {
                       "type": "boolean"
                     },
                     "login_at": {
                       "type": "date"
+                    },
+                    "nemo_address": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
                     },
                     "phone": {
                       "properties": {
@@ -872,7 +911,15 @@
                     "phone_verified": {
                       "type": "boolean"
                     },
-                    "register_client_id": {
+                    "register_app_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "register_project_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "status": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     },

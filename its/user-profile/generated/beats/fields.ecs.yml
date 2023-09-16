@@ -1004,15 +1004,21 @@
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
       default_field: false
-    - name: changes.its.is_guest_user
+    - name: changes.its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest_user field
+      description: Custom ITS is_guest field
       default_field: false
     - name: changes.its.login_at
       level: custom
       type: date
       description: Custom ITS login_at field
+      default_field: false
+    - name: changes.its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS nemo_address field
       default_field: false
     - name: changes.its.phone.country
       level: custom
@@ -1049,11 +1055,23 @@
       type: boolean
       description: Custom ITS phone_verified field
       default_field: false
-    - name: changes.its.register_client_id
+    - name: changes.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_client_id field
+      description: Custom ITS register_app_id field
+      default_field: false
+    - name: changes.its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS register_project_id field
+      default_field: false
+    - name: changes.its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS status field
       default_field: false
     - name: changes.its.updated_at
       level: custom
@@ -1346,15 +1364,21 @@
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
       default_field: false
-    - name: effective.its.is_guest_user
+    - name: effective.its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest_user field
+      description: Custom ITS is_guest field
       default_field: false
     - name: effective.its.login_at
       level: custom
       type: date
       description: Custom ITS login_at field
+      default_field: false
+    - name: effective.its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS nemo_address field
       default_field: false
     - name: effective.its.phone.country
       level: custom
@@ -1391,11 +1415,23 @@
       type: boolean
       description: Custom ITS phone_verified field
       default_field: false
-    - name: effective.its.register_client_id
+    - name: effective.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_client_id field
+      description: Custom ITS register_app_id field
+      default_field: false
+    - name: effective.its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS register_project_id field
+      default_field: false
+    - name: effective.its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS status field
       default_field: false
     - name: effective.its.updated_at
       level: custom
@@ -1667,15 +1703,21 @@
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
       default_field: false
-    - name: its.is_guest_user
+    - name: its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest_user field
+      description: Custom ITS is_guest field
       default_field: false
     - name: its.login_at
       level: custom
       type: date
       description: Custom ITS login_at field
+      default_field: false
+    - name: its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS nemo_address field
       default_field: false
     - name: its.phone.country
       level: custom
@@ -1712,11 +1754,23 @@
       type: boolean
       description: Custom ITS phone_verified field
       default_field: false
-    - name: its.register_client_id
+    - name: its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_client_id field
+      description: Custom ITS register_app_id field
+      default_field: false
+    - name: its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS register_project_id field
+      default_field: false
+    - name: its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS status field
       default_field: false
     - name: its.updated_at
       level: custom
@@ -2002,15 +2056,21 @@
       description: Array of user roles at the time of the event.
       example: '["kibana_admin", "reporting_user"]'
       default_field: false
-    - name: target.its.is_guest_user
+    - name: target.its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest_user field
+      description: Custom ITS is_guest field
       default_field: false
     - name: target.its.login_at
       level: custom
       type: date
       description: Custom ITS login_at field
+      default_field: false
+    - name: target.its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS nemo_address field
       default_field: false
     - name: target.its.phone.country
       level: custom
@@ -2047,11 +2107,23 @@
       type: boolean
       description: Custom ITS phone_verified field
       default_field: false
-    - name: target.its.register_client_id
+    - name: target.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_client_id field
+      description: Custom ITS register_app_id field
+      default_field: false
+    - name: target.its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS register_project_id field
+      default_field: false
+    - name: target.its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Custom ITS status field
       default_field: false
     - name: target.its.updated_at
       level: custom

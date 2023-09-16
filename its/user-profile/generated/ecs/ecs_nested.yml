@@ -2016,15 +2016,15 @@ user:
       original_fieldset: user
       short: Array of user roles at the time of the event.
       type: keyword
-    user.changes.its.is_guest_user:
-      dashed_name: user-changes-its-is-guest-user
-      description: Custom ITS is_guest_user field
-      flat_name: user.changes.its.is_guest_user
+    user.changes.its.is_guest:
+      dashed_name: user-changes-its-is-guest
+      description: Custom ITS is_guest field
+      flat_name: user.changes.its.is_guest
       level: custom
-      name: is_guest_user
+      name: is_guest
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS is_guest_user field
+      short: Custom ITS is_guest field
       type: boolean
     user.changes.its.login_at:
       dashed_name: user-changes-its-login-at
@@ -2036,6 +2036,17 @@ user:
       original_fieldset: user_its
       short: Custom ITS login_at field
       type: date
+    user.changes.its.nemo_address:
+      dashed_name: user-changes-its-nemo-address
+      description: Custom ITS nemo_address field
+      flat_name: user.changes.its.nemo_address
+      ignore_above: 1024
+      level: custom
+      name: nemo_address
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS nemo_address field
+      type: keyword
     user.changes.its.phone.country:
       dashed_name: user-changes-its-phone-country
       description: Custom ITS phone country field
@@ -2101,16 +2112,38 @@ user:
       original_fieldset: user_its
       short: Custom ITS phone_verified field
       type: boolean
-    user.changes.its.register_client_id:
-      dashed_name: user-changes-its-register-client-id
-      description: Custom ITS register_client_id field
-      flat_name: user.changes.its.register_client_id
+    user.changes.its.register_app_id:
+      dashed_name: user-changes-its-register-app-id
+      description: Custom ITS register_app_id field
+      flat_name: user.changes.its.register_app_id
       ignore_above: 1024
       level: custom
-      name: register_client_id
+      name: register_app_id
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS register_client_id field
+      short: Custom ITS register_app_id field
+      type: keyword
+    user.changes.its.register_project_id:
+      dashed_name: user-changes-its-register-project-id
+      description: Custom ITS register_project_id field
+      flat_name: user.changes.its.register_project_id
+      ignore_above: 1024
+      level: custom
+      name: register_project_id
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS register_project_id field
+      type: keyword
+    user.changes.its.status:
+      dashed_name: user-changes-its-status
+      description: Custom ITS status field
+      flat_name: user.changes.its.status
+      ignore_above: 1024
+      level: custom
+      name: status
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS status field
       type: keyword
     user.changes.its.updated_at:
       dashed_name: user-changes-its-updated-at
@@ -2617,15 +2650,15 @@ user:
       original_fieldset: user
       short: Array of user roles at the time of the event.
       type: keyword
-    user.effective.its.is_guest_user:
-      dashed_name: user-effective-its-is-guest-user
-      description: Custom ITS is_guest_user field
-      flat_name: user.effective.its.is_guest_user
+    user.effective.its.is_guest:
+      dashed_name: user-effective-its-is-guest
+      description: Custom ITS is_guest field
+      flat_name: user.effective.its.is_guest
       level: custom
-      name: is_guest_user
+      name: is_guest
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS is_guest_user field
+      short: Custom ITS is_guest field
       type: boolean
     user.effective.its.login_at:
       dashed_name: user-effective-its-login-at
@@ -2637,6 +2670,17 @@ user:
       original_fieldset: user_its
       short: Custom ITS login_at field
       type: date
+    user.effective.its.nemo_address:
+      dashed_name: user-effective-its-nemo-address
+      description: Custom ITS nemo_address field
+      flat_name: user.effective.its.nemo_address
+      ignore_above: 1024
+      level: custom
+      name: nemo_address
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS nemo_address field
+      type: keyword
     user.effective.its.phone.country:
       dashed_name: user-effective-its-phone-country
       description: Custom ITS phone country field
@@ -2702,16 +2746,38 @@ user:
       original_fieldset: user_its
       short: Custom ITS phone_verified field
       type: boolean
-    user.effective.its.register_client_id:
-      dashed_name: user-effective-its-register-client-id
-      description: Custom ITS register_client_id field
-      flat_name: user.effective.its.register_client_id
+    user.effective.its.register_app_id:
+      dashed_name: user-effective-its-register-app-id
+      description: Custom ITS register_app_id field
+      flat_name: user.effective.its.register_app_id
       ignore_above: 1024
       level: custom
-      name: register_client_id
+      name: register_app_id
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS register_client_id field
+      short: Custom ITS register_app_id field
+      type: keyword
+    user.effective.its.register_project_id:
+      dashed_name: user-effective-its-register-project-id
+      description: Custom ITS register_project_id field
+      flat_name: user.effective.its.register_project_id
+      ignore_above: 1024
+      level: custom
+      name: register_project_id
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS register_project_id field
+      type: keyword
+    user.effective.its.status:
+      dashed_name: user-effective-its-status
+      description: Custom ITS status field
+      flat_name: user.effective.its.status
+      ignore_above: 1024
+      level: custom
+      name: status
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS status field
       type: keyword
     user.effective.its.updated_at:
       dashed_name: user-effective-its-updated-at
@@ -3189,15 +3255,15 @@ user:
       original_fieldset: user
       short: Array of user roles at the time of the event.
       type: keyword
-    user.its.is_guest_user:
-      dashed_name: user-its-is-guest-user
-      description: Custom ITS is_guest_user field
-      flat_name: user.its.is_guest_user
+    user.its.is_guest:
+      dashed_name: user-its-is-guest
+      description: Custom ITS is_guest field
+      flat_name: user.its.is_guest
       level: custom
-      name: is_guest_user
+      name: is_guest
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS is_guest_user field
+      short: Custom ITS is_guest field
       type: boolean
     user.its.login_at:
       dashed_name: user-its-login-at
@@ -3209,6 +3275,17 @@ user:
       original_fieldset: user_its
       short: Custom ITS login_at field
       type: date
+    user.its.nemo_address:
+      dashed_name: user-its-nemo-address
+      description: Custom ITS nemo_address field
+      flat_name: user.its.nemo_address
+      ignore_above: 1024
+      level: custom
+      name: nemo_address
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS nemo_address field
+      type: keyword
     user.its.phone.country:
       dashed_name: user-its-phone-country
       description: Custom ITS phone country field
@@ -3274,16 +3351,38 @@ user:
       original_fieldset: user_its
       short: Custom ITS phone_verified field
       type: boolean
-    user.its.register_client_id:
-      dashed_name: user-its-register-client-id
-      description: Custom ITS register_client_id field
-      flat_name: user.its.register_client_id
+    user.its.register_app_id:
+      dashed_name: user-its-register-app-id
+      description: Custom ITS register_app_id field
+      flat_name: user.its.register_app_id
       ignore_above: 1024
       level: custom
-      name: register_client_id
+      name: register_app_id
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS register_client_id field
+      short: Custom ITS register_app_id field
+      type: keyword
+    user.its.register_project_id:
+      dashed_name: user-its-register-project-id
+      description: Custom ITS register_project_id field
+      flat_name: user.its.register_project_id
+      ignore_above: 1024
+      level: custom
+      name: register_project_id
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS register_project_id field
+      type: keyword
+    user.its.status:
+      dashed_name: user-its-status
+      description: Custom ITS status field
+      flat_name: user.its.status
+      ignore_above: 1024
+      level: custom
+      name: status
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS status field
       type: keyword
     user.its.updated_at:
       dashed_name: user-its-updated-at
@@ -3776,15 +3875,15 @@ user:
       original_fieldset: user
       short: Array of user roles at the time of the event.
       type: keyword
-    user.target.its.is_guest_user:
-      dashed_name: user-target-its-is-guest-user
-      description: Custom ITS is_guest_user field
-      flat_name: user.target.its.is_guest_user
+    user.target.its.is_guest:
+      dashed_name: user-target-its-is-guest
+      description: Custom ITS is_guest field
+      flat_name: user.target.its.is_guest
       level: custom
-      name: is_guest_user
+      name: is_guest
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS is_guest_user field
+      short: Custom ITS is_guest field
       type: boolean
     user.target.its.login_at:
       dashed_name: user-target-its-login-at
@@ -3796,6 +3895,17 @@ user:
       original_fieldset: user_its
       short: Custom ITS login_at field
       type: date
+    user.target.its.nemo_address:
+      dashed_name: user-target-its-nemo-address
+      description: Custom ITS nemo_address field
+      flat_name: user.target.its.nemo_address
+      ignore_above: 1024
+      level: custom
+      name: nemo_address
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS nemo_address field
+      type: keyword
     user.target.its.phone.country:
       dashed_name: user-target-its-phone-country
       description: Custom ITS phone country field
@@ -3861,16 +3971,38 @@ user:
       original_fieldset: user_its
       short: Custom ITS phone_verified field
       type: boolean
-    user.target.its.register_client_id:
-      dashed_name: user-target-its-register-client-id
-      description: Custom ITS register_client_id field
-      flat_name: user.target.its.register_client_id
+    user.target.its.register_app_id:
+      dashed_name: user-target-its-register-app-id
+      description: Custom ITS register_app_id field
+      flat_name: user.target.its.register_app_id
       ignore_above: 1024
       level: custom
-      name: register_client_id
+      name: register_app_id
       normalize: []
       original_fieldset: user_its
-      short: Custom ITS register_client_id field
+      short: Custom ITS register_app_id field
+      type: keyword
+    user.target.its.register_project_id:
+      dashed_name: user-target-its-register-project-id
+      description: Custom ITS register_project_id field
+      flat_name: user.target.its.register_project_id
+      ignore_above: 1024
+      level: custom
+      name: register_project_id
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS register_project_id field
+      type: keyword
+    user.target.its.status:
+      dashed_name: user-target-its-status
+      description: Custom ITS status field
+      flat_name: user.target.its.status
+      ignore_above: 1024
+      level: custom
+      name: status
+      normalize: []
+      original_fieldset: user_its
+      short: Custom ITS status field
       type: keyword
     user.target.its.updated_at:
       dashed_name: user-target-its-updated-at

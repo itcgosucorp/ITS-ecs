@@ -111,15 +111,18 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.changes.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
 8.9.0,true,user,user.changes.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
 8.9.0,true,user,user.changes.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
-8.9.0,true,user,user.changes.its.is_guest_user,boolean,custom,,,Custom ITS is_guest_user field
+8.9.0,true,user,user.changes.its.is_guest,boolean,custom,,,Custom ITS is_guest field
 8.9.0,true,user,user.changes.its.login_at,date,custom,,,Custom ITS login_at field
+8.9.0,true,user,user.changes.its.nemo_address,keyword,custom,,,Custom ITS nemo_address field
 8.9.0,true,user,user.changes.its.phone.country,keyword,custom,,,Custom ITS phone country field
 8.9.0,true,user,user.changes.its.phone.country_calling_code,keyword,custom,,,Custom ITS phone country_calling_code field
 8.9.0,true,user,user.changes.its.phone.extension,keyword,custom,,,Custom ITS phone extension field
 8.9.0,true,user,user.changes.its.phone.national_number,keyword,custom,,,Custom ITS phone national_number field
 8.9.0,true,user,user.changes.its.phone.number,keyword,custom,,,Custom ITS phone number field
 8.9.0,true,user,user.changes.its.phone_verified,boolean,custom,,,Custom ITS phone_verified field
-8.9.0,true,user,user.changes.its.register_client_id,keyword,custom,,,Custom ITS register_client_id field
+8.9.0,true,user,user.changes.its.register_app_id,keyword,custom,,,Custom ITS register_app_id field
+8.9.0,true,user,user.changes.its.register_project_id,keyword,custom,,,Custom ITS register_project_id field
+8.9.0,true,user,user.changes.its.status,keyword,custom,,,Custom ITS status field
 8.9.0,true,user,user.changes.its.updated_at,date,custom,,,Custom ITS updated_at field
 8.9.0,true,user,user.changes.name,keyword,core,,a.einstein,Short name or login of the user.
 8.9.0,true,user,user.changes.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
@@ -164,15 +167,18 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.effective.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
 8.9.0,true,user,user.effective.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
 8.9.0,true,user,user.effective.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
-8.9.0,true,user,user.effective.its.is_guest_user,boolean,custom,,,Custom ITS is_guest_user field
+8.9.0,true,user,user.effective.its.is_guest,boolean,custom,,,Custom ITS is_guest field
 8.9.0,true,user,user.effective.its.login_at,date,custom,,,Custom ITS login_at field
+8.9.0,true,user,user.effective.its.nemo_address,keyword,custom,,,Custom ITS nemo_address field
 8.9.0,true,user,user.effective.its.phone.country,keyword,custom,,,Custom ITS phone country field
 8.9.0,true,user,user.effective.its.phone.country_calling_code,keyword,custom,,,Custom ITS phone country_calling_code field
 8.9.0,true,user,user.effective.its.phone.extension,keyword,custom,,,Custom ITS phone extension field
 8.9.0,true,user,user.effective.its.phone.national_number,keyword,custom,,,Custom ITS phone national_number field
 8.9.0,true,user,user.effective.its.phone.number,keyword,custom,,,Custom ITS phone number field
 8.9.0,true,user,user.effective.its.phone_verified,boolean,custom,,,Custom ITS phone_verified field
-8.9.0,true,user,user.effective.its.register_client_id,keyword,custom,,,Custom ITS register_client_id field
+8.9.0,true,user,user.effective.its.register_app_id,keyword,custom,,,Custom ITS register_app_id field
+8.9.0,true,user,user.effective.its.register_project_id,keyword,custom,,,Custom ITS register_project_id field
+8.9.0,true,user,user.effective.its.status,keyword,custom,,,Custom ITS status field
 8.9.0,true,user,user.effective.its.updated_at,date,custom,,,Custom ITS updated_at field
 8.9.0,true,user,user.effective.name,keyword,core,,a.einstein,Short name or login of the user.
 8.9.0,true,user,user.effective.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
@@ -215,15 +221,18 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
 8.9.0,true,user,user.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
 8.9.0,true,user,user.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
-8.9.0,true,user,user.its.is_guest_user,boolean,custom,,,Custom ITS is_guest_user field
+8.9.0,true,user,user.its.is_guest,boolean,custom,,,Custom ITS is_guest field
 8.9.0,true,user,user.its.login_at,date,custom,,,Custom ITS login_at field
+8.9.0,true,user,user.its.nemo_address,keyword,custom,,,Custom ITS nemo_address field
 8.9.0,true,user,user.its.phone.country,keyword,custom,,,Custom ITS phone country field
 8.9.0,true,user,user.its.phone.country_calling_code,keyword,custom,,,Custom ITS phone country_calling_code field
 8.9.0,true,user,user.its.phone.extension,keyword,custom,,,Custom ITS phone extension field
 8.9.0,true,user,user.its.phone.national_number,keyword,custom,,,Custom ITS phone national_number field
 8.9.0,true,user,user.its.phone.number,keyword,custom,,,Custom ITS phone number field
 8.9.0,true,user,user.its.phone_verified,boolean,custom,,,Custom ITS phone_verified field
-8.9.0,true,user,user.its.register_client_id,keyword,custom,,,Custom ITS register_client_id field
+8.9.0,true,user,user.its.register_app_id,keyword,custom,,,Custom ITS register_app_id field
+8.9.0,true,user,user.its.register_project_id,keyword,custom,,,Custom ITS register_project_id field
+8.9.0,true,user,user.its.status,keyword,custom,,,Custom ITS status field
 8.9.0,true,user,user.its.updated_at,date,custom,,,Custom ITS updated_at field
 8.9.0,true,user,user.name,keyword,core,,a.einstein,Short name or login of the user.
 8.9.0,true,user,user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
@@ -267,15 +276,18 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.target.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
 8.9.0,true,user,user.target.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
 8.9.0,true,user,user.target.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
-8.9.0,true,user,user.target.its.is_guest_user,boolean,custom,,,Custom ITS is_guest_user field
+8.9.0,true,user,user.target.its.is_guest,boolean,custom,,,Custom ITS is_guest field
 8.9.0,true,user,user.target.its.login_at,date,custom,,,Custom ITS login_at field
+8.9.0,true,user,user.target.its.nemo_address,keyword,custom,,,Custom ITS nemo_address field
 8.9.0,true,user,user.target.its.phone.country,keyword,custom,,,Custom ITS phone country field
 8.9.0,true,user,user.target.its.phone.country_calling_code,keyword,custom,,,Custom ITS phone country_calling_code field
 8.9.0,true,user,user.target.its.phone.extension,keyword,custom,,,Custom ITS phone extension field
 8.9.0,true,user,user.target.its.phone.national_number,keyword,custom,,,Custom ITS phone national_number field
 8.9.0,true,user,user.target.its.phone.number,keyword,custom,,,Custom ITS phone number field
 8.9.0,true,user,user.target.its.phone_verified,boolean,custom,,,Custom ITS phone_verified field
-8.9.0,true,user,user.target.its.register_client_id,keyword,custom,,,Custom ITS register_client_id field
+8.9.0,true,user,user.target.its.register_app_id,keyword,custom,,,Custom ITS register_app_id field
+8.9.0,true,user,user.target.its.register_project_id,keyword,custom,,,Custom ITS register_project_id field
+8.9.0,true,user,user.target.its.status,keyword,custom,,,Custom ITS status field
 8.9.0,true,user,user.target.its.updated_at,date,custom,,,Custom ITS updated_at field
 8.9.0,true,user,user.target.name,keyword,core,,a.einstein,Short name or login of the user.
 8.9.0,true,user,user.target.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
