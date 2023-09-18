@@ -1,0 +1,20 @@
+---
+name: user-profile
+fields:
+  # ECS basic fields
+  base:
+    fields: "*"
+  ecs:
+    fields: "*"
+  event:
+    fields: "*"
+
+  # ECS user fields
+  user:
+    fields: "*"
+      
+  # Network fields to capture IPs, geo and stuff
+  related:
+    fields: "*"
+  client:
+    fields: "*"

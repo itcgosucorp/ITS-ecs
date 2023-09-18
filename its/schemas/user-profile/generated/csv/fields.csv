@@ -1,0 +1,300 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,base,labels,object,core,,"{""application"": ""foo-bar"", ""env"": ""production""}",Custom key/value pairs.
+8.9.0,true,base,message,match_only_text,core,,Hello World,Log message optimized for viewing in a log viewer.
+8.9.0,true,base,tags,keyword,core,array,"[""production"", ""env2""]",List of keywords used to tag each event.
+8.9.0,true,client,client.address,keyword,extended,,,Client network address.
+8.9.0,true,client,client.as.number,long,extended,,15169,Unique number allocated to the autonomous system.
+8.9.0,true,client,client.as.organization.name,keyword,extended,,Google LLC,Organization name.
+8.9.0,true,client,client.as.organization.name.text,match_only_text,extended,,Google LLC,Organization name.
+8.9.0,true,client,client.bytes,long,core,,184,Bytes sent from the client to the server.
+8.9.0,true,client,client.domain,keyword,core,,foo.example.com,The domain name of the client.
+8.9.0,true,client,client.geo.city_name,keyword,core,,Montreal,City name.
+8.9.0,true,client,client.geo.continent_code,keyword,core,,NA,Continent code.
+8.9.0,true,client,client.geo.continent_name,keyword,core,,North America,Name of the continent.
+8.9.0,true,client,client.geo.country_iso_code,keyword,core,,CA,Country ISO code.
+8.9.0,true,client,client.geo.country_name,keyword,core,,Canada,Country name.
+8.9.0,true,client,client.geo.location,geo_point,core,,"{ ""lon"": -73.614830, ""lat"": 45.505918 }",Longitude and latitude.
+8.9.0,true,client,client.geo.name,keyword,extended,,boston-dc,User-defined description of a location.
+8.9.0,true,client,client.geo.postal_code,keyword,core,,94040,Postal code.
+8.9.0,true,client,client.geo.region_iso_code,keyword,core,,CA-QC,Region ISO code.
+8.9.0,true,client,client.geo.region_name,keyword,core,,Quebec,Region name.
+8.9.0,true,client,client.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
+8.9.0,true,client,client.ip,ip,core,,,IP address of the client.
+8.9.0,true,client,client.mac,keyword,core,,00-00-5E-00-53-23,MAC address of the client.
+8.9.0,true,client,client.nat.ip,ip,extended,,,Client NAT ip address
+8.9.0,true,client,client.nat.port,long,extended,,,Client NAT port
+8.9.0,true,client,client.packets,long,core,,12,Packets sent from the client to the server.
+8.9.0,true,client,client.port,long,core,,,Port of the client.
+8.9.0,true,client,client.registered_domain,keyword,extended,,example.com,"The highest registered client domain, stripped of the subdomain."
+8.9.0,true,client,client.subdomain,keyword,extended,,east,The subdomain of the domain.
+8.9.0,true,client,client.top_level_domain,keyword,extended,,co.uk,"The effective top level domain (com, org, net, co.uk)."
+8.9.0,true,client,client.user.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,client,client.user.email,keyword,extended,,,User email address.
+8.9.0,true,client,client.user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,client,client.user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,client,client.user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,client,client.user.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,client,client.user.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,client,client.user.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,client,client.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,client,client.user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,client,client.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,client,client.user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,client,client.user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,client,client.user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,client,client.user.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,client,client.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,client,client.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,client,client.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,ecs,ecs.version,keyword,core,,1.0.0,ECS version this event conforms to.
+8.9.0,true,event,event.action,keyword,core,,user-password-change,The action captured by the event.
+8.9.0,true,event,event.agent_id_status,keyword,extended,,verified,Validation status of the event's agent.id field.
+8.9.0,true,event,event.category,keyword,core,array,authentication,Event category. The second categorization field in the hierarchy.
+8.9.0,true,event,event.code,keyword,extended,,4648,Identification code for this event.
+8.9.0,true,event,event.created,date,core,,2016-05-23T08:05:34.857Z,Time when the event was first read by an agent or by your pipeline.
+8.9.0,true,event,event.dataset,keyword,core,,apache.access,Name of the dataset.
+8.9.0,true,event,event.duration,long,core,,,Duration of the event in nanoseconds.
+8.9.0,true,event,event.end,date,extended,,,`event.end` contains the date when the event ended or when the activity was last observed.
+8.9.0,true,event,event.hash,keyword,extended,,123456789012345678901234567890ABCD,Hash (perhaps logstash fingerprint) of raw field to be able to demonstrate log integrity.
+8.9.0,true,event,event.id,keyword,core,,8a4f500d,Unique ID to describe the event.
+8.9.0,true,event,event.ingested,date,core,,2016-05-23T08:05:35.101Z,Timestamp when an event arrived in the central data store.
+8.9.0,true,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.
+8.9.0,true,event,event.module,keyword,core,,apache,Name of the module this data is coming from.
+8.9.0,false,event,event.original,keyword,core,,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232,Raw text message of entire event.
+8.9.0,true,event,event.outcome,keyword,core,,success,The outcome of the event. The lowest level categorization field in the hierarchy.
+8.9.0,true,event,event.provider,keyword,extended,,kernel,Source of the event.
+8.9.0,true,event,event.reason,keyword,extended,,Terminated an unexpected process,"Reason why this event happened, according to the source"
+8.9.0,true,event,event.reference,keyword,extended,,https://system.example.com/event/#0001234,Event reference URL
+8.9.0,true,event,event.risk_score,float,core,,,Risk score or priority of the event (e.g. security solutions). Use your system's original value here.
+8.9.0,true,event,event.risk_score_norm,float,extended,,,Normalized risk score or priority of the event (0-100).
+8.9.0,true,event,event.sequence,long,extended,,,Sequence number of the event.
+8.9.0,true,event,event.severity,long,core,,7,Numeric severity of the event.
+8.9.0,true,event,event.start,date,extended,,,`event.start` contains the date when the event started or when the activity was first observed.
+8.9.0,true,event,event.timezone,keyword,extended,,,Event time zone.
+8.9.0,true,event,event.type,keyword,core,array,,Event type. The third categorization field in the hierarchy.
+8.9.0,true,event,event.url,keyword,extended,,https://mysystem.example.com/alert/5271dedb-f5b0-4218-87f0-4ac4870a38fe,Event investigation URL
+8.9.0,true,related,related.hash,keyword,extended,array,,All the hashes seen on your event.
+8.9.0,true,related,related.hosts,keyword,extended,array,,All the host identifiers seen on your event.
+8.9.0,true,related,related.ip,ip,extended,array,,All of the IPs seen on your event.
+8.9.0,true,related,related.user,keyword,extended,array,,All the user names or other user identifiers seen on the event.
+8.9.0,true,user,user.changes.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.changes.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.changes.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.changes.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.changes.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.changes.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.changes.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.changes.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.changes.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.changes.its.birthday,date,custom,,,User's birthday.
+8.9.0,true,user,user.changes.its.created_at,date,custom,,,Time when the user was first created.
+8.9.0,true,user,user.changes.its.delete_at,date,custom,,,The time when the user was deleted truly.
+8.9.0,true,user,user.changes.its.email_verified,boolean,custom,,,User's email verification status.
+8.9.0,true,user,user.changes.its.gender,keyword,custom,,,User's gender.
+8.9.0,true,user,user.changes.its.identities,nested,custom,,,An array includes related user information.
+8.9.0,true,user,user.changes.its.identities.user.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.changes.its.identities.user.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.changes.its.identities.user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.changes.its.identities.user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.changes.its.identities.user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.changes.its.identities.user.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.changes.its.identities.user.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.changes.its.identities.user.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.changes.its.identities.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.changes.its.identities.user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.changes.its.identities.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.changes.its.identities.user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.changes.its.identities.user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.changes.its.identities.user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.changes.its.identities.user.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.changes.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.changes.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.changes.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.changes.its.is_guest,boolean,custom,,,User is guest account.
+8.9.0,true,user,user.changes.its.login_at,date,custom,,,Last time the user logged in.
+8.9.0,true,user,user.changes.its.nemo_address,keyword,custom,,,User's NEMO wallet address.
+8.9.0,true,user,user.changes.its.phone.country,keyword,custom,,,User's phone number country.
+8.9.0,true,user,user.changes.its.phone.country_calling_code,keyword,custom,,,User's phone number country calling code.
+8.9.0,true,user,user.changes.its.phone.extension,keyword,custom,,,User's phone number extension.
+8.9.0,true,user,user.changes.its.phone.national_number,keyword,custom,,,User's phone number in national format.
+8.9.0,true,user,user.changes.its.phone.number,keyword,custom,,,User's phone number in international format.
+8.9.0,true,user,user.changes.its.phone_verified,boolean,custom,,,User's phone number verification status.
+8.9.0,true,user,user.changes.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.changes.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.changes.its.status,keyword,custom,,,User account's status.
+8.9.0,true,user,user.changes.its.updated_at,date,custom,,,Time when the user was updated.
+8.9.0,true,user,user.changes.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.changes.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.changes.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.changes.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.changes.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.changes.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.changes.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.changes.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.changes.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.effective.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.effective.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.effective.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.effective.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.effective.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.effective.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.effective.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.effective.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.effective.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.effective.its.birthday,date,custom,,,User's birthday.
+8.9.0,true,user,user.effective.its.created_at,date,custom,,,Time when the user was first created.
+8.9.0,true,user,user.effective.its.delete_at,date,custom,,,The time when the user was deleted truly.
+8.9.0,true,user,user.effective.its.email_verified,boolean,custom,,,User's email verification status.
+8.9.0,true,user,user.effective.its.gender,keyword,custom,,,User's gender.
+8.9.0,true,user,user.effective.its.identities,nested,custom,,,An array includes related user information.
+8.9.0,true,user,user.effective.its.identities.user.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.effective.its.identities.user.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.effective.its.identities.user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.effective.its.identities.user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.effective.its.identities.user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.effective.its.identities.user.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.effective.its.identities.user.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.effective.its.identities.user.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.effective.its.identities.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.effective.its.identities.user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.effective.its.identities.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.effective.its.identities.user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.effective.its.identities.user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.effective.its.identities.user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.effective.its.identities.user.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.effective.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.effective.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.effective.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.effective.its.is_guest,boolean,custom,,,User is guest account.
+8.9.0,true,user,user.effective.its.login_at,date,custom,,,Last time the user logged in.
+8.9.0,true,user,user.effective.its.nemo_address,keyword,custom,,,User's NEMO wallet address.
+8.9.0,true,user,user.effective.its.phone.country,keyword,custom,,,User's phone number country.
+8.9.0,true,user,user.effective.its.phone.country_calling_code,keyword,custom,,,User's phone number country calling code.
+8.9.0,true,user,user.effective.its.phone.extension,keyword,custom,,,User's phone number extension.
+8.9.0,true,user,user.effective.its.phone.national_number,keyword,custom,,,User's phone number in national format.
+8.9.0,true,user,user.effective.its.phone.number,keyword,custom,,,User's phone number in international format.
+8.9.0,true,user,user.effective.its.phone_verified,boolean,custom,,,User's phone number verification status.
+8.9.0,true,user,user.effective.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.effective.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.effective.its.status,keyword,custom,,,User account's status.
+8.9.0,true,user,user.effective.its.updated_at,date,custom,,,Time when the user was updated.
+8.9.0,true,user,user.effective.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.effective.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.effective.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.effective.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.effective.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.effective.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.effective.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.effective.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.effective.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.its.birthday,date,custom,,,User's birthday.
+8.9.0,true,user,user.its.created_at,date,custom,,,Time when the user was first created.
+8.9.0,true,user,user.its.delete_at,date,custom,,,The time when the user was deleted truly.
+8.9.0,true,user,user.its.email_verified,boolean,custom,,,User's email verification status.
+8.9.0,true,user,user.its.gender,keyword,custom,,,User's gender.
+8.9.0,true,user,user.its.identities,nested,custom,,,An array includes related user information.
+8.9.0,true,user,user.its.identities.user.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.its.identities.user.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.its.identities.user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.its.identities.user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.its.identities.user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.its.identities.user.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.its.identities.user.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.its.identities.user.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.its.identities.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.its.identities.user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.its.identities.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.its.identities.user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.its.identities.user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.its.identities.user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.its.identities.user.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.its.is_guest,boolean,custom,,,User is guest account.
+8.9.0,true,user,user.its.login_at,date,custom,,,Last time the user logged in.
+8.9.0,true,user,user.its.nemo_address,keyword,custom,,,User's NEMO wallet address.
+8.9.0,true,user,user.its.phone.country,keyword,custom,,,User's phone number country.
+8.9.0,true,user,user.its.phone.country_calling_code,keyword,custom,,,User's phone number country calling code.
+8.9.0,true,user,user.its.phone.extension,keyword,custom,,,User's phone number extension.
+8.9.0,true,user,user.its.phone.national_number,keyword,custom,,,User's phone number in national format.
+8.9.0,true,user,user.its.phone.number,keyword,custom,,,User's phone number in international format.
+8.9.0,true,user,user.its.phone_verified,boolean,custom,,,User's phone number verification status.
+8.9.0,true,user,user.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.its.status,keyword,custom,,,User account's status.
+8.9.0,true,user,user.its.updated_at,date,custom,,,Time when the user was updated.
+8.9.0,true,user,user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.target.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.target.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.target.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.target.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.target.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.target.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.target.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.target.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.target.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.target.its.birthday,date,custom,,,User's birthday.
+8.9.0,true,user,user.target.its.created_at,date,custom,,,Time when the user was first created.
+8.9.0,true,user,user.target.its.delete_at,date,custom,,,The time when the user was deleted truly.
+8.9.0,true,user,user.target.its.email_verified,boolean,custom,,,User's email verification status.
+8.9.0,true,user,user.target.its.gender,keyword,custom,,,User's gender.
+8.9.0,true,user,user.target.its.identities,nested,custom,,,An array includes related user information.
+8.9.0,true,user,user.target.its.identities.user.domain,keyword,extended,,,Name of the directory the user is a member of.
+8.9.0,true,user,user.target.its.identities.user.email,keyword,extended,,,User email address.
+8.9.0,true,user,user.target.its.identities.user.full_name,keyword,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.target.its.identities.user.full_name.text,match_only_text,extended,,Albert Einstein,"User's full name, if available."
+8.9.0,true,user,user.target.its.identities.user.group.domain,keyword,extended,,,Name of the directory the group is a member of.
+8.9.0,true,user,user.target.its.identities.user.group.id,keyword,extended,,,Unique identifier for the group on the system/platform.
+8.9.0,true,user,user.target.its.identities.user.group.name,keyword,extended,,,Name of the group.
+8.9.0,true,user,user.target.its.identities.user.hash,keyword,extended,,,Unique user hash to correlate information for a user in anonymized form.
+8.9.0,true,user,user.target.its.identities.user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.target.its.identities.user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.target.its.identities.user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.target.its.identities.user.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.target.its.identities.user.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.target.its.identities.user.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.target.its.identities.user.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.target.its.identities.user.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.target.its.identities.user.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.target.its.identities.user.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.
+8.9.0,true,user,user.target.its.is_guest,boolean,custom,,,User is guest account.
+8.9.0,true,user,user.target.its.login_at,date,custom,,,Last time the user logged in.
+8.9.0,true,user,user.target.its.nemo_address,keyword,custom,,,User's NEMO wallet address.
+8.9.0,true,user,user.target.its.phone.country,keyword,custom,,,User's phone number country.
+8.9.0,true,user,user.target.its.phone.country_calling_code,keyword,custom,,,User's phone number country calling code.
+8.9.0,true,user,user.target.its.phone.extension,keyword,custom,,,User's phone number extension.
+8.9.0,true,user,user.target.its.phone.national_number,keyword,custom,,,User's phone number in national format.
+8.9.0,true,user,user.target.its.phone.number,keyword,custom,,,User's phone number in international format.
+8.9.0,true,user,user.target.its.phone_verified,boolean,custom,,,User's phone number verification status.
+8.9.0,true,user,user.target.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.target.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.target.its.status,keyword,custom,,,User account's status.
+8.9.0,true,user,user.target.its.updated_at,date,custom,,,Time when the user was updated.
+8.9.0,true,user,user.target.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.target.name.text,match_only_text,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.target.risk.calculated_level,keyword,extended,,High,A risk classification level calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.target.risk.calculated_score,float,extended,,880.73,A risk classification score calculated by an internal system as part of entity analytics and entity risk scoring.
+8.9.0,true,user,user.target.risk.calculated_score_norm,float,extended,,88.73,A normalized risk score calculated by an internal system.
+8.9.0,true,user,user.target.risk.static_level,keyword,extended,,High,"A risk classification level obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.target.risk.static_score,float,extended,,830.0,"A risk classification score obtained from outside the system, such as from some external Threat Intelligence Platform."
+8.9.0,true,user,user.target.risk.static_score_norm,float,extended,,83.0,A normalized risk score calculated by an external system.
+8.9.0,true,user,user.target.roles,keyword,extended,array,"[""kibana_admin"", ""reporting_user""]",Array of user roles at the time of the event.

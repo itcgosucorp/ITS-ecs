@@ -1,0 +1,12 @@
+{
+  "dynamic_templates": [
+    {
+      "labels_as_keyword": {
+        "path_match": "labels.*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    }
+  ]
+}

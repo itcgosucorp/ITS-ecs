@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "8.9.0"
+  },
+  "composed_of": [
+    "ecs_8.9.0_base",
+    "ecs_8.9.0_ecs",
+    "ecs_8.9.0_event",
+    "ecs_8.9.0_user",
+    "ecs_8.9.0_related",
+    "ecs_8.9.0_client"
+  ],
+  "index_patterns": [
+    "user_profile_*"
+  ],
+  "priority": 1,
+  "template": {
+    "mappings": {
+      "dynamic_templates": [
+        {
+          "labels_as_keyword": {
+            "mapping": {
+              "type": "keyword"
+            },
+            "path_match": "labels.*"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "index": {
+        "codec": "best_compression",
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        }
+      }
+    }
+  }
+}
