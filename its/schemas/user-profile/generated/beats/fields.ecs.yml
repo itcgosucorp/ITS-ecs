@@ -852,33 +852,34 @@
     - name: changes.its.birthday
       level: custom
       type: date
-      description: Custom ITS birthday field
+      description: User's birthday.
       default_field: false
     - name: changes.its.created_at
       level: custom
       type: date
-      description: Custom ITS created_at field
+      description: Time when the user was first created.
       default_field: false
     - name: changes.its.delete_at
       level: custom
       type: date
-      description: Custom ITS delete_at field
+      description: The time when the user was deleted truly.
       default_field: false
     - name: changes.its.email_verified
       level: custom
       type: boolean
-      description: Custom ITS email_verified field
+      description: User's email verification status.
       default_field: false
     - name: changes.its.gender
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS gender field
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
       default_field: false
     - name: changes.its.identities
       level: custom
       type: nested
-      description: Custom ITS identities field
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
       default_field: false
     - name: changes.its.identities.user.domain
       level: extended
@@ -1007,76 +1008,76 @@
     - name: changes.its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest field
+      description: User is guest account.
       default_field: false
     - name: changes.its.login_at
       level: custom
       type: date
-      description: Custom ITS login_at field
+      description: Last time the user logged in.
       default_field: false
     - name: changes.its.nemo_address
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS nemo_address field
+      description: User's NEMO wallet address.
       default_field: false
     - name: changes.its.phone.country
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country field
+      description: 'User''s phone number country. For example: "VN".'
       default_field: false
     - name: changes.its.phone.country_calling_code
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country_calling_code field
+      description: 'User''s phone number country calling code. For example: "84".'
       default_field: false
     - name: changes.its.phone.extension
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone extension field
+      description: User's phone number extension.
       default_field: false
     - name: changes.its.phone.national_number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone national_number field
+      description: 'User''s phone number in national format. For example: "949112358"'
       default_field: false
     - name: changes.its.phone.number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone number field
+      description: 'User''s phone number in international format. For example: "+84949112358"'
       default_field: false
     - name: changes.its.phone_verified
       level: custom
       type: boolean
-      description: Custom ITS phone_verified field
+      description: User's phone number verification status.
       default_field: false
     - name: changes.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_app_id field
+      description: App ID where the user registered from.
       default_field: false
     - name: changes.its.register_project_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_project_id field
+      description: Project ID where the user register from.
       default_field: false
     - name: changes.its.status
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS status field
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
       default_field: false
     - name: changes.its.updated_at
       level: custom
       type: date
-      description: Custom ITS updated_at field
+      description: Time when the user was updated.
       default_field: false
     - name: changes.name
       level: core
@@ -1212,33 +1213,34 @@
     - name: effective.its.birthday
       level: custom
       type: date
-      description: Custom ITS birthday field
+      description: User's birthday.
       default_field: false
     - name: effective.its.created_at
       level: custom
       type: date
-      description: Custom ITS created_at field
+      description: Time when the user was first created.
       default_field: false
     - name: effective.its.delete_at
       level: custom
       type: date
-      description: Custom ITS delete_at field
+      description: The time when the user was deleted truly.
       default_field: false
     - name: effective.its.email_verified
       level: custom
       type: boolean
-      description: Custom ITS email_verified field
+      description: User's email verification status.
       default_field: false
     - name: effective.its.gender
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS gender field
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
       default_field: false
     - name: effective.its.identities
       level: custom
       type: nested
-      description: Custom ITS identities field
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
       default_field: false
     - name: effective.its.identities.user.domain
       level: extended
@@ -1367,76 +1369,76 @@
     - name: effective.its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest field
+      description: User is guest account.
       default_field: false
     - name: effective.its.login_at
       level: custom
       type: date
-      description: Custom ITS login_at field
+      description: Last time the user logged in.
       default_field: false
     - name: effective.its.nemo_address
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS nemo_address field
+      description: User's NEMO wallet address.
       default_field: false
     - name: effective.its.phone.country
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country field
+      description: 'User''s phone number country. For example: "VN".'
       default_field: false
     - name: effective.its.phone.country_calling_code
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country_calling_code field
+      description: 'User''s phone number country calling code. For example: "84".'
       default_field: false
     - name: effective.its.phone.extension
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone extension field
+      description: User's phone number extension.
       default_field: false
     - name: effective.its.phone.national_number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone national_number field
+      description: 'User''s phone number in national format. For example: "949112358"'
       default_field: false
     - name: effective.its.phone.number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone number field
+      description: 'User''s phone number in international format. For example: "+84949112358"'
       default_field: false
     - name: effective.its.phone_verified
       level: custom
       type: boolean
-      description: Custom ITS phone_verified field
+      description: User's phone number verification status.
       default_field: false
     - name: effective.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_app_id field
+      description: App ID where the user registered from.
       default_field: false
     - name: effective.its.register_project_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_project_id field
+      description: Project ID where the user register from.
       default_field: false
     - name: effective.its.status
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS status field
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
       default_field: false
     - name: effective.its.updated_at
       level: custom
       type: date
-      description: Custom ITS updated_at field
+      description: Time when the user was updated.
       default_field: false
     - name: effective.name
       level: core
@@ -1551,33 +1553,34 @@
     - name: its.birthday
       level: custom
       type: date
-      description: Custom ITS birthday field
+      description: User's birthday.
       default_field: false
     - name: its.created_at
       level: custom
       type: date
-      description: Custom ITS created_at field
+      description: Time when the user was first created.
       default_field: false
     - name: its.delete_at
       level: custom
       type: date
-      description: Custom ITS delete_at field
+      description: The time when the user was deleted truly.
       default_field: false
     - name: its.email_verified
       level: custom
       type: boolean
-      description: Custom ITS email_verified field
+      description: User's email verification status.
       default_field: false
     - name: its.gender
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS gender field
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
       default_field: false
     - name: its.identities
       level: custom
       type: nested
-      description: Custom ITS identities field
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
       default_field: false
     - name: its.identities.user.domain
       level: extended
@@ -1706,76 +1709,76 @@
     - name: its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest field
+      description: User is guest account.
       default_field: false
     - name: its.login_at
       level: custom
       type: date
-      description: Custom ITS login_at field
+      description: Last time the user logged in.
       default_field: false
     - name: its.nemo_address
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS nemo_address field
+      description: User's NEMO wallet address.
       default_field: false
     - name: its.phone.country
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country field
+      description: 'User''s phone number country. For example: "VN".'
       default_field: false
     - name: its.phone.country_calling_code
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country_calling_code field
+      description: 'User''s phone number country calling code. For example: "84".'
       default_field: false
     - name: its.phone.extension
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone extension field
+      description: User's phone number extension.
       default_field: false
     - name: its.phone.national_number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone national_number field
+      description: 'User''s phone number in national format. For example: "949112358"'
       default_field: false
     - name: its.phone.number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone number field
+      description: 'User''s phone number in international format. For example: "+84949112358"'
       default_field: false
     - name: its.phone_verified
       level: custom
       type: boolean
-      description: Custom ITS phone_verified field
+      description: User's phone number verification status.
       default_field: false
     - name: its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_app_id field
+      description: App ID where the user registered from.
       default_field: false
     - name: its.register_project_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_project_id field
+      description: Project ID where the user register from.
       default_field: false
     - name: its.status
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS status field
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
       default_field: false
     - name: its.updated_at
       level: custom
       type: date
-      description: Custom ITS updated_at field
+      description: Time when the user was updated.
       default_field: false
     - name: name
       level: core
@@ -1904,33 +1907,34 @@
     - name: target.its.birthday
       level: custom
       type: date
-      description: Custom ITS birthday field
+      description: User's birthday.
       default_field: false
     - name: target.its.created_at
       level: custom
       type: date
-      description: Custom ITS created_at field
+      description: Time when the user was first created.
       default_field: false
     - name: target.its.delete_at
       level: custom
       type: date
-      description: Custom ITS delete_at field
+      description: The time when the user was deleted truly.
       default_field: false
     - name: target.its.email_verified
       level: custom
       type: boolean
-      description: Custom ITS email_verified field
+      description: User's email verification status.
       default_field: false
     - name: target.its.gender
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS gender field
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
       default_field: false
     - name: target.its.identities
       level: custom
       type: nested
-      description: Custom ITS identities field
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
       default_field: false
     - name: target.its.identities.user.domain
       level: extended
@@ -2059,76 +2063,76 @@
     - name: target.its.is_guest
       level: custom
       type: boolean
-      description: Custom ITS is_guest field
+      description: User is guest account.
       default_field: false
     - name: target.its.login_at
       level: custom
       type: date
-      description: Custom ITS login_at field
+      description: Last time the user logged in.
       default_field: false
     - name: target.its.nemo_address
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS nemo_address field
+      description: User's NEMO wallet address.
       default_field: false
     - name: target.its.phone.country
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country field
+      description: 'User''s phone number country. For example: "VN".'
       default_field: false
     - name: target.its.phone.country_calling_code
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone country_calling_code field
+      description: 'User''s phone number country calling code. For example: "84".'
       default_field: false
     - name: target.its.phone.extension
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone extension field
+      description: User's phone number extension.
       default_field: false
     - name: target.its.phone.national_number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone national_number field
+      description: 'User''s phone number in national format. For example: "949112358"'
       default_field: false
     - name: target.its.phone.number
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS phone number field
+      description: 'User''s phone number in international format. For example: "+84949112358"'
       default_field: false
     - name: target.its.phone_verified
       level: custom
       type: boolean
-      description: Custom ITS phone_verified field
+      description: User's phone number verification status.
       default_field: false
     - name: target.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_app_id field
+      description: App ID where the user registered from.
       default_field: false
     - name: target.its.register_project_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS register_project_id field
+      description: Project ID where the user register from.
       default_field: false
     - name: target.its.status
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Custom ITS status field
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
       default_field: false
     - name: target.its.updated_at
       level: custom
       type: date
-      description: Custom ITS updated_at field
+      description: Time when the user was updated.
       default_field: false
     - name: target.name
       level: core
