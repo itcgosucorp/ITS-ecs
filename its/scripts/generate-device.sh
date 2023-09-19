@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 scripts/generator.py --force-docs --template-settings-legacy its/schemas/device/fields/template-legacy.json --template-settings its/schemas/device/fields/template.json --mapping-settings its/schemas/device/fields/mapping.json --include its/schemas/device/fields/custom/ --subset its/schemas/device/fields/subset.yml --out its/schemas/device/

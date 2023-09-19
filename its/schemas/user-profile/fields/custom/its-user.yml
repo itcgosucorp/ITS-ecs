@@ -133,3 +133,9 @@
       short: User's NEMO wallet address.
       description: >
         User's NEMO wallet address.
+    - name: traits.anonymous_id
+      level: custom
+      type: keyword
+      short: User's anonymous_id.
+      description: >
+        User's anonymous_id.

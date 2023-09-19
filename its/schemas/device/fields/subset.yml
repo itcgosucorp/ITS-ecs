@@ -1,0 +1,16 @@
+---
+name: device-its
+fields:
+  # ECS basic fields
+  base:
+    fields: "*"
+  ecs:
+    fields: "*"
+  # ECS device fields
+  device:
+    fields: "*"
+  # Network fields to capture IPs, geo and stuff
+  related:
+    fields: "*"
+  client:
+    fields: "*"

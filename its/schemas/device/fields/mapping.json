@@ -1,0 +1,20 @@
+{
+  "dynamic_templates": [
+    {
+      "network_as_keyword": {
+        "path_match": "device.its.network.*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "screen_as_integer": {
+        "path_match": "device.its.screen.*",
+        "mapping": {
+          "type": "integer"
+        }
+      }
+    }
+  ]
+}

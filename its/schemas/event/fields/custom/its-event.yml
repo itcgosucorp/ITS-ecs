@@ -1,0 +1,20 @@
+---
+- name: event_its
+  title: event ITS
+  type: group
+  group: 2
+  short: Custom Event ITS field
+  description: >
+    Custom ITS field
+  reusable:
+    top_level: false
+    expected:
+      - at: event
+        as: its
+  fields:
+    - name: session_id
+      level: custom
+      type: keyword
+      short: Session ID of the event.
+      description: >
+        Session ID of the event.

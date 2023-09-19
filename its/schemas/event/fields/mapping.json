@@ -1,0 +1,36 @@
+{
+  "dynamic_templates": [
+    {
+      "context_as_keyword": {
+        "path_match": "event.its.context.*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "properties_as_keyword": {
+        "path_match": "event.its.properties.*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "campaign_as_keyword": {
+        "path_match": "event.its.campaign.*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "page_as_keyword": {
+        "path_match": "event.its.page.*",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    }
+  ]
+}
