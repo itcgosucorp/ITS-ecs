@@ -1,5 +1,5 @@
 ---
-- name: user_its
+- name: its_user
   title: User ITS
   type: group
   group: 2

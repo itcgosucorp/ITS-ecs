@@ -3,6 +3,7 @@
     {
       "labels_as_keyword": {
         "path_match": "labels.*",
+        "match_mapping_type": "string",
         "mapping": {
           "type": "keyword"
         }

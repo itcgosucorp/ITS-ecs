@@ -467,8 +467,22 @@ example: `Samsung Galaxy S6`
 
 
 | `device.its.*`
-| <<ecs-device_its,device_its>>
+| <<ecs-its_device,its_device>>
 | Custom Device ITS field
+
+// ===============================================================
+
+
+| `device.its.network.*`
+| <<ecs-its_network,its_network>>
+| Custom Campaign ITS field
+
+// ===============================================================
+
+
+| `device.its.screen.*`
+| <<ecs-its_screen,its_screen>>
+| Custom Screen ITS field
 
 // ===============================================================
 
@@ -1070,7 +1084,7 @@ example: `https://mysystem.example.com/alert/5271dedb-f5b0-4218-87f0-4ac4870a38f
 
 
 | `event.its.*`
-| <<ecs-event_its,event_its>>
+| <<ecs-its_event,its_event>>
 | Custom Event ITS field
 
 // ===============================================================

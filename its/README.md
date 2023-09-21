@@ -13,4 +13,8 @@ bash its/index-templates/<index-temaplate-name>/scripts/generator.sh
 
 Refer back to [USAGE.md](../USAGE.md) for the documentation on each of generate command flags and you can write your own.
 
-**NOTE** - If you customize ECS schema in `schemas` directory, you should comment that by `<ITS_CUSTOM>...your custom...</ITS_CUSTOM>`
+### IMPORTANT
+- If you want use your custom schema in another custom schema, you must set `reusable.order` to `1` and `reusable.expected.at` to **schema name**.
+
+#### NOTE
+- If you customize ECS schema in `schemas` directory, you should comment that by `<ITS_CUSTOM>...your custom...</ITS_CUSTOM>`

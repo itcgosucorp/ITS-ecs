@@ -583,7 +583,7 @@ device.its.advertising.id:
   level: custom
   name: advertising.id
   normalize: []
-  original_fieldset: device_its
+  original_fieldset: its_device
   short: Advertising ID of the device.
   type: keyword
 device.its.advertising.tracking_enabled:
@@ -593,9 +593,30 @@ device.its.advertising.tracking_enabled:
   level: custom
   name: advertising.tracking_enabled
   normalize: []
-  original_fieldset: device_its
+  original_fieldset: its_device
   short: Status tracking of the device.
   type: boolean
+device.its.network.wifi:
+  dashed_name: device-its-network-wifi
+  description: WiFi information about the network connection.
+  flat_name: device.its.network.wifi
+  ignore_above: 1024
+  level: custom
+  name: wifi
+  normalize: []
+  original_fieldset: its_network
+  short: WiFi information.
+  type: keyword
+device.its.screen.innerHeight:
+  dashed_name: device-its-screen-innerHeight
+  description: innerHeight of the device's screen.
+  flat_name: device.its.screen.innerHeight
+  level: custom
+  name: innerHeight
+  normalize: []
+  original_fieldset: its_screen
+  short: innerHeight of the device's screen.
+  type: integer
 device.its.type:
   dashed_name: device-its-type
   description: Type of the device.
@@ -604,7 +625,7 @@ device.its.type:
   level: custom
   name: type
   normalize: []
-  original_fieldset: device_its
+  original_fieldset: its_device
   short: Type of the device.
   type: keyword
 device.manufacturer:
@@ -1059,6 +1080,149 @@ event.ingested:
   normalize: []
   short: Timestamp when an event arrived in the central data store.
   type: date
+event.its.campaign.content:
+  dashed_name: event-its-campaign-content
+  description: Content of the campaign.
+  flat_name: event.its.campaign.content
+  ignore_above: 1024
+  level: custom
+  name: content
+  normalize: []
+  original_fieldset: its_campaign
+  short: Content of the campaign.
+  type: keyword
+event.its.campaign.medium:
+  dashed_name: event-its-campaign-medium
+  description: Medium of the campaign.
+  flat_name: event.its.campaign.medium
+  ignore_above: 1024
+  level: custom
+  name: medium
+  normalize: []
+  original_fieldset: its_campaign
+  short: Medium of the campaign.
+  type: keyword
+event.its.campaign.name:
+  dashed_name: event-its-campaign-name
+  description: Name of the campaign.
+  flat_name: event.its.campaign.name
+  ignore_above: 1024
+  level: custom
+  name: name
+  normalize: []
+  original_fieldset: its_campaign
+  short: Name of the campaign.
+  type: keyword
+event.its.campaign.source:
+  dashed_name: event-its-campaign-source
+  description: Source of the campaign.
+  flat_name: event.its.campaign.source
+  ignore_above: 1024
+  level: custom
+  name: source
+  normalize: []
+  original_fieldset: its_campaign
+  short: Source of the campaign.
+  type: keyword
+event.its.campaign.term:
+  dashed_name: event-its-campaign-term
+  description: Term of the campaign.
+  flat_name: event.its.campaign.term
+  ignore_above: 1024
+  level: custom
+  name: term
+  normalize: []
+  original_fieldset: its_campaign
+  short: Term of the campaign.
+  type: keyword
+event.its.page.initial_referrer:
+  dashed_name: event-its-page-initial-referrer
+  description: Initial referrer of the current page in the browser.
+  flat_name: event.its.page.initial_referrer
+  ignore_above: 1024
+  level: custom
+  name: initial_referrer
+  normalize: []
+  original_fieldset: its_page
+  short: Initial referrer of the current page in the browser.
+  type: keyword
+event.its.page.initial_referring_domain:
+  dashed_name: event-its-page-initial-referring-domain
+  description: Initial referring domain of the current page in the browser.
+  flat_name: event.its.page.initial_referring_domain
+  ignore_above: 1024
+  level: custom
+  name: initial_referring_domain
+  normalize: []
+  original_fieldset: its_page
+  short: Initial referring domain.
+  type: keyword
+event.its.page.path:
+  dashed_name: event-its-page-path
+  description: Path of the current page in the browser.
+  flat_name: event.its.page.path
+  ignore_above: 1024
+  level: custom
+  name: path
+  normalize: []
+  original_fieldset: its_page
+  short: Path of the current page.
+  type: keyword
+event.its.page.referrer:
+  dashed_name: event-its-page-referrer
+  description: Referrer of the current page in the browser.
+  flat_name: event.its.page.referrer
+  ignore_above: 1024
+  level: custom
+  name: referrer
+  normalize: []
+  original_fieldset: its_page
+  short: Referrer of the current page in the browser.
+  type: keyword
+event.its.page.referring_domain:
+  dashed_name: event-its-page-referring-domain
+  description: Referring domain of the current page in the browser.
+  flat_name: event.its.page.referring_domain
+  ignore_above: 1024
+  level: custom
+  name: referring_domain
+  normalize: []
+  original_fieldset: its_page
+  short: Referring domain.
+  type: keyword
+event.its.page.search:
+  dashed_name: event-its-page-search
+  description: Search of the current page in the browser.
+  flat_name: event.its.page.search
+  ignore_above: 1024
+  level: custom
+  name: search
+  normalize: []
+  original_fieldset: its_page
+  short: Search of the current page in the browser.
+  type: keyword
+event.its.page.title:
+  dashed_name: event-its-page-title
+  description: Title of the current page in the browser.
+  flat_name: event.its.page.title
+  ignore_above: 1024
+  level: custom
+  name: title
+  normalize: []
+  original_fieldset: its_page
+  short: Title of the current page in the browser.
+  type: keyword
+event.its.page.url:
+  dashed_name: event-its-page-url
+  description: URL of the current page in the browser.
+  flat_name: event.its.page.url
+  ignore_above: 1024
+  level: custom
+  name: url
+  normalize: []
+  original_fieldset: its_page
+  short: URL of the current page in the browser.
+  type: keyword
 event.its.session_id:
   dashed_name: event-its-session-id
   description: Session ID of the event.
@@ -1067,7 +1231,7 @@ event.its.session_id:
   level: custom
   name: session_id
   normalize: []
-  original_fieldset: event_its
+  original_fieldset: its_event
   short: Session ID of the event.
   type: keyword
 event.kind:

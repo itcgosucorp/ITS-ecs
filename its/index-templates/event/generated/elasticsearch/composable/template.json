@@ -23,6 +23,7 @@
             "mapping": {
               "type": "keyword"
             },
+            "match_mapping_type": "string",
             "path_match": "event.its.context.*"
           }
         },
@@ -31,23 +32,8 @@
             "mapping": {
               "type": "keyword"
             },
+            "match_mapping_type": "string",
             "path_match": "event.its.properties.*"
-          }
-        },
-        {
-          "campaign_as_keyword": {
-            "mapping": {
-              "type": "keyword"
-            },
-            "path_match": "event.its.campaign.*"
-          }
-        },
-        {
-          "page_as_keyword": {
-            "mapping": {
-              "type": "keyword"
-            },
-            "path_match": "event.its.page.*"
           }
         }
       ]

@@ -1,11 +1,11 @@
 ---
-- name: device_its
+- name: its_device
   title: device ITS
   type: group
   group: 2
   short: Custom Device ITS field
   description: >
-    Custom ITS field
+   Custom ITS field
   reusable:
     top_level: false
     expected:
@@ -17,18 +17,18 @@
       type: keyword
       short: Advertising ID of the device.
       description: >
-        Advertising ID of the device.
+       Advertising ID of the device.
     - name: advertising.tracking_enabled
       level: custom
       type: boolean
       short: Status tracking of the device.
       description: >
-        Status tracking of the device.
+       Status tracking of the device.
     - name: type
       level: custom
       type: keyword
       short: Type of the device.
       description: >
-        Type of the device.
+       Type of the device.
         
     

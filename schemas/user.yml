@@ -56,7 +56,7 @@
         short_override: The externally attested user based on an external source such as the Kube API.
         beta: Reusing the `user` fields in this location is currently considered beta.
       # <ITS_CUSTOM>
-      - user_its.identities
+      - its_user.identities
       # </ITS_CUSTOM>
 
   type: group

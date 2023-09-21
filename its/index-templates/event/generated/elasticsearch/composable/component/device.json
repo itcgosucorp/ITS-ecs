@@ -24,6 +24,21 @@
                     }
                   }
                 },
+                "network": {
+                  "properties": {
+                    "wifi": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "screen": {
+                  "properties": {
+                    "innerHeight": {
+                      "type": "integer"
+                    }
+                  }
+                },
                 "type": {
                   "ignore_above": 1024,
                   "type": "keyword"
