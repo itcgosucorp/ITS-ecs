@@ -52,6 +52,76 @@
     description: List of keywords used to tag each event.
     example: '["production", "env2"]'
     default_field: true
+  - name: agent
+    title: Agent
+    group: 2
+    description: 'The agent fields contain the data about the software entity, if
+      any, that collects, detects, or observes events on a host, or takes measurements
+      on a host.
+
+      Examples include Beats. Agents may also run on observers. ECS agent.* fields
+      shall be populated with details of the agent running on the host or observer
+      where the event happened or the measurement was taken.'
+    footnote: 'Examples: In the case of Beats for logs, the agent.name is filebeat.
+      For APM, it is the agent running in the app/service. The agent information does
+      not change if data is sent through queuing systems like Kafka, Redis, or processing
+      systems such as Logstash or APM Server.'
+    type: group
+    default_field: true
+    fields:
+    - name: build.original
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: 'Extended build information for the agent.
+
+        This field is intended to contain any build information that a data source
+        may provide, no specific formatting is required.'
+      example: metricbeat version 7.6.0 (amd64), libbeat 7.6.0 [6a23e8f8f30f5001ba344e4e54d8d9cb82cb107c
+        built 2020-02-05 23:10:10 +0000 UTC]
+      default_field: false
+    - name: ephemeral_id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Ephemeral identifier of this agent (if one exists).
+
+        This id normally changes across restarts, but `agent.id` does not.'
+      example: 8a4f500f
+    - name: id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique identifier of this agent (if one exists).
+
+        Example: For Beats this would be beat.id.'
+      example: 8a4f500d
+    - name: name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: 'Custom name of the agent.
+
+        This is a name that can be given to an agent. This can be helpful if for example
+        two Filebeat instances are running on the same host but a human readable separation
+        is needed on which Filebeat instance data is coming from.'
+      example: foo
+    - name: type
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: 'Type of the agent.
+
+        The agent type always stays the same and should be given by the agent used.
+        In case of Filebeat the agent would always be Filebeat also if two Filebeat
+        instances are run on the same machine.'
+      example: filebeat
+    - name: version
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Version of the agent.
+      example: 6.0.0-rc2
   - name: client
     title: Client
     group: 2
@@ -196,6 +266,36 @@
       level: core
       type: ip
       description: IP address of the client (IPv4 or IPv6).
+    - name: its.app.build
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Build of the application.
+      default_field: false
+    - name: its.app.firebase_token
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Firebase token of the application.
+      default_field: false
+    - name: its.app.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Name of the application.
+      default_field: false
+    - name: its.app.namespace
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Namespace of the application.
+      default_field: false
+    - name: its.app.version
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Version of the application.
+      default_field: false
     - name: mac
       level: core
       type: keyword
@@ -425,16 +525,65 @@
       type: boolean
       description: Status tracking of the device.
       default_field: false
+    - name: its.locale
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Locale of the device.
+      default_field: false
+    - name: its.network.bluetooth
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Bluetooth information.
+      default_field: false
+    - name: its.network.carrier
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Carrier information about the network connection.
+      default_field: false
+    - name: its.network.cellular
+      level: custom
+      type: boolean
+      description: Cellular information about the network connection.
+      default_field: false
     - name: its.network.wifi
       level: custom
       type: keyword
       ignore_above: 1024
       description: WiFi information about the network connection.
       default_field: false
-    - name: its.screen.innerHeight
+    - name: its.screen.density
+      level: custom
+      type: integer
+      description: Density of the device's screen.
+      default_field: false
+    - name: its.screen.height
+      level: custom
+      type: integer
+      description: Height of the device's screen.
+      default_field: false
+    - name: its.screen.inner_height
       level: custom
       type: integer
       description: innerHeight of the device's screen.
+      default_field: false
+    - name: its.screen.inner_width
+      level: custom
+      type: integer
+      description: innerWidth of the device's screen.
+      default_field: false
+    - name: its.screen.width
+      level: custom
+      type: integer
+      description: Width of the device's screen.
+      default_field: false
+    - name: its.timezone
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Timezone of the device.
       default_field: false
     - name: its.type
       level: custom
@@ -936,3 +1085,1540 @@
       ignore_above: 1024
       description: All the user names or other user identifiers seen on the event.
       default_field: false
+  - name: user
+    title: User
+    group: 2
+    description: 'The user fields describe information about the user that is relevant
+      to the event.
+
+      Fields can have one entry or multiple entries. If a user has more than one id,
+      provide an array that includes all of them.'
+    type: group
+    default_field: true
+    fields:
+    - name: changes.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: changes.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: changes.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: changes.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: changes.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: changes.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: changes.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: changes.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: changes.its.birthday
+      level: custom
+      type: date
+      description: User's birthday.
+      default_field: false
+    - name: changes.its.created_at
+      level: custom
+      type: date
+      description: Time when the user was first created.
+      default_field: false
+    - name: changes.its.delete_at
+      level: custom
+      type: date
+      description: The time when the user was deleted truly.
+      default_field: false
+    - name: changes.its.email_verified
+      level: custom
+      type: boolean
+      description: User's email verification status.
+      default_field: false
+    - name: changes.its.gender
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
+      default_field: false
+    - name: changes.its.identities
+      level: custom
+      type: nested
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
+      default_field: false
+    - name: changes.its.identities.user.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: changes.its.identities.user.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: changes.its.identities.user.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: changes.its.identities.user.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: changes.its.identities.user.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: changes.its.identities.user.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: changes.its.identities.user.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: changes.its.identities.user.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: changes.its.identities.user.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: changes.its.identities.user.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: changes.its.identities.user.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: changes.its.identities.user.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: changes.its.identities.user.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: changes.its.identities.user.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: changes.its.identities.user.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: changes.its.identities.user.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: changes.its.is_guest
+      level: custom
+      type: boolean
+      description: User is guest account.
+      default_field: false
+    - name: changes.its.login_at
+      level: custom
+      type: date
+      description: Last time the user logged in.
+      default_field: false
+    - name: changes.its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's NEMO wallet address.
+      default_field: false
+    - name: changes.its.phone.country
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country. For example: "VN".'
+      default_field: false
+    - name: changes.its.phone.country_calling_code
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country calling code. For example: "84".'
+      default_field: false
+    - name: changes.its.phone.extension
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's phone number extension.
+      default_field: false
+    - name: changes.its.phone.national_number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in national format. For example: "949112358"'
+      default_field: false
+    - name: changes.its.phone.number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in international format. For example: "+84949112358"'
+      default_field: false
+    - name: changes.its.phone_verified
+      level: custom
+      type: boolean
+      description: User's phone number verification status.
+      default_field: false
+    - name: changes.its.register_app_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App ID where the user registered from.
+      default_field: false
+    - name: changes.its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Project ID where the user register from.
+      default_field: false
+    - name: changes.its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
+      default_field: false
+    - name: changes.its.traits.anonymous_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's anonymous_id.
+      default_field: false
+    - name: changes.its.updated_at
+      level: custom
+      type: date
+      description: Time when the user was updated.
+      default_field: false
+    - name: changes.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: changes.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: changes.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: changes.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: changes.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: changes.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: changes.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: changes.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+    - name: effective.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: effective.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: effective.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: effective.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: effective.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: effective.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: effective.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: effective.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: effective.its.birthday
+      level: custom
+      type: date
+      description: User's birthday.
+      default_field: false
+    - name: effective.its.created_at
+      level: custom
+      type: date
+      description: Time when the user was first created.
+      default_field: false
+    - name: effective.its.delete_at
+      level: custom
+      type: date
+      description: The time when the user was deleted truly.
+      default_field: false
+    - name: effective.its.email_verified
+      level: custom
+      type: boolean
+      description: User's email verification status.
+      default_field: false
+    - name: effective.its.gender
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
+      default_field: false
+    - name: effective.its.identities
+      level: custom
+      type: nested
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
+      default_field: false
+    - name: effective.its.identities.user.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: effective.its.identities.user.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: effective.its.identities.user.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: effective.its.identities.user.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: effective.its.identities.user.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: effective.its.identities.user.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: effective.its.identities.user.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: effective.its.identities.user.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: effective.its.identities.user.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: effective.its.identities.user.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: effective.its.identities.user.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: effective.its.identities.user.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: effective.its.identities.user.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: effective.its.identities.user.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: effective.its.identities.user.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: effective.its.identities.user.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: effective.its.is_guest
+      level: custom
+      type: boolean
+      description: User is guest account.
+      default_field: false
+    - name: effective.its.login_at
+      level: custom
+      type: date
+      description: Last time the user logged in.
+      default_field: false
+    - name: effective.its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's NEMO wallet address.
+      default_field: false
+    - name: effective.its.phone.country
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country. For example: "VN".'
+      default_field: false
+    - name: effective.its.phone.country_calling_code
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country calling code. For example: "84".'
+      default_field: false
+    - name: effective.its.phone.extension
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's phone number extension.
+      default_field: false
+    - name: effective.its.phone.national_number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in national format. For example: "949112358"'
+      default_field: false
+    - name: effective.its.phone.number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in international format. For example: "+84949112358"'
+      default_field: false
+    - name: effective.its.phone_verified
+      level: custom
+      type: boolean
+      description: User's phone number verification status.
+      default_field: false
+    - name: effective.its.register_app_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App ID where the user registered from.
+      default_field: false
+    - name: effective.its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Project ID where the user register from.
+      default_field: false
+    - name: effective.its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
+      default_field: false
+    - name: effective.its.traits.anonymous_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's anonymous_id.
+      default_field: false
+    - name: effective.its.updated_at
+      level: custom
+      type: date
+      description: Time when the user was updated.
+      default_field: false
+    - name: effective.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: effective.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: effective.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: effective.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: effective.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: effective.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: effective.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: effective.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+    - name: full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+        default_field: false
+      description: User's full name, if available.
+      example: Albert Einstein
+    - name: group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+    - name: group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+    - name: group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+    - name: hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+    - name: id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+    - name: its.birthday
+      level: custom
+      type: date
+      description: User's birthday.
+      default_field: false
+    - name: its.created_at
+      level: custom
+      type: date
+      description: Time when the user was first created.
+      default_field: false
+    - name: its.delete_at
+      level: custom
+      type: date
+      description: The time when the user was deleted truly.
+      default_field: false
+    - name: its.email_verified
+      level: custom
+      type: boolean
+      description: User's email verification status.
+      default_field: false
+    - name: its.gender
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
+      default_field: false
+    - name: its.identities
+      level: custom
+      type: nested
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
+      default_field: false
+    - name: its.identities.user.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: its.identities.user.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: its.identities.user.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: its.identities.user.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: its.identities.user.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: its.identities.user.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: its.identities.user.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: its.identities.user.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: its.identities.user.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: its.identities.user.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: its.identities.user.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: its.identities.user.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: its.identities.user.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: its.identities.user.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: its.identities.user.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: its.identities.user.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: its.is_guest
+      level: custom
+      type: boolean
+      description: User is guest account.
+      default_field: false
+    - name: its.login_at
+      level: custom
+      type: date
+      description: Last time the user logged in.
+      default_field: false
+    - name: its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's NEMO wallet address.
+      default_field: false
+    - name: its.phone.country
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country. For example: "VN".'
+      default_field: false
+    - name: its.phone.country_calling_code
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country calling code. For example: "84".'
+      default_field: false
+    - name: its.phone.extension
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's phone number extension.
+      default_field: false
+    - name: its.phone.national_number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in national format. For example: "949112358"'
+      default_field: false
+    - name: its.phone.number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in international format. For example: "+84949112358"'
+      default_field: false
+    - name: its.phone_verified
+      level: custom
+      type: boolean
+      description: User's phone number verification status.
+      default_field: false
+    - name: its.register_app_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App ID where the user registered from.
+      default_field: false
+    - name: its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Project ID where the user register from.
+      default_field: false
+    - name: its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
+      default_field: false
+    - name: its.traits.anonymous_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's anonymous_id.
+      default_field: false
+    - name: its.updated_at
+      level: custom
+      type: date
+      description: Time when the user was updated.
+      default_field: false
+    - name: name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+        default_field: false
+      description: Short name or login of the user.
+      example: a.einstein
+    - name: risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: target.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: target.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: target.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: target.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: target.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: target.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: target.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: target.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: target.its.birthday
+      level: custom
+      type: date
+      description: User's birthday.
+      default_field: false
+    - name: target.its.created_at
+      level: custom
+      type: date
+      description: Time when the user was first created.
+      default_field: false
+    - name: target.its.delete_at
+      level: custom
+      type: date
+      description: The time when the user was deleted truly.
+      default_field: false
+    - name: target.its.email_verified
+      level: custom
+      type: boolean
+      description: User's email verification status.
+      default_field: false
+    - name: target.its.gender
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s gender. For example: "male", "female", "unspecified".'
+      default_field: false
+    - name: target.its.identities
+      level: custom
+      type: nested
+      description: An array includes related users information. For example, Google/
+        Facebook/ Apple account was linked to the user.
+      default_field: false
+    - name: target.its.identities.user.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the user is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: target.its.identities.user.email
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: User email address.
+      default_field: false
+    - name: target.its.identities.user.full_name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: User's full name, if available.
+      example: Albert Einstein
+      default_field: false
+    - name: target.its.identities.user.group.domain
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Name of the directory the group is a member of.
+
+        For example, an LDAP or Active Directory domain name.'
+      default_field: false
+    - name: target.its.identities.user.group.id
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier for the group on the system/platform.
+      default_field: false
+    - name: target.its.identities.user.group.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the group.
+      default_field: false
+    - name: target.its.identities.user.hash
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Unique user hash to correlate information for a user in anonymized
+        form.
+
+        Useful if `user.id` or `user.name` contain confidential information and cannot
+        be used.'
+      default_field: false
+    - name: target.its.identities.user.id
+      level: core
+      type: keyword
+      ignore_above: 1024
+      description: Unique identifier of the user.
+      example: S-1-5-21-202424912787-2692429404-2351956786-1000
+      default_field: false
+    - name: target.its.identities.user.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: target.its.identities.user.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: target.its.identities.user.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: target.its.identities.user.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: target.its.identities.user.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: target.its.identities.user.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: target.its.identities.user.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: target.its.identities.user.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+    - name: target.its.is_guest
+      level: custom
+      type: boolean
+      description: User is guest account.
+      default_field: false
+    - name: target.its.login_at
+      level: custom
+      type: date
+      description: Last time the user logged in.
+      default_field: false
+    - name: target.its.nemo_address
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's NEMO wallet address.
+      default_field: false
+    - name: target.its.phone.country
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country. For example: "VN".'
+      default_field: false
+    - name: target.its.phone.country_calling_code
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number country calling code. For example: "84".'
+      default_field: false
+    - name: target.its.phone.extension
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's phone number extension.
+      default_field: false
+    - name: target.its.phone.national_number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in national format. For example: "949112358"'
+      default_field: false
+    - name: target.its.phone.number
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User''s phone number in international format. For example: "+84949112358"'
+      default_field: false
+    - name: target.its.phone_verified
+      level: custom
+      type: boolean
+      description: User's phone number verification status.
+      default_field: false
+    - name: target.its.register_app_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App ID where the user registered from.
+      default_field: false
+    - name: target.its.register_project_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Project ID where the user register from.
+      default_field: false
+    - name: target.its.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: 'User account''s status. For example: "enabled", "disabled", "blocked".'
+      default_field: false
+    - name: target.its.traits.anonymous_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User's anonymous_id.
+      default_field: false
+    - name: target.its.updated_at
+      level: custom
+      type: date
+      description: Time when the user was updated.
+      default_field: false
+    - name: target.name
+      level: core
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Short name or login of the user.
+      example: a.einstein
+      default_field: false
+    - name: target.risk.calculated_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: High
+      default_field: false
+    - name: target.risk.calculated_score
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring.
+      example: 880.73
+      default_field: false
+    - name: target.risk.calculated_score_norm
+      level: extended
+      type: float
+      description: A risk classification score calculated by an internal system as
+        part of entity analytics and entity risk scoring, and normalized to a range
+        of 0 to 100.
+      example: 88.73
+      default_field: false
+    - name: target.risk.static_level
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: A risk classification level obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: High
+      default_field: false
+    - name: target.risk.static_score
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform.
+      example: 830.0
+      default_field: false
+    - name: target.risk.static_score_norm
+      level: extended
+      type: float
+      description: A risk classification score obtained from outside the system, such
+        as from some external Threat Intelligence Platform, and normalized to a range
+        of 0 to 100.
+      example: 83.0
+      default_field: false
+    - name: target.roles
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Array of user roles at the time of the event.
+      example: '["kibana_admin", "reporting_user"]'
+      default_field: false
+  - name: user_agent
+    title: User agent
+    group: 2
+    description: 'The user_agent fields normally come from a browser request.
+
+      They often show up in web service logs coming from the parsed user agent string.'
+    type: group
+    default_field: true
+    fields:
+    - name: device.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the device.
+      example: iPhone
+    - name: name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Name of the user agent.
+      example: Safari
+    - name: original
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+      description: Unparsed user_agent string.
+      example: Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15
+        (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1
+    - name: os.family
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: OS family (such as redhat, debian, freebsd, windows).
+      example: debian
+    - name: os.full
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+        default_field: false
+      description: Operating system name, including the version or code name.
+      example: Mac OS Mojave
+    - name: os.kernel
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Operating system kernel version as a raw string.
+      example: 4.4.0-112-generic
+    - name: os.name
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      multi_fields:
+      - name: text
+        type: match_only_text
+        default_field: false
+      description: Operating system name, without the version.
+      example: Mac OS X
+    - name: os.platform
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Operating system platform (such centos, ubuntu, windows).
+      example: darwin
+    - name: os.type
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: 'Use the `os.type` field to categorize the operating system into
+        one of the broad commercial families.
+
+        If the OS you''re dealing with is not listed as an expected value, the field
+        should not be populated. Please let us know by opening an issue with ECS,
+        to propose its addition.'
+      example: macos
+      default_field: false
+    - name: os.version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Operating system version as a raw string.
+      example: 10.14.1
+    - name: version
+      level: extended
+      type: keyword
+      ignore_above: 1024
+      description: Version of the user agent.
+      example: 12.0

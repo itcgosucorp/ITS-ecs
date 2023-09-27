@@ -30,5 +30,17 @@
       short: Type of the device.
       description: >
        Type of the device.
+    - name: locale
+      level: custom
+      type: keyword
+      short: Locale of the device.
+      description: >
+       Locale of the device.
+    - name: timezone
+      level: custom
+      type: keyword
+      short: Timezone of the device.
+      description: >
+       Timezone of the device.
         
     

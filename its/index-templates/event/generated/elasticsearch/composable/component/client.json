@@ -1,6 +1,5 @@
 {
   "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-client.html",
     "ecs_version": "8.9.0"
   },
   "template": {
@@ -88,6 +87,34 @@
             },
             "ip": {
               "type": "ip"
+            },
+            "its": {
+              "properties": {
+                "app": {
+                  "properties": {
+                    "build": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "firebase_token": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "namespace": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "version": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
             },
             "mac": {
               "ignore_above": 1024,

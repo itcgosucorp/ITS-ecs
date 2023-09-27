@@ -196,6 +196,36 @@
       level: core
       type: ip
       description: IP address of the client (IPv4 or IPv6).
+    - name: its.app.build
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Build of the application.
+      default_field: false
+    - name: its.app.firebase_token
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Firebase token of the application.
+      default_field: false
+    - name: its.app.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Name of the application.
+      default_field: false
+    - name: its.app.namespace
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Namespace of the application.
+      default_field: false
+    - name: its.app.version
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Version of the application.
+      default_field: false
     - name: mac
       level: core
       type: keyword
@@ -561,6 +591,84 @@
         In normal conditions, assuming no tampering, the timestamps should chronologically
         look like this: `@timestamp` < `event.created` < `event.ingested`.'
       example: '2016-05-23T08:05:35.101Z'
+      default_field: false
+    - name: its.campaign.content
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Content of the campaign.
+      default_field: false
+    - name: its.campaign.medium
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Medium of the campaign.
+      default_field: false
+    - name: its.campaign.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Name of the campaign.
+      default_field: false
+    - name: its.campaign.source
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source of the campaign.
+      default_field: false
+    - name: its.campaign.term
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Term of the campaign.
+      default_field: false
+    - name: its.page.initial_referrer
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Initial referrer of the current page in the browser.
+      default_field: false
+    - name: its.page.initial_referring_domain
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Initial referring domain of the current page in the browser.
+      default_field: false
+    - name: its.page.path
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Path of the current page in the browser.
+      default_field: false
+    - name: its.page.referrer
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Referrer of the current page in the browser.
+      default_field: false
+    - name: its.page.referring_domain
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Referring domain of the current page in the browser.
+      default_field: false
+    - name: its.page.search
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Search of the current page in the browser.
+      default_field: false
+    - name: its.page.title
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Title of the current page in the browser.
+      default_field: false
+    - name: its.page.url
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: URL of the current page in the browser.
       default_field: false
     - name: its.session_id
       level: custom

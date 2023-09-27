@@ -21,6 +21,11 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,client,client.geo.region_name,keyword,core,,Quebec,Region name.
 8.9.0,true,client,client.geo.timezone,keyword,core,,America/Argentina/Buenos_Aires,Time zone.
 8.9.0,true,client,client.ip,ip,core,,,IP address of the client.
+8.9.0,true,client,client.its.app.build,keyword,custom,,,Build of the application.
+8.9.0,true,client,client.its.app.firebase_token,keyword,custom,,,Firebase token of the application.
+8.9.0,true,client,client.its.app.name,keyword,custom,,,Name of the application.
+8.9.0,true,client,client.its.app.namespace,keyword,custom,,,Namespace of the application.
+8.9.0,true,client,client.its.app.version,keyword,custom,,,Version of the application.
 8.9.0,true,client,client.mac,keyword,core,,00-00-5E-00-53-23,MAC address of the client.
 8.9.0,true,client,client.nat.ip,ip,extended,,,Client NAT ip address
 8.9.0,true,client,client.nat.port,long,extended,,,Client NAT port
@@ -59,6 +64,19 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.hash,keyword,extended,,123456789012345678901234567890ABCD,Hash (perhaps logstash fingerprint) of raw field to be able to demonstrate log integrity.
 8.9.0,true,event,event.id,keyword,core,,8a4f500d,Unique ID to describe the event.
 8.9.0,true,event,event.ingested,date,core,,2016-05-23T08:05:35.101Z,Timestamp when an event arrived in the central data store.
+8.9.0,true,event,event.its.campaign.content,keyword,custom,,,Content of the campaign.
+8.9.0,true,event,event.its.campaign.medium,keyword,custom,,,Medium of the campaign.
+8.9.0,true,event,event.its.campaign.name,keyword,custom,,,Name of the campaign.
+8.9.0,true,event,event.its.campaign.source,keyword,custom,,,Source of the campaign.
+8.9.0,true,event,event.its.campaign.term,keyword,custom,,,Term of the campaign.
+8.9.0,true,event,event.its.page.initial_referrer,keyword,custom,,,Initial referrer of the current page in the browser.
+8.9.0,true,event,event.its.page.initial_referring_domain,keyword,custom,,,Initial referring domain.
+8.9.0,true,event,event.its.page.path,keyword,custom,,,Path of the current page.
+8.9.0,true,event,event.its.page.referrer,keyword,custom,,,Referrer of the current page in the browser.
+8.9.0,true,event,event.its.page.referring_domain,keyword,custom,,,Referring domain.
+8.9.0,true,event,event.its.page.search,keyword,custom,,,Search of the current page in the browser.
+8.9.0,true,event,event.its.page.title,keyword,custom,,,Title of the current page in the browser.
+8.9.0,true,event,event.its.page.url,keyword,custom,,,URL of the current page in the browser.
 8.9.0,true,event,event.its.session_id,keyword,custom,,,Session ID of the event.
 8.9.0,true,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.
 8.9.0,true,event,event.module,keyword,core,,apache,Name of the module this data is coming from.

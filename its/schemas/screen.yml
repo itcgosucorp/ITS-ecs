@@ -7,9 +7,10 @@
   description: >
    Custom ITS field
   reusable:
+    order: 1
     top_level: false
     expected:
-      - at: device.its
+      - at: its_device
         as: screen
   fields:
     - name: density
@@ -18,29 +19,25 @@
       short: Density of the device's screen.
       description: >
        Density of the device's screen.
-  fields:
     - name: height
       level: custom
       type: integer
       short: Height of the device's screen.
       description: >
        Height of the device's screen.
-  fields:
     - name: width
       level: custom
       type: integer
       short: Width of the device's screen.
       description: >
        Width of the device's screen.
-  fields:
-    - name: innerWidth
+    - name: inner_width
       level: custom
       type: integer
       short: innerWidth of the device's screen.
       description: >
        innerWidth of the device's screen.
-  fields:
-    - name: innerHeight
+    - name: inner_height
       level: custom
       type: integer
       short: innerHeight of the device's screen.

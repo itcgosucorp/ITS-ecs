@@ -234,6 +234,61 @@ client.ip:
   normalize: []
   short: IP address of the client.
   type: ip
+client.its.app.build:
+  dashed_name: client-its-app-build
+  description: Build of the application.
+  flat_name: client.its.app.build
+  ignore_above: 1024
+  level: custom
+  name: build
+  normalize: []
+  original_fieldset: its_app
+  short: Build of the application.
+  type: keyword
+client.its.app.firebase_token:
+  dashed_name: client-its-app-firebase-token
+  description: Firebase token of the application.
+  flat_name: client.its.app.firebase_token
+  ignore_above: 1024
+  level: custom
+  name: firebase_token
+  normalize: []
+  original_fieldset: its_app
+  short: Firebase token of the application.
+  type: keyword
+client.its.app.name:
+  dashed_name: client-its-app-name
+  description: Name of the application.
+  flat_name: client.its.app.name
+  ignore_above: 1024
+  level: custom
+  name: name
+  normalize: []
+  original_fieldset: its_app
+  short: Name of the application.
+  type: keyword
+client.its.app.namespace:
+  dashed_name: client-its-app-namespace
+  description: Namespace of the application.
+  flat_name: client.its.app.namespace
+  ignore_above: 1024
+  level: custom
+  name: namespace
+  normalize: []
+  original_fieldset: its_app
+  short: Namespace of the application.
+  type: keyword
+client.its.app.version:
+  dashed_name: client-its-app-version
+  description: Version of the application.
+  flat_name: client.its.app.version
+  ignore_above: 1024
+  level: custom
+  name: version
+  normalize: []
+  original_fieldset: its_app
+  short: Version of the application.
+  type: keyword
 client.mac:
   dashed_name: client-mac
   description: 'MAC address of the client.
@@ -977,6 +1032,149 @@ event.ingested:
   normalize: []
   short: Timestamp when an event arrived in the central data store.
   type: date
+event.its.campaign.content:
+  dashed_name: event-its-campaign-content
+  description: Content of the campaign.
+  flat_name: event.its.campaign.content
+  ignore_above: 1024
+  level: custom
+  name: content
+  normalize: []
+  original_fieldset: its_campaign
+  short: Content of the campaign.
+  type: keyword
+event.its.campaign.medium:
+  dashed_name: event-its-campaign-medium
+  description: Medium of the campaign.
+  flat_name: event.its.campaign.medium
+  ignore_above: 1024
+  level: custom
+  name: medium
+  normalize: []
+  original_fieldset: its_campaign
+  short: Medium of the campaign.
+  type: keyword
+event.its.campaign.name:
+  dashed_name: event-its-campaign-name
+  description: Name of the campaign.
+  flat_name: event.its.campaign.name
+  ignore_above: 1024
+  level: custom
+  name: name
+  normalize: []
+  original_fieldset: its_campaign
+  short: Name of the campaign.
+  type: keyword
+event.its.campaign.source:
+  dashed_name: event-its-campaign-source
+  description: Source of the campaign.
+  flat_name: event.its.campaign.source
+  ignore_above: 1024
+  level: custom
+  name: source
+  normalize: []
+  original_fieldset: its_campaign
+  short: Source of the campaign.
+  type: keyword
+event.its.campaign.term:
+  dashed_name: event-its-campaign-term
+  description: Term of the campaign.
+  flat_name: event.its.campaign.term
+  ignore_above: 1024
+  level: custom
+  name: term
+  normalize: []
+  original_fieldset: its_campaign
+  short: Term of the campaign.
+  type: keyword
+event.its.page.initial_referrer:
+  dashed_name: event-its-page-initial-referrer
+  description: Initial referrer of the current page in the browser.
+  flat_name: event.its.page.initial_referrer
+  ignore_above: 1024
+  level: custom
+  name: initial_referrer
+  normalize: []
+  original_fieldset: its_page
+  short: Initial referrer of the current page in the browser.
+  type: keyword
+event.its.page.initial_referring_domain:
+  dashed_name: event-its-page-initial-referring-domain
+  description: Initial referring domain of the current page in the browser.
+  flat_name: event.its.page.initial_referring_domain
+  ignore_above: 1024
+  level: custom
+  name: initial_referring_domain
+  normalize: []
+  original_fieldset: its_page
+  short: Initial referring domain.
+  type: keyword
+event.its.page.path:
+  dashed_name: event-its-page-path
+  description: Path of the current page in the browser.
+  flat_name: event.its.page.path
+  ignore_above: 1024
+  level: custom
+  name: path
+  normalize: []
+  original_fieldset: its_page
+  short: Path of the current page.
+  type: keyword
+event.its.page.referrer:
+  dashed_name: event-its-page-referrer
+  description: Referrer of the current page in the browser.
+  flat_name: event.its.page.referrer
+  ignore_above: 1024
+  level: custom
+  name: referrer
+  normalize: []
+  original_fieldset: its_page
+  short: Referrer of the current page in the browser.
+  type: keyword
+event.its.page.referring_domain:
+  dashed_name: event-its-page-referring-domain
+  description: Referring domain of the current page in the browser.
+  flat_name: event.its.page.referring_domain
+  ignore_above: 1024
+  level: custom
+  name: referring_domain
+  normalize: []
+  original_fieldset: its_page
+  short: Referring domain.
+  type: keyword
+event.its.page.search:
+  dashed_name: event-its-page-search
+  description: Search of the current page in the browser.
+  flat_name: event.its.page.search
+  ignore_above: 1024
+  level: custom
+  name: search
+  normalize: []
+  original_fieldset: its_page
+  short: Search of the current page in the browser.
+  type: keyword
+event.its.page.title:
+  dashed_name: event-its-page-title
+  description: Title of the current page in the browser.
+  flat_name: event.its.page.title
+  ignore_above: 1024
+  level: custom
+  name: title
+  normalize: []
+  original_fieldset: its_page
+  short: Title of the current page in the browser.
+  type: keyword
+event.its.page.url:
+  dashed_name: event-its-page-url
+  description: URL of the current page in the browser.
+  flat_name: event.its.page.url
+  ignore_above: 1024
+  level: custom
+  name: url
+  normalize: []
+  original_fieldset: its_page
+  short: URL of the current page in the browser.
+  type: keyword
 event.its.session_id:
   dashed_name: event-its-session-id
   description: Session ID of the event.
@@ -985,7 +1183,7 @@ event.its.session_id:
   level: custom
   name: session_id
   normalize: []
-  original_fieldset: event_its
+  original_fieldset: its_event
   short: Session ID of the event.
   type: keyword
 event.kind:
@@ -1643,7 +1841,7 @@ user.changes.its.birthday:
   level: custom
   name: birthday
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's birthday.
   type: date
 user.changes.its.created_at:
@@ -1653,7 +1851,7 @@ user.changes.its.created_at:
   level: custom
   name: created_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was first created.
   type: date
 user.changes.its.delete_at:
@@ -1663,7 +1861,7 @@ user.changes.its.delete_at:
   level: custom
   name: delete_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: The time when the user was deleted truly.
   type: date
 user.changes.its.email_verified:
@@ -1673,7 +1871,7 @@ user.changes.its.email_verified:
   level: custom
   name: email_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's email verification status.
   type: boolean
 user.changes.its.gender:
@@ -1684,7 +1882,7 @@ user.changes.its.gender:
   level: custom
   name: gender
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's gender.
   type: keyword
 user.changes.its.identities:
@@ -1695,7 +1893,7 @@ user.changes.its.identities:
   level: custom
   name: identities
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: An array includes related user information.
   type: nested
 user.changes.its.identities.user.domain:
@@ -1916,7 +2114,7 @@ user.changes.its.is_guest:
   level: custom
   name: is_guest
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User is guest account.
   type: boolean
 user.changes.its.login_at:
@@ -1926,7 +2124,7 @@ user.changes.its.login_at:
   level: custom
   name: login_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Last time the user logged in.
   type: date
 user.changes.its.nemo_address:
@@ -1937,7 +2135,7 @@ user.changes.its.nemo_address:
   level: custom
   name: nemo_address
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's NEMO wallet address.
   type: keyword
 user.changes.its.phone.country:
@@ -1948,7 +2146,7 @@ user.changes.its.phone.country:
   level: custom
   name: phone.country
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country.
   type: keyword
 user.changes.its.phone.country_calling_code:
@@ -1959,7 +2157,7 @@ user.changes.its.phone.country_calling_code:
   level: custom
   name: phone.country_calling_code
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country calling code.
   type: keyword
 user.changes.its.phone.extension:
@@ -1970,7 +2168,7 @@ user.changes.its.phone.extension:
   level: custom
   name: phone.extension
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number extension.
   type: keyword
 user.changes.its.phone.national_number:
@@ -1981,7 +2179,7 @@ user.changes.its.phone.national_number:
   level: custom
   name: phone.national_number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in national format.
   type: keyword
 user.changes.its.phone.number:
@@ -1992,7 +2190,7 @@ user.changes.its.phone.number:
   level: custom
   name: phone.number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in international format.
   type: keyword
 user.changes.its.phone_verified:
@@ -2002,7 +2200,7 @@ user.changes.its.phone_verified:
   level: custom
   name: phone_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
 user.changes.its.register_app_id:
@@ -2013,7 +2211,7 @@ user.changes.its.register_app_id:
   level: custom
   name: register_app_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
 user.changes.its.register_project_id:
@@ -2024,7 +2222,7 @@ user.changes.its.register_project_id:
   level: custom
   name: register_project_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Project ID where the user register from.
   type: keyword
 user.changes.its.status:
@@ -2035,7 +2233,7 @@ user.changes.its.status:
   level: custom
   name: status
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User account's status.
   type: keyword
 user.changes.its.traits.anonymous_id:
@@ -2046,7 +2244,7 @@ user.changes.its.traits.anonymous_id:
   level: custom
   name: traits.anonymous_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's anonymous_id.
   type: keyword
 user.changes.its.updated_at:
@@ -2056,7 +2254,7 @@ user.changes.its.updated_at:
   level: custom
   name: updated_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was updated.
   type: date
 user.changes.name:
@@ -2289,7 +2487,7 @@ user.effective.its.birthday:
   level: custom
   name: birthday
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's birthday.
   type: date
 user.effective.its.created_at:
@@ -2299,7 +2497,7 @@ user.effective.its.created_at:
   level: custom
   name: created_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was first created.
   type: date
 user.effective.its.delete_at:
@@ -2309,7 +2507,7 @@ user.effective.its.delete_at:
   level: custom
   name: delete_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: The time when the user was deleted truly.
   type: date
 user.effective.its.email_verified:
@@ -2319,7 +2517,7 @@ user.effective.its.email_verified:
   level: custom
   name: email_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's email verification status.
   type: boolean
 user.effective.its.gender:
@@ -2330,7 +2528,7 @@ user.effective.its.gender:
   level: custom
   name: gender
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's gender.
   type: keyword
 user.effective.its.identities:
@@ -2341,7 +2539,7 @@ user.effective.its.identities:
   level: custom
   name: identities
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: An array includes related user information.
   type: nested
 user.effective.its.identities.user.domain:
@@ -2562,7 +2760,7 @@ user.effective.its.is_guest:
   level: custom
   name: is_guest
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User is guest account.
   type: boolean
 user.effective.its.login_at:
@@ -2572,7 +2770,7 @@ user.effective.its.login_at:
   level: custom
   name: login_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Last time the user logged in.
   type: date
 user.effective.its.nemo_address:
@@ -2583,7 +2781,7 @@ user.effective.its.nemo_address:
   level: custom
   name: nemo_address
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's NEMO wallet address.
   type: keyword
 user.effective.its.phone.country:
@@ -2594,7 +2792,7 @@ user.effective.its.phone.country:
   level: custom
   name: phone.country
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country.
   type: keyword
 user.effective.its.phone.country_calling_code:
@@ -2605,7 +2803,7 @@ user.effective.its.phone.country_calling_code:
   level: custom
   name: phone.country_calling_code
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country calling code.
   type: keyword
 user.effective.its.phone.extension:
@@ -2616,7 +2814,7 @@ user.effective.its.phone.extension:
   level: custom
   name: phone.extension
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number extension.
   type: keyword
 user.effective.its.phone.national_number:
@@ -2627,7 +2825,7 @@ user.effective.its.phone.national_number:
   level: custom
   name: phone.national_number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in national format.
   type: keyword
 user.effective.its.phone.number:
@@ -2638,7 +2836,7 @@ user.effective.its.phone.number:
   level: custom
   name: phone.number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in international format.
   type: keyword
 user.effective.its.phone_verified:
@@ -2648,7 +2846,7 @@ user.effective.its.phone_verified:
   level: custom
   name: phone_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
 user.effective.its.register_app_id:
@@ -2659,7 +2857,7 @@ user.effective.its.register_app_id:
   level: custom
   name: register_app_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
 user.effective.its.register_project_id:
@@ -2670,7 +2868,7 @@ user.effective.its.register_project_id:
   level: custom
   name: register_project_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Project ID where the user register from.
   type: keyword
 user.effective.its.status:
@@ -2681,7 +2879,7 @@ user.effective.its.status:
   level: custom
   name: status
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User account's status.
   type: keyword
 user.effective.its.traits.anonymous_id:
@@ -2692,7 +2890,7 @@ user.effective.its.traits.anonymous_id:
   level: custom
   name: traits.anonymous_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's anonymous_id.
   type: keyword
 user.effective.its.updated_at:
@@ -2702,7 +2900,7 @@ user.effective.its.updated_at:
   level: custom
   name: updated_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was updated.
   type: date
 user.effective.name:
@@ -2906,7 +3104,7 @@ user.its.birthday:
   level: custom
   name: birthday
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's birthday.
   type: date
 user.its.created_at:
@@ -2916,7 +3114,7 @@ user.its.created_at:
   level: custom
   name: created_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was first created.
   type: date
 user.its.delete_at:
@@ -2926,7 +3124,7 @@ user.its.delete_at:
   level: custom
   name: delete_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: The time when the user was deleted truly.
   type: date
 user.its.email_verified:
@@ -2936,7 +3134,7 @@ user.its.email_verified:
   level: custom
   name: email_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's email verification status.
   type: boolean
 user.its.gender:
@@ -2947,7 +3145,7 @@ user.its.gender:
   level: custom
   name: gender
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's gender.
   type: keyword
 user.its.identities:
@@ -2958,7 +3156,7 @@ user.its.identities:
   level: custom
   name: identities
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: An array includes related user information.
   type: nested
 user.its.identities.user.domain:
@@ -3179,7 +3377,7 @@ user.its.is_guest:
   level: custom
   name: is_guest
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User is guest account.
   type: boolean
 user.its.login_at:
@@ -3189,7 +3387,7 @@ user.its.login_at:
   level: custom
   name: login_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Last time the user logged in.
   type: date
 user.its.nemo_address:
@@ -3200,7 +3398,7 @@ user.its.nemo_address:
   level: custom
   name: nemo_address
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's NEMO wallet address.
   type: keyword
 user.its.phone.country:
@@ -3211,7 +3409,7 @@ user.its.phone.country:
   level: custom
   name: phone.country
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country.
   type: keyword
 user.its.phone.country_calling_code:
@@ -3222,7 +3420,7 @@ user.its.phone.country_calling_code:
   level: custom
   name: phone.country_calling_code
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country calling code.
   type: keyword
 user.its.phone.extension:
@@ -3233,7 +3431,7 @@ user.its.phone.extension:
   level: custom
   name: phone.extension
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number extension.
   type: keyword
 user.its.phone.national_number:
@@ -3244,7 +3442,7 @@ user.its.phone.national_number:
   level: custom
   name: phone.national_number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in national format.
   type: keyword
 user.its.phone.number:
@@ -3255,7 +3453,7 @@ user.its.phone.number:
   level: custom
   name: phone.number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in international format.
   type: keyword
 user.its.phone_verified:
@@ -3265,7 +3463,7 @@ user.its.phone_verified:
   level: custom
   name: phone_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
 user.its.register_app_id:
@@ -3276,7 +3474,7 @@ user.its.register_app_id:
   level: custom
   name: register_app_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
 user.its.register_project_id:
@@ -3287,7 +3485,7 @@ user.its.register_project_id:
   level: custom
   name: register_project_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Project ID where the user register from.
   type: keyword
 user.its.status:
@@ -3298,7 +3496,7 @@ user.its.status:
   level: custom
   name: status
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User account's status.
   type: keyword
 user.its.traits.anonymous_id:
@@ -3309,7 +3507,7 @@ user.its.traits.anonymous_id:
   level: custom
   name: traits.anonymous_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's anonymous_id.
   type: keyword
 user.its.updated_at:
@@ -3319,7 +3517,7 @@ user.its.updated_at:
   level: custom
   name: updated_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was updated.
   type: date
 user.name:
@@ -3538,7 +3736,7 @@ user.target.its.birthday:
   level: custom
   name: birthday
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's birthday.
   type: date
 user.target.its.created_at:
@@ -3548,7 +3746,7 @@ user.target.its.created_at:
   level: custom
   name: created_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was first created.
   type: date
 user.target.its.delete_at:
@@ -3558,7 +3756,7 @@ user.target.its.delete_at:
   level: custom
   name: delete_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: The time when the user was deleted truly.
   type: date
 user.target.its.email_verified:
@@ -3568,7 +3766,7 @@ user.target.its.email_verified:
   level: custom
   name: email_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's email verification status.
   type: boolean
 user.target.its.gender:
@@ -3579,7 +3777,7 @@ user.target.its.gender:
   level: custom
   name: gender
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's gender.
   type: keyword
 user.target.its.identities:
@@ -3590,7 +3788,7 @@ user.target.its.identities:
   level: custom
   name: identities
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: An array includes related user information.
   type: nested
 user.target.its.identities.user.domain:
@@ -3811,7 +4009,7 @@ user.target.its.is_guest:
   level: custom
   name: is_guest
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User is guest account.
   type: boolean
 user.target.its.login_at:
@@ -3821,7 +4019,7 @@ user.target.its.login_at:
   level: custom
   name: login_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Last time the user logged in.
   type: date
 user.target.its.nemo_address:
@@ -3832,7 +4030,7 @@ user.target.its.nemo_address:
   level: custom
   name: nemo_address
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's NEMO wallet address.
   type: keyword
 user.target.its.phone.country:
@@ -3843,7 +4041,7 @@ user.target.its.phone.country:
   level: custom
   name: phone.country
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country.
   type: keyword
 user.target.its.phone.country_calling_code:
@@ -3854,7 +4052,7 @@ user.target.its.phone.country_calling_code:
   level: custom
   name: phone.country_calling_code
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number country calling code.
   type: keyword
 user.target.its.phone.extension:
@@ -3865,7 +4063,7 @@ user.target.its.phone.extension:
   level: custom
   name: phone.extension
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number extension.
   type: keyword
 user.target.its.phone.national_number:
@@ -3876,7 +4074,7 @@ user.target.its.phone.national_number:
   level: custom
   name: phone.national_number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in national format.
   type: keyword
 user.target.its.phone.number:
@@ -3887,7 +4085,7 @@ user.target.its.phone.number:
   level: custom
   name: phone.number
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number in international format.
   type: keyword
 user.target.its.phone_verified:
@@ -3897,7 +4095,7 @@ user.target.its.phone_verified:
   level: custom
   name: phone_verified
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
 user.target.its.register_app_id:
@@ -3908,7 +4106,7 @@ user.target.its.register_app_id:
   level: custom
   name: register_app_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
 user.target.its.register_project_id:
@@ -3919,7 +4117,7 @@ user.target.its.register_project_id:
   level: custom
   name: register_project_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Project ID where the user register from.
   type: keyword
 user.target.its.status:
@@ -3930,7 +4128,7 @@ user.target.its.status:
   level: custom
   name: status
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User account's status.
   type: keyword
 user.target.its.traits.anonymous_id:
@@ -3941,7 +4139,7 @@ user.target.its.traits.anonymous_id:
   level: custom
   name: traits.anonymous_id
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: User's anonymous_id.
   type: keyword
 user.target.its.updated_at:
@@ -3951,7 +4149,7 @@ user.target.its.updated_at:
   level: custom
   name: updated_at
   normalize: []
-  original_fieldset: user_its
+  original_fieldset: its_user
   short: Time when the user was updated.
   type: date
 user.target.name:

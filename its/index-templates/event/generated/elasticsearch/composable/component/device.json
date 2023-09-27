@@ -24,8 +24,23 @@
                     }
                   }
                 },
+                "locale": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                },
                 "network": {
                   "properties": {
+                    "bluetooth": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "carrier": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "cellular": {
+                      "type": "boolean"
+                    },
                     "wifi": {
                       "ignore_above": 1024,
                       "type": "keyword"
@@ -34,10 +49,26 @@
                 },
                 "screen": {
                   "properties": {
-                    "innerHeight": {
+                    "density": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "inner_height": {
+                      "type": "integer"
+                    },
+                    "inner_width": {
+                      "type": "integer"
+                    },
+                    "width": {
                       "type": "integer"
                     }
                   }
+                },
+                "timezone": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
                 },
                 "type": {
                   "ignore_above": 1024,

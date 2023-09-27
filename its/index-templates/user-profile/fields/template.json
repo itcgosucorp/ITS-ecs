@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["user_profile_*", "event_*_*"],
+  "index_patterns": ["user_profile_*"],
   "priority": 1,
   "template": {
     "settings": {

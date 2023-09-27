@@ -354,6 +354,13 @@ example: `co.uk`
 // ===============================================================
 
 
+| `client.its.*`
+| <<ecs-its_client,its_client>>
+| Custom Client ITS field
+
+// ===============================================================
+
+
 | `client.user.*`
 | <<ecs-user,user>>
 | Fields to describe the user relevant to the event.
@@ -958,7 +965,7 @@ example: `https://mysystem.example.com/alert/5271dedb-f5b0-4218-87f0-4ac4870a38f
 
 
 | `event.its.*`
-| <<ecs-event_its,event_its>>
+| <<ecs-its_event,its_event>>
 | Custom Event ITS field
 
 // ===============================================================
@@ -1223,6 +1230,8 @@ The `user` fields are expected to be nested at:
 
 * `destination.user`
 
+* `its_user.identities.user`
+
 * `process.attested_user`
 
 * `process.real_user`
@@ -1240,8 +1249,6 @@ The `user` fields are expected to be nested at:
 * `user.effective`
 
 * `user.target`
-
-* `user_its.identities.user`
 
 
 Note also that the `user` fields may be used directly at the root of the events.
@@ -1279,7 +1286,7 @@ Note also that the `user` fields may be used directly at the root of the events.
 
 
 | `user.its.*`
-| <<ecs-user_its,user_its>>
+| <<ecs-its_user,its_user>>
 | Custom User ITS field
 
 // ===============================================================

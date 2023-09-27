@@ -12,8 +12,7 @@
     "ecs_8.9.0_client"
   ],
   "index_patterns": [
-    "user_profile_*",
-    "event_*_*"
+    "user_profile_*"
   ],
   "priority": 1,
   "template": {
@@ -24,6 +23,7 @@
             "mapping": {
               "type": "keyword"
             },
+            "match_mapping_type": "string",
             "path_match": "labels.*"
           }
         }

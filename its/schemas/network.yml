@@ -7,9 +7,10 @@
   description: >
    Custom ITS field
   reusable:
+    order: 1
     top_level: false
     expected:
-      - at: device.its
+      - at: its_device
         as: network
   fields:
     - name: bluetooth
@@ -18,17 +19,21 @@
       short: Bluetooth information.
       description: >
        Bluetooth information.
-  fields:
     - name: carrier
       level: custom
       type: keyword
       short: Carrier information.
       description: >
        Carrier information about the network connection.
-  fields:
     - name: wifi
       level: custom
       type: keyword
       short: WiFi information.
       description: >
        WiFi information about the network connection.
+    - name: cellular
+      level: custom
+      type: boolean
+      short: Cellular information.
+      description: >
+       Cellular information about the network connection.
