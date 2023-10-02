@@ -101,18 +101,30 @@
       short: User is guest account.
       description: >
         User is guest account.
-    - name: register_app_id
+    - name: register_app.id
       level: custom
       type: keyword
       short: App ID where the user registered from.
       description: >
         App ID where the user registered from.
-    - name: register_project_id
+    - name: register_app.name
+      level: custom
+      type: keyword
+      short: App name where the user registered from.
+      description: >
+        App name where the user registered from.
+    - name: register_project.id
       level: custom
       type: keyword
       short: Project ID where the user register from.
       description: >
         Project ID where the user register from.
+    - name: register_project.name
+      level: custom
+      type: keyword
+      short: Project name where the user register from.
+      description: >
+        Project name where the user register from.
     - name: identities
       level: custom
       type: nested
