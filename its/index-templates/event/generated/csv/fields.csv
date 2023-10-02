@@ -93,6 +93,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.campaign.name,keyword,custom,,,Name of the campaign.
 8.9.0,true,event,event.its.campaign.source,keyword,custom,,,Source of the campaign.
 8.9.0,true,event,event.its.campaign.term,keyword,custom,,,Term of the campaign.
+8.9.0,true,event,event.its.game.currency,keyword,custom,,,Currency in the game.
+8.9.0,true,event,event.its.game.id,keyword,custom,,,ID of the game.
+8.9.0,true,event,event.its.game.identity_name,keyword,custom,,,Indentity name of the game.
+8.9.0,true,event,event.its.game.name,keyword,custom,,,Name of the game.
 8.9.0,true,event,event.its.page.initial_referrer,keyword,custom,,,Initial referrer of the current page in the browser.
 8.9.0,true,event,event.its.page.initial_referring_domain,keyword,custom,,,Initial referring domain.
 8.9.0,true,event,event.its.page.path,keyword,custom,,,Path of the current page.
@@ -163,8 +167,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.changes.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.changes.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.changes.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.changes.its.register_app_id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.changes.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.changes.its.register_app.id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.changes.its.register_app.name,keyword,custom,,,App name where the user registered from.
+8.9.0,true,user,user.changes.its.register_project.id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.changes.its.register_project.name,keyword,custom,,,Project name where the user register from.
 8.9.0,true,user,user.changes.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.changes.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.changes.its.updated_at,date,custom,,,Time when the user was updated.
@@ -220,8 +226,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.effective.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.effective.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.effective.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.effective.its.register_app_id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.effective.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.effective.its.register_app.id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.effective.its.register_app.name,keyword,custom,,,App name where the user registered from.
+8.9.0,true,user,user.effective.its.register_project.id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.effective.its.register_project.name,keyword,custom,,,Project name where the user register from.
 8.9.0,true,user,user.effective.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.effective.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.effective.its.updated_at,date,custom,,,Time when the user was updated.
@@ -275,8 +283,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.its.register_app_id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.its.register_app.id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.its.register_app.name,keyword,custom,,,App name where the user registered from.
+8.9.0,true,user,user.its.register_project.id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.its.register_project.name,keyword,custom,,,Project name where the user register from.
 8.9.0,true,user,user.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.its.updated_at,date,custom,,,Time when the user was updated.
@@ -331,8 +341,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.target.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.target.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.target.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.target.its.register_app_id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.target.its.register_project_id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.target.its.register_app.id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.target.its.register_app.name,keyword,custom,,,App name where the user registered from.
+8.9.0,true,user,user.target.its.register_project.id,keyword,custom,,,Project ID where the user register from.
+8.9.0,true,user,user.target.its.register_project.name,keyword,custom,,,Project name where the user register from.
 8.9.0,true,user,user.target.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.target.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.target.its.updated_at,date,custom,,,Time when the user was updated.

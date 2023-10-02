@@ -1533,6 +1533,50 @@ event:
       original_fieldset: its_campaign
       short: Term of the campaign.
       type: keyword
+    event.its.game.currency:
+      dashed_name: event-its-game-currency
+      description: Currency in the game.
+      flat_name: event.its.game.currency
+      ignore_above: 1024
+      level: custom
+      name: currency
+      normalize: []
+      original_fieldset: its_game
+      short: Currency in the game.
+      type: keyword
+    event.its.game.id:
+      dashed_name: event-its-game-id
+      description: ID of the game.
+      flat_name: event.its.game.id
+      ignore_above: 1024
+      level: custom
+      name: id
+      normalize: []
+      original_fieldset: its_game
+      short: ID of the game.
+      type: keyword
+    event.its.game.identity_name:
+      dashed_name: event-its-game-identity-name
+      description: Indentity name of the game.
+      flat_name: event.its.game.identity_name
+      ignore_above: 1024
+      level: custom
+      name: identity_name
+      normalize: []
+      original_fieldset: its_game
+      short: Indentity name of the game.
+      type: keyword
+    event.its.game.name:
+      dashed_name: event-its-game-name
+      description: Name of the game.
+      flat_name: event.its.game.name
+      ignore_above: 1024
+      level: custom
+      name: name
+      normalize: []
+      original_fieldset: its_game
+      short: Name of the game.
+      type: keyword
     event.its.page.initial_referrer:
       dashed_name: event-its-page-initial-referrer
       description: Initial referrer of the current page in the browser.
@@ -2653,27 +2697,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.changes.its.register_app_id:
+    user.changes.its.register_app.id:
       dashed_name: user-changes-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.changes.its.register_app_id
+      flat_name: user.changes.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.changes.its.register_project_id:
-      dashed_name: user-changes-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.changes.its.register_project_id
+    user.changes.its.register_app.name:
+      dashed_name: user-changes-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.changes.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
+      type: keyword
+    user.changes.its.register_project.id:
+      dashed_name: user-changes-its-register-project-id
+      description: Project ID where the user register from.
+      flat_name: user.changes.its.register_project.id
+      ignore_above: 1024
+      level: custom
+      name: register_project.id
       normalize: []
       original_fieldset: its_user
       short: Project ID where the user register from.
+      type: keyword
+    user.changes.its.register_project.name:
+      dashed_name: user-changes-its-register-project-name
+      description: Project name where the user register from.
+      flat_name: user.changes.its.register_project.name
+      ignore_above: 1024
+      level: custom
+      name: register_project.name
+      normalize: []
+      original_fieldset: its_user
+      short: Project name where the user register from.
       type: keyword
     user.changes.its.status:
       dashed_name: user-changes-its-status
@@ -3299,27 +3365,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.effective.its.register_app_id:
+    user.effective.its.register_app.id:
       dashed_name: user-effective-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.effective.its.register_app_id
+      flat_name: user.effective.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.effective.its.register_project_id:
-      dashed_name: user-effective-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.effective.its.register_project_id
+    user.effective.its.register_app.name:
+      dashed_name: user-effective-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.effective.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
+      type: keyword
+    user.effective.its.register_project.id:
+      dashed_name: user-effective-its-register-project-id
+      description: Project ID where the user register from.
+      flat_name: user.effective.its.register_project.id
+      ignore_above: 1024
+      level: custom
+      name: register_project.id
       normalize: []
       original_fieldset: its_user
       short: Project ID where the user register from.
+      type: keyword
+    user.effective.its.register_project.name:
+      dashed_name: user-effective-its-register-project-name
+      description: Project name where the user register from.
+      flat_name: user.effective.its.register_project.name
+      ignore_above: 1024
+      level: custom
+      name: register_project.name
+      normalize: []
+      original_fieldset: its_user
+      short: Project name where the user register from.
       type: keyword
     user.effective.its.status:
       dashed_name: user-effective-its-status
@@ -3916,27 +4004,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.its.register_app_id:
+    user.its.register_app.id:
       dashed_name: user-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.its.register_app_id
+      flat_name: user.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.its.register_project_id:
-      dashed_name: user-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.its.register_project_id
+    user.its.register_app.name:
+      dashed_name: user-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
+      type: keyword
+    user.its.register_project.id:
+      dashed_name: user-its-register-project-id
+      description: Project ID where the user register from.
+      flat_name: user.its.register_project.id
+      ignore_above: 1024
+      level: custom
+      name: register_project.id
       normalize: []
       original_fieldset: its_user
       short: Project ID where the user register from.
+      type: keyword
+    user.its.register_project.name:
+      dashed_name: user-its-register-project-name
+      description: Project name where the user register from.
+      flat_name: user.its.register_project.name
+      ignore_above: 1024
+      level: custom
+      name: register_project.name
+      normalize: []
+      original_fieldset: its_user
+      short: Project name where the user register from.
       type: keyword
     user.its.status:
       dashed_name: user-its-status
@@ -4548,27 +4658,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.target.its.register_app_id:
+    user.target.its.register_app.id:
       dashed_name: user-target-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.target.its.register_app_id
+      flat_name: user.target.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.target.its.register_project_id:
-      dashed_name: user-target-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.target.its.register_project_id
+    user.target.its.register_app.name:
+      dashed_name: user-target-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.target.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
+      type: keyword
+    user.target.its.register_project.id:
+      dashed_name: user-target-its-register-project-id
+      description: Project ID where the user register from.
+      flat_name: user.target.its.register_project.id
+      ignore_above: 1024
+      level: custom
+      name: register_project.id
       normalize: []
       original_fieldset: its_user
       short: Project ID where the user register from.
+      type: keyword
+    user.target.its.register_project.name:
+      dashed_name: user-target-its-register-project-name
+      description: Project name where the user register from.
+      flat_name: user.target.its.register_project.name
+      ignore_above: 1024
+      level: custom
+      name: register_project.name
+      normalize: []
+      original_fieldset: its_user
+      short: Project name where the user register from.
       type: keyword
     user.target.its.status:
       dashed_name: user-target-its-status

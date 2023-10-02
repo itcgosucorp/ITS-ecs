@@ -73,6 +73,26 @@
                     }
                   }
                 },
+                "game": {
+                  "properties": {
+                    "currency": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "identity_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
                 "page": {
                   "properties": {
                     "initial_referrer": {
