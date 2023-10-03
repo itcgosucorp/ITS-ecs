@@ -1498,6 +1498,48 @@ event.its.page.url:
   original_fieldset: its_page
   short: URL of the current page in the browser.
   type: keyword
+event.its.payment.amount:
+  dashed_name: event-its-payment-amount
+  description: Real amount of the payment.
+  flat_name: event.its.payment.amount
+  level: custom
+  name: amount
+  normalize: []
+  original_fieldset: its_payment
+  short: Real amount of the payment.
+  type: double
+event.its.payment.office:
+  dashed_name: event-its-payment-office
+  description: Office owns the payment's game (project).
+  flat_name: event.its.payment.office
+  ignore_above: 1024
+  level: custom
+  name: office
+  normalize: []
+  original_fieldset: its_payment
+  short: Office owns the payment's game (project).
+  type: keyword
+event.its.payment.original_amount:
+  dashed_name: event-its-payment-original-amount
+  description: Payment amount in database.
+  flat_name: event.its.payment.original_amount
+  level: custom
+  name: original_amount
+  normalize: []
+  original_fieldset: its_payment
+  short: Payment amount in database.
+  type: double
+event.its.payment.type:
+  dashed_name: event-its-payment-type
+  description: Type of the payment.
+  flat_name: event.its.payment.type
+  ignore_above: 1024
+  level: custom
+  name: type
+  normalize: []
+  original_fieldset: its_payment
+  short: Type of the payment.
+  type: keyword
 event.its.session_id:
   dashed_name: event-its-session-id
   description: Session ID of the event.

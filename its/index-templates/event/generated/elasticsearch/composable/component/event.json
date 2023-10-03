@@ -129,6 +129,24 @@
                     }
                   }
                 },
+                "payment": {
+                  "properties": {
+                    "amount": {
+                      "type": "double"
+                    },
+                    "office": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "original_amount": {
+                      "type": "double"
+                    },
+                    "type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
                 "session_id": {
                   "ignore_above": 1024,
                   "type": "keyword"

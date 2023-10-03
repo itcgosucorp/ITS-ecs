@@ -1,0 +1,40 @@
+---
+- name: its_payment
+  title: ITS Payment
+  type: group
+  group: 2
+  short: More information about payment.
+  description: >
+   More information about payment.
+  reusable:
+    order: 1
+    top_level: false
+    expected:
+      - at: its_event
+        as: payment
+  fields:
+    - name: amount
+      level: custom
+      type: double
+      short: Real amount of the payment.
+      description: >
+        Real amount of the payment.
+    - name: original_amount
+      level: custom
+      type: double
+      short: Payment amount in database.
+      description: >
+        Payment amount in database.
+    - name: type
+      level: custom
+      type: keyword
+      short: Type of the payment.
+      description: >
+       Type of the payment.
+    - name: office
+      level: custom
+      type: keyword
+      short: Office owns the payment's game (project).
+      description: >
+       Office owns the payment's game (project).
+      
