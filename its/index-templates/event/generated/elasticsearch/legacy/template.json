@@ -512,16 +512,16 @@
                   "amount": {
                     "type": "double"
                   },
+                  "channel": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
                   "office": {
                     "ignore_above": 1024,
                     "type": "keyword"
                   },
                   "original_amount": {
                     "type": "double"
-                  },
-                  "type": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
                   }
                 }
               },

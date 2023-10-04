@@ -893,6 +893,12 @@
       type: double
       description: Real amount of the payment.
       default_field: false
+    - name: its.payment.channel
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Channel of the payment.
+      default_field: false
     - name: its.payment.office
       level: custom
       type: keyword
@@ -903,12 +909,6 @@
       level: custom
       type: double
       description: Payment amount in database.
-      default_field: false
-    - name: its.payment.type
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Type of the payment.
       default_field: false
     - name: its.session_id
       level: custom

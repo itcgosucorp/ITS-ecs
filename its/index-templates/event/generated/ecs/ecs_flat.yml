@@ -1508,6 +1508,17 @@ event.its.payment.amount:
   original_fieldset: its_payment
   short: Real amount of the payment.
   type: double
+event.its.payment.channel:
+  dashed_name: event-its-payment-channel
+  description: Channel of the payment.
+  flat_name: event.its.payment.channel
+  ignore_above: 1024
+  level: custom
+  name: channel
+  normalize: []
+  original_fieldset: its_payment
+  short: Channel of the payment.
+  type: keyword
 event.its.payment.office:
   dashed_name: event-its-payment-office
   description: Office owns the payment's game (project).
@@ -1529,17 +1540,6 @@ event.its.payment.original_amount:
   original_fieldset: its_payment
   short: Payment amount in database.
   type: double
-event.its.payment.type:
-  dashed_name: event-its-payment-type
-  description: Type of the payment.
-  flat_name: event.its.payment.type
-  ignore_above: 1024
-  level: custom
-  name: type
-  normalize: []
-  original_fieldset: its_payment
-  short: Type of the payment.
-  type: keyword
 event.its.session_id:
   dashed_name: event-its-session-id
   description: Session ID of the event.

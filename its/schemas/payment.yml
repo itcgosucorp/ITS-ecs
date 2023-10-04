@@ -25,12 +25,12 @@
       short: Payment amount in database.
       description: >
         Payment amount in database.
-    - name: type
+    - name: channel
       level: custom
       type: keyword
-      short: Type of the payment.
+      short: Channel of the payment.
       description: >
-       Type of the payment.
+       Channel of the payment.
     - name: office
       level: custom
       type: keyword

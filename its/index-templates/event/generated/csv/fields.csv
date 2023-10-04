@@ -106,9 +106,9 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.page.title,keyword,custom,,,Title of the current page in the browser.
 8.9.0,true,event,event.its.page.url,keyword,custom,,,URL of the current page in the browser.
 8.9.0,true,event,event.its.payment.amount,double,custom,,,Real amount of the payment.
+8.9.0,true,event,event.its.payment.channel,keyword,custom,,,Channel of the payment.
 8.9.0,true,event,event.its.payment.office,keyword,custom,,,Office owns the payment's game (project).
 8.9.0,true,event,event.its.payment.original_amount,double,custom,,,Payment amount in database.
-8.9.0,true,event,event.its.payment.type,keyword,custom,,,Type of the payment.
 8.9.0,true,event,event.its.session_id,keyword,custom,,,Session ID of the event.
 8.9.0,true,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.
 8.9.0,true,event,event.module,keyword,core,,apache,Name of the module this data is coming from.
