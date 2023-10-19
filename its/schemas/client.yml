@@ -1,0 +1,13 @@
+---
+- name: its_client
+  title: client ITS
+  type: group
+  group: 2
+  short: Custom Client ITS field
+  description: >
+   Custom ITS field
+  reusable:
+    top_level: false
+    expected:
+      - at: client
+        as: its

@@ -1,0 +1,46 @@
+---
+- name: its_app
+  title: App ITS
+  type: group
+  group: 2
+  short: Custom App ITS field
+  description: >
+   Custom ITS field
+  reusable:
+    order: 1
+    top_level: false
+    expected:
+      - at: its_client
+        as: app
+  fields:
+    - name: build
+      level: custom
+      type: keyword
+      short: Build of the application.
+      description: >
+       Build of the application.
+    - name: name
+      level: custom
+      type: keyword
+      short: Name of the application.
+      description: >
+       Name of the application.
+    - name: namespace
+      level: custom
+      type: keyword
+      short: Namespace of the application.
+      description: >
+       Namespace of the application.
+    - name: version
+      level: custom
+      type: keyword
+      short: Version of the application.
+      description: >
+       Version of the application.
+    - name: firebase_token
+      level: custom
+      type: keyword
+      short: Firebase token of the application.
+      description: >
+       Firebase token of the application.
+      

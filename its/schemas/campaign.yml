@@ -1,0 +1,46 @@
+---
+- name: its_campaign
+  title: Campaign ITS
+  type: group
+  group: 2
+  short: Custom Campaign ITS field
+  description: >
+   Custom ITS field
+  reusable:
+    order: 1
+    top_level: false
+    expected:
+      - at: its_event
+        as: campaign
+  fields:
+    - name: name
+      level: custom
+      type: keyword
+      short: Name of the campaign.
+      description: >
+       Name of the campaign.
+    - name: source
+      level: custom
+      type: keyword
+      short: Source of the campaign.
+      description: >
+       Source of the campaign.
+    - name: medium
+      level: custom
+      type: keyword
+      short: Medium of the campaign.
+      description: >
+       Medium of the campaign.
+    - name: term
+      level: custom
+      type: keyword
+      short: Term of the campaign.
+      description: >
+       Term of the campaign.
+    - name: content
+      level: custom
+      type: keyword
+      short: Content of the campaign.
+      description: >
+       Content of the campaign.
+      

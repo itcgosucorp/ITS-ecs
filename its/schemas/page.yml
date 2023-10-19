@@ -1,0 +1,63 @@
+---
+- name: its_page
+  title: Page ITS
+  type: group
+  group: 2
+  short: Custom Page ITS field
+  description: >
+    Custom ITS field
+  reusable:
+    top_level: false
+    order: 1
+    expected:
+      - at: its_event
+        as: page
+  fields:
+    - name: path
+      level: custom
+      type: keyword
+      short: Path of the current page.
+      description: >
+        Path of the current page in the browser.
+    - name: initial_referrer
+      level: custom
+      type: keyword
+      short: Initial referrer of the current page in the browser.
+      description: >
+       Initial referrer of the current page in the browser.
+    - name: initial_referring_domain
+      level: custom
+      type: keyword
+      short: Initial referring domain.
+      description: >
+       Initial referring domain of the current page in the browser.
+    - name: referrer
+      level: custom
+      type: keyword
+      short: Referrer of the current page in the browser.
+      description: >
+        Referrer of the current page in the browser.
+    - name: referring_domain
+      level: custom
+      type: keyword
+      short:  Referring domain.
+      description: >
+        Referring domain of the current page in the browser.   
+    - name: search
+      level: custom
+      type: keyword
+      short:  Search of the current page in the browser.
+      description: >
+       Search of the current page in the browser. 
+    - name: title
+      level: custom
+      type: keyword
+      short:  Title of the current page in the browser.
+      description: >
+       Title of the current page in the browser.
+    - name: url
+      level: custom
+      type: keyword
+      short:  URL of the current page in the browser.
+      description: >
+       URL of the current page in the browser.

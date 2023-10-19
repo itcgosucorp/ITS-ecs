@@ -1,0 +1,39 @@
+---
+- name: its_network
+  title: Network ITS
+  type: group
+  group: 2
+  short: Custom Campaign ITS field
+  description: >
+   Custom ITS field
+  reusable:
+    order: 1
+    top_level: false
+    expected:
+      - at: its_device
+        as: network
+  fields:
+    - name: bluetooth
+      level: custom
+      type: keyword
+      short: Bluetooth information.
+      description: >
+       Bluetooth information.
+    - name: carrier
+      level: custom
+      type: keyword
+      short: Carrier information.
+      description: >
+       Carrier information about the network connection.
+    - name: wifi
+      level: custom
+      type: keyword
+      short: WiFi information.
+      description: >
+       WiFi information about the network connection.
+    - name: cellular
+      level: custom
+      type: boolean
+      short: Cellular information.
+      description: >
+       Cellular information about the network connection.

@@ -1,0 +1,40 @@
+---
+- name: its_game
+  title: ITS Game
+  type: group
+  group: 2
+  short: More information about game.
+  description: >
+   More information about game.
+  reusable:
+    order: 1
+    top_level: false
+    expected:
+      - at: its_event
+        as: game
+  fields:
+    - name: id
+      level: custom
+      type: keyword
+      short: ID of the game.
+      description: >
+        ID of the game.
+    - name: name
+      level: custom
+      type: keyword
+      short: Name of the game.
+      description: >
+       Name of the game.
+    - name: identity_name
+      level: custom
+      type: keyword
+      short: Indentity name of the game.
+      description: >
+       Indentity name of the game.
+    - name: currency
+      level: custom
+      type: keyword
+      short: Currency in the game.
+      description: >
+       Currency in the game.
+      

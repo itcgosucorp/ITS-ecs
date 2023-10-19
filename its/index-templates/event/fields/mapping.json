@@ -1,0 +1,22 @@
+{
+  "dynamic_templates": [
+    {
+      "context_as_keyword": {
+        "path_match": "event.its.context.*",
+        "match_mapping_type": "string",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    },
+    {
+      "properties_as_keyword": {
+        "path_match": "event.its.properties.*",
+        "match_mapping_type": "string",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
+    }
+  ]
+}
