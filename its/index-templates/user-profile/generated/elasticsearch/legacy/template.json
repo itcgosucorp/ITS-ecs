@@ -322,6 +322,26 @@
                   }
                 }
               },
+              "game": {
+                "properties": {
+                  "currency": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "identity_name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
               "page": {
                 "properties": {
                   "initial_referrer": {
@@ -355,6 +375,24 @@
                   "url": {
                     "ignore_above": 1024,
                     "type": "keyword"
+                  }
+                }
+              },
+              "payment": {
+                "properties": {
+                  "amount": {
+                    "type": "double"
+                  },
+                  "channel": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "office": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "original_amount": {
+                    "type": "double"
                   }
                 }
               },
@@ -638,13 +676,29 @@
                   "phone_verified": {
                     "type": "boolean"
                   },
-                  "register_app_id": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
+                  "register_app": {
+                    "properties": {
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
                   },
-                  "register_project_id": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
+                  "register_source": {
+                    "properties": {
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
                   },
                   "status": {
                     "ignore_above": 1024,
@@ -891,13 +945,29 @@
                   "phone_verified": {
                     "type": "boolean"
                   },
-                  "register_app_id": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
+                  "register_app": {
+                    "properties": {
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
                   },
-                  "register_project_id": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
+                  "register_source": {
+                    "properties": {
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
                   },
                   "status": {
                     "ignore_above": 1024,
@@ -1134,13 +1204,29 @@
               "phone_verified": {
                 "type": "boolean"
               },
-              "register_app_id": {
-                "ignore_above": 1024,
-                "type": "keyword"
+              "register_app": {
+                "properties": {
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
               },
-              "register_project_id": {
-                "ignore_above": 1024,
-                "type": "keyword"
+              "register_source": {
+                "properties": {
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
               },
               "status": {
                 "ignore_above": 1024,
@@ -1381,13 +1467,29 @@
                   "phone_verified": {
                     "type": "boolean"
                   },
-                  "register_app_id": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
+                  "register_app": {
+                    "properties": {
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
                   },
-                  "register_project_id": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
+                  "register_source": {
+                    "properties": {
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
                   },
                   "status": {
                     "ignore_above": 1024,

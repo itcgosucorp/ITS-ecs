@@ -113,18 +113,18 @@
       short: App name where the user registered from.
       description: >
         App name where the user registered from.
-    - name: register_project.id
+    - name: register_source.id
       level: custom
       type: keyword
-      short: Project ID where the user register from.
+      short: Source ID where the user registered from.
       description: >
-        Project ID where the user register from.
-    - name: register_project.name
+        Source ID where the user registered from.
+    - name: register_source.name
       level: custom
       type: keyword
-      short: Project name where the user register from.
+      short: App name where the user registered from.
       description: >
-        Project name where the user register from.
+        App name where the user registered from.
     - name: identities
       level: custom
       type: nested

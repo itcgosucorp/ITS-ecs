@@ -622,6 +622,30 @@
       ignore_above: 1024
       description: Term of the campaign.
       default_field: false
+    - name: its.game.currency
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Currency in the game.
+      default_field: false
+    - name: its.game.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: ID of the game.
+      default_field: false
+    - name: its.game.identity_name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Indentity name of the game.
+      default_field: false
+    - name: its.game.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Name of the game.
+      default_field: false
     - name: its.page.initial_referrer
       level: custom
       type: keyword
@@ -669,6 +693,28 @@
       type: keyword
       ignore_above: 1024
       description: URL of the current page in the browser.
+      default_field: false
+    - name: its.payment.amount
+      level: custom
+      type: double
+      description: Real amount of the payment.
+      default_field: false
+    - name: its.payment.channel
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Channel of the payment.
+      default_field: false
+    - name: its.payment.office
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Office owns the payment's game (project).
+      default_field: false
+    - name: its.payment.original_amount
+      level: custom
+      type: double
+      description: Payment amount in database.
       default_field: false
     - name: its.session_id
       level: custom
@@ -1170,17 +1216,29 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: changes.its.register_app_id
+    - name: changes.its.register_app.id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: changes.its.register_project_id
+    - name: changes.its.register_app.name
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Project ID where the user register from.
+      description: App name where the user registered from.
+      default_field: false
+    - name: changes.its.register_source.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source ID where the user registered from.
+      default_field: false
+    - name: changes.its.register_source.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App name where the user registered from.
       default_field: false
     - name: changes.its.status
       level: custom
@@ -1537,17 +1595,29 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: effective.its.register_app_id
+    - name: effective.its.register_app.id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: effective.its.register_project_id
+    - name: effective.its.register_app.name
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Project ID where the user register from.
+      description: App name where the user registered from.
+      default_field: false
+    - name: effective.its.register_source.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source ID where the user registered from.
+      default_field: false
+    - name: effective.its.register_source.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App name where the user registered from.
       default_field: false
     - name: effective.its.status
       level: custom
@@ -1883,17 +1953,29 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: its.register_app_id
+    - name: its.register_app.id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: its.register_project_id
+    - name: its.register_app.name
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Project ID where the user register from.
+      description: App name where the user registered from.
+      default_field: false
+    - name: its.register_source.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source ID where the user registered from.
+      default_field: false
+    - name: its.register_source.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App name where the user registered from.
       default_field: false
     - name: its.status
       level: custom
@@ -2243,17 +2325,29 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: target.its.register_app_id
+    - name: target.its.register_app.id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: target.its.register_project_id
+    - name: target.its.register_app.name
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Project ID where the user register from.
+      description: App name where the user registered from.
+      default_field: false
+    - name: target.its.register_source.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source ID where the user registered from.
+      default_field: false
+    - name: target.its.register_source.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App name where the user registered from.
       default_field: false
     - name: target.its.status
       level: custom
