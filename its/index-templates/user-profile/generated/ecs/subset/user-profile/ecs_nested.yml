@@ -1212,6 +1212,50 @@ event:
       original_fieldset: its_campaign
       short: Term of the campaign.
       type: keyword
+    event.its.game.currency:
+      dashed_name: event-its-game-currency
+      description: Currency in the game.
+      flat_name: event.its.game.currency
+      ignore_above: 1024
+      level: custom
+      name: currency
+      normalize: []
+      original_fieldset: its_game
+      short: Currency in the game.
+      type: keyword
+    event.its.game.id:
+      dashed_name: event-its-game-id
+      description: ID of the game.
+      flat_name: event.its.game.id
+      ignore_above: 1024
+      level: custom
+      name: id
+      normalize: []
+      original_fieldset: its_game
+      short: ID of the game.
+      type: keyword
+    event.its.game.identity_name:
+      dashed_name: event-its-game-identity-name
+      description: Indentity name of the game.
+      flat_name: event.its.game.identity_name
+      ignore_above: 1024
+      level: custom
+      name: identity_name
+      normalize: []
+      original_fieldset: its_game
+      short: Indentity name of the game.
+      type: keyword
+    event.its.game.name:
+      dashed_name: event-its-game-name
+      description: Name of the game.
+      flat_name: event.its.game.name
+      ignore_above: 1024
+      level: custom
+      name: name
+      normalize: []
+      original_fieldset: its_game
+      short: Name of the game.
+      type: keyword
     event.its.page.initial_referrer:
       dashed_name: event-its-page-initial-referrer
       description: Initial referrer of the current page in the browser.
@@ -1300,6 +1344,48 @@ event:
       original_fieldset: its_page
       short: URL of the current page in the browser.
       type: keyword
+    event.its.payment.amount:
+      dashed_name: event-its-payment-amount
+      description: Real amount of the payment.
+      flat_name: event.its.payment.amount
+      level: custom
+      name: amount
+      normalize: []
+      original_fieldset: its_payment
+      short: Real amount of the payment.
+      type: double
+    event.its.payment.channel:
+      dashed_name: event-its-payment-channel
+      description: Channel of the payment.
+      flat_name: event.its.payment.channel
+      ignore_above: 1024
+      level: custom
+      name: channel
+      normalize: []
+      original_fieldset: its_payment
+      short: Channel of the payment.
+      type: keyword
+    event.its.payment.office:
+      dashed_name: event-its-payment-office
+      description: Office owns the payment's game (project).
+      flat_name: event.its.payment.office
+      ignore_above: 1024
+      level: custom
+      name: office
+      normalize: []
+      original_fieldset: its_payment
+      short: Office owns the payment's game (project).
+      type: keyword
+    event.its.payment.original_amount:
+      dashed_name: event-its-payment-original-amount
+      description: Payment amount in database.
+      flat_name: event.its.payment.original_amount
+      level: custom
+      name: original_amount
+      normalize: []
+      original_fieldset: its_payment
+      short: Payment amount in database.
+      type: double
     event.its.session_id:
       dashed_name: event-its-session-id
       description: Session ID of the event.
@@ -2332,27 +2418,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.changes.its.register_app_id:
+    user.changes.its.register_app.id:
       dashed_name: user-changes-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.changes.its.register_app_id
+      flat_name: user.changes.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.changes.its.register_project_id:
-      dashed_name: user-changes-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.changes.its.register_project_id
+    user.changes.its.register_app.name:
+      dashed_name: user-changes-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.changes.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
       normalize: []
       original_fieldset: its_user
-      short: Project ID where the user register from.
+      short: App name where the user registered from.
+      type: keyword
+    user.changes.its.register_source.id:
+      dashed_name: user-changes-its-register-source-id
+      description: Source ID where the user registered from.
+      flat_name: user.changes.its.register_source.id
+      ignore_above: 1024
+      level: custom
+      name: register_source.id
+      normalize: []
+      original_fieldset: its_user
+      short: Source ID where the user registered from.
+      type: keyword
+    user.changes.its.register_source.name:
+      dashed_name: user-changes-its-register-source-name
+      description: App name where the user registered from.
+      flat_name: user.changes.its.register_source.name
+      ignore_above: 1024
+      level: custom
+      name: register_source.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
       type: keyword
     user.changes.its.status:
       dashed_name: user-changes-its-status
@@ -2978,27 +3086,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.effective.its.register_app_id:
+    user.effective.its.register_app.id:
       dashed_name: user-effective-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.effective.its.register_app_id
+      flat_name: user.effective.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.effective.its.register_project_id:
-      dashed_name: user-effective-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.effective.its.register_project_id
+    user.effective.its.register_app.name:
+      dashed_name: user-effective-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.effective.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
       normalize: []
       original_fieldset: its_user
-      short: Project ID where the user register from.
+      short: App name where the user registered from.
+      type: keyword
+    user.effective.its.register_source.id:
+      dashed_name: user-effective-its-register-source-id
+      description: Source ID where the user registered from.
+      flat_name: user.effective.its.register_source.id
+      ignore_above: 1024
+      level: custom
+      name: register_source.id
+      normalize: []
+      original_fieldset: its_user
+      short: Source ID where the user registered from.
+      type: keyword
+    user.effective.its.register_source.name:
+      dashed_name: user-effective-its-register-source-name
+      description: App name where the user registered from.
+      flat_name: user.effective.its.register_source.name
+      ignore_above: 1024
+      level: custom
+      name: register_source.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
       type: keyword
     user.effective.its.status:
       dashed_name: user-effective-its-status
@@ -3595,27 +3725,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.its.register_app_id:
+    user.its.register_app.id:
       dashed_name: user-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.its.register_app_id
+      flat_name: user.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.its.register_project_id:
-      dashed_name: user-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.its.register_project_id
+    user.its.register_app.name:
+      dashed_name: user-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
       normalize: []
       original_fieldset: its_user
-      short: Project ID where the user register from.
+      short: App name where the user registered from.
+      type: keyword
+    user.its.register_source.id:
+      dashed_name: user-its-register-source-id
+      description: Source ID where the user registered from.
+      flat_name: user.its.register_source.id
+      ignore_above: 1024
+      level: custom
+      name: register_source.id
+      normalize: []
+      original_fieldset: its_user
+      short: Source ID where the user registered from.
+      type: keyword
+    user.its.register_source.name:
+      dashed_name: user-its-register-source-name
+      description: App name where the user registered from.
+      flat_name: user.its.register_source.name
+      ignore_above: 1024
+      level: custom
+      name: register_source.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
       type: keyword
     user.its.status:
       dashed_name: user-its-status
@@ -4227,27 +4379,49 @@ user:
       original_fieldset: its_user
       short: User's phone number verification status.
       type: boolean
-    user.target.its.register_app_id:
+    user.target.its.register_app.id:
       dashed_name: user-target-its-register-app-id
       description: App ID where the user registered from.
-      flat_name: user.target.its.register_app_id
+      flat_name: user.target.its.register_app.id
       ignore_above: 1024
       level: custom
-      name: register_app_id
+      name: register_app.id
       normalize: []
       original_fieldset: its_user
       short: App ID where the user registered from.
       type: keyword
-    user.target.its.register_project_id:
-      dashed_name: user-target-its-register-project-id
-      description: Project ID where the user register from.
-      flat_name: user.target.its.register_project_id
+    user.target.its.register_app.name:
+      dashed_name: user-target-its-register-app-name
+      description: App name where the user registered from.
+      flat_name: user.target.its.register_app.name
       ignore_above: 1024
       level: custom
-      name: register_project_id
+      name: register_app.name
       normalize: []
       original_fieldset: its_user
-      short: Project ID where the user register from.
+      short: App name where the user registered from.
+      type: keyword
+    user.target.its.register_source.id:
+      dashed_name: user-target-its-register-source-id
+      description: Source ID where the user registered from.
+      flat_name: user.target.its.register_source.id
+      ignore_above: 1024
+      level: custom
+      name: register_source.id
+      normalize: []
+      original_fieldset: its_user
+      short: Source ID where the user registered from.
+      type: keyword
+    user.target.its.register_source.name:
+      dashed_name: user-target-its-register-source-name
+      description: App name where the user registered from.
+      flat_name: user.target.its.register_source.name
+      ignore_above: 1024
+      level: custom
+      name: register_source.name
+      normalize: []
+      original_fieldset: its_user
+      short: App name where the user registered from.
       type: keyword
     user.target.its.status:
       dashed_name: user-target-its-status
