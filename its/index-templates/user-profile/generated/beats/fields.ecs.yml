@@ -1216,29 +1216,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: changes.its.register_app.id
+    - name: changes.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: changes.its.register_app.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: changes.its.register_source.id
+    - name: changes.its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: Source ID where the user registered from.
-      default_field: false
-    - name: changes.its.register_source.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
       default_field: false
     - name: changes.its.status
       level: custom
@@ -1595,29 +1583,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: effective.its.register_app.id
+    - name: effective.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: effective.its.register_app.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: effective.its.register_source.id
+    - name: effective.its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: Source ID where the user registered from.
-      default_field: false
-    - name: effective.its.register_source.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
       default_field: false
     - name: effective.its.status
       level: custom
@@ -1953,29 +1929,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: its.register_app.id
+    - name: its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: its.register_app.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: its.register_source.id
+    - name: its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: Source ID where the user registered from.
-      default_field: false
-    - name: its.register_source.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
       default_field: false
     - name: its.status
       level: custom
@@ -2325,29 +2289,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: target.its.register_app.id
+    - name: target.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: target.its.register_app.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: target.its.register_source.id
+    - name: target.its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: Source ID where the user registered from.
-      default_field: false
-    - name: target.its.register_source.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App name where the user registered from.
       default_field: false
     - name: target.its.status
       level: custom
