@@ -147,6 +147,156 @@
                     }
                   }
                 },
+                "properties": {
+                  "properties": {
+                    "ad_displayed_percent": {
+                      "type": "float"
+                    },
+                    "ad_time_viewed": {
+                      "type": "float"
+                    },
+                    "application_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "brand": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "category": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "channel": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "character_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "character_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "currency": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "item_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "keywords": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "level": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "order_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_n_1": {
+                      "type": "float"
+                    },
+                    "param_n_2": {
+                      "type": "float"
+                    },
+                    "param_n_3": {
+                      "type": "float"
+                    },
+                    "param_n_4": {
+                      "type": "float"
+                    },
+                    "param_n_5": {
+                      "type": "float"
+                    },
+                    "param_s_1": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_2": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_3": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_4": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_5": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "playable_played_length": {
+                      "type": "float"
+                    },
+                    "price": {
+                      "type": "float"
+                    },
+                    "product_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "product_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "revenue": {
+                      "type": "float"
+                    },
+                    "reward": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "score": {
+                      "type": "integer"
+                    },
+                    "server_info": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "sku_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "source_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "task_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "task_type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "video_played_length": {
+                      "type": "integer"
+                    },
+                    "video_total_length": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "publisher": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
                 "session_id": {
                   "ignore_above": 1024,
                   "type": "keyword"

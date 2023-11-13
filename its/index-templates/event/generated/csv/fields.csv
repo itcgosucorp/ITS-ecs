@@ -109,6 +109,45 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.payment.channel,keyword,custom,,,Channel of the payment.
 8.9.0,true,event,event.its.payment.office,keyword,custom,,,Office owns the payment's game (project).
 8.9.0,true,event,event.its.payment.original_amount,double,custom,,,Payment amount in database.
+8.9.0,true,event,event.its.properties.ad_displayed_percent,float,custom,,,The maximum percentage of the ad(%).
+8.9.0,true,event,event.its.properties.ad_time_viewed,float,custom,,,How long the ad unit was visible on the screen(seconds)
+8.9.0,true,event,event.its.properties.application_id,keyword,custom,,,Application ID.
+8.9.0,true,event,event.its.properties.brand,keyword,custom,,,Product Brand.
+8.9.0,true,event,event.its.properties.category,keyword,custom,,,Product's Category.
+8.9.0,true,event,event.its.properties.channel,keyword,custom,,,Channel Info.
+8.9.0,true,event,event.its.properties.character_id,keyword,custom,,,Character ID.
+8.9.0,true,event,event.its.properties.character_name,keyword,custom,,,Character Name.
+8.9.0,true,event,event.its.properties.currency,keyword,custom,,,Cost currency.
+8.9.0,true,event,event.its.properties.item_id,keyword,custom,,,Item ID.
+8.9.0,true,event,event.its.properties.keywords,keyword,custom,,,Keyword Info.
+8.9.0,true,event,event.its.properties.level,keyword,custom,,,Level the user achieved.
+8.9.0,true,event,event.its.properties.order_id,keyword,custom,,,ID of the transaction.
+8.9.0,true,event,event.its.properties.param_n_1,float,custom,,,Parameter type number 1.
+8.9.0,true,event,event.its.properties.param_n_2,float,custom,,,Parameter type number 2.
+8.9.0,true,event,event.its.properties.param_n_3,float,custom,,,Parameter type number 3.
+8.9.0,true,event,event.its.properties.param_n_4,float,custom,,,Parameter type number 4.
+8.9.0,true,event,event.its.properties.param_n_5,float,custom,,,Parameter type number 5.
+8.9.0,true,event,event.its.properties.param_s_1,keyword,custom,,,Parameter type string 1.
+8.9.0,true,event,event.its.properties.param_s_2,keyword,custom,,,Parameter type string 2.
+8.9.0,true,event,event.its.properties.param_s_3,keyword,custom,,,Parameter type string 3.
+8.9.0,true,event,event.its.properties.param_s_4,keyword,custom,,,Parameter type string 4.
+8.9.0,true,event,event.its.properties.param_s_5,keyword,custom,,,Parameter type string 5.
+8.9.0,true,event,event.its.properties.playable_played_length,float,custom,,,How long the playable element was played once fully loaded.
+8.9.0,true,event,event.its.properties.price,float,custom,,,Product's Price.
+8.9.0,true,event,event.its.properties.product_id,keyword,custom,,,Product ID.
+8.9.0,true,event,event.its.properties.product_name,keyword,custom,,,Product Name.
+8.9.0,true,event,event.its.properties.quantity,integer,custom,,,Quantity of Product.
+8.9.0,true,event,event.its.properties.revenue,float,custom,,,Revenue.
+8.9.0,true,event,event.its.properties.reward,keyword,custom,,,Reward Info.
+8.9.0,true,event,event.its.properties.score,integer,custom,,,Score associated with the user's achievement.
+8.9.0,true,event,event.its.properties.server_info,keyword,custom,,,Server info.
+8.9.0,true,event,event.its.properties.sku_id,keyword,custom,,,Product's SKU.
+8.9.0,true,event,event.its.properties.source_id,keyword,custom,,,Source ID.
+8.9.0,true,event,event.its.properties.task_id,keyword,custom,,,Task ID.
+8.9.0,true,event,event.its.properties.task_type,keyword,custom,,,Task's type Info.
+8.9.0,true,event,event.its.properties.video_played_length,integer,custom,,,How much of the video was viewed.
+8.9.0,true,event,event.its.properties.video_total_length,integer,custom,,,The total possible duration of the video.
+8.9.0,true,event,event.its.publisher.id,keyword,custom,,,Publisher ID.
 8.9.0,true,event,event.its.session_id,keyword,custom,,,Session ID of the event.
 8.9.0,true,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.
 8.9.0,true,event,event.module,keyword,core,,apache,Name of the module this data is coming from.
@@ -171,10 +210,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.changes.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.changes.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.changes.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.changes.its.register_app.id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.changes.its.register_app.name,keyword,custom,,,App name where the user registered from.
-8.9.0,true,user,user.changes.its.register_project.id,keyword,custom,,,Project ID where the user register from.
-8.9.0,true,user,user.changes.its.register_project.name,keyword,custom,,,Project name where the user register from.
+8.9.0,true,user,user.changes.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.changes.its.register_source_id,keyword,custom,,,Source ID where the user registered from.
 8.9.0,true,user,user.changes.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.changes.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.changes.its.updated_at,date,custom,,,Time when the user was updated.
@@ -230,10 +267,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.effective.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.effective.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.effective.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.effective.its.register_app.id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.effective.its.register_app.name,keyword,custom,,,App name where the user registered from.
-8.9.0,true,user,user.effective.its.register_project.id,keyword,custom,,,Project ID where the user register from.
-8.9.0,true,user,user.effective.its.register_project.name,keyword,custom,,,Project name where the user register from.
+8.9.0,true,user,user.effective.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.effective.its.register_source_id,keyword,custom,,,Source ID where the user registered from.
 8.9.0,true,user,user.effective.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.effective.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.effective.its.updated_at,date,custom,,,Time when the user was updated.
@@ -287,10 +322,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.its.register_app.id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.its.register_app.name,keyword,custom,,,App name where the user registered from.
-8.9.0,true,user,user.its.register_project.id,keyword,custom,,,Project ID where the user register from.
-8.9.0,true,user,user.its.register_project.name,keyword,custom,,,Project name where the user register from.
+8.9.0,true,user,user.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.its.register_source_id,keyword,custom,,,Source ID where the user registered from.
 8.9.0,true,user,user.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.its.updated_at,date,custom,,,Time when the user was updated.
@@ -345,10 +378,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,user,user.target.its.phone.national_number,keyword,custom,,,User's phone number in national format.
 8.9.0,true,user,user.target.its.phone.number,keyword,custom,,,User's phone number in international format.
 8.9.0,true,user,user.target.its.phone_verified,boolean,custom,,,User's phone number verification status.
-8.9.0,true,user,user.target.its.register_app.id,keyword,custom,,,App ID where the user registered from.
-8.9.0,true,user,user.target.its.register_app.name,keyword,custom,,,App name where the user registered from.
-8.9.0,true,user,user.target.its.register_project.id,keyword,custom,,,Project ID where the user register from.
-8.9.0,true,user,user.target.its.register_project.name,keyword,custom,,,Project name where the user register from.
+8.9.0,true,user,user.target.its.register_app_id,keyword,custom,,,App ID where the user registered from.
+8.9.0,true,user,user.target.its.register_source_id,keyword,custom,,,Source ID where the user registered from.
 8.9.0,true,user,user.target.its.status,keyword,custom,,,User account's status.
 8.9.0,true,user,user.target.its.traits.anonymous_id,keyword,custom,,,User's anonymous_id.
 8.9.0,true,user,user.target.its.updated_at,date,custom,,,Time when the user was updated.

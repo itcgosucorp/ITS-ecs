@@ -910,6 +910,227 @@
       type: double
       description: Payment amount in database.
       default_field: false
+    - name: its.properties.ad_displayed_percent
+      level: custom
+      type: float
+      description: The maximum percentage of the ad unit that was visible on the device
+        screen(%).
+      default_field: false
+    - name: its.properties.ad_time_viewed
+      level: custom
+      type: float
+      description: How long the ad unit was visible on the screen(seconds).
+      default_field: false
+    - name: its.properties.application_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Application ID.
+      default_field: false
+    - name: its.properties.brand
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product Brand
+      default_field: false
+    - name: its.properties.category
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product's Category.
+      default_field: false
+    - name: its.properties.channel
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Channel Info.
+      default_field: false
+    - name: its.properties.character_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Character ID.
+      default_field: false
+    - name: its.properties.character_name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Character Name.
+      default_field: false
+    - name: its.properties.currency
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Cost currency.
+      default_field: false
+    - name: its.properties.item_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Item ID.
+      default_field: false
+    - name: its.properties.keywords
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Keyword Info.
+      default_field: false
+    - name: its.properties.level
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Level the user achieved.
+      default_field: false
+    - name: its.properties.order_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: ID of the transaction.
+      default_field: false
+    - name: its.properties.param_n_1
+      level: custom
+      type: float
+      description: Parameter type number 1.
+      default_field: false
+    - name: its.properties.param_n_2
+      level: custom
+      type: float
+      description: Parameter type number 2.
+      default_field: false
+    - name: its.properties.param_n_3
+      level: custom
+      type: float
+      description: Parameter type number 3.
+      default_field: false
+    - name: its.properties.param_n_4
+      level: custom
+      type: float
+      description: Parameter type number 4.
+      default_field: false
+    - name: its.properties.param_n_5
+      level: custom
+      type: float
+      description: Parameter type number 5.
+      default_field: false
+    - name: its.properties.param_s_1
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 1.
+      default_field: false
+    - name: its.properties.param_s_2
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 2.
+      default_field: false
+    - name: its.properties.param_s_3
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 3.
+      default_field: false
+    - name: its.properties.param_s_4
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 4.
+      default_field: false
+    - name: its.properties.param_s_5
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 5.
+      default_field: false
+    - name: its.properties.playable_played_length
+      level: custom
+      type: float
+      description: How long the playable element was played once fully loaded.
+      default_field: false
+    - name: its.properties.price
+      level: custom
+      type: float
+      description: Product's Price.
+      default_field: false
+    - name: its.properties.product_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product ID.
+      default_field: false
+    - name: its.properties.product_name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product Name.
+      default_field: false
+    - name: its.properties.quantity
+      level: custom
+      type: integer
+      description: Quantity of Product.
+      default_field: false
+    - name: its.properties.revenue
+      level: custom
+      type: float
+      description: Revenue.
+      default_field: false
+    - name: its.properties.reward
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Reward Info.
+      default_field: false
+    - name: its.properties.score
+      level: custom
+      type: integer
+      description: Score associated with the user's achievement.
+      default_field: false
+    - name: its.properties.server_info
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Server info.
+      default_field: false
+    - name: its.properties.sku_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product's SKU.
+      default_field: false
+    - name: its.properties.source_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source ID.
+      default_field: false
+    - name: its.properties.task_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task ID.
+      default_field: false
+    - name: its.properties.task_type
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task's type Info.
+      default_field: false
+    - name: its.properties.video_played_length
+      level: custom
+      type: integer
+      description: How much of the video was viewed.
+      default_field: false
+    - name: its.properties.video_total_length
+      level: custom
+      type: integer
+      description: The total possible duration of the video.
+      default_field: false
+    - name: its.publisher.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Publisher ID.
+      default_field: false
     - name: its.session_id
       level: custom
       type: keyword
@@ -1410,29 +1631,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: changes.its.register_app.id
+    - name: changes.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: changes.its.register_app.name
+    - name: changes.its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: changes.its.register_project.id
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project ID where the user register from.
-      default_field: false
-    - name: changes.its.register_project.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project name where the user register from.
+      description: Source ID where the user registered from.
       default_field: false
     - name: changes.its.status
       level: custom
@@ -1789,29 +1998,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: effective.its.register_app.id
+    - name: effective.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: effective.its.register_app.name
+    - name: effective.its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: effective.its.register_project.id
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project ID where the user register from.
-      default_field: false
-    - name: effective.its.register_project.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project name where the user register from.
+      description: Source ID where the user registered from.
       default_field: false
     - name: effective.its.status
       level: custom
@@ -2147,29 +2344,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: its.register_app.id
+    - name: its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: its.register_app.name
+    - name: its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: its.register_project.id
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project ID where the user register from.
-      default_field: false
-    - name: its.register_project.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project name where the user register from.
+      description: Source ID where the user registered from.
       default_field: false
     - name: its.status
       level: custom
@@ -2519,29 +2704,17 @@
       type: boolean
       description: User's phone number verification status.
       default_field: false
-    - name: target.its.register_app.id
+    - name: target.its.register_app_id
       level: custom
       type: keyword
       ignore_above: 1024
       description: App ID where the user registered from.
       default_field: false
-    - name: target.its.register_app.name
+    - name: target.its.register_source_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: App name where the user registered from.
-      default_field: false
-    - name: target.its.register_project.id
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project ID where the user register from.
-      default_field: false
-    - name: target.its.register_project.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Project name where the user register from.
+      description: Source ID where the user registered from.
       default_field: false
     - name: target.its.status
       level: custom

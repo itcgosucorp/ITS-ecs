@@ -1540,6 +1540,422 @@ event.its.payment.original_amount:
   original_fieldset: its_payment
   short: Payment amount in database.
   type: double
+event.its.properties.ad_displayed_percent:
+  dashed_name: event-its-properties-ad-displayed-percent
+  description: The maximum percentage of the ad unit that was visible on the device
+    screen(%).
+  flat_name: event.its.properties.ad_displayed_percent
+  level: custom
+  name: properties.ad_displayed_percent
+  normalize: []
+  original_fieldset: its_event
+  short: The maximum percentage of the ad(%).
+  type: float
+event.its.properties.ad_time_viewed:
+  dashed_name: event-its-properties-ad-time-viewed
+  description: How long the ad unit was visible on the screen(seconds).
+  flat_name: event.its.properties.ad_time_viewed
+  level: custom
+  name: properties.ad_time_viewed
+  normalize: []
+  original_fieldset: its_event
+  short: How long the ad unit was visible on the screen(seconds)
+  type: float
+event.its.properties.application_id:
+  dashed_name: event-its-properties-application-id
+  description: Application ID.
+  flat_name: event.its.properties.application_id
+  ignore_above: 1024
+  level: custom
+  name: properties.application_id
+  normalize: []
+  original_fieldset: its_event
+  short: Application ID.
+  type: keyword
+event.its.properties.brand:
+  dashed_name: event-its-properties-brand
+  description: Product Brand
+  flat_name: event.its.properties.brand
+  ignore_above: 1024
+  level: custom
+  name: properties.brand
+  normalize: []
+  original_fieldset: its_event
+  short: Product Brand.
+  type: keyword
+event.its.properties.category:
+  dashed_name: event-its-properties-category
+  description: Product's Category.
+  flat_name: event.its.properties.category
+  ignore_above: 1024
+  level: custom
+  name: properties.category
+  normalize: []
+  original_fieldset: its_event
+  short: Product's Category.
+  type: keyword
+event.its.properties.channel:
+  dashed_name: event-its-properties-channel
+  description: Channel Info.
+  flat_name: event.its.properties.channel
+  ignore_above: 1024
+  level: custom
+  name: properties.channel
+  normalize: []
+  original_fieldset: its_event
+  short: Channel Info.
+  type: keyword
+event.its.properties.character_id:
+  dashed_name: event-its-properties-character-id
+  description: Character ID.
+  flat_name: event.its.properties.character_id
+  ignore_above: 1024
+  level: custom
+  name: properties.character_id
+  normalize: []
+  original_fieldset: its_event
+  short: Character ID.
+  type: keyword
+event.its.properties.character_name:
+  dashed_name: event-its-properties-character-name
+  description: Character Name.
+  flat_name: event.its.properties.character_name
+  ignore_above: 1024
+  level: custom
+  name: properties.character_name
+  normalize: []
+  original_fieldset: its_event
+  short: Character Name.
+  type: keyword
+event.its.properties.currency:
+  dashed_name: event-its-properties-currency
+  description: Cost currency.
+  flat_name: event.its.properties.currency
+  ignore_above: 1024
+  level: custom
+  name: properties.currency
+  normalize: []
+  original_fieldset: its_event
+  short: Cost currency.
+  type: keyword
+event.its.properties.item_id:
+  dashed_name: event-its-properties-item-id
+  description: Item ID.
+  flat_name: event.its.properties.item_id
+  ignore_above: 1024
+  level: custom
+  name: properties.item_id
+  normalize: []
+  original_fieldset: its_event
+  short: Item ID.
+  type: keyword
+event.its.properties.keywords:
+  dashed_name: event-its-properties-keywords
+  description: Keyword Info.
+  flat_name: event.its.properties.keywords
+  ignore_above: 1024
+  level: custom
+  name: properties.keywords
+  normalize: []
+  original_fieldset: its_event
+  short: Keyword Info.
+  type: keyword
+event.its.properties.level:
+  dashed_name: event-its-properties-level
+  description: Level the user achieved.
+  flat_name: event.its.properties.level
+  ignore_above: 1024
+  level: custom
+  name: properties.level
+  normalize: []
+  original_fieldset: its_event
+  short: Level the user achieved.
+  type: keyword
+event.its.properties.order_id:
+  dashed_name: event-its-properties-order-id
+  description: ID of the transaction.
+  flat_name: event.its.properties.order_id
+  ignore_above: 1024
+  level: custom
+  name: properties.order_id
+  normalize: []
+  original_fieldset: its_event
+  short: ID of the transaction.
+  type: keyword
+event.its.properties.param_n_1:
+  dashed_name: event-its-properties-param-n-1
+  description: Parameter type number 1.
+  flat_name: event.its.properties.param_n_1
+  level: custom
+  name: properties.param_n_1
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type number 1.
+  type: float
+event.its.properties.param_n_2:
+  dashed_name: event-its-properties-param-n-2
+  description: Parameter type number 2.
+  flat_name: event.its.properties.param_n_2
+  level: custom
+  name: properties.param_n_2
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type number 2.
+  type: float
+event.its.properties.param_n_3:
+  dashed_name: event-its-properties-param-n-3
+  description: Parameter type number 3.
+  flat_name: event.its.properties.param_n_3
+  level: custom
+  name: properties.param_n_3
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type number 3.
+  type: float
+event.its.properties.param_n_4:
+  dashed_name: event-its-properties-param-n-4
+  description: Parameter type number 4.
+  flat_name: event.its.properties.param_n_4
+  level: custom
+  name: properties.param_n_4
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type number 4.
+  type: float
+event.its.properties.param_n_5:
+  dashed_name: event-its-properties-param-n-5
+  description: Parameter type number 5.
+  flat_name: event.its.properties.param_n_5
+  level: custom
+  name: properties.param_n_5
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type number 5.
+  type: float
+event.its.properties.param_s_1:
+  dashed_name: event-its-properties-param-s-1
+  description: Parameter type string 1.
+  flat_name: event.its.properties.param_s_1
+  ignore_above: 1024
+  level: custom
+  name: properties.param_s_1
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type string 1.
+  type: keyword
+event.its.properties.param_s_2:
+  dashed_name: event-its-properties-param-s-2
+  description: Parameter type string 2.
+  flat_name: event.its.properties.param_s_2
+  ignore_above: 1024
+  level: custom
+  name: properties.param_s_2
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type string 2.
+  type: keyword
+event.its.properties.param_s_3:
+  dashed_name: event-its-properties-param-s-3
+  description: Parameter type string 3.
+  flat_name: event.its.properties.param_s_3
+  ignore_above: 1024
+  level: custom
+  name: properties.param_s_3
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type string 3.
+  type: keyword
+event.its.properties.param_s_4:
+  dashed_name: event-its-properties-param-s-4
+  description: Parameter type string 4.
+  flat_name: event.its.properties.param_s_4
+  ignore_above: 1024
+  level: custom
+  name: properties.param_s_4
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type string 4.
+  type: keyword
+event.its.properties.param_s_5:
+  dashed_name: event-its-properties-param-s-5
+  description: Parameter type string 5.
+  flat_name: event.its.properties.param_s_5
+  ignore_above: 1024
+  level: custom
+  name: properties.param_s_5
+  normalize: []
+  original_fieldset: its_event
+  short: Parameter type string 5.
+  type: keyword
+event.its.properties.playable_played_length:
+  dashed_name: event-its-properties-playable-played-length
+  description: How long the playable element was played once fully loaded.
+  flat_name: event.its.properties.playable_played_length
+  level: custom
+  name: properties.playable_played_length
+  normalize: []
+  original_fieldset: its_event
+  short: How long the playable element was played once fully loaded.
+  type: float
+event.its.properties.price:
+  dashed_name: event-its-properties-price
+  description: Product's Price.
+  flat_name: event.its.properties.price
+  level: custom
+  name: properties.price
+  normalize: []
+  original_fieldset: its_event
+  short: Product's Price.
+  type: float
+event.its.properties.product_id:
+  dashed_name: event-its-properties-product-id
+  description: Product ID.
+  flat_name: event.its.properties.product_id
+  ignore_above: 1024
+  level: custom
+  name: properties.product_id
+  normalize: []
+  original_fieldset: its_event
+  short: Product ID.
+  type: keyword
+event.its.properties.product_name:
+  dashed_name: event-its-properties-product-name
+  description: Product Name.
+  flat_name: event.its.properties.product_name
+  ignore_above: 1024
+  level: custom
+  name: properties.product_name
+  normalize: []
+  original_fieldset: its_event
+  short: Product Name.
+  type: keyword
+event.its.properties.quantity:
+  dashed_name: event-its-properties-quantity
+  description: Quantity of Product.
+  flat_name: event.its.properties.quantity
+  level: custom
+  name: properties.quantity
+  normalize: []
+  original_fieldset: its_event
+  short: Quantity of Product.
+  type: integer
+event.its.properties.revenue:
+  dashed_name: event-its-properties-revenue
+  description: Revenue.
+  flat_name: event.its.properties.revenue
+  level: custom
+  name: properties.revenue
+  normalize: []
+  original_fieldset: its_event
+  short: Revenue.
+  type: float
+event.its.properties.reward:
+  dashed_name: event-its-properties-reward
+  description: Reward Info.
+  flat_name: event.its.properties.reward
+  ignore_above: 1024
+  level: custom
+  name: properties.reward
+  normalize: []
+  original_fieldset: its_event
+  short: Reward Info.
+  type: keyword
+event.its.properties.score:
+  dashed_name: event-its-properties-score
+  description: Score associated with the user's achievement.
+  flat_name: event.its.properties.score
+  level: custom
+  name: properties.score
+  normalize: []
+  original_fieldset: its_event
+  short: Score associated with the user's achievement.
+  type: integer
+event.its.properties.server_info:
+  dashed_name: event-its-properties-server-info
+  description: Server info.
+  flat_name: event.its.properties.server_info
+  ignore_above: 1024
+  level: custom
+  name: properties.server_info
+  normalize: []
+  original_fieldset: its_event
+  short: Server info.
+  type: keyword
+event.its.properties.sku_id:
+  dashed_name: event-its-properties-sku-id
+  description: Product's SKU.
+  flat_name: event.its.properties.sku_id
+  ignore_above: 1024
+  level: custom
+  name: properties.sku_id
+  normalize: []
+  original_fieldset: its_event
+  short: Product's SKU.
+  type: keyword
+event.its.properties.source_id:
+  dashed_name: event-its-properties-source-id
+  description: Source ID.
+  flat_name: event.its.properties.source_id
+  ignore_above: 1024
+  level: custom
+  name: properties.source_id
+  normalize: []
+  original_fieldset: its_event
+  short: Source ID.
+  type: keyword
+event.its.properties.task_id:
+  dashed_name: event-its-properties-task-id
+  description: Task ID.
+  flat_name: event.its.properties.task_id
+  ignore_above: 1024
+  level: custom
+  name: properties.task_id
+  normalize: []
+  original_fieldset: its_event
+  short: Task ID.
+  type: keyword
+event.its.properties.task_type:
+  dashed_name: event-its-properties-task-type
+  description: Task's type Info.
+  flat_name: event.its.properties.task_type
+  ignore_above: 1024
+  level: custom
+  name: properties.task_type
+  normalize: []
+  original_fieldset: its_event
+  short: Task's type Info.
+  type: keyword
+event.its.properties.video_played_length:
+  dashed_name: event-its-properties-video-played-length
+  description: How much of the video was viewed.
+  flat_name: event.its.properties.video_played_length
+  level: custom
+  name: properties.video_played_length
+  normalize: []
+  original_fieldset: its_event
+  short: How much of the video was viewed.
+  type: integer
+event.its.properties.video_total_length:
+  dashed_name: event-its-properties-video-total-length
+  description: The total possible duration of the video.
+  flat_name: event.its.properties.video_total_length
+  level: custom
+  name: properties.video_total_length
+  normalize: []
+  original_fieldset: its_event
+  short: The total possible duration of the video.
+  type: integer
+event.its.publisher.id:
+  dashed_name: event-its-publisher-id
+  description: Publisher ID.
+  flat_name: event.its.publisher.id
+  ignore_above: 1024
+  level: custom
+  name: publisher.id
+  normalize: []
+  original_fieldset: its_event
+  short: Publisher ID.
+  type: keyword
 event.its.session_id:
   dashed_name: event-its-session-id
   description: Session ID of the event.
@@ -2568,49 +2984,27 @@ user.changes.its.phone_verified:
   original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
-user.changes.its.register_app.id:
+user.changes.its.register_app_id:
   dashed_name: user-changes-its-register-app-id
   description: App ID where the user registered from.
-  flat_name: user.changes.its.register_app.id
+  flat_name: user.changes.its.register_app_id
   ignore_above: 1024
   level: custom
-  name: register_app.id
+  name: register_app_id
   normalize: []
   original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
-user.changes.its.register_app.name:
-  dashed_name: user-changes-its-register-app-name
-  description: App name where the user registered from.
-  flat_name: user.changes.its.register_app.name
+user.changes.its.register_source_id:
+  dashed_name: user-changes-its-register-source-id
+  description: Source ID where the user registered from.
+  flat_name: user.changes.its.register_source_id
   ignore_above: 1024
   level: custom
-  name: register_app.name
+  name: register_source_id
   normalize: []
   original_fieldset: its_user
-  short: App name where the user registered from.
-  type: keyword
-user.changes.its.register_project.id:
-  dashed_name: user-changes-its-register-project-id
-  description: Project ID where the user register from.
-  flat_name: user.changes.its.register_project.id
-  ignore_above: 1024
-  level: custom
-  name: register_project.id
-  normalize: []
-  original_fieldset: its_user
-  short: Project ID where the user register from.
-  type: keyword
-user.changes.its.register_project.name:
-  dashed_name: user-changes-its-register-project-name
-  description: Project name where the user register from.
-  flat_name: user.changes.its.register_project.name
-  ignore_above: 1024
-  level: custom
-  name: register_project.name
-  normalize: []
-  original_fieldset: its_user
-  short: Project name where the user register from.
+  short: Source ID where the user registered from.
   type: keyword
 user.changes.its.status:
   dashed_name: user-changes-its-status
@@ -3236,49 +3630,27 @@ user.effective.its.phone_verified:
   original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
-user.effective.its.register_app.id:
+user.effective.its.register_app_id:
   dashed_name: user-effective-its-register-app-id
   description: App ID where the user registered from.
-  flat_name: user.effective.its.register_app.id
+  flat_name: user.effective.its.register_app_id
   ignore_above: 1024
   level: custom
-  name: register_app.id
+  name: register_app_id
   normalize: []
   original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
-user.effective.its.register_app.name:
-  dashed_name: user-effective-its-register-app-name
-  description: App name where the user registered from.
-  flat_name: user.effective.its.register_app.name
+user.effective.its.register_source_id:
+  dashed_name: user-effective-its-register-source-id
+  description: Source ID where the user registered from.
+  flat_name: user.effective.its.register_source_id
   ignore_above: 1024
   level: custom
-  name: register_app.name
+  name: register_source_id
   normalize: []
   original_fieldset: its_user
-  short: App name where the user registered from.
-  type: keyword
-user.effective.its.register_project.id:
-  dashed_name: user-effective-its-register-project-id
-  description: Project ID where the user register from.
-  flat_name: user.effective.its.register_project.id
-  ignore_above: 1024
-  level: custom
-  name: register_project.id
-  normalize: []
-  original_fieldset: its_user
-  short: Project ID where the user register from.
-  type: keyword
-user.effective.its.register_project.name:
-  dashed_name: user-effective-its-register-project-name
-  description: Project name where the user register from.
-  flat_name: user.effective.its.register_project.name
-  ignore_above: 1024
-  level: custom
-  name: register_project.name
-  normalize: []
-  original_fieldset: its_user
-  short: Project name where the user register from.
+  short: Source ID where the user registered from.
   type: keyword
 user.effective.its.status:
   dashed_name: user-effective-its-status
@@ -3875,49 +4247,27 @@ user.its.phone_verified:
   original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
-user.its.register_app.id:
+user.its.register_app_id:
   dashed_name: user-its-register-app-id
   description: App ID where the user registered from.
-  flat_name: user.its.register_app.id
+  flat_name: user.its.register_app_id
   ignore_above: 1024
   level: custom
-  name: register_app.id
+  name: register_app_id
   normalize: []
   original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
-user.its.register_app.name:
-  dashed_name: user-its-register-app-name
-  description: App name where the user registered from.
-  flat_name: user.its.register_app.name
+user.its.register_source_id:
+  dashed_name: user-its-register-source-id
+  description: Source ID where the user registered from.
+  flat_name: user.its.register_source_id
   ignore_above: 1024
   level: custom
-  name: register_app.name
+  name: register_source_id
   normalize: []
   original_fieldset: its_user
-  short: App name where the user registered from.
-  type: keyword
-user.its.register_project.id:
-  dashed_name: user-its-register-project-id
-  description: Project ID where the user register from.
-  flat_name: user.its.register_project.id
-  ignore_above: 1024
-  level: custom
-  name: register_project.id
-  normalize: []
-  original_fieldset: its_user
-  short: Project ID where the user register from.
-  type: keyword
-user.its.register_project.name:
-  dashed_name: user-its-register-project-name
-  description: Project name where the user register from.
-  flat_name: user.its.register_project.name
-  ignore_above: 1024
-  level: custom
-  name: register_project.name
-  normalize: []
-  original_fieldset: its_user
-  short: Project name where the user register from.
+  short: Source ID where the user registered from.
   type: keyword
 user.its.status:
   dashed_name: user-its-status
@@ -4529,49 +4879,27 @@ user.target.its.phone_verified:
   original_fieldset: its_user
   short: User's phone number verification status.
   type: boolean
-user.target.its.register_app.id:
+user.target.its.register_app_id:
   dashed_name: user-target-its-register-app-id
   description: App ID where the user registered from.
-  flat_name: user.target.its.register_app.id
+  flat_name: user.target.its.register_app_id
   ignore_above: 1024
   level: custom
-  name: register_app.id
+  name: register_app_id
   normalize: []
   original_fieldset: its_user
   short: App ID where the user registered from.
   type: keyword
-user.target.its.register_app.name:
-  dashed_name: user-target-its-register-app-name
-  description: App name where the user registered from.
-  flat_name: user.target.its.register_app.name
+user.target.its.register_source_id:
+  dashed_name: user-target-its-register-source-id
+  description: Source ID where the user registered from.
+  flat_name: user.target.its.register_source_id
   ignore_above: 1024
   level: custom
-  name: register_app.name
+  name: register_source_id
   normalize: []
   original_fieldset: its_user
-  short: App name where the user registered from.
-  type: keyword
-user.target.its.register_project.id:
-  dashed_name: user-target-its-register-project-id
-  description: Project ID where the user register from.
-  flat_name: user.target.its.register_project.id
-  ignore_above: 1024
-  level: custom
-  name: register_project.id
-  normalize: []
-  original_fieldset: its_user
-  short: Project ID where the user register from.
-  type: keyword
-user.target.its.register_project.name:
-  dashed_name: user-target-its-register-project-name
-  description: Project name where the user register from.
-  flat_name: user.target.its.register_project.name
-  ignore_above: 1024
-  level: custom
-  name: register_project.name
-  normalize: []
-  original_fieldset: its_user
-  short: Project name where the user register from.
+  short: Source ID where the user registered from.
   type: keyword
 user.target.its.status:
   dashed_name: user-target-its-status

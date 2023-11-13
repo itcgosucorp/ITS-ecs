@@ -17,127 +17,127 @@
       type: keyword
       short: Session ID of the event.
       description: >
-       Session ID of the event.
-    - name: propertires.ad_displayed_percent
+        Session ID of the event.
+    - name: properties.ad_displayed_percent
       level: custom
-      type: number
+      type: float
       short: The maximum percentage of the ad(%).
       description: >
-       The maximum percentage of the ad unit that was visible on the device screen(%).
-    - name: propertires.ad_time_viewed
+        The maximum percentage of the ad unit that was visible on the device screen(%).
+    - name: properties.ad_time_viewed
       level: custom
-      type: number
+      type: float
       short: How long the ad unit was visible on the screen(seconds)
       description: >
-       How long the ad unit was visible on the screen(seconds).
-    - name: propertires.application_id
+        How long the ad unit was visible on the screen(seconds).
+    - name: properties.application_id
       level: custom
       type: keyword
       short: Application ID.
       description: >
-       Application ID.
-    - name: propertires.brand
+        Application ID.
+    - name: properties.brand
       level: custom
       type: keyword
       short: Product Brand.
       description: >
-       Product Brand
+        Product Brand
     - name: campaign.id
       level: custom
       type: keyword
       short: Campaign ID.
       description: >
-       Campaign ID.
+        Campaign ID.
     - name: properties.category
       level: custom
       type: keyword
       short: Product's Category.
       description: >
-       Product's Category.
+        Product's Category.
     - name: properties.channel
       level: custom
       type: keyword
       short: Channel Info.
       description: >
-       Channel Info.
+        Channel Info.
     - name: properties.character_id
       level: custom
       type: keyword
       short: Character ID.
       description: >
-       Character ID.
+        Character ID.
     - name: properties.character_name
       level: custom
       type: keyword
       short: Character Name.
       description: >
-       Character Name.
+        Character Name.
     - name: properties.currency
       level: custom
       type: keyword
       short: Cost currency.
       description: >
-       Cost currency.
+        Cost currency.
     - name: properties.keywords
       level: custom
       type: keyword
       short: Keyword Info.
       description: >
-       Keyword Info.
+        Keyword Info.
     - name: properties.level
       level: custom
       type: keyword
       short: Level the user achieved.
       description: >
-       Level the user achieved.
+        Level the user achieved.
     - name: properties.order_id
       level: custom
       type: keyword
       short: ID of the transaction.
       description: >
-       ID of the transaction.
+        ID of the transaction.
     - name: properties.param_n_1
       level: custom
-      type: number
+      type: float
       short: Parameter type number 1.
       description: >
-       Parameter type number 1.
+        Parameter type number 1.
     - name: properties.param_n_2
       level: custom
-      type: number
+      type: float
       short: Parameter type number 2.
       description: >
-       Parameter type number 2.
+        Parameter type number 2.
     - name: properties.param_n_3
       level: custom
-      type: number
+      type: float
       short: Parameter type number 3.
       description: >
-       Parameter type number 3.
+        Parameter type number 3.
     - name: properties.param_n_4
       level: custom
-      type: number
+      type: float
       short: Parameter type number 4.
       description: >
-       Parameter type number 4.
+        Parameter type number 4.
     - name: properties.param_n_5
       level: custom
-      type: number
+      type: float
       short: Parameter type number 5.
       description: >
-       Parameter type number 5.
+        Parameter type number 5.
     - name: properties.param_s_1
       level: custom
       type: keyword
       short: Parameter type string 1.
       description: >
-       Parameter type string 1.
+        Parameter type string 1.
     - name: properties.param_s_2
       level: custom
       type: keyword
       short: Parameter type string 2.
       description: >
-       Parameter type string 2.
+        Parameter type string 2.
     - name: properties.param_s_3
       level: custom
       type: keyword
@@ -149,112 +149,113 @@
       type: keyword
       short: Parameter type string 4.
       description: >
-       Parameter type string 4.
+        Parameter type string 4.
     - name: properties.param_s_5
       level: custom
       type: keyword
       short: Parameter type string 5.
       description: >
-       Parameter type string 5.
+        Parameter type string 5.
     - name: properties.playable_played_length
       level: custom
-      type: number
+      type: float
       short: How long the playable element was played once fully loaded.
       description: >
-       How long the playable element was played once fully loaded.
+        How long the playable element was played once fully loaded.
     - name: properties.price
       level: custom
-      type: number
+      type: float
       short: Product's Price.
       description: >
-       Product's Price.  
+        Product's Price.  
     - name: properties.product_id
       level: custom
       type: keyword
       short: Product ID.
       description: >
-       Product ID.  
+        Product ID.  
     - name: properties.product_name
       level: custom
       type: keyword
       short: Product Name.
       description: >
-       Product Name.
+        Product Name.
     - name: publisher.id
       level: custom
       type: keyword
       short: Publisher ID.
       description: >
-       Publisher ID.
+        Publisher ID.
     - name: properties.quantity
       level: custom
-      type: number
+      type: integer
       short: Quantity of Product.
       description: >
-       Quantity of Product.
+        Quantity of Product.
     - name: properties.revenue
       level: custom
-      type: number
+      type: float
       short: Revenue.
       description: >
-       Revenue.   
+        Revenue.   
     - name: properties.reward
       level: custom
-      type: number
+      type: keyword
       short: Reward Info.
       description: >
-       Reward Info.
+        Reward Info.
     - name: properties.score
       level: custom
-      type: number
+      type: integer
       short: Score associated with the user's achievement.
       description: >
-       Score associated with the user's achievement.
+        Score associated with the user's achievement.
     - name: properties.server_info
       level: custom
       type: keyword
       short: Server info.
       description: >
-       Server info.
+        Server info.
     - name: properties.sku_id
       level: custom
       type: keyword
       short: Product's SKU.
       description: >
-       Product's SKU.
+        Product's SKU.
     - name: properties.source_id
       level: custom
       type: keyword
       short: Source ID.
       description: >
-       Source ID.
+        Source ID.
     - name: properties.task_id
       level: custom
       type: keyword
       short: Task ID.
       description: >
-       Task ID.
+        Task ID.
     - name: properties.task_type
       level: custom
       type: keyword
       short: Task's type Info.
       description: >
-       Task's type Info. 
+        Task's type Info. 
     - name: properties.video_played_length
       level: custom
-      type: number
+      type: integer
       short: How much of the video was viewed.
       description: >
-       How much of the video was viewed. 
+        How much of the video was viewed. 
     - name: properties.video_total_length
       level: custom
-      type: number
+      type: integer
       short: The total possible duration of the video.
       description: >
-       The total possible duration of the video.
+        The total possible duration of the video.
     - name: properties.item_id
       level: custom
       type: keyword
       short: Item ID.
       description: >
-       Item ID. 
+        Item ID.
+     
