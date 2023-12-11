@@ -5,17 +5,13 @@
   "template": {
     "mappings": {
       "properties": {
-        "its_no_ecs_example": {
-          "properties": {
-            "testing_alias_field": {
-              "path": "testing_field",
-              "type": "alias"
-            },
-            "testing_field": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            }
-          }
+        "testing_alias_field": {
+          "path": "testing_field",
+          "type": "alias"
+        },
+        "testing_field": {
+          "ignore_above": 1024,
+          "type": "keyword"
         }
       }
     }

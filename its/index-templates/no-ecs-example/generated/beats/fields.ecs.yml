@@ -21,19 +21,13 @@
       Required field for all events.'
     example: '2016-05-23T08:05:34.853Z'
     default_field: true
-  - name: its_no_ecs_example
-    title: No ECS example
-    group: 2
-    description: No ECS example
-    type: root
-    fields:
-    - name: testing_alias_field
-      level: custom
-      type: alias
-      description: An alias of testing field.
-      path: testing_field
-    - name: testing_field
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Testing field.
+  - name: testing_alias_field
+    level: custom
+    type: alias
+    description: An alias of testing field.
+    path: testing_field
+  - name: testing_field
+    level: custom
+    type: keyword
+    ignore_above: 1024
+    description: Testing field.

@@ -31,29 +31,30 @@ base:
 its_no_ecs_example:
   description: No ECS example
   fields:
-    its_no_ecs_example.testing_alias_field:
-      dashed_name: its-no-ecs-example-testing-alias-field
+    testing_alias_field:
+      dashed_name: testing-alias-field
       description: An alias of testing field.
-      flat_name: its_no_ecs_example.testing_alias_field
+      flat_name: testing_alias_field
       level: custom
       name: testing_alias_field
       normalize: []
       path: testing_field
       short: An alias of testing field.
       type: alias
-    its_no_ecs_example.testing_field:
-      dashed_name: its-no-ecs-example-testing-field
+    testing_field:
+      dashed_name: testing-field
       description: Testing field.
-      flat_name: its_no_ecs_example.testing_field
+      flat_name: testing_field
       ignore_above: 1024
       level: custom
       name: testing_field
       normalize: []
       short: Testing field.
       type: keyword
-  group: 2
+  group: 1
   name: its_no_ecs_example
-  prefix: its_no_ecs_example.
+  prefix: ''
+  root: true
   short: No ECS example
   title: No ECS example
-  type: root
+  type: group

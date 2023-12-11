@@ -1,7 +1,9 @@
 ---
 - name: its_no_ecs_example
   title: No ECS example
-  type: root
+  group: 1
+  type: group
+  root: true
   short: No ECS example
   description: >
    No ECS example
