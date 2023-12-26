@@ -1,0 +1,13 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,base,metric_rev_14days,double,custom,,,Revenue in the past 14 days.
+8.9.0,true,base,metric_rev_1day,double,custom,,,Revenue in the past 1 day.
+8.9.0,true,base,metric_rev_30days,double,custom,,,Revenue in the past 30 days.
+8.9.0,true,base,metric_rev_3days,double,custom,,,Revenue in the past 3 days.
+8.9.0,true,base,metric_rev_60days,double,custom,,,Revenue in the past 60 days.
+8.9.0,true,base,metric_rev_7days,double,custom,,,Revenue in the past 7 days.
+8.9.0,true,base,metric_rev_90days,double,custom,,,Revenue in the past 90 days.
+8.9.0,true,base,report,keyword,custom,,,Report's name
+8.9.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
+8.9.0,true,user,user.name,keyword,core,,a.einstein,Short name or login of the user.
+8.9.0,true,user,user.name.text,match_only_text,core,,a.einstein,Short name or login of the user.

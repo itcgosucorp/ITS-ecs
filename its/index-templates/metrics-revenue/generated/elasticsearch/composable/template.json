@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "8.9.0"
+  },
+  "composed_of": [
+    "ecs_8.9.0_base",
+    "ecs_8.9.0_user",
+    "ecs_8.9.0_its_metrics_revenue"
+  ],
+  "index_patterns": [
+    "metric_revernue_*"
+  ],
+  "priority": 1,
+  "template": {
+    "mappings": {},
+    "settings": {
+      "index": {
+        "codec": "best_compression",
+        "default_pipeline": "metrics_revenue_mapping",
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        }
+      }
+    }
+  }
+}
