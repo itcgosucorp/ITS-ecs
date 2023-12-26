@@ -1,0 +1,30 @@
+---
+- name: its_metrics_login
+  title: Login metrics (Tracking in DB)
+  group: 1
+  type: group
+  root: true
+  short: Login metrics (Tracking in DB)
+  description: >
+    Login metrics (Tracking in DB)
+  fields:
+    - name: report
+      level: custom
+      type: keyword
+      short: Report's name
+      description: >
+       Report's name
+    - name: metric_last_login
+      level: custom
+      type: date
+      short: User's last login time
+      description: >
+       User's last login time
+    - name: metric_login_count
+      level: custom
+      type: integer
+      short: User's login count
+      description: >
+       User's login count
+    
+      
