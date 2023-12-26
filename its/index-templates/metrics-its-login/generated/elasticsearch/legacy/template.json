@@ -1,0 +1,57 @@
+{
+  "index_patterns": [
+    "metrics_*_*_its_login"
+  ],
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "character_id": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "metric_last_login": {
+        "type": "date"
+      },
+      "metric_server_id": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "report": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "user": {
+        "properties": {
+          "id": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "name": {
+            "fields": {
+              "text": {
+                "type": "match_only_text"
+              }
+            },
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "default_pipeline": "metrics_its_login_mapping",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}
