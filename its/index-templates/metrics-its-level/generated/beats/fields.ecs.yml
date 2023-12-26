@@ -30,15 +30,15 @@
     level: custom
     type: date
     description: Archieved data
+  - name: metric_level
+    level: custom
+    type: integer
+    description: Character's level
   - name: metric_server_id
     level: custom
     type: keyword
     ignore_above: 1024
     description: Server ID
-  - name: metric_vip
-    level: custom
-    type: integer
-    description: Character's VIP
   - name: report
     level: custom
     type: keyword

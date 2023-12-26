@@ -36,6 +36,15 @@ metric_achieved_date:
   normalize: []
   short: Archieved data
   type: date
+metric_level:
+  dashed_name: metric-level
+  description: Character's level
+  flat_name: metric_level
+  level: custom
+  name: metric_level
+  normalize: []
+  short: Character's level
+  type: integer
 metric_server_id:
   dashed_name: metric-server-id
   description: Server ID
@@ -46,15 +55,6 @@ metric_server_id:
   normalize: []
   short: Server ID
   type: keyword
-metric_vip:
-  dashed_name: metric-vip
-  description: Character's VIP
-  flat_name: metric_vip
-  level: custom
-  name: metric_vip
-  normalize: []
-  short: Character's VIP
-  type: integer
 report:
   dashed_name: report
   description: Report's name

@@ -1,5 +1,5 @@
 ---
-- name: its_metrics_its_vip
+- name: its_metrics_its_level
   title: VIP metrics
   group: 1
   type: group
@@ -32,11 +32,11 @@
       short: Archieved data
       description: >
        Archieved data
-    - name: metric_vip
+    - name: metric_level
       level: custom
       type: integer
-      short: Character's VIP
+      short: Character's level
       description: >
-        Character's VIP
+        Character's level
     
       
