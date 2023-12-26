@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "metrics_*_*_its_vip"
+    "metrics_*_*_its_level"
   ],
   "mappings": {
     "properties": {
@@ -14,12 +14,12 @@
       "metric_achieved_date": {
         "type": "date"
       },
+      "metric_level": {
+        "type": "integer"
+      },
       "metric_server_id": {
         "ignore_above": 1024,
         "type": "keyword"
-      },
-      "metric_vip": {
-        "type": "integer"
       },
       "report": {
         "ignore_above": 1024,
@@ -48,7 +48,7 @@
   "settings": {
     "index": {
       "codec": "best_compression",
-      "default_pipeline": "metrics_its_vip_mapping",
+      "default_pipeline": "metrics_its_level_mapping",
       "mapping": {
         "total_fields": {
           "limit": 1000

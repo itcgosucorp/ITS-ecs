@@ -2,8 +2,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
 8.9.0,true,base,character_id,keyword,custom,,,Character ID
 8.9.0,true,base,metric_achieved_date,date,custom,,,Archieved data
+8.9.0,true,base,metric_level,integer,custom,,,Character's level
 8.9.0,true,base,metric_server_id,keyword,custom,,,Server ID
-8.9.0,true,base,metric_vip,integer,custom,,,Character's VIP
 8.9.0,true,base,report,keyword,custom,,,Report's name
 8.9.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.
 8.9.0,true,user,user.name,keyword,core,,a.einstein,Short name or login of the user.

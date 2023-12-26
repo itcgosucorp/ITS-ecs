@@ -1,0 +1,17 @@
+{
+  "index_patterns": ["metrics_*_*_its_level"],
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec" : "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s",
+      "default_pipeline": "metrics_its_level_mapping"
+    }
+  }
+}
+
