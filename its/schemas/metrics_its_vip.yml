@@ -1,0 +1,42 @@
+---
+- name: its_metrics_its_vip
+  title: VIP metrics
+  group: 1
+  type: group
+  root: true
+  short: VIP metrics
+  description: >
+    VIP metrics
+  fields:
+    - name: report
+      level: custom
+      type: keyword
+      short: Report's name
+      description: >
+       Report's name
+    - name: metric_server_id
+      level: custom
+      type: keyword
+      short: Server ID
+      description: >
+       Server ID
+    - name: character_id
+      level: custom
+      type: keyword
+      short: Character ID
+      description: >
+       Character ID
+    - name: metric_achieved_date
+      level: custom
+      type: date
+      short: Archieved data
+      description: >
+       Archieved data
+    - name: metric_level
+      level: custom
+      type: integer
+      short: Character's level
+      description: >
+        Character's level
+    
+      

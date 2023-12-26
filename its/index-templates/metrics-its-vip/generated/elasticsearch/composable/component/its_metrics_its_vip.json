@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "character_id": {
+          "ignore_above": 1024,
+          "type": "keyword"
+        },
+        "metric_achieved_date": {
+          "type": "date"
+        },
+        "metric_level": {
+          "type": "integer"
+        },
+        "metric_server_id": {
+          "ignore_above": 1024,
+          "type": "keyword"
+        },
+        "report": {
+          "ignore_above": 1024,
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
