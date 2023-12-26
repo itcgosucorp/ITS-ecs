@@ -1,0 +1,17 @@
+{
+  "index_patterns": ["metric_revernue_*"],
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec" : "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s",
+      "default_pipeline": "metrics_revenue_mapping"
+    }
+  }
+}
+

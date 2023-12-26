@@ -1,0 +1,65 @@
+---
+- name: its_metrics_revenue
+  title: Revenue metrics
+  group: 1
+  type: group
+  root: true
+  short: Revenue metrics
+  description: >
+    Revenue metrics
+  fields:
+    - name: report
+      level: custom
+      type: keyword
+      short: Report's name
+      description: >
+       Report's name
+    - name: metric_rev_1day
+      level: custom
+      type: double
+      short: Revenue in the past 1 day.
+      description: >
+       Revenue in the past 1 day.
+    - name: metric_rev_3days
+      level: custom
+      type: double
+      short: Revenue in the past 3 days.
+      description: >
+       Revenue in the past 3 days.
+    - name: metric_rev_7days
+      level: custom
+      type: double
+      short: Revenue in the past 7 days.
+      description: >
+       Revenue in the past 7 days.
+    - name: metric_rev_14days
+      level: custom
+      type: double
+      short: Revenue in the past 14 days.
+      description: >
+       Revenue in the past 14 days.
+    - name: metric_rev_14days
+      level: custom
+      type: double
+      short: Revenue in the past 14 days.
+      description: >
+       Revenue in the past 14 days.
+    - name: metric_rev_30days
+      level: custom
+      type: double
+      short: Revenue in the past 30 days.
+      description: >
+       Revenue in the past 30 days.
+    - name: metric_rev_60days
+      level: custom
+      type: double
+      short: Revenue in the past 60 days.
+      description: >
+       Revenue in the past 60 days.
+    - name: metric_rev_90days
+      level: custom
+      type: double
+      short: Revenue in the past 90 days.
+      description: >
+       Revenue in the past 90 days.
+      

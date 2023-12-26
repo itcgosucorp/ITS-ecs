@@ -1,0 +1,67 @@
+{
+  "index_patterns": [
+    "metric_revernue_*"
+  ],
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "metric_rev_14days": {
+        "type": "double"
+      },
+      "metric_rev_1day": {
+        "type": "double"
+      },
+      "metric_rev_30days": {
+        "type": "double"
+      },
+      "metric_rev_3days": {
+        "type": "double"
+      },
+      "metric_rev_60days": {
+        "type": "double"
+      },
+      "metric_rev_7days": {
+        "type": "double"
+      },
+      "metric_rev_90days": {
+        "type": "double"
+      },
+      "report": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "user": {
+        "properties": {
+          "id": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "name": {
+            "fields": {
+              "text": {
+                "type": "match_only_text"
+              }
+            },
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "default_pipeline": "metrics_revenue_mapping",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}

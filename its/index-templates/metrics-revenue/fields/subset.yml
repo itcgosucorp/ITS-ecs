@@ -1,0 +1,14 @@
+---
+name: no-ecs-example
+fields:
+  # ECS basic fields
+  base:
+    fields:
+      "@timestamp": {}
+  user:
+    fields:
+      id: {}
+      name: {}
+  its_metrics_revenue:
+    fields: "*"
+  
