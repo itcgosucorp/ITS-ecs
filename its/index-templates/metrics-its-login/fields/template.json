@@ -1,0 +1,17 @@
+{
+  "index_patterns": ["metrics_*_*_its_login"],
+  "priority": 1,
+  "template": {
+    "settings": {
+      "index": {
+        "codec" : "best_compression",
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        },
+        "default_pipeline": "metrics_its_login_mapping"
+      }
+    }
+  }
+}

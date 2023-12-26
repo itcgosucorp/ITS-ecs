@@ -28,9 +28,19 @@ base:
   short: All fields defined directly at the root of the events.
   title: Base
   type: group
-its_metrics_login:
-  description: Login metrics (Tracking from DB)
+its_metrics_its_login:
+  description: Login metrics (Tracking from SDK)
   fields:
+    character_id:
+      dashed_name: character-id
+      description: Character ID
+      flat_name: character_id
+      ignore_above: 1024
+      level: custom
+      name: character_id
+      normalize: []
+      short: Character ID
+      type: keyword
     metric_last_login:
       dashed_name: metric-last-login
       description: User's last login time
@@ -40,15 +50,16 @@ its_metrics_login:
       normalize: []
       short: User's last login time
       type: date
-    metric_login_count:
-      dashed_name: metric-login-count
-      description: User's login count
-      flat_name: metric_login_count
+    metric_server_id:
+      dashed_name: metric-server-id
+      description: Server ID
+      flat_name: metric_server_id
+      ignore_above: 1024
       level: custom
-      name: metric_login_count
+      name: metric_server_id
       normalize: []
-      short: User's login count
-      type: integer
+      short: Server ID
+      type: keyword
     report:
       dashed_name: report
       description: Report's name
@@ -60,11 +71,11 @@ its_metrics_login:
       short: Report's name
       type: keyword
   group: 1
-  name: its_metrics_login
+  name: its_metrics_its_login
   prefix: ''
   root: true
-  short: Login metrics (Tracking from DB)
-  title: Login metrics (Tracking from DB)
+  short: Login metrics (Tracking from SDK)
+  title: Login metrics (Tracking from SDK)
   type: group
 user:
   description: 'The user fields describe information about the user that is relevant

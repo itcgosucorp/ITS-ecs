@@ -29,7 +29,7 @@ base:
   title: Base
   type: group
 its_metrics_login:
-  description: Login metrics (Tracking in DB)
+  description: Login metrics (Tracking from DB)
   fields:
     metric_last_login:
       dashed_name: metric-last-login
@@ -63,8 +63,8 @@ its_metrics_login:
   name: its_metrics_login
   prefix: ''
   root: true
-  short: Login metrics (Tracking in DB)
-  title: Login metrics (Tracking in DB)
+  short: Login metrics (Tracking from DB)
+  title: Login metrics (Tracking from DB)
   type: group
 user:
   description: 'The user fields describe information about the user that is relevant
