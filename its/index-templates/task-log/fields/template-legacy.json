@@ -1,0 +1,17 @@
+{
+  "index_patterns": ["task_log_*"],
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec" : "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s",
+      "default_pipeline": "task_log_pipeline"
+    }
+  }
+}
+

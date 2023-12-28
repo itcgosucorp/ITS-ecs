@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "8.9.0"
+  },
+  "composed_of": [
+    "ecs_8.9.0_base",
+    "ecs_8.9.0_user",
+    "ecs_8.9.0_its_task_log"
+  ],
+  "index_patterns": [
+    "task_log_*"
+  ],
+  "priority": 1,
+  "template": {
+    "mappings": {},
+    "settings": {
+      "index": {
+        "codec": "best_compression",
+        "default_pipeline": "task_log_pipeline",
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        }
+      }
+    }
+  }
+}
