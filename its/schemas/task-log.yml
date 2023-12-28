@@ -8,7 +8,7 @@
   description: >
    ITS Task Log
   fields:
-    - name: publisher-id
+    - name: publisher_id
       level: custom
       type: keyword
       short: Publisher ID.
