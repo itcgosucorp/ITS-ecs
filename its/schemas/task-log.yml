@@ -1,0 +1,119 @@
+---
+- name: its_task_log
+  title: ITS Task Log
+  group: 1
+  type: group
+  root: true
+  short: ITS Task Log
+  description: >
+   ITS Task Log
+  fields:
+    - name: publisher_id
+      level: custom
+      type: keyword
+      short: Publisher ID.
+      description: >
+       Publisher ID.
+    - name: pub_code
+      level: custom
+      type: keyword
+      short: Publisher code.
+      description: >
+       Publisher code.
+    - name: campaign_id
+      level: custom
+      type: keyword
+      short: Campaign ID.
+      description: >
+       Campaign ID.
+    - name: application_id
+      level: custom
+      type: keyword
+      short: Application ID.
+      description: >
+       Application ID.
+    - name: app_code
+      level: custom
+      type: keyword
+      short: Application code.
+      description: >
+        Application code.
+    - name: campaign_task_id
+      level: custom
+      type: keyword
+      short: Campaign Task ID.
+      description: >
+        Campaign Task ID.
+    - name: task_type
+      level: custom
+      type: keyword
+      short: Task type.
+      description: >
+        Task type.
+    - name: status
+      level: custom
+      type: keyword
+      short: Task status.
+      description: >
+        Task status.
+    - name: is_new
+      level: custom
+      type: boolean
+      short: Task is new.
+      description: >
+        Task is new.
+    - name: task_name
+      level: custom
+      type: keyword
+      short: Task name.
+      description: >
+        Task name.
+    - name: task_description
+      level: custom
+      type: keyword
+      short: Task description.
+      description: >
+        Task description.
+    - name: task_channel
+      level: custom
+      type: keyword
+      short: Task channel.
+      description: >
+        Task channel.
+    - name: start_date
+      level: custom
+      type: date
+      short: Campaign's start date.
+      description: >
+        Campaign's start date.
+    - name: end_date
+      level: custom
+      type: date
+      short: Campaign's end date.
+      description: >
+        Campaign's end date.
+    - name: completed_task_info.video_total_length
+      level: custom
+      type: integer
+      short: Video total length.
+      description: >
+        Video total length.
+    - name: completed_task_info.video_played_length
+      level: custom
+      type: integer
+      short: Video played length.
+      description: >
+        Video played length.
+    - name: completed_task_info.banner_time_viewed 
+      level: custom
+      type: integer
+      short: Banner time viewed.
+      description: >
+        Banner time viewed.
+    - name: postback.status 
+      level: custom
+      type: keyword
+      short: Postback status.
+      description: >
+        Postback status.
+      
