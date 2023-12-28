@@ -54,7 +54,7 @@
         "ignore_above": 1024,
         "type": "keyword"
       },
-      "publisher-id": {
+      "publisher_id": {
         "ignore_above": 1024,
         "type": "keyword"
       },

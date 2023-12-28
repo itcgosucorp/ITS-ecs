@@ -136,13 +136,13 @@ its_task_log:
       normalize: []
       short: Publisher code.
       type: keyword
-    publisher-id:
+    publisher_id:
       dashed_name: publisher-id
       description: Publisher ID.
-      flat_name: publisher-id
+      flat_name: publisher_id
       ignore_above: 1024
       level: custom
-      name: publisher-id
+      name: publisher_id
       normalize: []
       short: Publisher ID.
       type: keyword

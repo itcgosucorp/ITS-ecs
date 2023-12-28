@@ -71,7 +71,7 @@
     type: keyword
     ignore_above: 1024
     description: Publisher code.
-  - name: publisher-id
+  - name: publisher_id
     level: custom
     type: keyword
     ignore_above: 1024
