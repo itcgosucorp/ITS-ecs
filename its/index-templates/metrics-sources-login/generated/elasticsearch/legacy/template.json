@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "metrics_*_*_login"
+    "metrics_*_*_sources_login"
   ],
   "mappings": {
     "properties": {
@@ -40,7 +40,7 @@
   "settings": {
     "index": {
       "codec": "best_compression",
-      "default_pipeline": "metrics_login_mapping",
+      "default_pipeline": "metrics_sources_login_mapping",
       "mapping": {
         "total_fields": {
           "limit": 1000
