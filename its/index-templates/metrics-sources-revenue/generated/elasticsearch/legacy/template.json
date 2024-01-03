@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "metrics_*_*_revenue"
+    "metrics_*_*_sources_revenue"
   ],
   "mappings": {
     "properties": {
@@ -55,7 +55,7 @@
   "settings": {
     "index": {
       "codec": "best_compression",
-      "default_pipeline": "metrics_revenue_mapping",
+      "default_pipeline": "metrics_sources_revenue_mapping",
       "mapping": {
         "total_fields": {
           "limit": 1000

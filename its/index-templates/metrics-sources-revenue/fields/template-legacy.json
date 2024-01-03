@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["metrics_*_*_revenue"],
+  "index_patterns": ["metrics_*_*_sources_revenue"],
   "order": 1,
   "settings": {
     "index": {
@@ -10,7 +10,7 @@
         }
       },
       "refresh_interval": "2s",
-      "default_pipeline": "metrics_revenue_mapping"
+      "default_pipeline": "metrics_sources_revenue_mapping"
     }
   }
 }

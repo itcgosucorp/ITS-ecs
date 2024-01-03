@@ -1,2 +1,0 @@
-#!/bin/bash
-python3 scripts/generator.py --template-settings-legacy its/index-templates/metrics-revenue/fields/template-legacy.json --template-settings its/index-templates/metrics-revenue/fields/template.json --mapping-settings its/index-templates/metrics-revenue/fields/mapping.json --include its/schemas/ --subset its/index-templates/metrics-revenue/fields/subset.yml --out its/index-templates/metrics-revenue/
