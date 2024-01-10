@@ -28,6 +28,51 @@ base:
   short: All fields defined directly at the root of the events.
   title: Base
   type: group
+event:
+  description: 'The event fields are used for context information about the log or
+    metric event itself.
+
+    A log is defined as an event containing details of something that happened. Log
+    events must include the time at which the thing happened. Examples of log events
+    include a process starting on a host, a network packet being sent from a source
+    to a destination, or a network connection between a client and a server being
+    initiated or closed. A metric is defined as an event containing one or more numerical
+    measurements and the time at which the measurement was taken. Examples of metric
+    events include memory pressure measured on a host and device temperature. See
+    the `event.kind` definition in this section for additional details about metric
+    and state events.'
+  fields:
+    event.original:
+      dashed_name: event-original
+      description: 'Raw text message of entire event. Used to demonstrate log integrity
+        or where the full log message (before splitting it up in multiple parts) may
+        be required, e.g. for reindex.
+
+        This field is not indexed and doc_values are disabled. It cannot be searched,
+        but it can be retrieved from `_source`. If users wish to override this and
+        index this field, please see `Field data types` in the `Elasticsearch Reference`.'
+      doc_values: false
+      example: Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124;
+        worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232
+      flat_name: event.original
+      index: false
+      level: core
+      name: original
+      normalize: []
+      short: Raw text message of entire event.
+      type: keyword
+  group: 2
+  name: event
+  nestings:
+  - event.its
+  prefix: event.
+  reused_here:
+  - full: event.its
+    schema_name: its_event
+    short: Custom Event ITS field
+  short: Fields breaking down the event details.
+  title: Event
+  type: group
 its_task_log:
   description: ITS Task Log
   fields:
@@ -115,6 +160,15 @@ its_task_log:
       name: is_new
       normalize: []
       short: Task is new.
+      type: boolean
+    is_show_result:
+      dashed_name: is-show-result
+      description: Postback dialog showing's status.
+      flat_name: is_show_result
+      level: custom
+      name: is_show_result
+      normalize: []
+      short: Postback dialog showing's status.
       type: boolean
     postback.status:
       dashed_name: postback-status

@@ -8,6 +8,9 @@ fields:
   user:
     fields:
       id: {}
+  event:
+    fields:
+      original: {}
   its_task_log:
     fields: "*"
   

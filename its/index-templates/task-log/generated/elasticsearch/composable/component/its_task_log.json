@@ -40,6 +40,9 @@
         "is_new": {
           "type": "boolean"
         },
+        "is_show_result": {
+          "type": "boolean"
+        },
         "postback": {
           "properties": {
             "status": {

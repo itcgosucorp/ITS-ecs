@@ -93,6 +93,25 @@ end_date:
   normalize: []
   short: Campaign's end date.
   type: date
+event.original:
+  dashed_name: event-original
+  description: 'Raw text message of entire event. Used to demonstrate log integrity
+    or where the full log message (before splitting it up in multiple parts) may be
+    required, e.g. for reindex.
+
+    This field is not indexed and doc_values are disabled. It cannot be searched,
+    but it can be retrieved from `_source`. If users wish to override this and index
+    this field, please see `Field data types` in the `Elasticsearch Reference`.'
+  doc_values: false
+  example: Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124;
+    worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232
+  flat_name: event.original
+  index: false
+  level: core
+  name: original
+  normalize: []
+  short: Raw text message of entire event.
+  type: keyword
 is_new:
   dashed_name: is-new
   description: Task is new.
@@ -101,6 +120,15 @@ is_new:
   name: is_new
   normalize: []
   short: Task is new.
+  type: boolean
+is_show_result:
+  dashed_name: is-show-result
+  description: Postback dialog showing's status.
+  flat_name: is_show_result
+  level: custom
+  name: is_show_result
+  normalize: []
+  short: Postback dialog showing's status.
   type: boolean
 postback.status:
   dashed_name: postback-status

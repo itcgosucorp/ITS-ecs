@@ -6,6 +6,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,campaign_task_id,keyword,custom,,,Campaign Task ID.
 8.9.0,true,base,end_date,date,custom,,,Campaign's end date.
 8.9.0,true,base,is_new,boolean,custom,,,Task is new.
+8.9.0,true,base,is_show_result,boolean,custom,,,Postback dialog showing's status.
 8.9.0,true,base,pub_code,keyword,custom,,,Publisher code.
 8.9.0,true,base,publisher_id,keyword,custom,,,Publisher ID.
 8.9.0,true,base,start_date,date,custom,,,Campaign's start date.
@@ -17,5 +18,6 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,completed_task_info,completed_task_info.banner_time_viewed,integer,custom,,,Banner time viewed.
 8.9.0,true,completed_task_info,completed_task_info.video_played_length,integer,custom,,,Video played length.
 8.9.0,true,completed_task_info,completed_task_info.video_total_length,integer,custom,,,Video total length.
+8.9.0,false,event,event.original,keyword,core,,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232,Raw text message of entire event.
 8.9.0,true,postback,postback.status,keyword,custom,,,Postback status.
 8.9.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.

@@ -6,6 +6,7 @@
   "composed_of": [
     "ecs_8.9.0_base",
     "ecs_8.9.0_user",
+    "ecs_8.9.0_event",
     "ecs_8.9.0_its_task_log"
   ],
   "index_patterns": [

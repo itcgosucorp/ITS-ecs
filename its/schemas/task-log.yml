@@ -116,4 +116,10 @@
       short: Postback status.
       description: >
         Postback status.
+    - name: is_show_result 
+      level: custom
+      type: boolean
+      short: Postback dialog showing's status.
+      description: >
+        Postback dialog showing's status.
       

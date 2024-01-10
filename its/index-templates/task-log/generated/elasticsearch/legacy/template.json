@@ -39,7 +39,19 @@
       "end_date": {
         "type": "date"
       },
+      "event": {
+        "properties": {
+          "original": {
+            "doc_values": false,
+            "index": false,
+            "type": "keyword"
+          }
+        }
+      },
       "is_new": {
+        "type": "boolean"
+      },
+      "is_show_result": {
         "type": "boolean"
       },
       "postback": {
