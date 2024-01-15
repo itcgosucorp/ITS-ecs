@@ -116,6 +116,18 @@
       short: Postback status.
       description: >
         Postback status.
+    - name: character_id 
+      level: custom
+      type: boolean
+      short: Character ID.
+      description: >
+        Character ID.
+    - name: server_id 
+      level: custom
+      type: boolean
+      short: Server ID.
+      description: >
+        Server ID.
     - name: is_show_result 
       level: custom
       type: boolean

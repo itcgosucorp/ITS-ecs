@@ -73,6 +73,10 @@
     type: keyword
     ignore_above: 1024
     description: Campaign Task ID.
+  - name: character_id
+    level: custom
+    type: boolean
+    description: Character ID.
   - name: completed_task_info.banner_time_viewed
     level: custom
     type: integer
@@ -112,6 +116,10 @@
     type: keyword
     ignore_above: 1024
     description: Publisher ID.
+  - name: server_id
+    level: custom
+    type: boolean
+    description: Server ID.
   - name: start_date
     level: custom
     type: date

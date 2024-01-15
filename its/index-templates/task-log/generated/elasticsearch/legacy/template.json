@@ -23,6 +23,9 @@
         "ignore_above": 1024,
         "type": "keyword"
       },
+      "character_id": {
+        "type": "boolean"
+      },
       "completed_task_info": {
         "properties": {
           "banner_time_viewed": {
@@ -69,6 +72,9 @@
       "publisher_id": {
         "ignore_above": 1024,
         "type": "keyword"
+      },
+      "server_id": {
+        "type": "boolean"
       },
       "start_date": {
         "type": "date"

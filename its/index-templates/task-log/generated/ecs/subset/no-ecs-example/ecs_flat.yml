@@ -57,6 +57,15 @@ campaign_task_id:
   normalize: []
   short: Campaign Task ID.
   type: keyword
+character_id:
+  dashed_name: character-id
+  description: Character ID.
+  flat_name: character_id
+  level: custom
+  name: character_id
+  normalize: []
+  short: Character ID.
+  type: boolean
 completed_task_info.banner_time_viewed:
   dashed_name: completed-task-info-banner-time-viewed
   description: Banner time viewed.
@@ -160,6 +169,15 @@ publisher_id:
   normalize: []
   short: Publisher ID.
   type: keyword
+server_id:
+  dashed_name: server-id
+  description: Server ID.
+  flat_name: server_id
+  level: custom
+  name: server_id
+  normalize: []
+  short: Server ID.
+  type: boolean
 start_date:
   dashed_name: start-date
   description: Campaign's start date.
