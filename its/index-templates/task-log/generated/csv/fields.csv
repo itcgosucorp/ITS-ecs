@@ -4,13 +4,13 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,application_id,keyword,custom,,,Application ID.
 8.9.0,true,base,campaign_id,keyword,custom,,,Campaign ID.
 8.9.0,true,base,campaign_task_id,keyword,custom,,,Campaign Task ID.
-8.9.0,true,base,character_id,boolean,custom,,,Character ID.
+8.9.0,true,base,character_id,keyword,custom,,,Character ID.
 8.9.0,true,base,end_date,date,custom,,,Campaign's end date.
 8.9.0,true,base,is_new,boolean,custom,,,Task is new.
 8.9.0,true,base,is_show_result,boolean,custom,,,Postback dialog showing's status.
 8.9.0,true,base,pub_code,keyword,custom,,,Publisher code.
 8.9.0,true,base,publisher_id,keyword,custom,,,Publisher ID.
-8.9.0,true,base,server_id,boolean,custom,,,Server ID.
+8.9.0,true,base,server_id,keyword,custom,,,Server ID.
 8.9.0,true,base,start_date,date,custom,,,Campaign's start date.
 8.9.0,true,base,status,keyword,custom,,,Task status.
 8.9.0,true,base,task_channel,keyword,custom,,,Task channel.

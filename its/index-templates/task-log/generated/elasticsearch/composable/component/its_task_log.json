@@ -22,7 +22,8 @@
           "type": "keyword"
         },
         "character_id": {
-          "type": "boolean"
+          "ignore_above": 1024,
+          "type": "keyword"
         },
         "completed_task_info": {
           "properties": {
@@ -63,7 +64,8 @@
           "type": "keyword"
         },
         "server_id": {
-          "type": "boolean"
+          "ignore_above": 1024,
+          "type": "keyword"
         },
         "start_date": {
           "type": "date"

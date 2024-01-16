@@ -118,13 +118,13 @@
         Postback status.
     - name: character_id 
       level: custom
-      type: boolean
+      type: keyword
       short: Character ID.
       description: >
         Character ID.
     - name: server_id 
       level: custom
-      type: boolean
+      type: keyword
       short: Server ID.
       description: >
         Server ID.

@@ -120,11 +120,12 @@ its_task_log:
       dashed_name: character-id
       description: Character ID.
       flat_name: character_id
+      ignore_above: 1024
       level: custom
       name: character_id
       normalize: []
       short: Character ID.
-      type: boolean
+      type: keyword
     completed_task_info.banner_time_viewed:
       dashed_name: completed-task-info-banner-time-viewed
       description: Banner time viewed.
@@ -213,11 +214,12 @@ its_task_log:
       dashed_name: server-id
       description: Server ID.
       flat_name: server_id
+      ignore_above: 1024
       level: custom
       name: server_id
       normalize: []
       short: Server ID.
-      type: boolean
+      type: keyword
     start_date:
       dashed_name: start-date
       description: Campaign's start date.

@@ -75,7 +75,8 @@
     description: Campaign Task ID.
   - name: character_id
     level: custom
-    type: boolean
+    type: keyword
+    ignore_above: 1024
     description: Character ID.
   - name: completed_task_info.banner_time_viewed
     level: custom
@@ -118,7 +119,8 @@
     description: Publisher ID.
   - name: server_id
     level: custom
-    type: boolean
+    type: keyword
+    ignore_above: 1024
     description: Server ID.
   - name: start_date
     level: custom
