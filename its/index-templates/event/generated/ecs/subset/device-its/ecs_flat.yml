@@ -1944,6 +1944,16 @@ event.its.properties.video_total_length:
   original_fieldset: its_event
   short: The total possible duration of the video.
   type: integer
+event.its.properties.vip_level:
+  dashed_name: event-its-properties-vip-level
+  description: Vip level the user achieved.
+  flat_name: event.its.properties.vip_level
+  level: custom
+  name: properties.vip_level
+  normalize: []
+  original_fieldset: its_event
+  short: Vip level the user achieved.
+  type: integer
 event.its.publisher.id:
   dashed_name: event-its-publisher-id
   description: Publisher ID.

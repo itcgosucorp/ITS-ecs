@@ -147,6 +147,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.task_type,keyword,custom,,,Task's type Info.
 8.9.0,true,event,event.its.properties.video_played_length,integer,custom,,,How much of the video was viewed.
 8.9.0,true,event,event.its.properties.video_total_length,integer,custom,,,The total possible duration of the video.
+8.9.0,true,event,event.its.properties.vip_level,integer,custom,,,Vip level the user achieved.
 8.9.0,true,event,event.its.publisher.id,keyword,custom,,,Publisher ID.
 8.9.0,true,event,event.its.session_id,keyword,custom,,,Session ID of the event.
 8.9.0,true,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.

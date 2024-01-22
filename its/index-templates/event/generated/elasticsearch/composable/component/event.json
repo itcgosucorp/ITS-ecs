@@ -285,6 +285,9 @@
                     },
                     "video_total_length": {
                       "type": "integer"
+                    },
+                    "vip_level": {
+                      "type": "integer"
                     }
                   }
                 },

@@ -1124,6 +1124,11 @@
       type: integer
       description: The total possible duration of the video.
       default_field: false
+    - name: its.properties.vip_level
+      level: custom
+      type: integer
+      description: Vip level the user achieved.
+      default_field: false
     - name: its.publisher.id
       level: custom
       type: keyword

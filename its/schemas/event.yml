@@ -90,6 +90,12 @@
       short: Level the user achieved.
       description: >
         Level the user achieved.
+    - name: properties.vip_level
+      level: custom
+      type: integer
+      short: Vip level the user achieved.
+      description: >
+        Vip level the user achieved.
     - name: properties.order_id
       level: custom
       type: keyword
