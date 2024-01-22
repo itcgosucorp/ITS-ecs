@@ -140,7 +140,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.revenue,float,custom,,,Revenue.
 8.9.0,true,event,event.its.properties.reward,keyword,custom,,,Reward Info.
 8.9.0,true,event,event.its.properties.score,integer,custom,,,Score associated with the user's achievement.
-8.9.0,true,event,event.its.properties.server_info,keyword,custom,,,Server info.
+8.9.0,true,event,event.its.properties.server_id,keyword,custom,,,Server ID.
 8.9.0,true,event,event.its.properties.sku_id,keyword,custom,,,Product's SKU.
 8.9.0,true,event,event.its.properties.source_id,keyword,custom,,,Source ID.
 8.9.0,true,event,event.its.properties.task_id,keyword,custom,,,Task ID.

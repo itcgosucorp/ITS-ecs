@@ -210,12 +210,12 @@
       short: Score associated with the user's achievement.
       description: >
         Score associated with the user's achievement.
-    - name: properties.server_info
+    - name: properties.server_id
       level: custom
       type: keyword
-      short: Server info.
+      short: Server ID.
       description: >
-        Server info.
+        Server ID.
     - name: properties.sku_id
       level: custom
       type: keyword

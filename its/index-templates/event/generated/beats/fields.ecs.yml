@@ -1084,11 +1084,11 @@
       type: integer
       description: Score associated with the user's achievement.
       default_field: false
-    - name: its.properties.server_info
+    - name: its.properties.server_id
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Server info.
+      description: Server ID.
       default_field: false
     - name: its.properties.sku_id
       level: custom

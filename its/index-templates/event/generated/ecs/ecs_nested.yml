@@ -2036,16 +2036,16 @@ event:
       original_fieldset: its_event
       short: Score associated with the user's achievement.
       type: integer
-    event.its.properties.server_info:
-      dashed_name: event-its-properties-server-info
-      description: Server info.
-      flat_name: event.its.properties.server_info
+    event.its.properties.server_id:
+      dashed_name: event-its-properties-server-id
+      description: Server ID.
+      flat_name: event.its.properties.server_id
       ignore_above: 1024
       level: custom
-      name: properties.server_info
+      name: properties.server_id
       normalize: []
       original_fieldset: its_event
-      short: Server info.
+      short: Server ID.
       type: keyword
     event.its.properties.sku_id:
       dashed_name: event-its-properties-sku-id
