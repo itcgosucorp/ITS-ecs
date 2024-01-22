@@ -86,7 +86,7 @@
         Keyword Info.
     - name: properties.level
       level: custom
-      type: keyword
+      type: integer
       short: Level the user achieved.
       description: >
         Level the user achieved.

@@ -1664,13 +1664,12 @@ event.its.properties.level:
   dashed_name: event-its-properties-level
   description: Level the user achieved.
   flat_name: event.its.properties.level
-  ignore_above: 1024
   level: custom
   name: properties.level
   normalize: []
   original_fieldset: its_event
   short: Level the user achieved.
-  type: keyword
+  type: integer
 event.its.properties.order_id:
   dashed_name: event-its-properties-order-id
   description: ID of the transaction.

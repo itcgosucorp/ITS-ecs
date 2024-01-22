@@ -977,8 +977,7 @@
       default_field: false
     - name: its.properties.level
       level: custom
-      type: keyword
-      ignore_above: 1024
+      type: integer
       description: Level the user achieved.
       default_field: false
     - name: its.properties.order_id

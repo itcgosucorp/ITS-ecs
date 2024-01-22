@@ -192,8 +192,7 @@
                       "type": "keyword"
                     },
                     "level": {
-                      "ignore_above": 1024,
-                      "type": "keyword"
+                      "type": "integer"
                     },
                     "order_id": {
                       "ignore_above": 1024,

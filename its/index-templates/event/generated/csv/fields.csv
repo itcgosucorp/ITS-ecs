@@ -120,7 +120,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.currency,keyword,custom,,,Cost currency.
 8.9.0,true,event,event.its.properties.item_id,keyword,custom,,,Item ID.
 8.9.0,true,event,event.its.properties.keywords,keyword,custom,,,Keyword Info.
-8.9.0,true,event,event.its.properties.level,keyword,custom,,,Level the user achieved.
+8.9.0,true,event,event.its.properties.level,integer,custom,,,Level the user achieved.
 8.9.0,true,event,event.its.properties.order_id,keyword,custom,,,ID of the transaction.
 8.9.0,true,event,event.its.properties.param_n_1,float,custom,,,Parameter type number 1.
 8.9.0,true,event,event.its.properties.param_n_2,float,custom,,,Parameter type number 2.
