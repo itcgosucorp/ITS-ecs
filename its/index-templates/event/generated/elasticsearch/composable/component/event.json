@@ -138,6 +138,10 @@
                       "ignore_above": 1024,
                       "type": "keyword"
                     },
+                    "curreny_unit": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
                     "office": {
                       "ignore_above": 1024,
                       "type": "keyword"

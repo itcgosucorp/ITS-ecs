@@ -899,6 +899,12 @@
       ignore_above: 1024
       description: Channel of the payment.
       default_field: false
+    - name: its.payment.curreny_unit
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Curreny unit.
+      default_field: false
     - name: its.payment.office
       level: custom
       type: keyword

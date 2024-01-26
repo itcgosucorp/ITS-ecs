@@ -37,4 +37,10 @@
       short: Office owns the payment's game (project).
       description: >
        Office owns the payment's game (project).
+    - name: curreny_unit
+      level: custom
+      type: keyword
+      short: Curreny unit.
+      description: >
+       Curreny unit.
       

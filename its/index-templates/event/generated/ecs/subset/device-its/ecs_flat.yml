@@ -1519,6 +1519,17 @@ event.its.payment.channel:
   original_fieldset: its_payment
   short: Channel of the payment.
   type: keyword
+event.its.payment.curreny_unit:
+  dashed_name: event-its-payment-curreny-unit
+  description: Curreny unit.
+  flat_name: event.its.payment.curreny_unit
+  ignore_above: 1024
+  level: custom
+  name: curreny_unit
+  normalize: []
+  original_fieldset: its_payment
+  short: Curreny unit.
+  type: keyword
 event.its.payment.office:
   dashed_name: event-its-payment-office
   description: Office owns the payment's game (project).
