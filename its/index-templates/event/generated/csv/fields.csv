@@ -107,7 +107,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.page.url,keyword,custom,,,URL of the current page in the browser.
 8.9.0,true,event,event.its.payment.amount,double,custom,,,Real amount of the payment.
 8.9.0,true,event,event.its.payment.channel,keyword,custom,,,Channel of the payment.
-8.9.0,true,event,event.its.payment.curreny_unit,keyword,custom,,,Curreny unit.
+8.9.0,true,event,event.its.payment.currency_unit,keyword,custom,,,Currency unit.
 8.9.0,true,event,event.its.payment.office,keyword,custom,,,Office owns the payment's game (project).
 8.9.0,true,event,event.its.payment.original_amount,double,custom,,,Payment amount in database.
 8.9.0,true,event,event.its.properties.ad_displayed_percent,float,custom,,,The maximum percentage of the ad(%).

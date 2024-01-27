@@ -516,7 +516,7 @@
                     "ignore_above": 1024,
                     "type": "keyword"
                   },
-                  "curreny_unit": {
+                  "currency_unit": {
                     "ignore_above": 1024,
                     "type": "keyword"
                   },
