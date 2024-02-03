@@ -9,11 +9,13 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,its_task_log,its_task_log.completed_task_info.banner_time_viewed,integer,custom,,,Banner time viewed.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.answer,keyword,custom,,,The answer.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.choices,keyword,custom,,,The choice options of radiogroup/checkbox question.
-8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.columns,keyword,custom,,,The column options of matrix question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.columns.text,keyword,custom,,,The column options's text of matrix question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.columns.value,keyword,custom,,,The column options's value of matrix question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.name,keyword,custom,,,Question unique ID.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_count,integer,custom,,,The rate count of rating question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_max,integer,custom,,,The rate count of rating question.
-8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rows,keyword,custom,,,The row questions of matrix question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rows.text,keyword,custom,,,The row questions's text of matrix question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rows.value,keyword,custom,,,The row questions's value of matrix question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.title,keyword,custom,,,Question title.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.type,keyword,custom,,,Question type.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.video_played_length,integer,custom,,,Video played length.

@@ -157,16 +157,27 @@ its_task_log:
       original_fieldset: its_survey_result
       short: The choice options of radiogroup/checkbox question.
       type: keyword
-    its_task_log.completed_task_info.survey_result.columns:
-      dashed_name: its-task-log-completed-task-info-survey-result-columns
-      description: The column options of matrix question.
-      flat_name: its_task_log.completed_task_info.survey_result.columns
+    its_task_log.completed_task_info.survey_result.columns.text:
+      dashed_name: its-task-log-completed-task-info-survey-result-columns-text
+      description: The column options's text of matrix question.
+      flat_name: its_task_log.completed_task_info.survey_result.columns.text
       ignore_above: 1024
       level: custom
-      name: columns
+      name: columns.text
       normalize: []
       original_fieldset: its_survey_result
-      short: The column options of matrix question.
+      short: The column options's text of matrix question.
+      type: keyword
+    its_task_log.completed_task_info.survey_result.columns.value:
+      dashed_name: its-task-log-completed-task-info-survey-result-columns-value
+      description: The column options's value of matrix question.
+      flat_name: its_task_log.completed_task_info.survey_result.columns.value
+      ignore_above: 1024
+      level: custom
+      name: columns.value
+      normalize: []
+      original_fieldset: its_survey_result
+      short: The column options's value of matrix question.
       type: keyword
     its_task_log.completed_task_info.survey_result.name:
       dashed_name: its-task-log-completed-task-info-survey-result-name
@@ -199,16 +210,27 @@ its_task_log:
       original_fieldset: its_survey_result
       short: The rate count of rating question.
       type: integer
-    its_task_log.completed_task_info.survey_result.rows:
-      dashed_name: its-task-log-completed-task-info-survey-result-rows
-      description: The row questions of matrix question.
-      flat_name: its_task_log.completed_task_info.survey_result.rows
+    its_task_log.completed_task_info.survey_result.rows.text:
+      dashed_name: its-task-log-completed-task-info-survey-result-rows-text
+      description: The row questions's text of matrix question.
+      flat_name: its_task_log.completed_task_info.survey_result.rows.text
       ignore_above: 1024
       level: custom
-      name: rows
+      name: rows.text
       normalize: []
       original_fieldset: its_survey_result
-      short: The row questions of matrix question.
+      short: The row questions's text of matrix question.
+      type: keyword
+    its_task_log.completed_task_info.survey_result.rows.value:
+      dashed_name: its-task-log-completed-task-info-survey-result-rows-value
+      description: The row questions's value of matrix question.
+      flat_name: its_task_log.completed_task_info.survey_result.rows.value
+      ignore_above: 1024
+      level: custom
+      name: rows.value
+      normalize: []
+      original_fieldset: its_survey_result
+      short: The row questions's value of matrix question.
       type: keyword
     its_task_log.completed_task_info.survey_result.title:
       dashed_name: its-task-log-completed-task-info-survey-result-title

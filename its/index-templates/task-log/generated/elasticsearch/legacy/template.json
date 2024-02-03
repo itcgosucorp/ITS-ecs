@@ -52,8 +52,16 @@
                 "type": "keyword"
               },
               "columns": {
-                "ignore_above": 1024,
-                "type": "keyword"
+                "properties": {
+                  "text": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "value": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
               },
               "name": {
                 "ignore_above": 1024,
@@ -66,8 +74,16 @@
                 "type": "integer"
               },
               "rows": {
-                "ignore_above": 1024,
-                "type": "keyword"
+                "properties": {
+                  "text": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "value": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
               },
               "title": {
                 "ignore_above": 1024,

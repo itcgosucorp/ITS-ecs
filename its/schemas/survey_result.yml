@@ -55,17 +55,29 @@
       short: The choice options of radiogroup/checkbox question.
       description: >
         The choice options of radiogroup/checkbox question.
-    - name: columns
+    - name: columns.value
       level: custom
       type: keyword
-      short: The column options of matrix question.
+      short: The column options's value of matrix question.
       description: >
-        The column options of matrix question.
-    - name: rows
+        The column options's value of matrix question.
+    - name: columns.text
       level: custom
       type: keyword
-      short: The row questions of matrix question.
+      short: The column options's text of matrix question.
       description: >
-        The row questions of matrix question.
+        The column options's text of matrix question.
+    - name: rows.value
+      level: custom
+      type: keyword
+      short: The row questions's value of matrix question.
+      description: >
+        The row questions's value of matrix question.
+    - name: rows.text
+      level: custom
+      type: keyword
+      short: The row questions's text of matrix question.
+      description: >
+        The row questions's text of matrix question.
     
       

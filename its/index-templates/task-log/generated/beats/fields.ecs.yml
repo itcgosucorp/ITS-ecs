@@ -107,11 +107,17 @@
       ignore_above: 1024
       description: The choice options of radiogroup/checkbox question.
       default_field: false
-    - name: completed_task_info.survey_result.columns
+    - name: completed_task_info.survey_result.columns.text
       level: custom
       type: keyword
       ignore_above: 1024
-      description: The column options of matrix question.
+      description: The column options's text of matrix question.
+      default_field: false
+    - name: completed_task_info.survey_result.columns.value
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The column options's value of matrix question.
       default_field: false
     - name: completed_task_info.survey_result.name
       level: custom
@@ -129,11 +135,17 @@
       type: integer
       description: The rate count of rating question.
       default_field: false
-    - name: completed_task_info.survey_result.rows
+    - name: completed_task_info.survey_result.rows.text
       level: custom
       type: keyword
       ignore_above: 1024
-      description: The row questions of matrix question.
+      description: The row questions's text of matrix question.
+      default_field: false
+    - name: completed_task_info.survey_result.rows.value
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The row questions's value of matrix question.
       default_field: false
     - name: completed_task_info.survey_result.title
       level: custom
