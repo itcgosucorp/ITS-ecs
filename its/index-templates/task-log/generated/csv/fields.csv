@@ -1,25 +1,38 @@
 ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
-8.9.0,true,base,app_code,keyword,custom,,,Application code.
-8.9.0,true,base,application_id,keyword,custom,,,Application ID.
-8.9.0,true,base,campaign_id,keyword,custom,,,Campaign ID.
-8.9.0,true,base,campaign_task_id,keyword,custom,,,Campaign Task ID.
-8.9.0,true,base,character_id,keyword,custom,,,Character ID.
-8.9.0,true,base,end_date,date,custom,,,Campaign's end date.
-8.9.0,true,base,is_new,boolean,custom,,,Task is new.
-8.9.0,true,base,is_show_result,boolean,custom,,,Postback dialog showing's status.
-8.9.0,true,base,pub_code,keyword,custom,,,Publisher code.
-8.9.0,true,base,publisher_id,keyword,custom,,,Publisher ID.
-8.9.0,true,base,server_id,keyword,custom,,,Server ID.
-8.9.0,true,base,start_date,date,custom,,,Campaign's start date.
-8.9.0,true,base,status,keyword,custom,,,Task status.
-8.9.0,true,base,task_channel,keyword,custom,,,Task channel.
-8.9.0,true,base,task_description,keyword,custom,,,Task description.
-8.9.0,true,base,task_name,keyword,custom,,,Task name.
-8.9.0,true,base,task_type,keyword,custom,,,Task type.
-8.9.0,true,completed_task_info,completed_task_info.banner_time_viewed,integer,custom,,,Banner time viewed.
-8.9.0,true,completed_task_info,completed_task_info.video_played_length,integer,custom,,,Video played length.
-8.9.0,true,completed_task_info,completed_task_info.video_total_length,integer,custom,,,Video total length.
 8.9.0,false,event,event.original,keyword,core,,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232,Raw text message of entire event.
-8.9.0,true,postback,postback.status,keyword,custom,,,Postback status.
+8.9.0,true,its_task_log,its_task_log.app_code,keyword,custom,,,Application code.
+8.9.0,true,its_task_log,its_task_log.application_id,keyword,custom,,,Application ID.
+8.9.0,true,its_task_log,its_task_log.campaign_id,keyword,custom,,,Campaign ID.
+8.9.0,true,its_task_log,its_task_log.campaign_task_id,keyword,custom,,,Campaign Task ID.
+8.9.0,true,its_task_log,its_task_log.character_id,keyword,custom,,,Character ID.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.banner_time_viewed,integer,custom,,,Banner time viewed.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.answer,keyword,custom,,,The answer.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.choices,keyword,custom,,,The choice options of radiogroup/checkbox question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.columns,keyword,custom,,,The column options of matrix question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.name,keyword,custom,,,Question unique ID.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_count,integer,custom,,,The rate count of rating question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_max,integer,custom,,,The rate count of rating question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rows,keyword,custom,,,The row questions of matrix question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.title,keyword,custom,,,Question title.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.type,keyword,custom,,,Question type.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.video_played_length,integer,custom,,,Video played length.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.video_total_length,integer,custom,,,Video total length.
+8.9.0,true,its_task_log,its_task_log.completion_cond_metadata_rule,keyword,custom,,,The string of completion_cond_metadata_rule.
+8.9.0,true,its_task_log,its_task_log.completion_cond_metadata_rule_metrics,keyword,custom,,,Metrics relate to completion_cond_metadata_rule.
+8.9.0,true,its_task_log,its_task_log.end_date,date,custom,,,Campaign's end date.
+8.9.0,true,its_task_log,its_task_log.is_new,boolean,custom,,,Task is new.
+8.9.0,true,its_task_log,its_task_log.is_show_result,boolean,custom,,,Postback dialog showing's status.
+8.9.0,true,its_task_log,its_task_log.metadata_rule,keyword,custom,,,The string of metadata_rule.
+8.9.0,true,its_task_log,its_task_log.metadata_rule_metrics,keyword,custom,,,Metrics relate to metadata_rule.
+8.9.0,true,its_task_log,its_task_log.postback.status,keyword,custom,,,Postback status.
+8.9.0,true,its_task_log,its_task_log.pub_code,keyword,custom,,,Publisher code.
+8.9.0,true,its_task_log,its_task_log.publisher_id,keyword,custom,,,Publisher ID.
+8.9.0,true,its_task_log,its_task_log.server_id,keyword,custom,,,Server ID.
+8.9.0,true,its_task_log,its_task_log.start_date,date,custom,,,Campaign's start date.
+8.9.0,true,its_task_log,its_task_log.status,keyword,custom,,,Task status.
+8.9.0,true,its_task_log,its_task_log.task_channel,keyword,custom,,,Task channel.
+8.9.0,true,its_task_log,its_task_log.task_description,keyword,custom,,,Task description.
+8.9.0,true,its_task_log,its_task_log.task_name,keyword,custom,,,Task name.
+8.9.0,true,its_task_log,its_task_log.task_type,keyword,custom,,,Task type.
 8.9.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.

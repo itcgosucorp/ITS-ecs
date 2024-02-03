@@ -3,7 +3,7 @@
   title: ITS Task Log
   group: 1
   type: group
-  root: true
+  root: false
   short: ITS Task Log
   description: >
    ITS Task Log
@@ -110,6 +110,36 @@
       short: Banner time viewed.
       description: >
         Banner time viewed.
+    - name: completed_task_info.survey_result
+      level: custom
+      type: nested
+      short: The survey result.
+      description: >
+        The survey result.
+    - name: metadata_rule
+      level: custom
+      type: keyword
+      short: The string of metadata_rule.
+      description: >
+        The string of metadata_rule.
+    - name: completion_cond_metadata_rule
+      level: custom
+      type: keyword
+      short: The string of completion_cond_metadata_rule.
+      description: >
+        The string of completion_cond_metadata_rule.
+    - name: metadata_rule_metrics
+      level: custom
+      type: keyword
+      short: Metrics relate to metadata_rule.
+      description: >
+        Metrics relate to metadata_rule.
+    - name: completion_cond_metadata_rule_metrics
+      level: custom
+      type: keyword
+      short: Metrics relate to completion_cond_metadata_rule.
+      description: >
+        Metrics relate to completion_cond_metadata_rule.
     - name: postback.status 
       level: custom
       type: keyword

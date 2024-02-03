@@ -53,104 +53,208 @@
         worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232
       index: false
       doc_values: false
-  - name: app_code
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Application code.
-  - name: application_id
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Application ID.
-  - name: campaign_id
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Campaign ID.
-  - name: campaign_task_id
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Campaign Task ID.
-  - name: character_id
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Character ID.
-  - name: completed_task_info.banner_time_viewed
-    level: custom
-    type: integer
-    description: Banner time viewed.
-  - name: completed_task_info.video_played_length
-    level: custom
-    type: integer
-    description: Video played length.
-  - name: completed_task_info.video_total_length
-    level: custom
-    type: integer
-    description: Video total length.
-  - name: end_date
-    level: custom
-    type: date
-    description: Campaign's end date.
-  - name: is_new
-    level: custom
-    type: boolean
-    description: Task is new.
-  - name: is_show_result
-    level: custom
-    type: boolean
-    description: Postback dialog showing's status.
-  - name: postback.status
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Postback status.
-  - name: pub_code
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Publisher code.
-  - name: publisher_id
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Publisher ID.
-  - name: server_id
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Server ID.
-  - name: start_date
-    level: custom
-    type: date
-    description: Campaign's start date.
-  - name: status
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Task status.
-  - name: task_channel
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Task channel.
-  - name: task_description
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Task description.
-  - name: task_name
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Task name.
-  - name: task_type
-    level: custom
-    type: keyword
-    ignore_above: 1024
-    description: Task type.
+  - name: its_task_log
+    title: ITS Task Log
+    group: 1
+    description: ITS Task Log
+    type: group
+    default_field: true
+    fields:
+    - name: app_code
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Application code.
+      default_field: false
+    - name: application_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Application ID.
+      default_field: false
+    - name: campaign_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Campaign ID.
+      default_field: false
+    - name: campaign_task_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Campaign Task ID.
+      default_field: false
+    - name: character_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Character ID.
+      default_field: false
+    - name: completed_task_info.banner_time_viewed
+      level: custom
+      type: integer
+      description: Banner time viewed.
+      default_field: false
+    - name: completed_task_info.survey_result.answer
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The answer.
+      default_field: false
+    - name: completed_task_info.survey_result.choices
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The choice options of radiogroup/checkbox question.
+      default_field: false
+    - name: completed_task_info.survey_result.columns
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The column options of matrix question.
+      default_field: false
+    - name: completed_task_info.survey_result.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The survey question unique ID.
+      default_field: false
+    - name: completed_task_info.survey_result.rate_count
+      level: custom
+      type: integer
+      description: The rate count of rating question.
+      default_field: false
+    - name: completed_task_info.survey_result.rate_max
+      level: custom
+      type: integer
+      description: The rate count of rating question.
+      default_field: false
+    - name: completed_task_info.survey_result.rows
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The row questions of matrix question.
+      default_field: false
+    - name: completed_task_info.survey_result.title
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The survey question title.
+      default_field: false
+    - name: completed_task_info.survey_result.type
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The survey question type.
+      default_field: false
+    - name: completed_task_info.video_played_length
+      level: custom
+      type: integer
+      description: Video played length.
+      default_field: false
+    - name: completed_task_info.video_total_length
+      level: custom
+      type: integer
+      description: Video total length.
+      default_field: false
+    - name: completion_cond_metadata_rule
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The string of completion_cond_metadata_rule.
+      default_field: false
+    - name: completion_cond_metadata_rule_metrics
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Metrics relate to completion_cond_metadata_rule.
+      default_field: false
+    - name: end_date
+      level: custom
+      type: date
+      description: Campaign's end date.
+      default_field: false
+    - name: is_new
+      level: custom
+      type: boolean
+      description: Task is new.
+      default_field: false
+    - name: is_show_result
+      level: custom
+      type: boolean
+      description: Postback dialog showing's status.
+      default_field: false
+    - name: metadata_rule
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The string of metadata_rule.
+      default_field: false
+    - name: metadata_rule_metrics
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Metrics relate to metadata_rule.
+      default_field: false
+    - name: postback.status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Postback status.
+      default_field: false
+    - name: pub_code
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Publisher code.
+      default_field: false
+    - name: publisher_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Publisher ID.
+      default_field: false
+    - name: server_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Server ID.
+      default_field: false
+    - name: start_date
+      level: custom
+      type: date
+      description: Campaign's start date.
+      default_field: false
+    - name: status
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task status.
+      default_field: false
+    - name: task_channel
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task channel.
+      default_field: false
+    - name: task_description
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task description.
+      default_field: false
+    - name: task_name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task name.
+      default_field: false
+    - name: task_type
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task type.
+      default_field: false
   - name: user
     title: User
     group: 2

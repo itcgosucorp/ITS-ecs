@@ -5,90 +5,148 @@
   "template": {
     "mappings": {
       "properties": {
-        "app_code": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "application_id": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "campaign_id": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "campaign_task_id": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "character_id": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "completed_task_info": {
+        "its_task_log": {
           "properties": {
-            "banner_time_viewed": {
-              "type": "integer"
+            "app_code": {
+              "ignore_above": 1024,
+              "type": "keyword"
             },
-            "video_played_length": {
-              "type": "integer"
+            "application_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
             },
-            "video_total_length": {
-              "type": "integer"
-            }
-          }
-        },
-        "end_date": {
-          "type": "date"
-        },
-        "is_new": {
-          "type": "boolean"
-        },
-        "is_show_result": {
-          "type": "boolean"
-        },
-        "postback": {
-          "properties": {
+            "campaign_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "campaign_task_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "character_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "completed_task_info": {
+              "properties": {
+                "banner_time_viewed": {
+                  "type": "integer"
+                },
+                "survey_result": {
+                  "properties": {
+                    "answer": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "choices": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "columns": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "rate_count": {
+                      "type": "integer"
+                    },
+                    "rate_max": {
+                      "type": "integer"
+                    },
+                    "rows": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "title": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "video_played_length": {
+                  "type": "integer"
+                },
+                "video_total_length": {
+                  "type": "integer"
+                }
+              }
+            },
+            "completion_cond_metadata_rule": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "completion_cond_metadata_rule_metrics": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "end_date": {
+              "type": "date"
+            },
+            "is_new": {
+              "type": "boolean"
+            },
+            "is_show_result": {
+              "type": "boolean"
+            },
+            "metadata_rule": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "metadata_rule_metrics": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "postback": {
+              "properties": {
+                "status": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "pub_code": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "publisher_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "server_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "start_date": {
+              "type": "date"
+            },
             "status": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "task_channel": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "task_description": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "task_name": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "task_type": {
               "ignore_above": 1024,
               "type": "keyword"
             }
           }
-        },
-        "pub_code": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "publisher_id": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "server_id": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "start_date": {
-          "type": "date"
-        },
-        "status": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "task_channel": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "task_description": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "task_name": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        },
-        "task_type": {
-          "ignore_above": 1024,
-          "type": "keyword"
         }
       }
     }

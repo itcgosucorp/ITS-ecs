@@ -17,92 +17,6 @@
   required: true
   short: Date/time when the event originated.
   type: date
-app_code:
-  dashed_name: app-code
-  description: Application code.
-  flat_name: app_code
-  ignore_above: 1024
-  level: custom
-  name: app_code
-  normalize: []
-  short: Application code.
-  type: keyword
-application_id:
-  dashed_name: application-id
-  description: Application ID.
-  flat_name: application_id
-  ignore_above: 1024
-  level: custom
-  name: application_id
-  normalize: []
-  short: Application ID.
-  type: keyword
-campaign_id:
-  dashed_name: campaign-id
-  description: Campaign ID.
-  flat_name: campaign_id
-  ignore_above: 1024
-  level: custom
-  name: campaign_id
-  normalize: []
-  short: Campaign ID.
-  type: keyword
-campaign_task_id:
-  dashed_name: campaign-task-id
-  description: Campaign Task ID.
-  flat_name: campaign_task_id
-  ignore_above: 1024
-  level: custom
-  name: campaign_task_id
-  normalize: []
-  short: Campaign Task ID.
-  type: keyword
-character_id:
-  dashed_name: character-id
-  description: Character ID.
-  flat_name: character_id
-  ignore_above: 1024
-  level: custom
-  name: character_id
-  normalize: []
-  short: Character ID.
-  type: keyword
-completed_task_info.banner_time_viewed:
-  dashed_name: completed-task-info-banner-time-viewed
-  description: Banner time viewed.
-  flat_name: completed_task_info.banner_time_viewed
-  level: custom
-  name: completed_task_info.banner_time_viewed
-  normalize: []
-  short: Banner time viewed.
-  type: integer
-completed_task_info.video_played_length:
-  dashed_name: completed-task-info-video-played-length
-  description: Video played length.
-  flat_name: completed_task_info.video_played_length
-  level: custom
-  name: completed_task_info.video_played_length
-  normalize: []
-  short: Video played length.
-  type: integer
-completed_task_info.video_total_length:
-  dashed_name: completed-task-info-video-total-length
-  description: Video total length.
-  flat_name: completed_task_info.video_total_length
-  level: custom
-  name: completed_task_info.video_total_length
-  normalize: []
-  short: Video total length.
-  type: integer
-end_date:
-  dashed_name: end-date
-  description: Campaign's end date.
-  flat_name: end_date
-  level: custom
-  name: end_date
-  normalize: []
-  short: Campaign's end date.
-  type: date
 event.original:
   dashed_name: event-original
   description: 'Raw text message of entire event. Used to demonstrate log integrity
@@ -122,117 +36,340 @@ event.original:
   normalize: []
   short: Raw text message of entire event.
   type: keyword
-is_new:
-  dashed_name: is-new
+its_task_log.app_code:
+  dashed_name: its-task-log-app-code
+  description: Application code.
+  flat_name: its_task_log.app_code
+  ignore_above: 1024
+  level: custom
+  name: app_code
+  normalize: []
+  short: Application code.
+  type: keyword
+its_task_log.application_id:
+  dashed_name: its-task-log-application-id
+  description: Application ID.
+  flat_name: its_task_log.application_id
+  ignore_above: 1024
+  level: custom
+  name: application_id
+  normalize: []
+  short: Application ID.
+  type: keyword
+its_task_log.campaign_id:
+  dashed_name: its-task-log-campaign-id
+  description: Campaign ID.
+  flat_name: its_task_log.campaign_id
+  ignore_above: 1024
+  level: custom
+  name: campaign_id
+  normalize: []
+  short: Campaign ID.
+  type: keyword
+its_task_log.campaign_task_id:
+  dashed_name: its-task-log-campaign-task-id
+  description: Campaign Task ID.
+  flat_name: its_task_log.campaign_task_id
+  ignore_above: 1024
+  level: custom
+  name: campaign_task_id
+  normalize: []
+  short: Campaign Task ID.
+  type: keyword
+its_task_log.character_id:
+  dashed_name: its-task-log-character-id
+  description: Character ID.
+  flat_name: its_task_log.character_id
+  ignore_above: 1024
+  level: custom
+  name: character_id
+  normalize: []
+  short: Character ID.
+  type: keyword
+its_task_log.completed_task_info.banner_time_viewed:
+  dashed_name: its-task-log-completed-task-info-banner-time-viewed
+  description: Banner time viewed.
+  flat_name: its_task_log.completed_task_info.banner_time_viewed
+  level: custom
+  name: completed_task_info.banner_time_viewed
+  normalize: []
+  short: Banner time viewed.
+  type: integer
+its_task_log.completed_task_info.survey_result.answer:
+  dashed_name: its-task-log-completed-task-info-survey-result-answer
+  description: The answer.
+  flat_name: its_task_log.completed_task_info.survey_result.answer
+  ignore_above: 1024
+  level: custom
+  name: answer
+  normalize: []
+  original_fieldset: its_survey_result
+  short: The answer.
+  type: keyword
+its_task_log.completed_task_info.survey_result.choices:
+  dashed_name: its-task-log-completed-task-info-survey-result-choices
+  description: The choice options of radiogroup/checkbox question.
+  flat_name: its_task_log.completed_task_info.survey_result.choices
+  ignore_above: 1024
+  level: custom
+  name: choices
+  normalize: []
+  original_fieldset: its_survey_result
+  short: The choice options of radiogroup/checkbox question.
+  type: keyword
+its_task_log.completed_task_info.survey_result.columns:
+  dashed_name: its-task-log-completed-task-info-survey-result-columns
+  description: The column options of matrix question.
+  flat_name: its_task_log.completed_task_info.survey_result.columns
+  ignore_above: 1024
+  level: custom
+  name: columns
+  normalize: []
+  original_fieldset: its_survey_result
+  short: The column options of matrix question.
+  type: keyword
+its_task_log.completed_task_info.survey_result.name:
+  dashed_name: its-task-log-completed-task-info-survey-result-name
+  description: The survey question unique ID.
+  flat_name: its_task_log.completed_task_info.survey_result.name
+  ignore_above: 1024
+  level: custom
+  name: name
+  normalize: []
+  original_fieldset: its_survey_result
+  short: Question unique ID.
+  type: keyword
+its_task_log.completed_task_info.survey_result.rate_count:
+  dashed_name: its-task-log-completed-task-info-survey-result-rate-count
+  description: The rate count of rating question.
+  flat_name: its_task_log.completed_task_info.survey_result.rate_count
+  level: custom
+  name: rate_count
+  normalize: []
+  original_fieldset: its_survey_result
+  short: The rate count of rating question.
+  type: integer
+its_task_log.completed_task_info.survey_result.rate_max:
+  dashed_name: its-task-log-completed-task-info-survey-result-rate-max
+  description: The rate count of rating question.
+  flat_name: its_task_log.completed_task_info.survey_result.rate_max
+  level: custom
+  name: rate_max
+  normalize: []
+  original_fieldset: its_survey_result
+  short: The rate count of rating question.
+  type: integer
+its_task_log.completed_task_info.survey_result.rows:
+  dashed_name: its-task-log-completed-task-info-survey-result-rows
+  description: The row questions of matrix question.
+  flat_name: its_task_log.completed_task_info.survey_result.rows
+  ignore_above: 1024
+  level: custom
+  name: rows
+  normalize: []
+  original_fieldset: its_survey_result
+  short: The row questions of matrix question.
+  type: keyword
+its_task_log.completed_task_info.survey_result.title:
+  dashed_name: its-task-log-completed-task-info-survey-result-title
+  description: The survey question title.
+  flat_name: its_task_log.completed_task_info.survey_result.title
+  ignore_above: 1024
+  level: custom
+  name: title
+  normalize: []
+  original_fieldset: its_survey_result
+  short: Question title.
+  type: keyword
+its_task_log.completed_task_info.survey_result.type:
+  dashed_name: its-task-log-completed-task-info-survey-result-type
+  description: The survey question type.
+  flat_name: its_task_log.completed_task_info.survey_result.type
+  ignore_above: 1024
+  level: custom
+  name: type
+  normalize: []
+  original_fieldset: its_survey_result
+  short: Question type.
+  type: keyword
+its_task_log.completed_task_info.video_played_length:
+  dashed_name: its-task-log-completed-task-info-video-played-length
+  description: Video played length.
+  flat_name: its_task_log.completed_task_info.video_played_length
+  level: custom
+  name: completed_task_info.video_played_length
+  normalize: []
+  short: Video played length.
+  type: integer
+its_task_log.completed_task_info.video_total_length:
+  dashed_name: its-task-log-completed-task-info-video-total-length
+  description: Video total length.
+  flat_name: its_task_log.completed_task_info.video_total_length
+  level: custom
+  name: completed_task_info.video_total_length
+  normalize: []
+  short: Video total length.
+  type: integer
+its_task_log.completion_cond_metadata_rule:
+  dashed_name: its-task-log-completion-cond-metadata-rule
+  description: The string of completion_cond_metadata_rule.
+  flat_name: its_task_log.completion_cond_metadata_rule
+  ignore_above: 1024
+  level: custom
+  name: completion_cond_metadata_rule
+  normalize: []
+  short: The string of completion_cond_metadata_rule.
+  type: keyword
+its_task_log.completion_cond_metadata_rule_metrics:
+  dashed_name: its-task-log-completion-cond-metadata-rule-metrics
+  description: Metrics relate to completion_cond_metadata_rule.
+  flat_name: its_task_log.completion_cond_metadata_rule_metrics
+  ignore_above: 1024
+  level: custom
+  name: completion_cond_metadata_rule_metrics
+  normalize: []
+  short: Metrics relate to completion_cond_metadata_rule.
+  type: keyword
+its_task_log.end_date:
+  dashed_name: its-task-log-end-date
+  description: Campaign's end date.
+  flat_name: its_task_log.end_date
+  level: custom
+  name: end_date
+  normalize: []
+  short: Campaign's end date.
+  type: date
+its_task_log.is_new:
+  dashed_name: its-task-log-is-new
   description: Task is new.
-  flat_name: is_new
+  flat_name: its_task_log.is_new
   level: custom
   name: is_new
   normalize: []
   short: Task is new.
   type: boolean
-is_show_result:
-  dashed_name: is-show-result
+its_task_log.is_show_result:
+  dashed_name: its-task-log-is-show-result
   description: Postback dialog showing's status.
-  flat_name: is_show_result
+  flat_name: its_task_log.is_show_result
   level: custom
   name: is_show_result
   normalize: []
   short: Postback dialog showing's status.
   type: boolean
-postback.status:
-  dashed_name: postback-status
+its_task_log.metadata_rule:
+  dashed_name: its-task-log-metadata-rule
+  description: The string of metadata_rule.
+  flat_name: its_task_log.metadata_rule
+  ignore_above: 1024
+  level: custom
+  name: metadata_rule
+  normalize: []
+  short: The string of metadata_rule.
+  type: keyword
+its_task_log.metadata_rule_metrics:
+  dashed_name: its-task-log-metadata-rule-metrics
+  description: Metrics relate to metadata_rule.
+  flat_name: its_task_log.metadata_rule_metrics
+  ignore_above: 1024
+  level: custom
+  name: metadata_rule_metrics
+  normalize: []
+  short: Metrics relate to metadata_rule.
+  type: keyword
+its_task_log.postback.status:
+  dashed_name: its-task-log-postback-status
   description: Postback status.
-  flat_name: postback.status
+  flat_name: its_task_log.postback.status
   ignore_above: 1024
   level: custom
   name: postback.status
   normalize: []
   short: Postback status.
   type: keyword
-pub_code:
-  dashed_name: pub-code
+its_task_log.pub_code:
+  dashed_name: its-task-log-pub-code
   description: Publisher code.
-  flat_name: pub_code
+  flat_name: its_task_log.pub_code
   ignore_above: 1024
   level: custom
   name: pub_code
   normalize: []
   short: Publisher code.
   type: keyword
-publisher_id:
-  dashed_name: publisher-id
+its_task_log.publisher_id:
+  dashed_name: its-task-log-publisher-id
   description: Publisher ID.
-  flat_name: publisher_id
+  flat_name: its_task_log.publisher_id
   ignore_above: 1024
   level: custom
   name: publisher_id
   normalize: []
   short: Publisher ID.
   type: keyword
-server_id:
-  dashed_name: server-id
+its_task_log.server_id:
+  dashed_name: its-task-log-server-id
   description: Server ID.
-  flat_name: server_id
+  flat_name: its_task_log.server_id
   ignore_above: 1024
   level: custom
   name: server_id
   normalize: []
   short: Server ID.
   type: keyword
-start_date:
-  dashed_name: start-date
+its_task_log.start_date:
+  dashed_name: its-task-log-start-date
   description: Campaign's start date.
-  flat_name: start_date
+  flat_name: its_task_log.start_date
   level: custom
   name: start_date
   normalize: []
   short: Campaign's start date.
   type: date
-status:
-  dashed_name: status
+its_task_log.status:
+  dashed_name: its-task-log-status
   description: Task status.
-  flat_name: status
+  flat_name: its_task_log.status
   ignore_above: 1024
   level: custom
   name: status
   normalize: []
   short: Task status.
   type: keyword
-task_channel:
-  dashed_name: task-channel
+its_task_log.task_channel:
+  dashed_name: its-task-log-task-channel
   description: Task channel.
-  flat_name: task_channel
+  flat_name: its_task_log.task_channel
   ignore_above: 1024
   level: custom
   name: task_channel
   normalize: []
   short: Task channel.
   type: keyword
-task_description:
-  dashed_name: task-description
+its_task_log.task_description:
+  dashed_name: its-task-log-task-description
   description: Task description.
-  flat_name: task_description
+  flat_name: its_task_log.task_description
   ignore_above: 1024
   level: custom
   name: task_description
   normalize: []
   short: Task description.
   type: keyword
-task_name:
-  dashed_name: task-name
+its_task_log.task_name:
+  dashed_name: its-task-log-task-name
   description: Task name.
-  flat_name: task_name
+  flat_name: its_task_log.task_name
   ignore_above: 1024
   level: custom
   name: task_name
   normalize: []
   short: Task name.
   type: keyword
-task_type:
-  dashed_name: task-type
+its_task_log.task_type:
+  dashed_name: its-task-log-task-type
   description: Task type.
-  flat_name: task_type
+  flat_name: its_task_log.task_type
   ignore_above: 1024
   level: custom
   name: task_type

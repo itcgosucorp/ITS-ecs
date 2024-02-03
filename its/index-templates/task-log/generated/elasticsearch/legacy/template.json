@@ -7,6 +7,15 @@
       "@timestamp": {
         "type": "date"
       },
+      "event": {
+        "properties": {
+          "original": {
+            "doc_values": false,
+            "index": false,
+            "type": "keyword"
+          }
+        }
+      },
       "app_code": {
         "ignore_above": 1024,
         "type": "keyword"
@@ -32,6 +41,44 @@
           "banner_time_viewed": {
             "type": "integer"
           },
+          "survey_result": {
+            "properties": {
+              "answer": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "choices": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "columns": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "name": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "rate_count": {
+                "type": "integer"
+              },
+              "rate_max": {
+                "type": "integer"
+              },
+              "rows": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "title": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "type": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
           "video_played_length": {
             "type": "integer"
           },
@@ -40,23 +87,30 @@
           }
         }
       },
+      "completion_cond_metadata_rule": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "completion_cond_metadata_rule_metrics": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
       "end_date": {
         "type": "date"
-      },
-      "event": {
-        "properties": {
-          "original": {
-            "doc_values": false,
-            "index": false,
-            "type": "keyword"
-          }
-        }
       },
       "is_new": {
         "type": "boolean"
       },
       "is_show_result": {
         "type": "boolean"
+      },
+      "metadata_rule": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "metadata_rule_metrics": {
+        "ignore_above": 1024,
+        "type": "keyword"
       },
       "postback": {
         "properties": {
