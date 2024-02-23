@@ -49,12 +49,30 @@
       short: The rate count of rating question.
       description: >
         The rate count of rating question.
-    - name: choices
+    - name: rate_values.text
+      level: custom
+      type: integer
+      short: The rate value's text of rating question.
+      description: >
+        The rate value's text of rating question.
+    - name: rate_values.value
+      level: custom
+      type: integer
+      short: The rate value's value of rating question.
+      description: >
+        The rate value's value of rating question.
+    - name: choices.text
       level: custom
       type: keyword
-      short: The choice options of radiogroup/checkbox question.
+      short: The choice's text options of radiogroup/checkbox question.
       description: >
-        The choice options of radiogroup/checkbox question.
+        The choice'text options of radiogroup/checkbox question.
+    - name: choices.value
+      level: custom
+      type: keyword
+      short: The choice's value options of radiogroup/checkbox question.
+      description: >
+        The choice's value options of radiogroup/checkbox question.
     - name: columns.value
       level: custom
       type: keyword

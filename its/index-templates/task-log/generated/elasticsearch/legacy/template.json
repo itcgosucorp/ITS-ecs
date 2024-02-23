@@ -37,6 +37,7 @@
         "type": "keyword"
       },
       "completed_task_info": {
+        "type": "nested",
         "properties": {
           "banner_time_viewed": {
             "type": "integer"
@@ -48,8 +49,16 @@
                 "type": "keyword"
               },
               "choices": {
-                "ignore_above": 1024,
-                "type": "keyword"
+                "properties": {
+                  "text": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "value": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
               },
               "columns": {
                 "properties": {
@@ -72,6 +81,16 @@
               },
               "rate_max": {
                 "type": "integer"
+              },
+              "rate_values": {
+                "properties": {
+                  "text": {
+                    "type": "integer"
+                  },
+                  "value": {
+                    "type": "integer"
+                  }
+                }
               },
               "rows": {
                 "properties": {

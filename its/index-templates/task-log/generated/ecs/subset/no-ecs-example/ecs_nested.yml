@@ -146,16 +146,27 @@ its_task_log:
       original_fieldset: its_survey_result
       short: The answer.
       type: keyword
-    its_task_log.completed_task_info.survey_result.choices:
-      dashed_name: its-task-log-completed-task-info-survey-result-choices
-      description: The choice options of radiogroup/checkbox question.
-      flat_name: its_task_log.completed_task_info.survey_result.choices
+    its_task_log.completed_task_info.survey_result.choices.text:
+      dashed_name: its-task-log-completed-task-info-survey-result-choices-text
+      description: The choice'text options of radiogroup/checkbox question.
+      flat_name: its_task_log.completed_task_info.survey_result.choices.text
       ignore_above: 1024
       level: custom
-      name: choices
+      name: choices.text
       normalize: []
       original_fieldset: its_survey_result
-      short: The choice options of radiogroup/checkbox question.
+      short: The choice's text options of radiogroup/checkbox question.
+      type: keyword
+    its_task_log.completed_task_info.survey_result.choices.value:
+      dashed_name: its-task-log-completed-task-info-survey-result-choices-value
+      description: The choice's value options of radiogroup/checkbox question.
+      flat_name: its_task_log.completed_task_info.survey_result.choices.value
+      ignore_above: 1024
+      level: custom
+      name: choices.value
+      normalize: []
+      original_fieldset: its_survey_result
+      short: The choice's value options of radiogroup/checkbox question.
       type: keyword
     its_task_log.completed_task_info.survey_result.columns.text:
       dashed_name: its-task-log-completed-task-info-survey-result-columns-text
@@ -209,6 +220,26 @@ its_task_log:
       normalize: []
       original_fieldset: its_survey_result
       short: The rate count of rating question.
+      type: integer
+    its_task_log.completed_task_info.survey_result.rate_values.text:
+      dashed_name: its-task-log-completed-task-info-survey-result-rate-values-text
+      description: The rate value's text of rating question.
+      flat_name: its_task_log.completed_task_info.survey_result.rate_values.text
+      level: custom
+      name: rate_values.text
+      normalize: []
+      original_fieldset: its_survey_result
+      short: The rate value's text of rating question.
+      type: integer
+    its_task_log.completed_task_info.survey_result.rate_values.value:
+      dashed_name: its-task-log-completed-task-info-survey-result-rate-values-value
+      description: The rate value's value of rating question.
+      flat_name: its_task_log.completed_task_info.survey_result.rate_values.value
+      level: custom
+      name: rate_values.value
+      normalize: []
+      original_fieldset: its_survey_result
+      short: The rate value's value of rating question.
       type: integer
     its_task_log.completed_task_info.survey_result.rows.text:
       dashed_name: its-task-log-completed-task-info-survey-result-rows-text

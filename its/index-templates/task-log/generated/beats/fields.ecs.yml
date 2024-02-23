@@ -101,11 +101,17 @@
       ignore_above: 1024
       description: The answer.
       default_field: false
-    - name: completed_task_info.survey_result.choices
+    - name: completed_task_info.survey_result.choices.text
       level: custom
       type: keyword
       ignore_above: 1024
-      description: The choice options of radiogroup/checkbox question.
+      description: The choice'text options of radiogroup/checkbox question.
+      default_field: false
+    - name: completed_task_info.survey_result.choices.value
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The choice's value options of radiogroup/checkbox question.
       default_field: false
     - name: completed_task_info.survey_result.columns.text
       level: custom
@@ -134,6 +140,16 @@
       level: custom
       type: integer
       description: The rate count of rating question.
+      default_field: false
+    - name: completed_task_info.survey_result.rate_values.text
+      level: custom
+      type: integer
+      description: The rate value's text of rating question.
+      default_field: false
+    - name: completed_task_info.survey_result.rate_values.value
+      level: custom
+      type: integer
+      description: The rate value's value of rating question.
       default_field: false
     - name: completed_task_info.survey_result.rows.text
       level: custom
