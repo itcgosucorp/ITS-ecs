@@ -75,7 +75,8 @@
                     "rate_values": {
                       "properties": {
                         "text": {
-                          "type": "integer"
+                          "ignore_above": 1024,
+                          "type": "keyword"
                         },
                         "value": {
                           "type": "integer"

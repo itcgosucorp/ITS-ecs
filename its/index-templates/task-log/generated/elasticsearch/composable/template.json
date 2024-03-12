@@ -14,7 +14,9 @@
   ],
   "priority": 1,
   "template": {
-    "mappings": {},
+    "mappings": {
+      "dynamic": false
+    },
     "settings": {
       "index": {
         "codec": "best_compression",

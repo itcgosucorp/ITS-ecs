@@ -15,7 +15,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.name,keyword,custom,,,Question unique ID.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_count,integer,custom,,,The rate count of rating question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_max,integer,custom,,,The rate count of rating question.
-8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_values.text,integer,custom,,,The rate value's text of rating question.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_values.text,keyword,custom,,,The rate value's text of rating question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_values.value,integer,custom,,,The rate value's value of rating question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rows.text,keyword,custom,,,The row questions's text of matrix question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rows.value,keyword,custom,,,The row questions's value of matrix question.

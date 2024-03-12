@@ -225,12 +225,13 @@ its_task_log:
       dashed_name: its-task-log-completed-task-info-survey-result-rate-values-text
       description: The rate value's text of rating question.
       flat_name: its_task_log.completed_task_info.survey_result.rate_values.text
+      ignore_above: 1024
       level: custom
       name: rate_values.text
       normalize: []
       original_fieldset: its_survey_result
       short: The rate value's text of rating question.
-      type: integer
+      type: keyword
     its_task_log.completed_task_info.survey_result.rate_values.value:
       dashed_name: its-task-log-completed-task-info-survey-result-rate-values-value
       description: The rate value's value of rating question.

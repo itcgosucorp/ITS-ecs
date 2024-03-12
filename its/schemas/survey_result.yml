@@ -51,7 +51,7 @@
         The rate count of rating question.
     - name: rate_values.text
       level: custom
-      type: integer
+      type: keyword
       short: The rate value's text of rating question.
       description: >
         The rate value's text of rating question.

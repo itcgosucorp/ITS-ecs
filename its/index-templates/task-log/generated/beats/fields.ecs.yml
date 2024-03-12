@@ -143,7 +143,8 @@
       default_field: false
     - name: completed_task_info.survey_result.rate_values.text
       level: custom
-      type: integer
+      type: keyword
+      ignore_above: 1024
       description: The rate value's text of rating question.
       default_field: false
     - name: completed_task_info.survey_result.rate_values.value
