@@ -1,0 +1,44 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,false,event,event.original,keyword,core,,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232,Raw text message of entire event.
+8.9.0,true,its_report_survey,its_report_survey.app_code,keyword,custom,,,Application code.
+8.9.0,true,its_report_survey,its_report_survey.application_id,keyword,custom,,,Application ID.
+8.9.0,true,its_report_survey,its_report_survey.campaign_id,keyword,custom,,,Campaign ID.
+8.9.0,true,its_report_survey,its_report_survey.campaign_task_id,keyword,custom,,,Campaign Task ID.
+8.9.0,true,its_report_survey,its_report_survey.character_id,keyword,custom,,,Character ID.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.banner_time_viewed,integer,custom,,,Banner time viewed.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.answer,keyword,custom,,,The answer.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.choices.text,keyword,custom,,,The choice's text options of radiogroup/checkbox question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.choices.value,keyword,custom,,,The choice's value options of radiogroup/checkbox question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.columns.text,keyword,custom,,,The column options's text of matrix question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.columns.value,keyword,custom,,,The column options's value of matrix question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.name,keyword,custom,,,Question unique ID.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.rate_count,integer,custom,,,The rate count of rating question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.rate_max,integer,custom,,,The rate count of rating question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.rate_values.text,keyword,custom,,,The rate value's text of rating question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.rate_values.value,integer,custom,,,The rate value's value of rating question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.rows.text,keyword,custom,,,The row questions's text of matrix question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.rows.value,keyword,custom,,,The row questions's value of matrix question.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.title,keyword,custom,,,Question title.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.type,keyword,custom,,,Question type.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.video_played_length,integer,custom,,,Video played length.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.video_total_length,integer,custom,,,Video total length.
+8.9.0,true,its_report_survey,its_report_survey.completion_cond_metadata_rule,keyword,custom,,,The string of completion_cond_metadata_rule.
+8.9.0,true,its_report_survey,its_report_survey.completion_cond_metadata_rule_metrics,keyword,custom,,,Metrics relate to completion_cond_metadata_rule.
+8.9.0,true,its_report_survey,its_report_survey.end_date,date,custom,,,Campaign's end date.
+8.9.0,true,its_report_survey,its_report_survey.is_new,boolean,custom,,,Task is new.
+8.9.0,true,its_report_survey,its_report_survey.is_show_result,boolean,custom,,,Postback dialog showing's status.
+8.9.0,true,its_report_survey,its_report_survey.metadata_rule,keyword,custom,,,The string of metadata_rule.
+8.9.0,true,its_report_survey,its_report_survey.metadata_rule_metrics,keyword,custom,,,Metrics relate to metadata_rule.
+8.9.0,true,its_report_survey,its_report_survey.postback.status,keyword,custom,,,Postback status.
+8.9.0,true,its_report_survey,its_report_survey.pub_code,keyword,custom,,,Publisher code.
+8.9.0,true,its_report_survey,its_report_survey.publisher_id,keyword,custom,,,Publisher ID.
+8.9.0,true,its_report_survey,its_report_survey.server_id,keyword,custom,,,Server ID.
+8.9.0,true,its_report_survey,its_report_survey.start_date,date,custom,,,Campaign's start date.
+8.9.0,true,its_report_survey,its_report_survey.status,keyword,custom,,,Task status.
+8.9.0,true,its_report_survey,its_report_survey.task_channel,keyword,custom,,,Task channel.
+8.9.0,true,its_report_survey,its_report_survey.task_description,keyword,custom,,,Task description.
+8.9.0,true,its_report_survey,its_report_survey.task_log_id,keyword,custom,,,Task log ID.
+8.9.0,true,its_report_survey,its_report_survey.task_name,keyword,custom,,,Task name.
+8.9.0,true,its_report_survey,its_report_survey.task_type,keyword,custom,,,Task type.
+8.9.0,true,user,user.id,keyword,core,,S-1-5-21-202424912787-2692429404-2351956786-1000,Unique identifier of the user.

@@ -12,6 +12,8 @@
     expected:
       - at: its_task_log.completed_task_info
         as: survey_result
+      - at: its_report_survey.completed_task_info
+        as: survey_result
   fields:
     - name: type
       level: custom
