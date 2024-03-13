@@ -135,16 +135,27 @@ its_report_survey:
       normalize: []
       short: Banner time viewed.
       type: integer
-    its_report_survey.completed_task_info.survey_result.answer:
-      dashed_name: its-report-survey-completed-task-info-survey-result-answer
-      description: The answer.
-      flat_name: its_report_survey.completed_task_info.survey_result.answer
+    its_report_survey.completed_task_info.survey_result.answer.text:
+      dashed_name: its-report-survey-completed-task-info-survey-result-answer-text
+      description: The answer's text.
+      flat_name: its_report_survey.completed_task_info.survey_result.answer.text
       ignore_above: 1024
       level: custom
-      name: answer
+      name: answer.text
       normalize: []
       original_fieldset: its_survey_result
-      short: The answer.
+      short: The answer's text.
+      type: keyword
+    its_report_survey.completed_task_info.survey_result.answer.value:
+      dashed_name: its-report-survey-completed-task-info-survey-result-answer-value
+      description: The answer's value.
+      flat_name: its_report_survey.completed_task_info.survey_result.answer.value
+      ignore_above: 1024
+      level: custom
+      name: answer.value
+      normalize: []
+      original_fieldset: its_survey_result
+      short: The answer's value.
       type: keyword
     its_report_survey.completed_task_info.survey_result.choices.text:
       dashed_name: its-report-survey-completed-task-info-survey-result-choices-text

@@ -95,11 +95,17 @@
       type: integer
       description: Banner time viewed.
       default_field: false
-    - name: completed_task_info.survey_result.answer
+    - name: completed_task_info.survey_result.answer.text
       level: custom
       type: keyword
       ignore_above: 1024
-      description: The answer.
+      description: The answer's text.
+      default_field: false
+    - name: completed_task_info.survey_result.answer.value
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: The answer's value.
       default_field: false
     - name: completed_task_info.survey_result.choices.text
       level: custom

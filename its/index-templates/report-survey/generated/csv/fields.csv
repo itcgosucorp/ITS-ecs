@@ -7,7 +7,8 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,its_report_survey,its_report_survey.campaign_task_id,keyword,custom,,,Campaign Task ID.
 8.9.0,true,its_report_survey,its_report_survey.character_id,keyword,custom,,,Character ID.
 8.9.0,true,its_report_survey,its_report_survey.completed_task_info.banner_time_viewed,integer,custom,,,Banner time viewed.
-8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.answer,keyword,custom,,,The answer.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.answer.text,keyword,custom,,,The answer's text.
+8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.answer.value,keyword,custom,,,The answer's value.
 8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.choices.text,keyword,custom,,,The choice's text options of radiogroup/checkbox question.
 8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.choices.value,keyword,custom,,,The choice's value options of radiogroup/checkbox question.
 8.9.0,true,its_report_survey,its_report_survey.completed_task_info.survey_result.columns.text,keyword,custom,,,The column options's text of matrix question.

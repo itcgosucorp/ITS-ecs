@@ -45,8 +45,16 @@
           "survey_result": {
             "properties": {
               "answer": {
-                "ignore_above": 1024,
-                "type": "keyword"
+                "properties": {
+                  "text": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "value": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
               },
               "choices": {
                 "properties": {

@@ -33,12 +33,18 @@
       short: Question title.
       description: >
         The survey question title.
-    - name: answer
+    - name: answer.value
       level: custom
       type: keyword
-      short: The answer.
+      short: The answer's value.
       description: >
-        The answer.
+        The answer's value.
+    - name: answer.text
+      level: custom
+      type: keyword
+      short: The answer's text.
+      description: >
+        The answer's text.
     - name: rate_count
       level: custom
       type: integer
