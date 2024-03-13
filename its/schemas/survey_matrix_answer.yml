@@ -1,0 +1,29 @@
+---
+- name: its_survey_matrix_answer
+  title: ITS Survey Result
+  type: group
+  group: 2
+  short: More information about survey result.
+  description: >
+   More information about survey result.
+  reusable:
+    order: 2
+    top_level: true
+    expected:
+      - at: its_survey_result
+        as: matrix_answers
+  fields:
+    - name: row
+      level: custom
+      type: keyword
+      short: Row's value.
+      description: >
+        Row's value.
+    - name: answer
+      level: custom
+      type: keyword
+      short: Answer.
+      description: >
+        Answer.
+    
+      

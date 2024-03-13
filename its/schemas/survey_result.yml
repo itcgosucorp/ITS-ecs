@@ -99,5 +99,11 @@
       short: The row questions's text of matrix question.
       description: >
         The row questions's text of matrix question.
+    - name: matrix_answers
+      level: custom
+      type: nested
+      short: The answers of matrix question.
+      description: >
+        The answers of matrix question.
     
       

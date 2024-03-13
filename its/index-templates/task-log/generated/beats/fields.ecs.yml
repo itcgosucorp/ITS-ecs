@@ -125,6 +125,18 @@
       ignore_above: 1024
       description: The column options's value of matrix question.
       default_field: false
+    - name: completed_task_info.survey_result.matrix_answers.answer
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Answer.
+      default_field: false
+    - name: completed_task_info.survey_result.matrix_answers.row
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Row's value.
+      default_field: false
     - name: completed_task_info.survey_result.name
       level: custom
       type: keyword

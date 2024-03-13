@@ -190,6 +190,28 @@ its_task_log:
       original_fieldset: its_survey_result
       short: The column options's value of matrix question.
       type: keyword
+    its_task_log.completed_task_info.survey_result.matrix_answers.answer:
+      dashed_name: its-task-log-completed-task-info-survey-result-matrix-answers-answer
+      description: Answer.
+      flat_name: its_task_log.completed_task_info.survey_result.matrix_answers.answer
+      ignore_above: 1024
+      level: custom
+      name: answer
+      normalize: []
+      original_fieldset: its_survey_matrix_answer
+      short: Answer.
+      type: keyword
+    its_task_log.completed_task_info.survey_result.matrix_answers.row:
+      dashed_name: its-task-log-completed-task-info-survey-result-matrix-answers-row
+      description: Row's value.
+      flat_name: its_task_log.completed_task_info.survey_result.matrix_answers.row
+      ignore_above: 1024
+      level: custom
+      name: row
+      normalize: []
+      original_fieldset: its_survey_matrix_answer
+      short: Row's value.
+      type: keyword
     its_task_log.completed_task_info.survey_result.name:
       dashed_name: its-task-log-completed-task-info-survey-result-name
       description: The survey question unique ID.
