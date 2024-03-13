@@ -13,8 +13,10 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.choices.value,keyword,custom,,,The choice's value options of radiogroup/checkbox question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.columns.text,keyword,custom,,,The column options's text of matrix question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.columns.value,keyword,custom,,,The column options's value of matrix question.
-8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.matrix_answers.answer,keyword,custom,,,Answer.
-8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.matrix_answers.row,keyword,custom,,,Row's value.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.matrix_answers.answer.text,keyword,custom,,,Answer's text.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.matrix_answers.answer.value,keyword,custom,,,Answer's value.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.matrix_answers.row.text,keyword,custom,,,Row's text.
+8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.matrix_answers.row.value,keyword,custom,,,Row's value.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.name,keyword,custom,,,Question unique ID.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_count,integer,custom,,,The rate count of rating question.
 8.9.0,true,its_task_log,its_task_log.completed_task_info.survey_result.rate_max,integer,custom,,,The rate count of rating question.

@@ -201,24 +201,46 @@ its_report_survey:
       original_fieldset: its_survey_result
       short: The column options's value of matrix question.
       type: keyword
-    its_report_survey.completed_task_info.survey_result.matrix_answers.answer:
-      dashed_name: its-report-survey-completed-task-info-survey-result-matrix-answers-answer
-      description: Answer.
-      flat_name: its_report_survey.completed_task_info.survey_result.matrix_answers.answer
+    its_report_survey.completed_task_info.survey_result.matrix_answers.answer.text:
+      dashed_name: its-report-survey-completed-task-info-survey-result-matrix-answers-answer-text
+      description: Answer's text.
+      flat_name: its_report_survey.completed_task_info.survey_result.matrix_answers.answer.text
       ignore_above: 1024
       level: custom
-      name: answer
+      name: answer.text
       normalize: []
       original_fieldset: its_survey_matrix_answer
-      short: Answer.
+      short: Answer's text.
       type: keyword
-    its_report_survey.completed_task_info.survey_result.matrix_answers.row:
-      dashed_name: its-report-survey-completed-task-info-survey-result-matrix-answers-row
-      description: Row's value.
-      flat_name: its_report_survey.completed_task_info.survey_result.matrix_answers.row
+    its_report_survey.completed_task_info.survey_result.matrix_answers.answer.value:
+      dashed_name: its-report-survey-completed-task-info-survey-result-matrix-answers-answer-value
+      description: Answer's value.
+      flat_name: its_report_survey.completed_task_info.survey_result.matrix_answers.answer.value
       ignore_above: 1024
       level: custom
-      name: row
+      name: answer.value
+      normalize: []
+      original_fieldset: its_survey_matrix_answer
+      short: Answer's value.
+      type: keyword
+    its_report_survey.completed_task_info.survey_result.matrix_answers.row.text:
+      dashed_name: its-report-survey-completed-task-info-survey-result-matrix-answers-row-text
+      description: Row's text.
+      flat_name: its_report_survey.completed_task_info.survey_result.matrix_answers.row.text
+      ignore_above: 1024
+      level: custom
+      name: row.text
+      normalize: []
+      original_fieldset: its_survey_matrix_answer
+      short: Row's text.
+      type: keyword
+    its_report_survey.completed_task_info.survey_result.matrix_answers.row.value:
+      dashed_name: its-report-survey-completed-task-info-survey-result-matrix-answers-row-value
+      description: Row's value.
+      flat_name: its_report_survey.completed_task_info.survey_result.matrix_answers.row.value
+      ignore_above: 1024
+      level: custom
+      name: row.value
       normalize: []
       original_fieldset: its_survey_matrix_answer
       short: Row's value.

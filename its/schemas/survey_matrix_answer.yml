@@ -13,17 +13,29 @@
       - at: its_survey_result
         as: matrix_answers
   fields:
-    - name: row
+    - name: row.value
       level: custom
       type: keyword
       short: Row's value.
       description: >
         Row's value.
-    - name: answer
+    - name: row.text
       level: custom
       type: keyword
-      short: Answer.
+      short: Row's text.
       description: >
-        Answer.
+        Row's text.
+    - name: answer.value
+      level: custom
+      type: keyword
+      short: Answer's value.
+      description: >
+        Answer's value.
+    - name: answer.text
+      level: custom
+      type: keyword
+      short: Answer's text.
+      description: >
+        Answer's text.
     
       
