@@ -73,7 +73,6 @@
                 }
               },
               "matrix_answers": {
-                "type": "nested",
                 "properties": {
                   "answer": {
                     "ignore_above": 1024,
