@@ -56,12 +56,12 @@
       short: Task status.
       description: >
         Task status.
-    - name: is_new
+    - name: read_state
       level: custom
-      type: boolean
-      short: Task is new.
+      type: keyword
+      short: Task's read state.
       description: >
-        Task is new.
+        Task's read state.
     - name: task_name
       level: custom
       type: keyword

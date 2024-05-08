@@ -388,15 +388,6 @@ its_task_log:
       normalize: []
       short: Campaign's end date.
       type: date
-    its_task_log.is_new:
-      dashed_name: its-task-log-is-new
-      description: Task is new.
-      flat_name: its_task_log.is_new
-      level: custom
-      name: is_new
-      normalize: []
-      short: Task is new.
-      type: boolean
     its_task_log.is_show_result:
       dashed_name: its-task-log-is-show-result
       description: Postback dialog showing's status.
@@ -455,6 +446,16 @@ its_task_log:
       name: publisher_id
       normalize: []
       short: Publisher ID.
+      type: keyword
+    its_task_log.read_state:
+      dashed_name: its-task-log-read-state
+      description: Task's read state.
+      flat_name: its_task_log.read_state
+      ignore_above: 1024
+      level: custom
+      name: read_state
+      normalize: []
+      short: Task's read state.
       type: keyword
     its_task_log.server_id:
       dashed_name: its-task-log-server-id

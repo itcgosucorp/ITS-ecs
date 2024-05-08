@@ -233,11 +233,6 @@
       type: date
       description: Campaign's end date.
       default_field: false
-    - name: is_new
-      level: custom
-      type: boolean
-      description: Task is new.
-      default_field: false
     - name: is_show_result
       level: custom
       type: boolean
@@ -272,6 +267,12 @@
       type: keyword
       ignore_above: 1024
       description: Publisher ID.
+      default_field: false
+    - name: read_state
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task's read state.
       default_field: false
     - name: server_id
       level: custom

@@ -160,9 +160,6 @@
             "end_date": {
               "type": "date"
             },
-            "is_new": {
-              "type": "boolean"
-            },
             "is_show_result": {
               "type": "boolean"
             },
@@ -187,6 +184,10 @@
               "type": "keyword"
             },
             "publisher_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "read_state": {
               "ignore_above": 1024,
               "type": "keyword"
             },
