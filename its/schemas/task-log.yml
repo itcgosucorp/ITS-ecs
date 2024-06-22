@@ -164,4 +164,10 @@
       short: Postback dialog showing's status.
       description: >
         Postback dialog showing's status.
+    - name: log_type 
+      level: custom
+      type: keyword
+      short: Task type
+      description: >
+        Task type (mission or notification)
       

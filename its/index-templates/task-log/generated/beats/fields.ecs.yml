@@ -238,6 +238,12 @@
       type: boolean
       description: Postback dialog showing's status.
       default_field: false
+    - name: log_type
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task type (mission or notification)
+      default_field: false
     - name: metadata_rule
       level: custom
       type: keyword

@@ -397,6 +397,16 @@ its_task_log:
       normalize: []
       short: Postback dialog showing's status.
       type: boolean
+    its_task_log.log_type:
+      dashed_name: its-task-log-log-type
+      description: Task type (mission or notification)
+      flat_name: its_task_log.log_type
+      ignore_above: 1024
+      level: custom
+      name: log_type
+      normalize: []
+      short: Task type
+      type: keyword
     its_task_log.metadata_rule:
       dashed_name: its-task-log-metadata-rule
       description: The string of metadata_rule.

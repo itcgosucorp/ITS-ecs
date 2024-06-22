@@ -163,6 +163,10 @@
             "is_show_result": {
               "type": "boolean"
             },
+            "log_type": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
             "metadata_rule": {
               "ignore_above": 1024,
               "type": "keyword"
