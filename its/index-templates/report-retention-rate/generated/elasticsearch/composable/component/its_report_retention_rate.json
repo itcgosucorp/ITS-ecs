@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_retention_rate": {
+          "properties": {
+            "d0": {
+              "type": "date"
+            },
+            "rr_d1": {
+              "type": "double"
+            },
+            "rr_d3": {
+              "type": "double"
+            },
+            "rr_d30": {
+              "type": "double"
+            },
+            "rr_d7": {
+              "type": "double"
+            }
+          }
+        }
+      }
+    }
+  }
+}

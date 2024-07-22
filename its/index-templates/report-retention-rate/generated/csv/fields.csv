@@ -1,0 +1,7 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_retention_rate,its_report_retention_rate.d0,date,custom,,,Day 0.
+8.9.0,true,its_report_retention_rate,its_report_retention_rate.rr_d1,double,custom,,,Retention rate of d1.
+8.9.0,true,its_report_retention_rate,its_report_retention_rate.rr_d3,double,custom,,,Retention rate of d3.
+8.9.0,true,its_report_retention_rate,its_report_retention_rate.rr_d30,double,custom,,,Retention rate of d30.
+8.9.0,true,its_report_retention_rate,its_report_retention_rate.rr_d7,double,custom,,,Retention rate of d7.
