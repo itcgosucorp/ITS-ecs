@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "report_*_retention_rate"
+    "report_*_*_retention_rate"
   ],
   "mappings": {
     "dynamic": false,

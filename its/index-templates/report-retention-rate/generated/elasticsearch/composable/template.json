@@ -8,7 +8,7 @@
     "ecs_8.9.0_its_report_retention_rate"
   ],
   "index_patterns": [
-    "report_*_retention_rate"
+    "report_*_*_retention_rate"
   ],
   "priority": 1,
   "template": {

@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_retention_rate"],
+  "index_patterns": ["report_*_*_retention_rate"],
   "priority": 1,
   "template": {
     "settings": {
