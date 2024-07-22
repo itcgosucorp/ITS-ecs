@@ -7,6 +7,14 @@
       "properties": {
         "its_report_retention_rate": {
           "properties": {
+            "app_code": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "application_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
             "d0": {
               "type": "date"
             },
