@@ -1,0 +1,4 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_ccu_hour,its_report_ccu_hour.timestamp_by_hour,date,custom,,,Timestamp by hour.
+8.9.0,true,its_report_ccu_hour,its_report_ccu_hour.user_count,long,custom,,,Number of unique user.

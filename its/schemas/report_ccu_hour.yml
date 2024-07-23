@@ -1,0 +1,24 @@
+---
+- name: its_report_ccu_hour
+  title: ITS report CCU by hour
+  type: group
+  group: 2
+  root: false
+  short: ITS report CCU by hour
+  description: >
+    ITS report CCU by hour
+  fields:
+    - name: timestamp_by_hour
+      level: custom
+      type: date
+      short: Timestamp by hour.
+      description: >
+       Timestamp by hour.
+    - name: user_count
+      level: custom
+      type: long
+      short: Number of unique user.
+      description: >
+       Number of unique user.
+    
+    

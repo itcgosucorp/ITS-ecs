@@ -1,0 +1,31 @@
+{
+  "index_patterns": [
+    "report_*_*_ccu_hour"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "timestamp_by_hour": {
+        "type": "date"
+      },
+      "user_count": {
+        "type": "long"
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_ccu_hour": {
+          "properties": {
+            "timestamp_by_hour": {
+              "type": "date"
+            },
+            "user_count": {
+              "type": "long"
+            }
+          }
+        }
+      }
+    }
+  }
+}
