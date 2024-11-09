@@ -14,11 +14,29 @@
         }
       },
       {
+        "context_as_keyword": {
+          "mapping": {
+            "type": "double"
+          },
+          "match_mapping_type": "long",
+          "path_match": "event.its.context.*"
+        }
+      },
+      {
         "properties_as_keyword": {
           "mapping": {
             "type": "keyword"
           },
           "match_mapping_type": "string",
+          "path_match": "event.its.properties.*"
+        }
+      },
+      {
+        "properties_as_keyword": {
+          "mapping": {
+            "type": "double"
+          },
+          "match_mapping_type": "long",
           "path_match": "event.its.properties.*"
         }
       }
