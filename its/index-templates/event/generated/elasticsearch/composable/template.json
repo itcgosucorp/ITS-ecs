@@ -31,7 +31,7 @@
           }
         },
         {
-          "context_as_keyword": {
+          "context_as_double": {
             "mapping": {
               "type": "double"
             },
@@ -49,7 +49,7 @@
           }
         },
         {
-          "properties_as_keyword": {
+          "properties_as_double": {
             "mapping": {
               "type": "double"
             },
