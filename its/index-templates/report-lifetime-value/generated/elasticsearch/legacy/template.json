@@ -1,0 +1,61 @@
+{
+  "index_patterns": [
+    "report_*_*_lifetime_value"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+     "d0": {
+        "type": "date"
+      },
+      "ltv_d1": {
+        "type": "double"
+      },
+      "ltv_d120": {
+        "type": "double"
+      },
+      "ltv_d14": {
+        "type": "double"
+      },
+      "ltv_d150": {
+        "type": "double"
+      },
+      "ltv_d180": {
+        "type": "double"
+      },
+      "ltv_d21": {
+        "type": "double"
+      },
+      "ltv_d3": {
+        "type": "double"
+      },
+      "ltv_d30": {
+        "type": "double"
+      },
+      "ltv_d60": {
+        "type": "double"
+      },
+      "ltv_d7": {
+        "type": "double"
+      },
+      "ltv_d90": {
+        "type": "double"
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}

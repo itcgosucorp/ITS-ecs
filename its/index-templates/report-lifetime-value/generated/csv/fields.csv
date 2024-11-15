@@ -1,0 +1,14 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.d0,date,custom,,,Day 0.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d1,double,custom,,,Retention rate of d1.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d120,double,custom,,,Retention rate of d120.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d14,double,custom,,,Retention rate of d14.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d150,double,custom,,,Retention rate of d150.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d180,double,custom,,,Retention rate of d180.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d21,double,custom,,,Retention rate of d21.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d3,double,custom,,,Retention rate of d3.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d30,double,custom,,,Retention rate of d30.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d60,double,custom,,,Retention rate of d60.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d7,double,custom,,,Retention rate of d7.
+8.9.0,true,its_report_lifetime_value,its_report_lifetime_value.ltv_d90,double,custom,,,Retention rate of d90.

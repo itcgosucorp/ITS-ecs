@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_lifetime_value": {
+          "properties": {
+            "d0": {
+              "type": "date"
+            },
+            "ltv_d1": {
+              "type": "double"
+            },
+            "ltv_d120": {
+              "type": "double"
+            },
+            "ltv_d14": {
+              "type": "double"
+            },
+            "ltv_d150": {
+              "type": "double"
+            },
+            "ltv_d180": {
+              "type": "double"
+            },
+            "ltv_d21": {
+              "type": "double"
+            },
+            "ltv_d3": {
+              "type": "double"
+            },
+            "ltv_d30": {
+              "type": "double"
+            },
+            "ltv_d60": {
+              "type": "double"
+            },
+            "ltv_d7": {
+              "type": "double"
+            },
+            "ltv_d90": {
+              "type": "double"
+            }
+          }
+        }
+      }
+    }
+  }
+}

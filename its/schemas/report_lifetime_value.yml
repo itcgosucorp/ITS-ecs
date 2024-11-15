@@ -1,0 +1,84 @@
+---
+- name: its_report_lifetime_value
+  title: ITS report lifetime value
+  type: group
+  group: 2
+  root: false
+  short: ITS report lifetime value
+  description: >
+    ITS report lifetime value
+  fields:
+    - name: d0
+      level: custom
+      type: date
+      short: Day 0.
+      description: >
+        Day 0.
+    - name: ltv_d1
+      level: custom
+      type: double
+      short: Retention rate of d1.
+      description: >
+        Retention rate of d1.
+    - name: ltv_d3
+      level: custom
+      type: double
+      short: Retention rate of d3.
+      description: >
+        Retention rate of d3.
+    - name: ltv_d7
+      level: custom
+      type: double
+      short: Retention rate of d7.
+      description: >
+        Retention rate of d7.
+    - name: ltv_d14
+      level: custom
+      type: double
+      short: Retention rate of d14.
+      description: >
+        Retention rate of d14.
+    - name: ltv_d21
+      level: custom
+      type: double
+      short: Retention rate of d21.
+      description: >
+        Retention rate of d21.
+    - name: ltv_d30
+      level: custom
+      type: double
+      short: Retention rate of d30.
+      description: >
+        Retention rate of d30.
+    - name: ltv_d60
+      level: custom
+      type: double
+      short: Retention rate of d60.
+      description: >
+        Retention rate of d60.
+    - name: ltv_d90
+      level: custom
+      type: double
+      short: Retention rate of d90.
+      description: >
+        Retention rate of d90.
+    - name: ltv_d120
+      level: custom
+      type: double
+      short: Retention rate of d120.
+      description: >
+        Retention rate of d120.
+    - name: ltv_d150
+      level: custom
+      type: double
+      short: Retention rate of d150.
+      description: >
+        Retention rate of d150.
+    - name: ltv_d180
+      level: custom
+      type: double
+      short: Retention rate of d180.
+      description: >
+        Retention rate of d180.
+    
+    
