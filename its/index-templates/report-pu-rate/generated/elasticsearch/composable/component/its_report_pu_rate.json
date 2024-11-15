@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_pu_rate": {
+          "properties": {
+            "d0": {
+              "type": "date"
+            },
+            "pur_d1": {
+              "type": "double"
+            },
+            "pur_d14": {
+              "type": "double"
+            },
+            "pur_d21": {
+              "type": "double"
+            },
+            "pur_d3": {
+              "type": "double"
+            },
+            "pur_d30": {
+              "type": "double"
+            },
+            "pur_d60": {
+              "type": "double"
+            },
+            "pur_d7": {
+              "type": "double"
+            },
+            "pur_d90": {
+              "type": "double"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.d0,date,custom,,,Day 0.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d1,double,custom,,,PU rate of d1.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d14,double,custom,,,PU rate of d14.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d21,double,custom,,,PU rate of d21.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d3,double,custom,,,PU rate of d3.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d30,double,custom,,,PU rate of d30.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d60,double,custom,,,PU rate of d60.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d7,double,custom,,,PU rate of d7.
+8.9.0,true,its_report_pu_rate,its_report_pu_rate.pur_d90,double,custom,,,PU rate of d90.

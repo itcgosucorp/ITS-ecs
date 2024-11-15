@@ -1,0 +1,52 @@
+{
+  "index_patterns": [
+    "report_*_*_pu_rate"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "d0": {
+        "type": "date"
+      },
+      "pur_d1": {
+        "type": "double"
+      },
+      "pur_d14": {
+        "type": "double"
+      },
+      "pur_d21": {
+        "type": "double"
+      },
+      "pur_d3": {
+        "type": "double"
+      },
+      "pur_d30": {
+        "type": "double"
+      },
+      "pur_d60": {
+        "type": "double"
+      },
+      "pur_d7": {
+        "type": "double"
+      },
+      "pur_d90": {
+        "type": "double"
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}

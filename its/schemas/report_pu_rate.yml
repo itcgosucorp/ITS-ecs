@@ -1,0 +1,66 @@
+---
+- name: its_report_pu_rate
+  title: ITS report PU rate
+  type: group
+  group: 2
+  root: false
+  short: ITS report PU rate
+  description: >
+    ITS report PU rate
+  fields:
+    - name: d0
+      level: custom
+      type: date
+      short: Day 0.
+      description: >
+        Day 0.
+    - name: pur_d1
+      level: custom
+      type: double
+      short: PU rate of d1.
+      description: >
+        PU rate of d1.
+    - name: pur_d3
+      level: custom
+      type: double
+      short: PU rate of d3.
+      description: >
+        PU rate of d3.
+    - name: pur_d7
+      level: custom
+      type: double
+      short: PU rate of d7.
+      description: >
+        PU rate of d7.
+    - name: pur_d14
+      level: custom
+      type: double
+      short: PU rate of d14.
+      description: >
+        PU rate of d14.
+    - name: pur_d21
+      level: custom
+      type: double
+      short: PU rate of d21.
+      description: >
+        PU rate of d21.
+    - name: pur_d30
+      level: custom
+      type: double
+      short: PU rate of d30.
+      description: >
+        PU rate of d30.
+    - name: pur_d60
+      level: custom
+      type: double
+      short: PU rate of d60.
+      description: >
+        PU rate of d60.
+    - name: pur_d90
+      level: custom
+      type: double
+      short: PU rate of d90.
+      description: >
+        PU rate of d90.
+    
+    
