@@ -28,18 +28,6 @@
     type: group
     default_field: true
     fields:
-    - name: app_code
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Application code.
-      default_field: false
-    - name: application_id
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Application ID.
-      default_field: false
     - name: d0
       level: custom
       type: date

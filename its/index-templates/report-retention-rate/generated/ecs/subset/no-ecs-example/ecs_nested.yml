@@ -31,26 +31,6 @@ base:
 its_report_retention_rate:
   description: ITS report retention rate
   fields:
-    its_report_retention_rate.app_code:
-      dashed_name: its-report-retention-rate-app-code
-      description: Application code.
-      flat_name: its_report_retention_rate.app_code
-      ignore_above: 1024
-      level: custom
-      name: app_code
-      normalize: []
-      short: Application code.
-      type: keyword
-    its_report_retention_rate.application_id:
-      dashed_name: its-report-retention-rate-application-id
-      description: Application ID.
-      flat_name: its_report_retention_rate.application_id
-      ignore_above: 1024
-      level: custom
-      name: application_id
-      normalize: []
-      short: Application ID.
-      type: keyword
     its_report_retention_rate.d0:
       dashed_name: its-report-retention-rate-d0
       description: Day 0.

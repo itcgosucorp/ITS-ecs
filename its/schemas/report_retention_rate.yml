@@ -8,18 +8,6 @@
   description: >
     ITS report retention rate
   fields:
-    - name: application_id
-      level: custom
-      type: keyword
-      short: Application ID.
-      description: >
-       Application ID.
-    - name: app_code
-      level: custom
-      type: keyword
-      short: Application code.
-      description: >
-        Application code.
     - name: d0
       level: custom
       type: date
