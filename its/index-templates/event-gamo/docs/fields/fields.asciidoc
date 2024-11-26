@@ -1,0 +1,43 @@
+[[ecs-field-reference]]
+== {ecs} Field Reference
+
+This is the documentation of ECS version 8.9.0.
+
+ECS defines multiple groups of related fields. They are called "field sets".
+The <<ecs-base,Base>> field set is the only one whose fields are defined
+at the root of the event.
+
+All other field sets are defined as objects in {es}, under which
+all fields are defined.
+
+For a single page representation of all fields, please see the
+{ecs_github_repo_link}/generated/csv/fields.csv[generated CSV of fields].
+
+[float]
+[[ecs-fieldsets]]
+=== Field Sets
+[cols="<,<",options="header",]
+|=====
+| Field Set  | Description
+
+| <<ecs-base,Base>> | All fields defined directly at the root of the events.
+
+| <<ecs-agent,Agent>> | Fields about the monitoring agent.
+
+| <<ecs-client,Client>> | Fields about the client side of a network connection, used with server.
+
+| <<ecs-device,Device>> | Fields characterizing a (mobile) device a process or application is running on.
+
+| <<ecs-ecs,ECS>> | Meta-information specific to ECS.
+
+| <<ecs-event,Event>> | Fields breaking down the event details.
+
+| <<ecs-related,Related>> | Fields meant to facilitate pivoting around a piece of data.
+
+| <<ecs-user,User>> | Fields to describe the user relevant to the event.
+
+| <<ecs-user_agent,User agent>> | Fields to describe a browser user_agent string.
+
+|=====
+
+include::field-details.asciidoc[]

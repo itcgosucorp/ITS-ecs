@@ -1,0 +1,21 @@
+---
+name: device-its
+fields:
+  base:
+    fields: "*"
+  ecs:
+    fields: "*"
+  device:
+    fields: "*"
+  event:
+    fields: "*"
+  related:
+    fields: "*"
+  client:
+    fields: "*"
+  user_agent:
+    fields: "*"
+  agent:
+    fields: "*"
+  user:
+    fields: "*"
