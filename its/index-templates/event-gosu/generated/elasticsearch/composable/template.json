@@ -17,7 +17,7 @@
   "index_patterns": [
     "event_gosu_*"
   ],
-  "priority": 1,
+  "priority": 2,
   "template": {
     "mappings": {
       "dynamic_templates": [

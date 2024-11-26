@@ -1,6 +1,6 @@
 {
   "index_patterns": ["event_gamo_*"],
-  "priority": 1,
+  "priority": 2,
   "template": {
     "settings": {
       "index": {

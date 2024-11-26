@@ -1,6 +1,6 @@
 {
   "index_patterns": ["event_gamo_*"],
-  "order": 1,
+  "order": 2,
   "settings": {
     "index": {
       "codec" : "best_compression",
