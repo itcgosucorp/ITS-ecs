@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "8.9.0"
+  },
+  "composed_of": [
+    "ecs_8.9.0_base",
+    "ecs_8.9.0_ecs",
+    "ecs_8.9.0_device",
+    "ecs_8.9.0_event",
+    "ecs_8.9.0_related",
+    "ecs_8.9.0_client",
+    "ecs_8.9.0_user_agent",
+    "ecs_8.9.0_agent",
+    "ecs_8.9.0_user"
+  ],
+  "index_patterns": [
+    "event_gosu_*"
+  ],
+  "priority": 1,
+  "template": {
+    "mappings": {
+      "dynamic_templates": [
+        {
+          "context_as_keyword": {
+            "mapping": {
+              "type": "keyword"
+            },
+            "match_mapping_type": "string",
+            "path_match": "event.its.context.*"
+          }
+        },
+        {
+          "context_as_double": {
+            "mapping": {
+              "type": "double"
+            },
+            "match_mapping_type": "long",
+            "path_match": "event.its.context.*"
+          }
+        },
+        {
+          "properties_as_keyword": {
+            "mapping": {
+              "type": "keyword"
+            },
+            "match_mapping_type": "string",
+            "path_match": "event.its.properties.*"
+          }
+        },
+        {
+          "properties_as_double": {
+            "mapping": {
+              "type": "double"
+            },
+            "match_mapping_type": "long",
+            "path_match": "event.its.properties.*"
+          }
+        }
+      ],
+      "runtime": {
+        "event.its.payment.transfer_type": {
+          "script": {
+            "lang": "painless",
+            "source": "if(doc['event.action'].value != 'its_purchase') {emit('N/A');} else if (['gcard', 'onepayinter', 'payos', 'smsmobi', 'momo', 'zalopay', 'onepay_inter', 'onepay', 'vnptpay', 'mocha', 'vnpay', 'xsolla', 'gate', 'vtc', 'appota', 'nemo', 'onepayglobal', 'fpt', 'android', 'smsviettel', 'apple', 'tttt', 'smsvinaphone', 'virtualaccount', 'google', 'bit', 'paypal', 'vinadata', 'gtv', 'steam', 'vcoin', 'bankaccount', 'steamdev'].contains(doc['event.its.payment.channel'].value)) { if(doc['event.its.game.id'].size() != 0 && !doc['event.its.game.id'][0].empty) {emit('C2G');} else {emit('C2W')}  } else if (['gosu', 'apple.g', 'android.g', 'gosutest', 'g.apple', 'g.google', 'g.gosutest'].contains(doc['event.its.payment.channel'].value) && doc.containsKey('event.its.game.id') && !doc['event.its.game.id'].empty) {emit('W2G');} else if (['staking', 'staking-receive', 'transfer'].contains(doc['event.its.payment.channel'].value))  {emit('W2W');} else if (['tienmat', 'transfer'].contains(doc['event.its.payment.channel'].value)) {emit('T2W');} else if (['burngosu'].contains(doc['event.its.payment.channel'].value)) {emit('T2G');} else if (['promotion'].contains(doc['event.its.payment.channel'].value)) {emit('P2G');} else if (['tanggosu'].contains(doc['event.its.payment.channel'].value)) { if(doc['event.its.game.id'].size() != 0 && !doc['event.its.game.id'][0].empty) {emit('P2G');} else {emit('T2W')} } else {emit('N/A');}"
+          },
+          "type": "keyword"
+        },
+        "event.its.payment.vnd_amount": {
+          "script": {
+            "lang": "painless",
+            "source": "if(doc['event.action'].value == 'its_purchase') { if(doc['event.its.properties.exchange_rate'].size() != 0) { emit(doc['event.its.payment.amount'].value * doc['event.its.properties.exchange_rate'].value); } else {emit(doc['event.its.payment.amount'].value);} }"
+          },
+          "type": "double"
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "codec": "best_compression",
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        }
+      }
+    }
+  }
+}

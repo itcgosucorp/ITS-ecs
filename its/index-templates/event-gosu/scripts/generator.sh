@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 scripts/generator.py --force-docs --template-settings-legacy its/index-templates/event-gosu/fields/template-legacy.json --template-settings its/index-templates/event-gosu/fields/template.json --mapping-settings its/index-templates/event-gosu/fields/mapping.json --include its/schemas --subset its/index-templates/event-gosu/fields/subset.yml --out its/index-templates/event-gosu/
