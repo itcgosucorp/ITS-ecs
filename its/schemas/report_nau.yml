@@ -1,0 +1,48 @@
+---
+- name: its_report_nau
+  title: ITS report NAU
+  type: group
+  group: 2
+  root: false
+  short: ITS report NAU
+  description: >
+    ITS report NAU
+  fields:
+    - name: user.name
+      level: custom
+      type: keyword
+      short: User Name.
+      description: >
+        User Name.
+    - name: first_doc.@timestamp
+      level: custom
+      type: date
+      short: Timestamp.
+      description: >
+        Timestamp.
+    - name: first_doc.client.geo.city_name
+      level: custom
+      type: keyword
+      short: City name.
+      description: >
+        City name.
+    - name: first_doc.user_agent.os.name
+      level: custom
+      type: date
+      short: OS name.
+      description: >
+        OS name.
+    - name: first_doc.event.its.game.id
+      level: custom
+      type: date
+      short: Game ID.
+      description: >
+        Game ID.
+    - name: first_doc.client.geo.country_name
+      level: custom
+      type: date
+      short: Country name.
+      description: >
+        Country name.
+
+    

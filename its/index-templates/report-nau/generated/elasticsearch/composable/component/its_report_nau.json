@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_nau": {
+          "properties": {
+            "first_doc": {
+              "properties": {
+                "@timestamp": {
+                  "type": "date"
+                },
+                "client": {
+                  "properties": {
+                    "geo": {
+                      "properties": {
+                        "city_name": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "country_name": {
+                          "type": "date"
+                        }
+                      }
+                    }
+                  }
+                },
+                "event": {
+                  "properties": {
+                    "its": {
+                      "properties": {
+                        "game": {
+                          "properties": {
+                            "id": {
+                              "type": "date"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "user_agent": {
+                  "properties": {
+                    "os": {
+                      "properties": {
+                        "name": {
+                          "type": "date"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "user": {
+              "properties": {
+                "name": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

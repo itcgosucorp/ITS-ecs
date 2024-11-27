@@ -1,0 +1,73 @@
+{
+  "index_patterns": [
+    "report_*_*_nau"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "first_doc": {
+        "properties": {
+          "@timestamp": {
+            "type": "date"
+          },
+          "client": {
+            "properties": {
+              "geo": {
+                "properties": {
+                  "city_name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "country_name": {
+                    "type": "date"
+                  }
+                }
+              }
+            }
+          },
+          "event": {
+            "properties": {
+              "its": {
+                "properties": {
+                  "game": {
+                    "properties": {
+                      "id": {
+                        "type": "date"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "user_agent": {
+            "properties": {
+              "os": {
+                "properties": {
+                  "name": {
+                    "type": "date"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}
