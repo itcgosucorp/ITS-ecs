@@ -54,29 +54,32 @@ its_report_nau:
       dashed_name: its-report-nau-first-doc-client-geo-country-name
       description: Country name.
       flat_name: its_report_nau.first_doc.client.geo.country_name
+      ignore_above: 1024
       level: custom
       name: first_doc.client.geo.country_name
       normalize: []
       short: Country name.
-      type: date
+      type: keyword
     its_report_nau.first_doc.event.its.game.id:
       dashed_name: its-report-nau-first-doc-event-its-game-id
       description: Game ID.
       flat_name: its_report_nau.first_doc.event.its.game.id
+      ignore_above: 1024
       level: custom
       name: first_doc.event.its.game.id
       normalize: []
       short: Game ID.
-      type: date
+      type: keyword
     its_report_nau.first_doc.user_agent.os.name:
       dashed_name: its-report-nau-first-doc-user-agent-os-name
       description: OS name.
       flat_name: its_report_nau.first_doc.user_agent.os.name
+      ignore_above: 1024
       level: custom
       name: first_doc.user_agent.os.name
       normalize: []
       short: OS name.
-      type: date
+      type: keyword
     its_report_nau.user.name:
       dashed_name: its-report-nau-user-name
       description: User Name.

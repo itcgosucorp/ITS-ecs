@@ -21,7 +21,8 @@
                           "type": "keyword"
                         },
                         "country_name": {
-                          "type": "date"
+                          "ignore_above": 1024,
+                          "type": "keyword"
                         }
                       }
                     }
@@ -34,7 +35,8 @@
                         "game": {
                           "properties": {
                             "id": {
-                              "type": "date"
+                              "ignore_above": 1024,
+                              "type": "keyword"
                             }
                           }
                         }
@@ -47,7 +49,8 @@
                     "os": {
                       "properties": {
                         "name": {
-                          "type": "date"
+                          "ignore_above": 1024,
+                          "type": "keyword"
                         }
                       }
                     }

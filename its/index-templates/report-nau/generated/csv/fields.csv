@@ -2,7 +2,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
 8.9.0,true,its_report_nau,its_report_nau.first_doc.@timestamp,date,custom,,,Timestamp.
 8.9.0,true,its_report_nau,its_report_nau.first_doc.client.geo.city_name,keyword,custom,,,City name.
-8.9.0,true,its_report_nau,its_report_nau.first_doc.client.geo.country_name,date,custom,,,Country name.
-8.9.0,true,its_report_nau,its_report_nau.first_doc.event.its.game.id,date,custom,,,Game ID.
-8.9.0,true,its_report_nau,its_report_nau.first_doc.user_agent.os.name,date,custom,,,OS name.
+8.9.0,true,its_report_nau,its_report_nau.first_doc.client.geo.country_name,keyword,custom,,,Country name.
+8.9.0,true,its_report_nau,its_report_nau.first_doc.event.its.game.id,keyword,custom,,,Game ID.
+8.9.0,true,its_report_nau,its_report_nau.first_doc.user_agent.os.name,keyword,custom,,,OS name.
 8.9.0,true,its_report_nau,its_report_nau.user.name,keyword,custom,,,User Name.

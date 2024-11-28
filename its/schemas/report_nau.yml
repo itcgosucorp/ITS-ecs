@@ -28,19 +28,19 @@
         City name.
     - name: first_doc.user_agent.os.name
       level: custom
-      type: date
+      type: keyword
       short: OS name.
       description: >
         OS name.
     - name: first_doc.event.its.game.id
       level: custom
-      type: date
+      type: keyword
       short: Game ID.
       description: >
         Game ID.
     - name: first_doc.client.geo.country_name
       level: custom
-      type: date
+      type: keyword
       short: Country name.
       description: >
         Country name.
