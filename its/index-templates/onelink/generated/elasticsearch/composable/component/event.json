@@ -1,0 +1,373 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "event": {
+          "properties": {
+            "action": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "agent_id_status": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "category": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "code": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "created": {
+              "type": "date"
+            },
+            "dataset": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "duration": {
+              "type": "long"
+            },
+            "end": {
+              "type": "date"
+            },
+            "hash": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "ingested": {
+              "type": "date"
+            },
+            "its": {
+              "properties": {
+                "campaign": {
+                  "properties": {
+                    "content": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "medium": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "source": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "term": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "game": {
+                  "properties": {
+                    "currency": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "identity_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "page": {
+                  "properties": {
+                    "initial_referrer": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "initial_referring_domain": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "path": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "referrer": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "referring_domain": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "search": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "title": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "url": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "payment": {
+                  "properties": {
+                    "amount": {
+                      "type": "double"
+                    },
+                    "channel": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "currency_unit": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "office": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "original_amount": {
+                      "type": "double"
+                    }
+                  }
+                },
+                "properties": {
+                  "properties": {
+                    "ad_displayed_percent": {
+                      "type": "float"
+                    },
+                    "ad_time_viewed": {
+                      "type": "float"
+                    },
+                    "application_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "brand": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "category": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "channel": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "character_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "character_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "currency": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "item_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "keywords": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "order_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_n_1": {
+                      "type": "float"
+                    },
+                    "param_n_2": {
+                      "type": "float"
+                    },
+                    "param_n_3": {
+                      "type": "float"
+                    },
+                    "param_n_4": {
+                      "type": "float"
+                    },
+                    "param_n_5": {
+                      "type": "float"
+                    },
+                    "param_s_1": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_2": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_3": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_4": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "param_s_5": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "playable_played_length": {
+                      "type": "float"
+                    },
+                    "price": {
+                      "type": "float"
+                    },
+                    "product_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "product_name": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "revenue": {
+                      "type": "float"
+                    },
+                    "reward": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "score": {
+                      "type": "integer"
+                    },
+                    "server_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "sku_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "source_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "task_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "task_type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "video_played_length": {
+                      "type": "integer"
+                    },
+                    "video_total_length": {
+                      "type": "integer"
+                    },
+                    "vip_level": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "publisher": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "session_id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
+            "kind": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "module": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "original": {
+              "doc_values": false,
+              "index": false,
+              "type": "keyword"
+            },
+            "outcome": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "provider": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "reason": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "reference": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "risk_score": {
+              "type": "float"
+            },
+            "risk_score_norm": {
+              "type": "float"
+            },
+            "sequence": {
+              "type": "long"
+            },
+            "severity": {
+              "type": "long"
+            },
+            "start": {
+              "type": "date"
+            },
+            "timezone": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "type": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "url": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}
