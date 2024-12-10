@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_pr": {
+          "properties": {
+            "count_users": {
+              "type": "long"
+            },
+            "event": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "first_doc": {
+              "properties": {
+                "event": {
+                  "properties": {
+                    "its": {
+                      "properties": {
+                        "game": {
+                          "properties": {
+                            "id": {
+                              "ignore_above": 1024,
+                              "type": "keyword"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

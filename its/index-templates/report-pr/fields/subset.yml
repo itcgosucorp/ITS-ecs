@@ -1,0 +1,10 @@
+---
+name: no-ecs-example
+fields:
+  # ECS basic fields
+  base:
+    fields:
+      "@timestamp": {}
+  its_report_pr:
+    fields: "*"
+  

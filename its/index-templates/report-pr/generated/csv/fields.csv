@@ -1,0 +1,5 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_pr,its_report_pr.count_users,long,custom,,,Count users.
+8.9.0,true,its_report_pr,its_report_pr.event,keyword,custom,,,Event name.
+8.9.0,true,its_report_pr,its_report_pr.first_doc.event.its.game.id,keyword,custom,,,Game ID.
