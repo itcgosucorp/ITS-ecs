@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "8.9.0"
+  },
+  "composed_of": [
+    "ecs_8.9.0_base",
+    "ecs_8.9.0_its_report_dau"
+  ],
+  "index_patterns": [
+    "report_*_*_dau"
+  ],
+  "priority": 1,
+  "template": {
+    "mappings": {
+      "dynamic": false
+    },
+    "settings": {
+      "index": {
+        "codec": "best_compression",
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        }
+      }
+    }
+  }
+}
