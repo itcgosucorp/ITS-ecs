@@ -1,0 +1,25 @@
+---
+- name: its_report_niu
+  title: ITS report NIU
+  type: group
+  group: 2
+  root: false
+  short: ITS report NIU
+  description: >
+    ITS report NIU
+  fields:
+    - name: os
+      level: custom
+      type: keyword
+      short: OS Name.
+      description: >
+        OS Name.
+    - name: count
+      level: custom
+      type: long
+      short: Total count.
+      description: >
+        Total count.
+    
+
+    
