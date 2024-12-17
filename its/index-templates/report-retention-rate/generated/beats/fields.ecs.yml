@@ -38,6 +38,11 @@
       type: double
       description: Retention rate of d1.
       default_field: false
+    - name: rr_d150
+      level: custom
+      type: double
+      description: Retention rate of d150.
+      default_field: false
     - name: rr_d3
       level: custom
       type: double
@@ -47,6 +52,11 @@
       level: custom
       type: double
       description: Retention rate of d30.
+      default_field: false
+    - name: rr_d60
+      level: custom
+      type: double
+      description: Retention rate of d60.
       default_field: false
     - name: rr_d7
       level: custom

@@ -38,4 +38,16 @@
       short: Retention rate of d30.
       description: >
         Retention rate of d30.
+    - name: rr_d60
+      level: custom
+      type: double
+      short: Retention rate of d60.
+      description: >
+        Retention rate of d60.
+    - name: rr_d150
+      level: custom
+      type: double
+      short: Retention rate of d150.
+      description: >
+        Retention rate of d150.
     

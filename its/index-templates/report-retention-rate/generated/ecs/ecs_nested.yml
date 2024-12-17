@@ -49,6 +49,15 @@ its_report_retention_rate:
       normalize: []
       short: Retention rate of d1.
       type: double
+    its_report_retention_rate.rr_d150:
+      dashed_name: its-report-retention-rate-rr-d150
+      description: Retention rate of d150.
+      flat_name: its_report_retention_rate.rr_d150
+      level: custom
+      name: rr_d150
+      normalize: []
+      short: Retention rate of d150.
+      type: double
     its_report_retention_rate.rr_d3:
       dashed_name: its-report-retention-rate-rr-d3
       description: Retention rate of d3.
@@ -66,6 +75,15 @@ its_report_retention_rate:
       name: rr_d30
       normalize: []
       short: Retention rate of d30.
+      type: double
+    its_report_retention_rate.rr_d60:
+      dashed_name: its-report-retention-rate-rr-d60
+      description: Retention rate of d60.
+      flat_name: its_report_retention_rate.rr_d60
+      level: custom
+      name: rr_d60
+      normalize: []
+      short: Retention rate of d60.
       type: double
     its_report_retention_rate.rr_d7:
       dashed_name: its-report-retention-rate-rr-d7

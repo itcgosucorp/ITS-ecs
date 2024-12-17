@@ -13,10 +13,16 @@
             "rr_d1": {
               "type": "double"
             },
+            "rr_d150": {
+              "type": "double"
+            },
             "rr_d3": {
               "type": "double"
             },
             "rr_d30": {
+              "type": "double"
+            },
+            "rr_d60": {
               "type": "double"
             },
             "rr_d7": {
