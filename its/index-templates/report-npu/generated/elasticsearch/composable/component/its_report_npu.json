@@ -1,0 +1,53 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "its_report_npu": {
+          "properties": {
+            "first_payment": {
+              "properties": {
+                "@timestamp": {
+                  "type": "date"
+                },
+                "event": {
+                  "properties": {
+                    "its": {
+                      "properties": {
+                        "payment": {
+                          "properties": {
+                            "amount": {
+                              "type": "double"
+                            }
+                          }
+                        },
+                        "properties": {
+                          "properties": {
+                            "installation_channel": {
+                              "ignore_above": 1024,
+                              "type": "keyword"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "user": {
+              "properties": {
+                "id": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
