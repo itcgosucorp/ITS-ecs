@@ -264,4 +264,155 @@
       short: Item ID.
       description: >
         Item ID.
+    - name: properties.custom_id
+      level: custom
+      type: keyword
+      short: Onelink ID.
+      description: >
+        Onelink ID.
+    - name: properties.device_os
+      level: custom
+      type: keyword
+      short: Device OS.
+      description: >
+        Device OS.
+    - name: properties.redirect
+      level: custom
+      type: keyword
+      short: Redirect.
+      description: >
+        Redirect.
+    - name: properties.campaign.ad_creative
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.ad_creative_id
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.ad_group
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.ad_group_id
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.campaign_id
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.click_id
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.deeplink_url
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.fbclid
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.gaid_raw
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.gclid
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.ifa_raw
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.ip
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.language
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.sub_id
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.sub_id_1
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.ttclid
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.user_agent
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.utm_campaign
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.utm_content
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.utm_medium
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.utm_source
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+    - name: properties.campaign.utm_term
+      level: custom
+      type: keyword
+      short: Onelink campaign.
+      description: >
+        Onelink campaign.
+
      

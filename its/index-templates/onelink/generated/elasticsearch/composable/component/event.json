@@ -167,6 +167,98 @@
                       "ignore_above": 1024,
                       "type": "keyword"
                     },
+                    "campaign": {
+                      "properties": {
+                        "ad_creative": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ad_creative_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ad_group": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ad_group_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "campaign_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "click_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "deeplink_url": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "fbclid": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "gaid_raw": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "gclid": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ifa_raw": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ip": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "language": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "sub_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "sub_id_1": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "ttclid": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "user_agent": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "utm_campaign": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "utm_content": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "utm_medium": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "utm_source": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "utm_term": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    },
                     "category": {
                       "ignore_above": 1024,
                       "type": "keyword"
@@ -184,6 +276,14 @@
                       "type": "keyword"
                     },
                     "currency": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "custom_id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "device_os": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     },
@@ -253,6 +353,10 @@
                     },
                     "quantity": {
                       "type": "integer"
+                    },
+                    "redirect": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
                     },
                     "revenue": {
                       "type": "float"

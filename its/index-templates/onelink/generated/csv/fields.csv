@@ -114,11 +114,35 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.ad_time_viewed,float,custom,,,How long the ad unit was visible on the screen(seconds)
 8.9.0,true,event,event.its.properties.application_id,keyword,custom,,,Application ID.
 8.9.0,true,event,event.its.properties.brand,keyword,custom,,,Product Brand.
+8.9.0,true,event,event.its.properties.campaign.ad_creative,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ad_creative_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ad_group,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ad_group_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.campaign_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.click_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.deeplink_url,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.fbclid,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.gaid_raw,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.gclid,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ifa_raw,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ip,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.language,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.sub_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.sub_id_1,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ttclid,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.user_agent,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_campaign,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_content,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_medium,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_source,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_term,keyword,custom,,,Onelink campaign.
 8.9.0,true,event,event.its.properties.category,keyword,custom,,,Product's Category.
 8.9.0,true,event,event.its.properties.channel,keyword,custom,,,Channel Info.
 8.9.0,true,event,event.its.properties.character_id,keyword,custom,,,Character ID.
 8.9.0,true,event,event.its.properties.character_name,keyword,custom,,,Character Name.
 8.9.0,true,event,event.its.properties.currency,keyword,custom,,,Cost currency.
+8.9.0,true,event,event.its.properties.custom_id,keyword,custom,,,Onelink ID.
+8.9.0,true,event,event.its.properties.device_os,keyword,custom,,,Device OS.
 8.9.0,true,event,event.its.properties.item_id,keyword,custom,,,Item ID.
 8.9.0,true,event,event.its.properties.keywords,keyword,custom,,,Keyword Info.
 8.9.0,true,event,event.its.properties.level,integer,custom,,,Level the user achieved.
@@ -138,6 +162,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.product_id,keyword,custom,,,Product ID.
 8.9.0,true,event,event.its.properties.product_name,keyword,custom,,,Product Name.
 8.9.0,true,event,event.its.properties.quantity,integer,custom,,,Quantity of Product.
+8.9.0,true,event,event.its.properties.redirect,keyword,custom,,,Redirect.
 8.9.0,true,event,event.its.properties.revenue,float,custom,,,Revenue.
 8.9.0,true,event,event.its.properties.reward,keyword,custom,,,Reward Info.
 8.9.0,true,event,event.its.properties.score,integer,custom,,,Score associated with the user's achievement.
