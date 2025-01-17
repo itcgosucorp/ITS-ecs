@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["event_gamo_*"],
+  "index_patterns": ["event_gamo_*", "event_duostudio_*"],
   "priority": 2,
   "template": {
     "settings": {

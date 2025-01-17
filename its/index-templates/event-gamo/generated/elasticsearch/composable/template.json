@@ -15,7 +15,8 @@
     "ecs_8.9.0_user"
   ],
   "index_patterns": [
-    "event_gamo_*"
+    "event_gamo_*",
+    "event_duostudio_*"
   ],
   "priority": 2,
   "template": {
