@@ -51,6 +51,13 @@
               "source": "if(['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { if(doc['event.its.properties.exchange_rate'].size() != 0) { emit(doc['event.its.payment.amount'].value * doc['event.its.properties.exchange_rate'].value); } else {emit(doc['event.its.payment.amount'].value);} }",
               "lang": "painless"
           }
+      },
+      "event.its.payment.channel_name": {
+          "type": "keyword",
+          "script": {
+              "source": "if(['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { emit(doc['event.its.payment.channel'].value) }",
+              "lang": "painless"
+          }
       }
   }
 }

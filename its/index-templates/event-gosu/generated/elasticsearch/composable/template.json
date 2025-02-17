@@ -59,6 +59,13 @@
         }
       ],
       "runtime": {
+        "event.its.payment.channel_name": {
+          "script": {
+            "lang": "painless",
+            "source": "if(['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { emit(doc['event.its.payment.channel'].value) }"
+          },
+          "type": "keyword"
+        },
         "event.its.payment.transfer_type": {
           "script": {
             "lang": "painless",
