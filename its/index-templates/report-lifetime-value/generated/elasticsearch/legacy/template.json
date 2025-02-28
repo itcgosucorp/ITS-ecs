@@ -8,7 +8,7 @@
       "@timestamp": {
         "type": "date"
       },
-     "d0": {
+      "d0": {
         "type": "date"
       },
       "ltv_d1": {
@@ -42,6 +42,72 @@
         "type": "double"
       },
       "ltv_d90": {
+        "type": "double"
+      },
+      "usd_ltv_d1": {
+        "type": "double"
+      },
+      "usd_ltv_d120": {
+        "type": "double"
+      },
+      "usd_ltv_d14": {
+        "type": "double"
+      },
+      "usd_ltv_d150": {
+        "type": "double"
+      },
+      "usd_ltv_d180": {
+        "type": "double"
+      },
+      "usd_ltv_d21": {
+        "type": "double"
+      },
+      "usd_ltv_d3": {
+        "type": "double"
+      },
+      "usd_ltv_d30": {
+        "type": "double"
+      },
+      "usd_ltv_d60": {
+        "type": "double"
+      },
+      "usd_ltv_d7": {
+        "type": "double"
+      },
+      "usd_ltv_d90": {
+        "type": "double"
+      },
+      "vnd_ltv_d1": {
+        "type": "double"
+      },
+      "vnd_ltv_d120": {
+        "type": "double"
+      },
+      "vnd_ltv_d14": {
+        "type": "double"
+      },
+      "vnd_ltv_d150": {
+        "type": "double"
+      },
+      "vnd_ltv_d180": {
+        "type": "double"
+      },
+      "vnd_ltv_d21": {
+        "type": "double"
+      },
+      "vnd_ltv_d3": {
+        "type": "double"
+      },
+      "vnd_ltv_d30": {
+        "type": "double"
+      },
+      "vnd_ltv_d60": {
+        "type": "double"
+      },
+      "vnd_ltv_d7": {
+        "type": "double"
+      },
+      "vnd_ltv_d90": {
         "type": "double"
       }
     }

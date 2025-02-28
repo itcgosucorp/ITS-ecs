@@ -80,5 +80,135 @@
       short: Retention rate of d180.
       description: >
         Retention rate of d180.
-    
-    
+    - name: vnd_ltv_d1
+      level: custom
+      type: double
+      short: Retention rate of d1.
+      description: >
+        Retention rate of d1.
+    - name: vnd_ltv_d3
+      level: custom
+      type: double
+      short: Retention rate of d3.
+      description: >
+        Retention rate of d3.
+    - name: vnd_ltv_d7
+      level: custom
+      type: double
+      short: Retention rate of d7.
+      description: >
+        Retention rate of d7.
+    - name: vnd_ltv_d14
+      level: custom
+      type: double
+      short: Retention rate of d14.
+      description: >
+        Retention rate of d14.
+    - name: vnd_ltv_d21
+      level: custom
+      type: double
+      short: Retention rate of d21.
+      description: >
+        Retention rate of d21.
+    - name: vnd_ltv_d30
+      level: custom
+      type: double
+      short: Retention rate of d30.
+      description: >
+        Retention rate of d30.
+    - name: vnd_ltv_d60
+      level: custom
+      type: double
+      short: Retention rate of d60.
+      description: >
+        Retention rate of d60.
+    - name: vnd_ltv_d90
+      level: custom
+      type: double
+      short: Retention rate of d90.
+      description: >
+        Retention rate of d90.
+    - name: vnd_ltv_d120
+      level: custom
+      type: double
+      short: Retention rate of d120.
+      description: >
+        Retention rate of d120.
+    - name: vnd_ltv_d150
+      level: custom
+      type: double
+      short: Retention rate of d150.
+      description: >
+        Retention rate of d150.
+    - name: vnd_ltv_d180
+      level: custom
+      type: double
+      short: Retention rate of d180.
+      description: >
+        Retention rate of d180.
+    - name: usd_ltv_d1
+      level: custom
+      type: double
+      short: Retention rate of d1.
+      description: >
+        Retention rate of d1.
+    - name: usd_ltv_d3
+      level: custom
+      type: double
+      short: Retention rate of d3.
+      description: >
+        Retention rate of d3.
+    - name: usd_ltv_d7
+      level: custom
+      type: double
+      short: Retention rate of d7.
+      description: >
+        Retention rate of d7.
+    - name: usd_ltv_d14
+      level: custom
+      type: double
+      short: Retention rate of d14.
+      description: >
+        Retention rate of d14.
+    - name: usd_ltv_d21
+      level: custom
+      type: double
+      short: Retention rate of d21.
+      description: >
+        Retention rate of d21.
+    - name: usd_ltv_d30
+      level: custom
+      type: double
+      short: Retention rate of d30.
+      description: >
+        Retention rate of d30.
+    - name: usd_ltv_d60
+      level: custom
+      type: double
+      short: Retention rate of d60.
+      description: >
+        Retention rate of d60.
+    - name: usd_ltv_d90
+      level: custom
+      type: double
+      short: Retention rate of d90.
+      description: >
+        Retention rate of d90.
+    - name: usd_ltv_d120
+      level: custom
+      type: double
+      short: Retention rate of d120.
+      description: >
+        Retention rate of d120.
+    - name: usd_ltv_d150
+      level: custom
+      type: double
+      short: Retention rate of d150.
+      description: >
+        Retention rate of d150.
+    - name: usd_ltv_d180
+      level: custom
+      type: double
+      short: Retention rate of d180.
+      description: >
+        Retention rate of d180.

@@ -88,3 +88,113 @@
       type: double
       description: Retention rate of d90.
       default_field: false
+    - name: usd_ltv_d1
+      level: custom
+      type: double
+      description: Retention rate of d1.
+      default_field: false
+    - name: usd_ltv_d120
+      level: custom
+      type: double
+      description: Retention rate of d120.
+      default_field: false
+    - name: usd_ltv_d14
+      level: custom
+      type: double
+      description: Retention rate of d14.
+      default_field: false
+    - name: usd_ltv_d150
+      level: custom
+      type: double
+      description: Retention rate of d150.
+      default_field: false
+    - name: usd_ltv_d180
+      level: custom
+      type: double
+      description: Retention rate of d180.
+      default_field: false
+    - name: usd_ltv_d21
+      level: custom
+      type: double
+      description: Retention rate of d21.
+      default_field: false
+    - name: usd_ltv_d3
+      level: custom
+      type: double
+      description: Retention rate of d3.
+      default_field: false
+    - name: usd_ltv_d30
+      level: custom
+      type: double
+      description: Retention rate of d30.
+      default_field: false
+    - name: usd_ltv_d60
+      level: custom
+      type: double
+      description: Retention rate of d60.
+      default_field: false
+    - name: usd_ltv_d7
+      level: custom
+      type: double
+      description: Retention rate of d7.
+      default_field: false
+    - name: usd_ltv_d90
+      level: custom
+      type: double
+      description: Retention rate of d90.
+      default_field: false
+    - name: vnd_ltv_d1
+      level: custom
+      type: double
+      description: Retention rate of d1.
+      default_field: false
+    - name: vnd_ltv_d120
+      level: custom
+      type: double
+      description: Retention rate of d120.
+      default_field: false
+    - name: vnd_ltv_d14
+      level: custom
+      type: double
+      description: Retention rate of d14.
+      default_field: false
+    - name: vnd_ltv_d150
+      level: custom
+      type: double
+      description: Retention rate of d150.
+      default_field: false
+    - name: vnd_ltv_d180
+      level: custom
+      type: double
+      description: Retention rate of d180.
+      default_field: false
+    - name: vnd_ltv_d21
+      level: custom
+      type: double
+      description: Retention rate of d21.
+      default_field: false
+    - name: vnd_ltv_d3
+      level: custom
+      type: double
+      description: Retention rate of d3.
+      default_field: false
+    - name: vnd_ltv_d30
+      level: custom
+      type: double
+      description: Retention rate of d30.
+      default_field: false
+    - name: vnd_ltv_d60
+      level: custom
+      type: double
+      description: Retention rate of d60.
+      default_field: false
+    - name: vnd_ltv_d7
+      level: custom
+      type: double
+      description: Retention rate of d7.
+      default_field: false
+    - name: vnd_ltv_d90
+      level: custom
+      type: double
+      description: Retention rate of d90.
+      default_field: false

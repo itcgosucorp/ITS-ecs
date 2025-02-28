@@ -139,6 +139,204 @@ its_report_lifetime_value:
       normalize: []
       short: Retention rate of d90.
       type: double
+    its_report_lifetime_value.usd_ltv_d1:
+      dashed_name: its-report-lifetime-value-usd-ltv-d1
+      description: Retention rate of d1.
+      flat_name: its_report_lifetime_value.usd_ltv_d1
+      level: custom
+      name: usd_ltv_d1
+      normalize: []
+      short: Retention rate of d1.
+      type: double
+    its_report_lifetime_value.usd_ltv_d120:
+      dashed_name: its-report-lifetime-value-usd-ltv-d120
+      description: Retention rate of d120.
+      flat_name: its_report_lifetime_value.usd_ltv_d120
+      level: custom
+      name: usd_ltv_d120
+      normalize: []
+      short: Retention rate of d120.
+      type: double
+    its_report_lifetime_value.usd_ltv_d14:
+      dashed_name: its-report-lifetime-value-usd-ltv-d14
+      description: Retention rate of d14.
+      flat_name: its_report_lifetime_value.usd_ltv_d14
+      level: custom
+      name: usd_ltv_d14
+      normalize: []
+      short: Retention rate of d14.
+      type: double
+    its_report_lifetime_value.usd_ltv_d150:
+      dashed_name: its-report-lifetime-value-usd-ltv-d150
+      description: Retention rate of d150.
+      flat_name: its_report_lifetime_value.usd_ltv_d150
+      level: custom
+      name: usd_ltv_d150
+      normalize: []
+      short: Retention rate of d150.
+      type: double
+    its_report_lifetime_value.usd_ltv_d180:
+      dashed_name: its-report-lifetime-value-usd-ltv-d180
+      description: Retention rate of d180.
+      flat_name: its_report_lifetime_value.usd_ltv_d180
+      level: custom
+      name: usd_ltv_d180
+      normalize: []
+      short: Retention rate of d180.
+      type: double
+    its_report_lifetime_value.usd_ltv_d21:
+      dashed_name: its-report-lifetime-value-usd-ltv-d21
+      description: Retention rate of d21.
+      flat_name: its_report_lifetime_value.usd_ltv_d21
+      level: custom
+      name: usd_ltv_d21
+      normalize: []
+      short: Retention rate of d21.
+      type: double
+    its_report_lifetime_value.usd_ltv_d3:
+      dashed_name: its-report-lifetime-value-usd-ltv-d3
+      description: Retention rate of d3.
+      flat_name: its_report_lifetime_value.usd_ltv_d3
+      level: custom
+      name: usd_ltv_d3
+      normalize: []
+      short: Retention rate of d3.
+      type: double
+    its_report_lifetime_value.usd_ltv_d30:
+      dashed_name: its-report-lifetime-value-usd-ltv-d30
+      description: Retention rate of d30.
+      flat_name: its_report_lifetime_value.usd_ltv_d30
+      level: custom
+      name: usd_ltv_d30
+      normalize: []
+      short: Retention rate of d30.
+      type: double
+    its_report_lifetime_value.usd_ltv_d60:
+      dashed_name: its-report-lifetime-value-usd-ltv-d60
+      description: Retention rate of d60.
+      flat_name: its_report_lifetime_value.usd_ltv_d60
+      level: custom
+      name: usd_ltv_d60
+      normalize: []
+      short: Retention rate of d60.
+      type: double
+    its_report_lifetime_value.usd_ltv_d7:
+      dashed_name: its-report-lifetime-value-usd-ltv-d7
+      description: Retention rate of d7.
+      flat_name: its_report_lifetime_value.usd_ltv_d7
+      level: custom
+      name: usd_ltv_d7
+      normalize: []
+      short: Retention rate of d7.
+      type: double
+    its_report_lifetime_value.usd_ltv_d90:
+      dashed_name: its-report-lifetime-value-usd-ltv-d90
+      description: Retention rate of d90.
+      flat_name: its_report_lifetime_value.usd_ltv_d90
+      level: custom
+      name: usd_ltv_d90
+      normalize: []
+      short: Retention rate of d90.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d1:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d1
+      description: Retention rate of d1.
+      flat_name: its_report_lifetime_value.vnd_ltv_d1
+      level: custom
+      name: vnd_ltv_d1
+      normalize: []
+      short: Retention rate of d1.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d120:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d120
+      description: Retention rate of d120.
+      flat_name: its_report_lifetime_value.vnd_ltv_d120
+      level: custom
+      name: vnd_ltv_d120
+      normalize: []
+      short: Retention rate of d120.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d14:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d14
+      description: Retention rate of d14.
+      flat_name: its_report_lifetime_value.vnd_ltv_d14
+      level: custom
+      name: vnd_ltv_d14
+      normalize: []
+      short: Retention rate of d14.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d150:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d150
+      description: Retention rate of d150.
+      flat_name: its_report_lifetime_value.vnd_ltv_d150
+      level: custom
+      name: vnd_ltv_d150
+      normalize: []
+      short: Retention rate of d150.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d180:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d180
+      description: Retention rate of d180.
+      flat_name: its_report_lifetime_value.vnd_ltv_d180
+      level: custom
+      name: vnd_ltv_d180
+      normalize: []
+      short: Retention rate of d180.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d21:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d21
+      description: Retention rate of d21.
+      flat_name: its_report_lifetime_value.vnd_ltv_d21
+      level: custom
+      name: vnd_ltv_d21
+      normalize: []
+      short: Retention rate of d21.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d3:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d3
+      description: Retention rate of d3.
+      flat_name: its_report_lifetime_value.vnd_ltv_d3
+      level: custom
+      name: vnd_ltv_d3
+      normalize: []
+      short: Retention rate of d3.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d30:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d30
+      description: Retention rate of d30.
+      flat_name: its_report_lifetime_value.vnd_ltv_d30
+      level: custom
+      name: vnd_ltv_d30
+      normalize: []
+      short: Retention rate of d30.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d60:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d60
+      description: Retention rate of d60.
+      flat_name: its_report_lifetime_value.vnd_ltv_d60
+      level: custom
+      name: vnd_ltv_d60
+      normalize: []
+      short: Retention rate of d60.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d7:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d7
+      description: Retention rate of d7.
+      flat_name: its_report_lifetime_value.vnd_ltv_d7
+      level: custom
+      name: vnd_ltv_d7
+      normalize: []
+      short: Retention rate of d7.
+      type: double
+    its_report_lifetime_value.vnd_ltv_d90:
+      dashed_name: its-report-lifetime-value-vnd-ltv-d90
+      description: Retention rate of d90.
+      flat_name: its_report_lifetime_value.vnd_ltv_d90
+      level: custom
+      name: vnd_ltv_d90
+      normalize: []
+      short: Retention rate of d90.
+      type: double
   group: 2
   name: its_report_lifetime_value
   prefix: its_report_lifetime_value.
