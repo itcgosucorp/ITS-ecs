@@ -46,13 +46,3 @@ its_report_dau.labels.publisher.keyword:
   normalize: []
   short: Publisher Code.
   type: keyword
-its_report_dau.user_agent.os.name:
-  dashed_name: its-report-dau-user-agent-os-name
-  description: OS Name.
-  flat_name: its_report_dau.user_agent.os.name
-  ignore_above: 1024
-  level: custom
-  name: user_agent.os.name
-  normalize: []
-  short: OS Name.
-  type: keyword

@@ -5,7 +5,7 @@
   "template": {
     "mappings": {
       "properties": {
-        "its_report_dau": {
+        "its_report_dau_by_os": {
           "properties": {
             "count": {
               "type": "long"
@@ -23,6 +23,18 @@
                 "publisher": {
                   "properties": {
                     "keyword": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                }
+              }
+            },
+            "user_agent": {
+              "properties": {
+                "os": {
+                  "properties": {
+                    "name": {
                       "ignore_above": 1024,
                       "type": "keyword"
                     }

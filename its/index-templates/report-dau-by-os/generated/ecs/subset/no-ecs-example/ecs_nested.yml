@@ -28,41 +28,51 @@ base:
   short: All fields defined directly at the root of the events.
   title: Base
   type: group
-its_report_dau:
-  description: ITS report DAU
+its_report_dau_by_os:
+  description: ITS report DAU by OS
   fields:
-    its_report_dau.count:
-      dashed_name: its-report-dau-count
+    its_report_dau_by_os.count:
+      dashed_name: its-report-dau-by-os-count
       description: Total count.
-      flat_name: its_report_dau.count
+      flat_name: its_report_dau_by_os.count
       level: custom
       name: count
       normalize: []
       short: Total count.
       type: long
-    its_report_dau.labels.app.keyword:
-      dashed_name: its-report-dau-labels-app-keyword
+    its_report_dau_by_os.labels.app.keyword:
+      dashed_name: its-report-dau-by-os-labels-app-keyword
       description: App code.
-      flat_name: its_report_dau.labels.app.keyword
+      flat_name: its_report_dau_by_os.labels.app.keyword
       ignore_above: 1024
       level: custom
       name: labels.app.keyword
       normalize: []
       short: App code.
       type: keyword
-    its_report_dau.labels.publisher.keyword:
-      dashed_name: its-report-dau-labels-publisher-keyword
+    its_report_dau_by_os.labels.publisher.keyword:
+      dashed_name: its-report-dau-by-os-labels-publisher-keyword
       description: Publisher Code.
-      flat_name: its_report_dau.labels.publisher.keyword
+      flat_name: its_report_dau_by_os.labels.publisher.keyword
       ignore_above: 1024
       level: custom
       name: labels.publisher.keyword
       normalize: []
       short: Publisher Code.
       type: keyword
+    its_report_dau_by_os.user_agent.os.name:
+      dashed_name: its-report-dau-by-os-user-agent-os-name
+      description: OS Name.
+      flat_name: its_report_dau_by_os.user_agent.os.name
+      ignore_above: 1024
+      level: custom
+      name: user_agent.os.name
+      normalize: []
+      short: OS Name.
+      type: keyword
   group: 2
-  name: its_report_dau
-  prefix: its_report_dau.
-  short: ITS report DAU
-  title: ITS report DAU
+  name: its_report_dau_by_os
+  prefix: its_report_dau_by_os.
+  short: ITS report DAU by OS
+  title: ITS report DAU by OS
   type: group

@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "report_*_*_dau"
+    "report_*_*_dau_by_os"
   ],
   "mappings": {
     "dynamic": false,
@@ -24,6 +24,18 @@
           "publisher": {
             "properties": {
               "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "user_agent": {
+        "properties": {
+          "os": {
+            "properties": {
+              "name": {
                 "ignore_above": 1024,
                 "type": "keyword"
               }
