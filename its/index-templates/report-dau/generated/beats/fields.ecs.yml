@@ -28,6 +28,12 @@
     type: group
     default_field: true
     fields:
+    - name: app
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: App code.
+      default_field: false
     - name: count
       level: custom
       type: long
@@ -38,4 +44,10 @@
       type: keyword
       ignore_above: 1024
       description: OS Name.
+      default_field: false
+    - name: publisher
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Publisher Code.
       default_field: false

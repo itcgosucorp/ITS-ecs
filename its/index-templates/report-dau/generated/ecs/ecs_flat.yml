@@ -17,6 +17,16 @@
   required: true
   short: Date/time when the event originated.
   type: date
+its_report_dau.app:
+  dashed_name: its-report-dau-app
+  description: App code.
+  flat_name: its_report_dau.app
+  ignore_above: 1024
+  level: custom
+  name: app
+  normalize: []
+  short: App code.
+  type: keyword
 its_report_dau.count:
   dashed_name: its-report-dau-count
   description: Total count.
@@ -35,4 +45,14 @@ its_report_dau.os:
   name: os
   normalize: []
   short: OS Name.
+  type: keyword
+its_report_dau.publisher:
+  dashed_name: its-report-dau-publisher
+  description: Publisher Code.
+  flat_name: its_report_dau.publisher
+  ignore_above: 1024
+  level: custom
+  name: publisher
+  normalize: []
+  short: Publisher Code.
   type: keyword
