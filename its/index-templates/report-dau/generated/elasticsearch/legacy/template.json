@@ -8,20 +8,40 @@
       "@timestamp": {
         "type": "date"
       },
-      "app": {
-        "ignore_above": 1024,
-        "type": "keyword"
-      },
       "count": {
         "type": "long"
       },
-      "os": {
-        "ignore_above": 1024,
-        "type": "keyword"
+      "labels": {
+        "properties": {
+          "app": {
+            "properties": {
+              "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "publisher": {
+            "properties": {
+              "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          }
+        }
       },
-      "publisher": {
-        "ignore_above": 1024,
-        "type": "keyword"
+      "user_agent": {
+        "properties": {
+          "os": {
+            "properties": {
+              "name": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          }
+        }
       }
     }
   },

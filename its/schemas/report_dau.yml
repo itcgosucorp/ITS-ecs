@@ -8,19 +8,19 @@
   description: >
     ITS report DAU
   fields:
-    - name: os
+    - name: user_agent.os.name
       level: custom
       type: keyword
       short: OS Name.
       description: >
         OS Name.
-    - name: publisher
+    - name: labels.publisher.keyword
       level: custom
       type: keyword
       short: Publisher Code.
       description: >
         Publisher Code.
-    - name: app
+    - name: labels.app.keyword
       level: custom
       type: keyword
       short: App code.

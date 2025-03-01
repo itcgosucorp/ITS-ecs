@@ -31,16 +31,6 @@ base:
 its_report_dau:
   description: ITS report DAU
   fields:
-    its_report_dau.app:
-      dashed_name: its-report-dau-app
-      description: App code.
-      flat_name: its_report_dau.app
-      ignore_above: 1024
-      level: custom
-      name: app
-      normalize: []
-      short: App code.
-      type: keyword
     its_report_dau.count:
       dashed_name: its-report-dau-count
       description: Total count.
@@ -50,25 +40,35 @@ its_report_dau:
       normalize: []
       short: Total count.
       type: long
-    its_report_dau.os:
-      dashed_name: its-report-dau-os
-      description: OS Name.
-      flat_name: its_report_dau.os
+    its_report_dau.labels.app.keyword:
+      dashed_name: its-report-dau-labels-app-keyword
+      description: App code.
+      flat_name: its_report_dau.labels.app.keyword
       ignore_above: 1024
       level: custom
-      name: os
+      name: labels.app.keyword
       normalize: []
-      short: OS Name.
+      short: App code.
       type: keyword
-    its_report_dau.publisher:
-      dashed_name: its-report-dau-publisher
+    its_report_dau.labels.publisher.keyword:
+      dashed_name: its-report-dau-labels-publisher-keyword
       description: Publisher Code.
-      flat_name: its_report_dau.publisher
+      flat_name: its_report_dau.labels.publisher.keyword
       ignore_above: 1024
       level: custom
-      name: publisher
+      name: labels.publisher.keyword
       normalize: []
       short: Publisher Code.
+      type: keyword
+    its_report_dau.user_agent.os.name:
+      dashed_name: its-report-dau-user-agent-os-name
+      description: OS Name.
+      flat_name: its_report_dau.user_agent.os.name
+      ignore_above: 1024
+      level: custom
+      name: user_agent.os.name
+      normalize: []
+      short: OS Name.
       type: keyword
   group: 2
   name: its_report_dau

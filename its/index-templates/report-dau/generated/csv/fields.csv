@@ -1,6 +1,6 @@
 ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
-8.9.0,true,its_report_dau,its_report_dau.app,keyword,custom,,,App code.
 8.9.0,true,its_report_dau,its_report_dau.count,long,custom,,,Total count.
-8.9.0,true,its_report_dau,its_report_dau.os,keyword,custom,,,OS Name.
-8.9.0,true,its_report_dau,its_report_dau.publisher,keyword,custom,,,Publisher Code.
+8.9.0,true,its_report_dau,its_report_dau.labels.app.keyword,keyword,custom,,,App code.
+8.9.0,true,its_report_dau,its_report_dau.labels.publisher.keyword,keyword,custom,,,Publisher Code.
+8.9.0,true,its_report_dau,its_report_dau.user_agent.os.name,keyword,custom,,,OS Name.

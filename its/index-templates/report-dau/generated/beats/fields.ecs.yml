@@ -28,26 +28,26 @@
     type: group
     default_field: true
     fields:
-    - name: app
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: App code.
-      default_field: false
     - name: count
       level: custom
       type: long
       description: Total count.
       default_field: false
-    - name: os
+    - name: labels.app.keyword
       level: custom
       type: keyword
       ignore_above: 1024
-      description: OS Name.
+      description: App code.
       default_field: false
-    - name: publisher
+    - name: labels.publisher.keyword
       level: custom
       type: keyword
       ignore_above: 1024
       description: Publisher Code.
+      default_field: false
+    - name: user_agent.os.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: OS Name.
       default_field: false
