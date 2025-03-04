@@ -14,6 +14,24 @@
       short: User ID
       description: >
         User ID
+    - name: user.name
+      level: custom
+      type: keyword
+      short: Username
+      description: >
+        Username
+    - name: labels.publisher.keyword
+      level: custom
+      type: keyword
+      short: Publisher code
+      description: >
+        Publisher code
+    - name: labels.app.keyword
+      level: custom
+      type: keyword
+      short: App code
+      description: >
+        App code
     - name: first_payment.@timestamp
       level: custom
       type: date
@@ -26,9 +44,21 @@
       short: Payment Amount
       description: >
         Payment Amount
-    - name: first_payment.event.its.properties.installation_channel
+    - name: first_payment.event.its.payment.vnd_amount
+      level: custom
+      type: double
+      short: VND Amount
+      description: >
+        VND Amount
+    - name: first_payment.event.its.payment.usd_amount
+      level: custom
+      type: double
+      short: USD Amount
+      description: >
+        USD Amount
+    - name: first_payment.event.its.attribution_result.utm_source
       level: custom
       type: keyword
-      short: Install Channel
+      short: Install Source
       description: >
-        Install Channel
+        Install Source

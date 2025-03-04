@@ -33,20 +33,48 @@
       type: date
       description: Timestamp
       default_field: false
+    - name: first_payment.event.its.attribution_result.utm_source
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Install Source
+      default_field: false
     - name: first_payment.event.its.payment.amount
       level: custom
       type: double
       description: Payment Amount
       default_field: false
-    - name: first_payment.event.its.properties.installation_channel
+    - name: first_payment.event.its.payment.usd_amount
+      level: custom
+      type: double
+      description: USD Amount
+      default_field: false
+    - name: first_payment.event.its.payment.vnd_amount
+      level: custom
+      type: double
+      description: VND Amount
+      default_field: false
+    - name: labels.app.keyword
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Install Channel
+      description: App code
+      default_field: false
+    - name: labels.publisher.keyword
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Publisher code
       default_field: false
     - name: user.id
       level: custom
       type: keyword
       ignore_above: 1024
       description: User ID
+      default_field: false
+    - name: user.name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Username
       default_field: false

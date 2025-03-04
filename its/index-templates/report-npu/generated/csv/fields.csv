@@ -1,6 +1,11 @@
 ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
 8.9.0,true,its_report_npu,its_report_npu.first_payment.@timestamp,date,custom,,,Timestamp
+8.9.0,true,its_report_npu,its_report_npu.first_payment.event.its.attribution_result.utm_source,keyword,custom,,,Install Source
 8.9.0,true,its_report_npu,its_report_npu.first_payment.event.its.payment.amount,double,custom,,,Payment Amount
-8.9.0,true,its_report_npu,its_report_npu.first_payment.event.its.properties.installation_channel,keyword,custom,,,Install Channel
+8.9.0,true,its_report_npu,its_report_npu.first_payment.event.its.payment.usd_amount,double,custom,,,USD Amount
+8.9.0,true,its_report_npu,its_report_npu.first_payment.event.its.payment.vnd_amount,double,custom,,,VND Amount
+8.9.0,true,its_report_npu,its_report_npu.labels.app.keyword,keyword,custom,,,App code
+8.9.0,true,its_report_npu,its_report_npu.labels.publisher.keyword,keyword,custom,,,Publisher code
 8.9.0,true,its_report_npu,its_report_npu.user.id,keyword,custom,,,User ID
+8.9.0,true,its_report_npu,its_report_npu.user.name,keyword,custom,,,Username

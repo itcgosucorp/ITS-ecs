@@ -26,6 +26,16 @@ its_report_npu.first_payment.@timestamp:
   normalize: []
   short: Timestamp
   type: date
+its_report_npu.first_payment.event.its.attribution_result.utm_source:
+  dashed_name: its-report-npu-first-payment-event-its-attribution-result-utm-source
+  description: Install Source
+  flat_name: its_report_npu.first_payment.event.its.attribution_result.utm_source
+  ignore_above: 1024
+  level: custom
+  name: first_payment.event.its.attribution_result.utm_source
+  normalize: []
+  short: Install Source
+  type: keyword
 its_report_npu.first_payment.event.its.payment.amount:
   dashed_name: its-report-npu-first-payment-event-its-payment-amount
   description: Payment Amount
@@ -35,15 +45,43 @@ its_report_npu.first_payment.event.its.payment.amount:
   normalize: []
   short: Payment Amount
   type: double
-its_report_npu.first_payment.event.its.properties.installation_channel:
-  dashed_name: its-report-npu-first-payment-event-its-properties-install-channel
-  description: Install Channel
-  flat_name: its_report_npu.first_payment.event.its.properties.installation_channel
+its_report_npu.first_payment.event.its.payment.usd_amount:
+  dashed_name: its-report-npu-first-payment-event-its-payment-usd-amount
+  description: USD Amount
+  flat_name: its_report_npu.first_payment.event.its.payment.usd_amount
+  level: custom
+  name: first_payment.event.its.payment.usd_amount
+  normalize: []
+  short: USD Amount
+  type: double
+its_report_npu.first_payment.event.its.payment.vnd_amount:
+  dashed_name: its-report-npu-first-payment-event-its-payment-vnd-amount
+  description: VND Amount
+  flat_name: its_report_npu.first_payment.event.its.payment.vnd_amount
+  level: custom
+  name: first_payment.event.its.payment.vnd_amount
+  normalize: []
+  short: VND Amount
+  type: double
+its_report_npu.labels.app.keyword:
+  dashed_name: its-report-npu-labels-app-keyword
+  description: App code
+  flat_name: its_report_npu.labels.app.keyword
   ignore_above: 1024
   level: custom
-  name: first_payment.event.its.properties.installation_channel
+  name: labels.app.keyword
   normalize: []
-  short: Install Channel
+  short: App code
+  type: keyword
+its_report_npu.labels.publisher.keyword:
+  dashed_name: its-report-npu-labels-publisher-keyword
+  description: Publisher code
+  flat_name: its_report_npu.labels.publisher.keyword
+  ignore_above: 1024
+  level: custom
+  name: labels.publisher.keyword
+  normalize: []
+  short: Publisher code
   type: keyword
 its_report_npu.user.id:
   dashed_name: its-report-npu-user-id
@@ -54,4 +92,14 @@ its_report_npu.user.id:
   name: user.id
   normalize: []
   short: User ID
+  type: keyword
+its_report_npu.user.name:
+  dashed_name: its-report-npu-user-name
+  description: Username
+  flat_name: its_report_npu.user.name
+  ignore_above: 1024
+  level: custom
+  name: user.name
+  normalize: []
+  short: Username
   type: keyword
