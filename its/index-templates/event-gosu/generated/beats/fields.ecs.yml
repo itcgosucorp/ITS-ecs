@@ -786,6 +786,138 @@
         look like this: `@timestamp` < `event.created` < `event.ingested`.'
       example: '2016-05-23T08:05:35.101Z'
       default_field: false
+    - name: its.attribution_result.ad_creative
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Creative.
+      default_field: false
+    - name: its.attribution_result.ad_creative_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Creative ID.
+      default_field: false
+    - name: its.attribution_result.ad_group
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Group.
+      default_field: false
+    - name: its.attribution_result.ad_group_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Group ID.
+      default_field: false
+    - name: its.attribution_result.campaign_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Campaign ID.
+      default_field: false
+    - name: its.attribution_result.click_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Click ID.
+      default_field: false
+    - name: its.attribution_result.deeplink_url
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Deeplink URL.
+      default_field: false
+    - name: its.attribution_result.fbclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: FBCILID.
+      default_field: false
+    - name: its.attribution_result.gaid_raw
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: GAID Raw.
+      default_field: false
+    - name: its.attribution_result.gclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: GCLID.
+      default_field: false
+    - name: its.attribution_result.ifa_raw
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: IFA Raw.
+      default_field: false
+    - name: its.attribution_result.ip
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: IP.
+      default_field: false
+    - name: its.attribution_result.language
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Language.
+      default_field: false
+    - name: its.attribution_result.sub_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Sub ID.
+      default_field: false
+    - name: its.attribution_result.sub_id_1
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Sub ID 1.
+      default_field: false
+    - name: its.attribution_result.ttclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: TTCLID.
+      default_field: false
+    - name: its.attribution_result.user_agent
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User Agent.
+      default_field: false
+    - name: its.attribution_result.utm_campaign
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Campaign.
+      default_field: false
+    - name: its.attribution_result.utm_content
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Content.
+      default_field: false
+    - name: its.attribution_result.utm_medium
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Medium.
+      default_field: false
+    - name: its.attribution_result.utm_source
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Source.
+      default_field: false
+    - name: its.attribution_result.utm_term
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Term.
+      default_field: false
     - name: its.campaign.content
       level: custom
       type: keyword

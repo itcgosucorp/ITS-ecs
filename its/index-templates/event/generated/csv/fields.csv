@@ -88,6 +88,28 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.hash,keyword,extended,,123456789012345678901234567890ABCD,Hash (perhaps logstash fingerprint) of raw field to be able to demonstrate log integrity.
 8.9.0,true,event,event.id,keyword,core,,8a4f500d,Unique ID to describe the event.
 8.9.0,true,event,event.ingested,date,core,,2016-05-23T08:05:35.101Z,Timestamp when an event arrived in the central data store.
+8.9.0,true,event,event.its.attribution_result.ad_creative,keyword,custom,,,AD Creative.
+8.9.0,true,event,event.its.attribution_result.ad_creative_id,keyword,custom,,,AD Creative ID.
+8.9.0,true,event,event.its.attribution_result.ad_group,keyword,custom,,,AD Group.
+8.9.0,true,event,event.its.attribution_result.ad_group_id,keyword,custom,,,AD Group ID.
+8.9.0,true,event,event.its.attribution_result.campaign_id,keyword,custom,,,Campaign ID.
+8.9.0,true,event,event.its.attribution_result.click_id,keyword,custom,,,Click ID.
+8.9.0,true,event,event.its.attribution_result.deeplink_url,keyword,custom,,,Deeplink URL.
+8.9.0,true,event,event.its.attribution_result.fbclid,keyword,custom,,,FBCILID.
+8.9.0,true,event,event.its.attribution_result.gaid_raw,keyword,custom,,,GAID Raw.
+8.9.0,true,event,event.its.attribution_result.gclid,keyword,custom,,,GCLID.
+8.9.0,true,event,event.its.attribution_result.ifa_raw,keyword,custom,,,IFA Raw.
+8.9.0,true,event,event.its.attribution_result.ip,keyword,custom,,,IP.
+8.9.0,true,event,event.its.attribution_result.language,keyword,custom,,,Language.
+8.9.0,true,event,event.its.attribution_result.sub_id,keyword,custom,,,Sub ID.
+8.9.0,true,event,event.its.attribution_result.sub_id_1,keyword,custom,,,Sub ID 1.
+8.9.0,true,event,event.its.attribution_result.ttclid,keyword,custom,,,TTCLID.
+8.9.0,true,event,event.its.attribution_result.user_agent,keyword,custom,,,User Agent.
+8.9.0,true,event,event.its.attribution_result.utm_campaign,keyword,custom,,,UTM Campaign.
+8.9.0,true,event,event.its.attribution_result.utm_content,keyword,custom,,,UTM Content.
+8.9.0,true,event,event.its.attribution_result.utm_medium,keyword,custom,,,UTM Medium.
+8.9.0,true,event,event.its.attribution_result.utm_source,keyword,custom,,,UTM Source.
+8.9.0,true,event,event.its.attribution_result.utm_term,keyword,custom,,,UTM Term.
 8.9.0,true,event,event.its.campaign.content,keyword,custom,,,Content of the campaign.
 8.9.0,true,event,event.its.campaign.medium,keyword,custom,,,Medium of the campaign.
 8.9.0,true,event,event.its.campaign.name,keyword,custom,,,Name of the campaign.
@@ -114,11 +136,35 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.ad_time_viewed,float,custom,,,How long the ad unit was visible on the screen(seconds)
 8.9.0,true,event,event.its.properties.application_id,keyword,custom,,,Application ID.
 8.9.0,true,event,event.its.properties.brand,keyword,custom,,,Product Brand.
+8.9.0,true,event,event.its.properties.campaign.ad_creative,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ad_creative_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ad_group,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ad_group_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.campaign_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.click_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.deeplink_url,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.fbclid,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.gaid_raw,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.gclid,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ifa_raw,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ip,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.language,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.sub_id,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.sub_id_1,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.ttclid,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.user_agent,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_campaign,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_content,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_medium,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_source,keyword,custom,,,Onelink campaign.
+8.9.0,true,event,event.its.properties.campaign.utm_term,keyword,custom,,,Onelink campaign.
 8.9.0,true,event,event.its.properties.category,keyword,custom,,,Product's Category.
 8.9.0,true,event,event.its.properties.channel,keyword,custom,,,Channel Info.
 8.9.0,true,event,event.its.properties.character_id,keyword,custom,,,Character ID.
 8.9.0,true,event,event.its.properties.character_name,keyword,custom,,,Character Name.
 8.9.0,true,event,event.its.properties.currency,keyword,custom,,,Cost currency.
+8.9.0,true,event,event.its.properties.custom_id,keyword,custom,,,Onelink ID.
+8.9.0,true,event,event.its.properties.device_os,keyword,custom,,,Device OS.
 8.9.0,true,event,event.its.properties.item_id,keyword,custom,,,Item ID.
 8.9.0,true,event,event.its.properties.keywords,keyword,custom,,,Keyword Info.
 8.9.0,true,event,event.its.properties.level,integer,custom,,,Level the user achieved.
@@ -138,6 +184,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.its.properties.product_id,keyword,custom,,,Product ID.
 8.9.0,true,event,event.its.properties.product_name,keyword,custom,,,Product Name.
 8.9.0,true,event,event.its.properties.quantity,integer,custom,,,Quantity of Product.
+8.9.0,true,event,event.its.properties.redirect,keyword,custom,,,Redirect.
 8.9.0,true,event,event.its.properties.revenue,float,custom,,,Revenue.
 8.9.0,true,event,event.its.properties.reward,keyword,custom,,,Reward Info.
 8.9.0,true,event,event.its.properties.score,integer,custom,,,Score associated with the user's achievement.

@@ -57,6 +57,15 @@
             "match_mapping_type": "long",
             "path_match": "event.its.properties.*"
           }
+        },
+        {
+          "attribution_result_as_keyword": {
+            "mapping": {
+              "type": "keyword"
+            },
+            "match_mapping_type": "string",
+            "path_match": "event.its.attribution_result.*"
+          }
         }
       ],
       "runtime": {

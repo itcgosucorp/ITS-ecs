@@ -88,6 +88,28 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,event,event.hash,keyword,extended,,123456789012345678901234567890ABCD,Hash (perhaps logstash fingerprint) of raw field to be able to demonstrate log integrity.
 8.9.0,true,event,event.id,keyword,core,,8a4f500d,Unique ID to describe the event.
 8.9.0,true,event,event.ingested,date,core,,2016-05-23T08:05:35.101Z,Timestamp when an event arrived in the central data store.
+8.9.0,true,event,event.its.attribution_result.ad_creative,keyword,custom,,,AD Creative.
+8.9.0,true,event,event.its.attribution_result.ad_creative_id,keyword,custom,,,AD Creative ID.
+8.9.0,true,event,event.its.attribution_result.ad_group,keyword,custom,,,AD Group.
+8.9.0,true,event,event.its.attribution_result.ad_group_id,keyword,custom,,,AD Group ID.
+8.9.0,true,event,event.its.attribution_result.campaign_id,keyword,custom,,,Campaign ID.
+8.9.0,true,event,event.its.attribution_result.click_id,keyword,custom,,,Click ID.
+8.9.0,true,event,event.its.attribution_result.deeplink_url,keyword,custom,,,Deeplink URL.
+8.9.0,true,event,event.its.attribution_result.fbclid,keyword,custom,,,FBCILID.
+8.9.0,true,event,event.its.attribution_result.gaid_raw,keyword,custom,,,GAID Raw.
+8.9.0,true,event,event.its.attribution_result.gclid,keyword,custom,,,GCLID.
+8.9.0,true,event,event.its.attribution_result.ifa_raw,keyword,custom,,,IFA Raw.
+8.9.0,true,event,event.its.attribution_result.ip,keyword,custom,,,IP.
+8.9.0,true,event,event.its.attribution_result.language,keyword,custom,,,Language.
+8.9.0,true,event,event.its.attribution_result.sub_id,keyword,custom,,,Sub ID.
+8.9.0,true,event,event.its.attribution_result.sub_id_1,keyword,custom,,,Sub ID 1.
+8.9.0,true,event,event.its.attribution_result.ttclid,keyword,custom,,,TTCLID.
+8.9.0,true,event,event.its.attribution_result.user_agent,keyword,custom,,,User Agent.
+8.9.0,true,event,event.its.attribution_result.utm_campaign,keyword,custom,,,UTM Campaign.
+8.9.0,true,event,event.its.attribution_result.utm_content,keyword,custom,,,UTM Content.
+8.9.0,true,event,event.its.attribution_result.utm_medium,keyword,custom,,,UTM Medium.
+8.9.0,true,event,event.its.attribution_result.utm_source,keyword,custom,,,UTM Source.
+8.9.0,true,event,event.its.attribution_result.utm_term,keyword,custom,,,UTM Term.
 8.9.0,true,event,event.its.campaign.content,keyword,custom,,,Content of the campaign.
 8.9.0,true,event,event.its.campaign.medium,keyword,custom,,,Medium of the campaign.
 8.9.0,true,event,event.its.campaign.name,keyword,custom,,,Name of the campaign.

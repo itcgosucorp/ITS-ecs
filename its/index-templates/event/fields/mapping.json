@@ -35,6 +35,15 @@
           "type": "double"
         }
       }
+    },
+    {
+      "attribution_result_as_keyword": {
+        "path_match": "event.its.attribution_result.*",
+        "match_mapping_type": "string",
+        "mapping": {
+          "type": "keyword"
+        }
+      }
     }
   ]
 }

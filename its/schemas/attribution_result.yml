@@ -1,0 +1,154 @@
+---
+- name: its_atttribution_result
+  title: ITS atttribution result
+  type: group
+  group: 2
+  root: false
+  short: ITS atttribution result
+  description: >
+    ITS atttribution result
+  reusable:
+    order: 1
+    top_level: false
+    expected:
+      - at: its_event
+        as: attribution_result
+  fields:
+    - name: utm_source
+      level: custom
+      type: keyword
+      short: UTM Source.
+      description: >
+        UTM Source.
+    - name: utm_medium
+      level: custom
+      type: keyword
+      short: UTM Medium.
+      description: >
+        UTM Medium.
+    - name: utm_campaign
+      level: custom
+      type: keyword
+      short: UTM Campaign.
+      description: >
+        UTM Campaign.
+    - name: utm_term
+      level: custom
+      type: keyword
+      short: UTM Term.
+      description: >
+        UTM Term.
+    - name: utm_content
+      level: custom
+      type: keyword
+      short: UTM Content.
+      description: >
+        UTM Content.
+    - name: ad_creative
+      level: custom
+      type: keyword
+      short: AD Creative.
+      description: >
+        AD Creative.
+    - name: ad_group
+      level: custom
+      type: keyword
+      short: AD Group.
+      description: >
+        AD Group.
+    - name: sub_id
+      level: custom
+      type: keyword
+      short: Sub ID.
+      description: >
+        Sub ID.
+    - name: sub_id_1
+      level: custom
+      type: keyword
+      short: Sub ID 1.
+      description: >
+        Sub ID 1.
+    - name: ad_creative_id
+      level: custom
+      type: keyword
+      short: AD Creative ID.
+      description: >
+        AD Creative ID.
+    - name: ad_group_id
+      level: custom
+      type: keyword
+      short: AD Group ID.
+      description: >
+        AD Group ID.
+    - name: sub_id
+      level: custom
+      type: keyword
+      short: Sub ID.
+      description: >
+        Sub ID.
+    - name: campaign_id
+      level: custom
+      type: keyword
+      short: Campaign ID.
+      description: >
+        Campaign ID.
+    - name: click_id
+      level: custom
+      type: keyword
+      short: Click ID.
+      description: >
+        Click ID.
+    - name: gaid_raw
+      level: custom
+      type: keyword
+      short: GAID Raw.
+      description: >
+        GAID Raw.
+    - name: ifa_raw
+      level: custom
+      type: keyword
+      short: IFA Raw.
+      description: >
+        IFA Raw.
+    - name: user_agent
+      level: custom
+      type: keyword
+      short: User Agent.
+      description: >
+        User Agent.
+    - name: ip
+      level: custom
+      type: keyword
+      short: IP.
+      description: >
+        IP.
+    - name: language
+      level: custom
+      type: keyword
+      short: Language.
+      description: >
+        Language.
+    - name: deeplink_url
+      level: custom
+      type: keyword
+      short: Deeplink URL.
+      description: >
+        Deeplink URL.
+    - name: ttclid
+      level: custom
+      type: keyword
+      short: TTCLID.
+      description: >
+        TTCLID.
+    - name: fbclid
+      level: custom
+      type: keyword
+      short: FBCILID.
+      description: >
+        FBCILID.
+    - name: gclid
+      level: custom
+      type: keyword
+      short: GCLID.
+      description: >
+        GCLID.

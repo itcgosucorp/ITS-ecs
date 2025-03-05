@@ -1478,6 +1478,248 @@ event:
       normalize: []
       short: Timestamp when an event arrived in the central data store.
       type: date
+    event.its.attribution_result.ad_creative:
+      dashed_name: event-its-attribution-result-ad-creative
+      description: AD Creative.
+      flat_name: event.its.attribution_result.ad_creative
+      ignore_above: 1024
+      level: custom
+      name: ad_creative
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: AD Creative.
+      type: keyword
+    event.its.attribution_result.ad_creative_id:
+      dashed_name: event-its-attribution-result-ad-creative-id
+      description: AD Creative ID.
+      flat_name: event.its.attribution_result.ad_creative_id
+      ignore_above: 1024
+      level: custom
+      name: ad_creative_id
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: AD Creative ID.
+      type: keyword
+    event.its.attribution_result.ad_group:
+      dashed_name: event-its-attribution-result-ad-group
+      description: AD Group.
+      flat_name: event.its.attribution_result.ad_group
+      ignore_above: 1024
+      level: custom
+      name: ad_group
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: AD Group.
+      type: keyword
+    event.its.attribution_result.ad_group_id:
+      dashed_name: event-its-attribution-result-ad-group-id
+      description: AD Group ID.
+      flat_name: event.its.attribution_result.ad_group_id
+      ignore_above: 1024
+      level: custom
+      name: ad_group_id
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: AD Group ID.
+      type: keyword
+    event.its.attribution_result.campaign_id:
+      dashed_name: event-its-attribution-result-campaign-id
+      description: Campaign ID.
+      flat_name: event.its.attribution_result.campaign_id
+      ignore_above: 1024
+      level: custom
+      name: campaign_id
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: Campaign ID.
+      type: keyword
+    event.its.attribution_result.click_id:
+      dashed_name: event-its-attribution-result-click-id
+      description: Click ID.
+      flat_name: event.its.attribution_result.click_id
+      ignore_above: 1024
+      level: custom
+      name: click_id
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: Click ID.
+      type: keyword
+    event.its.attribution_result.deeplink_url:
+      dashed_name: event-its-attribution-result-deeplink-url
+      description: Deeplink URL.
+      flat_name: event.its.attribution_result.deeplink_url
+      ignore_above: 1024
+      level: custom
+      name: deeplink_url
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: Deeplink URL.
+      type: keyword
+    event.its.attribution_result.fbclid:
+      dashed_name: event-its-attribution-result-fbclid
+      description: FBCILID.
+      flat_name: event.its.attribution_result.fbclid
+      ignore_above: 1024
+      level: custom
+      name: fbclid
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: FBCILID.
+      type: keyword
+    event.its.attribution_result.gaid_raw:
+      dashed_name: event-its-attribution-result-gaid-raw
+      description: GAID Raw.
+      flat_name: event.its.attribution_result.gaid_raw
+      ignore_above: 1024
+      level: custom
+      name: gaid_raw
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: GAID Raw.
+      type: keyword
+    event.its.attribution_result.gclid:
+      dashed_name: event-its-attribution-result-gclid
+      description: GCLID.
+      flat_name: event.its.attribution_result.gclid
+      ignore_above: 1024
+      level: custom
+      name: gclid
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: GCLID.
+      type: keyword
+    event.its.attribution_result.ifa_raw:
+      dashed_name: event-its-attribution-result-ifa-raw
+      description: IFA Raw.
+      flat_name: event.its.attribution_result.ifa_raw
+      ignore_above: 1024
+      level: custom
+      name: ifa_raw
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: IFA Raw.
+      type: keyword
+    event.its.attribution_result.ip:
+      dashed_name: event-its-attribution-result-ip
+      description: IP.
+      flat_name: event.its.attribution_result.ip
+      ignore_above: 1024
+      level: custom
+      name: ip
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: IP.
+      type: keyword
+    event.its.attribution_result.language:
+      dashed_name: event-its-attribution-result-language
+      description: Language.
+      flat_name: event.its.attribution_result.language
+      ignore_above: 1024
+      level: custom
+      name: language
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: Language.
+      type: keyword
+    event.its.attribution_result.sub_id:
+      dashed_name: event-its-attribution-result-sub-id
+      description: Sub ID.
+      flat_name: event.its.attribution_result.sub_id
+      ignore_above: 1024
+      level: custom
+      name: sub_id
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: Sub ID.
+      type: keyword
+    event.its.attribution_result.sub_id_1:
+      dashed_name: event-its-attribution-result-sub-id-1
+      description: Sub ID 1.
+      flat_name: event.its.attribution_result.sub_id_1
+      ignore_above: 1024
+      level: custom
+      name: sub_id_1
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: Sub ID 1.
+      type: keyword
+    event.its.attribution_result.ttclid:
+      dashed_name: event-its-attribution-result-ttclid
+      description: TTCLID.
+      flat_name: event.its.attribution_result.ttclid
+      ignore_above: 1024
+      level: custom
+      name: ttclid
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: TTCLID.
+      type: keyword
+    event.its.attribution_result.user_agent:
+      dashed_name: event-its-attribution-result-user-agent
+      description: User Agent.
+      flat_name: event.its.attribution_result.user_agent
+      ignore_above: 1024
+      level: custom
+      name: user_agent
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: User Agent.
+      type: keyword
+    event.its.attribution_result.utm_campaign:
+      dashed_name: event-its-attribution-result-utm-campaign
+      description: UTM Campaign.
+      flat_name: event.its.attribution_result.utm_campaign
+      ignore_above: 1024
+      level: custom
+      name: utm_campaign
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: UTM Campaign.
+      type: keyword
+    event.its.attribution_result.utm_content:
+      dashed_name: event-its-attribution-result-utm-content
+      description: UTM Content.
+      flat_name: event.its.attribution_result.utm_content
+      ignore_above: 1024
+      level: custom
+      name: utm_content
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: UTM Content.
+      type: keyword
+    event.its.attribution_result.utm_medium:
+      dashed_name: event-its-attribution-result-utm-medium
+      description: UTM Medium.
+      flat_name: event.its.attribution_result.utm_medium
+      ignore_above: 1024
+      level: custom
+      name: utm_medium
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: UTM Medium.
+      type: keyword
+    event.its.attribution_result.utm_source:
+      dashed_name: event-its-attribution-result-utm-source
+      description: UTM Source.
+      flat_name: event.its.attribution_result.utm_source
+      ignore_above: 1024
+      level: custom
+      name: utm_source
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: UTM Source.
+      type: keyword
+    event.its.attribution_result.utm_term:
+      dashed_name: event-its-attribution-result-utm-term
+      description: UTM Term.
+      flat_name: event.its.attribution_result.utm_term
+      ignore_above: 1024
+      level: custom
+      name: utm_term
+      normalize: []
+      original_fieldset: its_atttribution_result
+      short: UTM Term.
+      type: keyword
     event.its.campaign.content:
       dashed_name: event-its-campaign-content
       description: Content of the campaign.
@@ -1761,6 +2003,248 @@ event:
       original_fieldset: its_event
       short: Product Brand.
       type: keyword
+    event.its.properties.campaign.ad_creative:
+      dashed_name: event-its-properties-campaign-ad-creative
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ad_creative
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ad_creative
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.ad_creative_id:
+      dashed_name: event-its-properties-campaign-ad-creative-id
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ad_creative_id
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ad_creative_id
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.ad_group:
+      dashed_name: event-its-properties-campaign-ad-group
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ad_group
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ad_group
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.ad_group_id:
+      dashed_name: event-its-properties-campaign-ad-group-id
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ad_group_id
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ad_group_id
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.campaign_id:
+      dashed_name: event-its-properties-campaign-campaign-id
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.campaign_id
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.campaign_id
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.click_id:
+      dashed_name: event-its-properties-campaign-click-id
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.click_id
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.click_id
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.deeplink_url:
+      dashed_name: event-its-properties-campaign-deeplink-url
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.deeplink_url
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.deeplink_url
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.fbclid:
+      dashed_name: event-its-properties-campaign-fbclid
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.fbclid
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.fbclid
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.gaid_raw:
+      dashed_name: event-its-properties-campaign-gaid-raw
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.gaid_raw
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.gaid_raw
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.gclid:
+      dashed_name: event-its-properties-campaign-gclid
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.gclid
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.gclid
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.ifa_raw:
+      dashed_name: event-its-properties-campaign-ifa-raw
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ifa_raw
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ifa_raw
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.ip:
+      dashed_name: event-its-properties-campaign-ip
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ip
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ip
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.language:
+      dashed_name: event-its-properties-campaign-language
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.language
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.language
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.sub_id:
+      dashed_name: event-its-properties-campaign-sub-id
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.sub_id
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.sub_id
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.sub_id_1:
+      dashed_name: event-its-properties-campaign-sub-id-1
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.sub_id_1
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.sub_id_1
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.ttclid:
+      dashed_name: event-its-properties-campaign-ttclid
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.ttclid
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.ttclid
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.user_agent:
+      dashed_name: event-its-properties-campaign-user-agent
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.user_agent
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.user_agent
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.utm_campaign:
+      dashed_name: event-its-properties-campaign-utm-campaign
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.utm_campaign
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.utm_campaign
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.utm_content:
+      dashed_name: event-its-properties-campaign-utm-content
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.utm_content
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.utm_content
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.utm_medium:
+      dashed_name: event-its-properties-campaign-utm-medium
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.utm_medium
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.utm_medium
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.utm_source:
+      dashed_name: event-its-properties-campaign-utm-source
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.utm_source
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.utm_source
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
+    event.its.properties.campaign.utm_term:
+      dashed_name: event-its-properties-campaign-utm-term
+      description: Onelink campaign.
+      flat_name: event.its.properties.campaign.utm_term
+      ignore_above: 1024
+      level: custom
+      name: properties.campaign.utm_term
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink campaign.
+      type: keyword
     event.its.properties.category:
       dashed_name: event-its-properties-category
       description: Product's Category.
@@ -1815,6 +2299,28 @@ event:
       normalize: []
       original_fieldset: its_event
       short: Cost currency.
+      type: keyword
+    event.its.properties.custom_id:
+      dashed_name: event-its-properties-custom-id
+      description: Onelink ID.
+      flat_name: event.its.properties.custom_id
+      ignore_above: 1024
+      level: custom
+      name: properties.custom_id
+      normalize: []
+      original_fieldset: its_event
+      short: Onelink ID.
+      type: keyword
+    event.its.properties.device_os:
+      dashed_name: event-its-properties-device-os
+      description: Device OS.
+      flat_name: event.its.properties.device_os
+      ignore_above: 1024
+      level: custom
+      name: properties.device_os
+      normalize: []
+      original_fieldset: its_event
+      short: Device OS.
       type: keyword
     event.its.properties.item_id:
       dashed_name: event-its-properties-item-id
@@ -2016,6 +2522,17 @@ event:
       original_fieldset: its_event
       short: Quantity of Product.
       type: integer
+    event.its.properties.redirect:
+      dashed_name: event-its-properties-redirect
+      description: Redirect.
+      flat_name: event.its.properties.redirect
+      ignore_above: 1024
+      level: custom
+      name: properties.redirect
+      normalize: []
+      original_fieldset: its_event
+      short: Redirect.
+      type: keyword
     event.its.properties.revenue:
       dashed_name: event-its-properties-revenue
       description: Revenue.
