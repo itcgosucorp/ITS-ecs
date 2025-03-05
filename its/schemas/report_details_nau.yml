@@ -1,5 +1,5 @@
 ---
-- name: its_report_nau
+- name: its_report_details_nau
   title: ITS report NAU
   type: group
   group: 2
@@ -8,41 +8,53 @@
   description: >
     ITS report NAU
   fields:
+    - name: user.id
+      level: custom
+      type: keyword
+      short: Username.
+      description: >
+        Username.
     - name: user.name
       level: custom
       type: keyword
       short: User Name.
       description: >
         User Name.
-    - name: first_doc.@timestamp
+    - name: labels.publisher.keyword
       level: custom
-      type: date
-      short: Timestamp.
+      type: keyword
+      short: Publisher Code.
       description: >
-        Timestamp.
-    - name: first_doc.client.geo.city_name
+        Publisher Code.
+    - name: labels.app.keyword
+      level: custom
+      type: keyword
+      short: App code.
+      description: >
+        App code.
+    - name: client.geo.city_name
       level: custom
       type: keyword
       short: City name.
       description: >
         City name.
-    - name: first_doc.user_agent.os.name
+    - name: user_agent.os.name
       level: custom
       type: keyword
       short: OS name.
       description: >
         OS name.
-    - name: first_doc.event.its.game.id
-      level: custom
-      type: keyword
-      short: Game ID.
-      description: >
-        Game ID.
-    - name: first_doc.client.geo.country_name
+    - name: client.geo.country_name
       level: custom
       type: keyword
       short: Country name.
       description: >
         Country name.
+    - name: count
+      level: custom
+      type: long
+      short: Total count.
+      description: >
+        Total count.
 
     
