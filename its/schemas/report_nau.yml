@@ -1,0 +1,31 @@
+---
+- name: its_report_nau
+  title: ITS report NAU
+  type: group
+  group: 2
+  root: false
+  short: ITS report NAU
+  description: >
+    ITS report NAU
+  fields:
+    - name: labels.publisher.keyword
+      level: custom
+      type: keyword
+      short: Publisher Code.
+      description: >
+        Publisher Code.
+    - name: labels.app.keyword
+      level: custom
+      type: keyword
+      short: App code.
+      description: >
+        App code.
+    - name: count
+      level: custom
+      type: long
+      short: Total count.
+      description: >
+        Total count.
+    
+
+    

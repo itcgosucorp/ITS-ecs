@@ -28,38 +28,20 @@
     type: group
     default_field: true
     fields:
-    - name: first_doc.@timestamp
+    - name: count
       level: custom
-      type: date
-      description: Timestamp.
+      type: long
+      description: Total count.
       default_field: false
-    - name: first_doc.client.geo.city_name
+    - name: labels.app.keyword
       level: custom
       type: keyword
       ignore_above: 1024
-      description: City name.
+      description: App code.
       default_field: false
-    - name: first_doc.client.geo.country_name
+    - name: labels.publisher.keyword
       level: custom
       type: keyword
       ignore_above: 1024
-      description: Country name.
-      default_field: false
-    - name: first_doc.event.its.game.id
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: Game ID.
-      default_field: false
-    - name: first_doc.user_agent.os.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: OS name.
-      default_field: false
-    - name: user.name
-      level: custom
-      type: keyword
-      ignore_above: 1024
-      description: User Name.
+      description: Publisher Code.
       default_field: false

@@ -8,49 +8,24 @@
       "@timestamp": {
         "type": "date"
       },
-      "first_doc": {
+      "count": {
+        "type": "long"
+      },
+      "labels": {
         "properties": {
-          "@timestamp": {
-            "type": "date"
-          },
-          "client": {
+          "app": {
             "properties": {
-              "geo": {
-                "properties": {
-                  "city_name": {
-                    "ignore_above": 1024,
-                    "type": "keyword"
-                  },
-                  "country_name": {
-                    "type": "keyword"
-                  }
-                }
+              "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
               }
             }
           },
-          "event": {
+          "publisher": {
             "properties": {
-              "its": {
-                "properties": {
-                  "game": {
-                    "properties": {
-                      "id": {
-                        "type": "keyword"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "user_agent": {
-            "properties": {
-              "os": {
-                "properties": {
-                  "name": {
-                    "type": "keyword"
-                  }
-                }
+              "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
               }
             }
           }

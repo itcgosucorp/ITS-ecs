@@ -7,62 +7,26 @@
       "properties": {
         "its_report_nau": {
           "properties": {
-            "first_doc": {
-              "properties": {
-                "@timestamp": {
-                  "type": "date"
-                },
-                "client": {
-                  "properties": {
-                    "geo": {
-                      "properties": {
-                        "city_name": {
-                          "ignore_above": 1024,
-                          "type": "keyword"
-                        },
-                        "country_name": {
-                          "ignore_above": 1024,
-                          "type": "keyword"
-                        }
-                      }
-                    }
-                  }
-                },
-                "event": {
-                  "properties": {
-                    "its": {
-                      "properties": {
-                        "game": {
-                          "properties": {
-                            "id": {
-                              "ignore_above": 1024,
-                              "type": "keyword"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "user_agent": {
-                  "properties": {
-                    "os": {
-                      "properties": {
-                        "name": {
-                          "ignore_above": 1024,
-                          "type": "keyword"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+            "count": {
+              "type": "long"
             },
-            "user": {
+            "labels": {
               "properties": {
-                "name": {
-                  "ignore_above": 1024,
-                  "type": "keyword"
+                "app": {
+                  "properties": {
+                    "keyword": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
+                },
+                "publisher": {
+                  "properties": {
+                    "keyword": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  }
                 }
               }
             }

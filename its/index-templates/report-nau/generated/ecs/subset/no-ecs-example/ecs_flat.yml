@@ -17,62 +17,32 @@
   required: true
   short: Date/time when the event originated.
   type: date
-its_report_nau.first_doc.@timestamp:
-  dashed_name: its-report-nau-first-doc-timestamp
-  description: Timestamp.
-  flat_name: its_report_nau.first_doc.@timestamp
+its_report_nau.count:
+  dashed_name: its-report-nau-count
+  description: Total count.
+  flat_name: its_report_nau.count
   level: custom
-  name: first_doc.@timestamp
+  name: count
   normalize: []
-  short: Timestamp.
-  type: date
-its_report_nau.first_doc.client.geo.city_name:
-  dashed_name: its-report-nau-first-doc-client-geo-city-name
-  description: City name.
-  flat_name: its_report_nau.first_doc.client.geo.city_name
+  short: Total count.
+  type: long
+its_report_nau.labels.app.keyword:
+  dashed_name: its-report-nau-labels-app-keyword
+  description: App code.
+  flat_name: its_report_nau.labels.app.keyword
   ignore_above: 1024
   level: custom
-  name: first_doc.client.geo.city_name
+  name: labels.app.keyword
   normalize: []
-  short: City name.
+  short: App code.
   type: keyword
-its_report_nau.first_doc.client.geo.country_name:
-  dashed_name: its-report-nau-first-doc-client-geo-country-name
-  description: Country name.
-  flat_name: its_report_nau.first_doc.client.geo.country_name
+its_report_nau.labels.publisher.keyword:
+  dashed_name: its-report-nau-labels-publisher-keyword
+  description: Publisher Code.
+  flat_name: its_report_nau.labels.publisher.keyword
   ignore_above: 1024
   level: custom
-  name: first_doc.client.geo.country_name
+  name: labels.publisher.keyword
   normalize: []
-  short: Country name.
-  type: keyword
-its_report_nau.first_doc.event.its.game.id:
-  dashed_name: its-report-nau-first-doc-event-its-game-id
-  description: Game ID.
-  flat_name: its_report_nau.first_doc.event.its.game.id
-  ignore_above: 1024
-  level: custom
-  name: first_doc.event.its.game.id
-  normalize: []
-  short: Game ID.
-  type: keyword
-its_report_nau.first_doc.user_agent.os.name:
-  dashed_name: its-report-nau-first-doc-user-agent-os-name
-  description: OS name.
-  flat_name: its_report_nau.first_doc.user_agent.os.name
-  ignore_above: 1024
-  level: custom
-  name: first_doc.user_agent.os.name
-  normalize: []
-  short: OS name.
-  type: keyword
-its_report_nau.user.name:
-  dashed_name: its-report-nau-user-name
-  description: User Name.
-  flat_name: its_report_nau.user.name
-  ignore_above: 1024
-  level: custom
-  name: user.name
-  normalize: []
-  short: User Name.
+  short: Publisher Code.
   type: keyword
