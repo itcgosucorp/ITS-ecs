@@ -5,10 +5,10 @@
   },
   "composed_of": [
     "ecs_8.9.0_base",
-    "ecs_8.9.0_its_report_details_nau"
+    "ecs_8.9.0_its_report_nau_details"
   ],
   "index_patterns": [
-    "report_*_*_details_nau"
+    "report_*_*_nau_details"
   ],
   "priority": 1,
   "template": {

@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_details_nau"],
+  "index_patterns": ["report_*_*_nau_details"],
   "priority": 1,
   "template": {
     "settings": {

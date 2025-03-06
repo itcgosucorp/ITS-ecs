@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "report_*_*_details_nau"
+    "report_*_*_nau_details"
   ],
   "mappings": {
     "dynamic": false,

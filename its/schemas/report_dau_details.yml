@@ -1,12 +1,12 @@
 ---
-- name: its_report_details_nau
-  title: ITS report NAU
+- name: its_report_nau_details
+  title: ITS report NAU Details
   type: group
   group: 2
   root: false
-  short: ITS report NAU
+  short: ITS report NAU Details
   description: >
-    ITS report NAU
+    ITS report NAU Details
   fields:
     - name: user.id
       level: custom

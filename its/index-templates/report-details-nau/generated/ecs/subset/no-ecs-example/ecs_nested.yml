@@ -28,82 +28,82 @@ base:
   short: All fields defined directly at the root of the events.
   title: Base
   type: group
-its_report_details_nau:
-  description: ITS report NAU
+its_report_nau_details:
+  description: ITS report NAU Details
   fields:
-    its_report_details_nau.client.geo.city_name:
-      dashed_name: its-report-details-nau-client-geo-city-name
+    its_report_nau_details.client.geo.city_name:
+      dashed_name: its-report-nau-details-client-geo-city-name
       description: City name.
-      flat_name: its_report_details_nau.client.geo.city_name
+      flat_name: its_report_nau_details.client.geo.city_name
       ignore_above: 1024
       level: custom
       name: client.geo.city_name
       normalize: []
       short: City name.
       type: keyword
-    its_report_details_nau.client.geo.country_name:
-      dashed_name: its-report-details-nau-client-geo-country-name
+    its_report_nau_details.client.geo.country_name:
+      dashed_name: its-report-nau-details-client-geo-country-name
       description: Country name.
-      flat_name: its_report_details_nau.client.geo.country_name
+      flat_name: its_report_nau_details.client.geo.country_name
       ignore_above: 1024
       level: custom
       name: client.geo.country_name
       normalize: []
       short: Country name.
       type: keyword
-    its_report_details_nau.count:
-      dashed_name: its-report-details-nau-count
+    its_report_nau_details.count:
+      dashed_name: its-report-nau-details-count
       description: Total count.
-      flat_name: its_report_details_nau.count
+      flat_name: its_report_nau_details.count
       level: custom
       name: count
       normalize: []
       short: Total count.
       type: long
-    its_report_details_nau.labels.app.keyword:
-      dashed_name: its-report-details-nau-labels-app-keyword
+    its_report_nau_details.labels.app.keyword:
+      dashed_name: its-report-nau-details-labels-app-keyword
       description: App code.
-      flat_name: its_report_details_nau.labels.app.keyword
+      flat_name: its_report_nau_details.labels.app.keyword
       ignore_above: 1024
       level: custom
       name: labels.app.keyword
       normalize: []
       short: App code.
       type: keyword
-    its_report_details_nau.labels.publisher.keyword:
-      dashed_name: its-report-details-nau-labels-publisher-keyword
+    its_report_nau_details.labels.publisher.keyword:
+      dashed_name: its-report-nau-details-labels-publisher-keyword
       description: Publisher Code.
-      flat_name: its_report_details_nau.labels.publisher.keyword
+      flat_name: its_report_nau_details.labels.publisher.keyword
       ignore_above: 1024
       level: custom
       name: labels.publisher.keyword
       normalize: []
       short: Publisher Code.
       type: keyword
-    its_report_details_nau.user.id:
-      dashed_name: its-report-details-nau-user-id
+    its_report_nau_details.user.id:
+      dashed_name: its-report-nau-details-user-id
       description: Username.
-      flat_name: its_report_details_nau.user.id
+      flat_name: its_report_nau_details.user.id
       ignore_above: 1024
       level: custom
       name: user.id
       normalize: []
       short: Username.
       type: keyword
-    its_report_details_nau.user.name:
-      dashed_name: its-report-details-nau-user-name
+    its_report_nau_details.user.name:
+      dashed_name: its-report-nau-details-user-name
       description: User Name.
-      flat_name: its_report_details_nau.user.name
+      flat_name: its_report_nau_details.user.name
       ignore_above: 1024
       level: custom
       name: user.name
       normalize: []
       short: User Name.
       type: keyword
-    its_report_details_nau.user_agent.os.name:
-      dashed_name: its-report-details-nau-user-agent-os-name
+    its_report_nau_details.user_agent.os.name:
+      dashed_name: its-report-nau-details-user-agent-os-name
       description: OS name.
-      flat_name: its_report_details_nau.user_agent.os.name
+      flat_name: its_report_nau_details.user_agent.os.name
       ignore_above: 1024
       level: custom
       name: user_agent.os.name
@@ -111,8 +111,8 @@ its_report_details_nau:
       short: OS name.
       type: keyword
   group: 2
-  name: its_report_details_nau
-  prefix: its_report_details_nau.
-  short: ITS report NAU
-  title: ITS report NAU
+  name: its_report_nau_details
+  prefix: its_report_nau_details.
+  short: ITS report NAU Details
+  title: ITS report NAU Details
   type: group

@@ -5,6 +5,6 @@ fields:
   base:
     fields:
       "@timestamp": {}
-  its_report_details_nau:
+  its_report_nau_details:
     fields: "*"
   
