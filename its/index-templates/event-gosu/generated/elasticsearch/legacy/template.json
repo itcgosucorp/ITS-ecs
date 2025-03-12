@@ -2069,21 +2069,21 @@
       "event.its.payment.channel_name": {
         "script": {
           "lang": "painless",
-          "source": "if(['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { emit(doc['event.its.payment.channel'].value) }"
+          "source": "if(doc['event.module'].value == 'sources' && ['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { emit(doc['event.its.payment.channel'].value) }"
         },
         "type": "keyword"
       },
       "event.its.payment.transfer_type": {
         "script": {
           "lang": "painless",
-          "source": "if(!['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) {emit('N/A');} else if (['gcard', 'onepayinter', 'payos', 'smsmobi', 'momo', 'zalopay', 'onepay_inter', 'onepay', 'vnptpay', 'mocha', 'vnpay', 'xsolla', 'gate', 'vtc', 'appota', 'nemo', 'onepayglobal', 'fpt', 'android', 'smsviettel', 'apple', 'tttt', 'smsvinaphone', 'virtualaccount', 'google', 'bit', 'paypal', 'vinadata', 'gtv', 'steam', 'vcoin', 'bankaccount', 'steamdev'].contains(doc['event.its.payment.channel'].value)) { if(doc['event.its.game.id'].size() != 0 && !doc['event.its.game.id'][0].empty) {emit('C2G');} else {emit('C2W')}  } else if (['gosu', 'apple.g', 'android.g', 'gosutest', 'g.apple', 'g.google', 'g.gosutest'].contains(doc['event.its.payment.channel'].value) && doc.containsKey('event.its.game.id') && !doc['event.its.game.id'].empty) {emit('W2G');} else if (['staking', 'staking-receive', 'transfer'].contains(doc['event.its.payment.channel'].value))  {emit('W2W');} else if (['tienmat', 'transfer'].contains(doc['event.its.payment.channel'].value)) {emit('T2W');} else if (['burngosu'].contains(doc['event.its.payment.channel'].value)) {emit('T2G');} else if (['promotion'].contains(doc['event.its.payment.channel'].value)) {emit('P2G');} else if (['tanggosu'].contains(doc['event.its.payment.channel'].value)) { if(doc['event.its.game.id'].size() != 0 && !doc['event.its.game.id'][0].empty) {emit('P2G');} else {emit('T2W')} } else {emit('N/A');}"
+          "source": "if(doc['event.module'].value != 'sources' || !['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) {emit('N/A');} else if (['gcard', 'onepayinter', 'payos', 'smsmobi', 'momo', 'zalopay', 'onepay_inter', 'onepay', 'vnptpay', 'mocha', 'vnpay', 'xsolla', 'gate', 'vtc', 'appota', 'nemo', 'onepayglobal', 'fpt', 'android', 'smsviettel', 'apple', 'tttt', 'smsvinaphone', 'virtualaccount', 'google', 'bit', 'paypal', 'vinadata', 'gtv', 'steam', 'vcoin', 'bankaccount', 'steamdev'].contains(doc['event.its.payment.channel'].value)) { if(doc['event.its.game.id'].size() != 0 && !doc['event.its.game.id'][0].empty) {emit('C2G');} else {emit('C2W')}  } else if (['gosu', 'apple.g', 'android.g', 'gosutest', 'g.apple', 'g.google', 'g.gosutest'].contains(doc['event.its.payment.channel'].value) && doc.containsKey('event.its.game.id') && !doc['event.its.game.id'].empty) {emit('W2G');} else if (['staking', 'staking-receive', 'transfer'].contains(doc['event.its.payment.channel'].value))  {emit('W2W');} else if (['tienmat', 'transfer'].contains(doc['event.its.payment.channel'].value)) {emit('T2W');} else if (['burngosu'].contains(doc['event.its.payment.channel'].value)) {emit('T2G');} else if (['promotion'].contains(doc['event.its.payment.channel'].value)) {emit('P2G');} else if (['tanggosu'].contains(doc['event.its.payment.channel'].value)) { if(doc['event.its.game.id'].size() != 0 && !doc['event.its.game.id'][0].empty) {emit('P2G');} else {emit('T2W')} } else {emit('N/A');}"
         },
         "type": "keyword"
       },
       "event.its.payment.vnd_amount": {
         "script": {
           "lang": "painless",
-          "source": "if(['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { if(doc['event.its.properties.exchange_rate'].size() != 0) { emit(doc['event.its.payment.amount'].value * doc['event.its.properties.exchange_rate'].value); } else {emit(doc['event.its.payment.amount'].value);} }"
+          "source": "if(doc['event.module'].value == 'sources' && ['its_purchase', 'its_rechargewallet'].contains(doc['event.action'].value)) { if(doc['event.its.properties.exchange_rate'].size() != 0) { emit(doc['event.its.payment.amount'].value * doc['event.its.properties.exchange_rate'].value); } else {emit(doc['event.its.payment.amount'].value);} }"
         },
         "type": "double"
       }
