@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_dau_by_os"],
+  "index_patterns": ["report_*_*_dau_by_os","report_*_*_mau_by_os"],
   "priority": 1,
   "template": {
     "settings": {
