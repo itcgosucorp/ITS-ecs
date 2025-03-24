@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "report_*_*_pr"
+    "report_*_*_pr",
+    "test_report_*_*_pr"
   ],
   "mappings": {
     "dynamic": false,

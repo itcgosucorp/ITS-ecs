@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "report_*_*_lifetime_value"
+    "report_*_*_lifetime_value",
+    "test_report_*_*_lifetime_value"
   ],
   "mappings": {
     "dynamic": false,

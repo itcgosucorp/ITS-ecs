@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_lifetime_value"],
+  "index_patterns": ["report_*_*_lifetime_value", "test_report_*_*_lifetime_value"],
   "priority": 1,
   "template": {
     "settings": {

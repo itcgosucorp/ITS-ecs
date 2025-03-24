@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_niu"],
+  "index_patterns": ["report_*_*_niu", "test_report_*_*_niu"],
   "order": 1,
   "settings": {
     "index": {

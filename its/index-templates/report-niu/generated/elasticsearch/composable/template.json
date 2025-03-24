@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_niu"
   ],
   "index_patterns": [
-    "report_*_*_niu"
+    "report_*_*_niu",
+    "test_report_*_*_niu"
   ],
   "priority": 1,
   "template": {

@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_lifetime_value"
   ],
   "index_patterns": [
-    "report_*_*_lifetime_value"
+    "report_*_*_lifetime_value",
+    "test_report_*_*_lifetime_value"
   ],
   "priority": 1,
   "template": {

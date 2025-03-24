@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["metrics_*_*_its_login"],
+  "index_patterns": ["metrics_*_*_its_login", "test_metrics_*_*_its_login"],
   "priority": 1,
   "template": {
     "settings": {

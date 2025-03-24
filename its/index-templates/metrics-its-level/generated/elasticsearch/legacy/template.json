@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "metrics_*_*_its_level"
+    "metrics_*_*_its_level",
+    "test_metrics_*_*_its_level"
   ],
   "mappings": {
     "properties": {

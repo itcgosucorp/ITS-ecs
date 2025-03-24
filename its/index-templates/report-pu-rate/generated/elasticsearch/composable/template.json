@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_pu_rate"
   ],
   "index_patterns": [
-    "report_*_*_pu_rate"
+    "report_*_*_pu_rate",
+    "test_report_*_*_pu_rate"
   ],
   "priority": 1,
   "template": {

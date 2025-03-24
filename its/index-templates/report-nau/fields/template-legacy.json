@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_nau"],
+  "index_patterns": ["report_*_*_nau", "test_report_*_*_nau"],
   "order": 1,
   "settings": {
     "index": {

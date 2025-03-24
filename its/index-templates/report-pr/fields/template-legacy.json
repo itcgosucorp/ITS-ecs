@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_pr"],
+  "index_patterns": ["report_*_*_pr", "test_report_*_*_pr"],
   "order": 1,
   "settings": {
     "index": {

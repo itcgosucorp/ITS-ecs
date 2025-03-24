@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "report_*_*_npu"
+    "report_*_*_npu",
+    "test_report_*_*_npu"
   ],
   "mappings": {
     "dynamic": false,

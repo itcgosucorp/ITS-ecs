@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_pr"
   ],
   "index_patterns": [
-    "report_*_*_pr"
+    "report_*_*_pr",
+    "test_report_*_*_pr"
   ],
   "priority": 1,
   "template": {

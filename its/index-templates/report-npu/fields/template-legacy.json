@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_npu"],
+  "index_patterns": ["report_*_*_npu", "test_report_*_*_npu"],
   "order": 1,
   "settings": {
     "index": {

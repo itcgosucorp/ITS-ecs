@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "report_*_*_ccu_hour"
+    "report_*_*_ccu_hour",
+    "test_report_*_*_ccu_hour"
   ],
   "mappings": {
     "dynamic": false,

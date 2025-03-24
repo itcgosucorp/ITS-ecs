@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["event_*_*"],
+  "index_patterns": ["event_*_*", "test_event_*_*"],
   "priority": 1,
   "template": {
     "settings": {

@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "report_*_*_niu"
+    "report_*_*_niu",
+    "test_report_*_*_niu"
   ],
   "mappings": {
     "dynamic": false,
@@ -9,12 +10,12 @@
         "type": "date"
       },
       "count": {
-            "type": "long"
-          },
-          "os": {
-            "ignore_above": 1024,
-            "type": "keyword"
-          }
+        "type": "long"
+      },
+      "os": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      }
     }
   },
   "order": 1,

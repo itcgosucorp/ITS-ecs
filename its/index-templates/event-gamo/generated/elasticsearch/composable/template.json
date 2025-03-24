@@ -16,7 +16,9 @@
   ],
   "index_patterns": [
     "event_gamo_*",
-    "event_duostudio_*"
+    "event_duostudio_*",
+    "test_event_gamo_*",
+    "test_event_duostudio_*"
   ],
   "priority": 2,
   "template": {

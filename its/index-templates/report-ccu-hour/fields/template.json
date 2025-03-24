@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["report_*_*_ccu_hour"],
+  "index_patterns": ["report_*_*_ccu_hour", "test_report_*_*_ccu_hour"],
   "priority": 1,
   "template": {
     "settings": {

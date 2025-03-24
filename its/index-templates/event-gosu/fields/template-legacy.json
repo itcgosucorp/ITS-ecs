@@ -1,5 +1,5 @@
 {
-  "index_patterns": ["event_gosu_*"],
+  "index_patterns": ["event_gosu_*", "test_event_gosu_*"],
   "order": 2,
   "settings": {
     "index": {

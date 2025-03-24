@@ -15,7 +15,8 @@
     "ecs_8.9.0_user"
   ],
   "index_patterns": [
-    "event_gosu_*"
+    "event_gosu_*",
+    "test_event_gosu_*"
   ],
   "priority": 2,
   "template": {

@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_dau"
   ],
   "index_patterns": [
-    "report_*_*_dau"
+    "report_*_*_dau",
+    "test_report_*_*_dau"
   ],
   "priority": 1,
   "template": {

@@ -9,7 +9,8 @@
     "ecs_8.9.0_its_metrics_its_vip"
   ],
   "index_patterns": [
-    "metrics_*_*_its_vip"
+    "metrics_*_*_its_vip",
+    "test_metrics_*_*_its_vip"
   ],
   "priority": 1,
   "template": {

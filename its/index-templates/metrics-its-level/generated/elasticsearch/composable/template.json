@@ -9,7 +9,8 @@
     "ecs_8.9.0_its_metrics_its_level"
   ],
   "index_patterns": [
-    "metrics_*_*_its_level"
+    "metrics_*_*_its_level",
+    "test_metrics_*_*_its_level"
   ],
   "priority": 1,
   "template": {

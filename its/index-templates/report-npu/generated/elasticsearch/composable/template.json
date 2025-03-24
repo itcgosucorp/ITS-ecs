@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_npu"
   ],
   "index_patterns": [
-    "report_*_*_npu"
+    "report_*_*_npu",
+    "test_report_*_*_npu"
   ],
   "priority": 1,
   "template": {
