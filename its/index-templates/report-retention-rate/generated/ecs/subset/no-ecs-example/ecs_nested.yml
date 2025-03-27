@@ -40,6 +40,16 @@ its_report_retention_rate:
       normalize: []
       short: Day 0.
       type: date
+    its_report_retention_rate.event.its.attribution_result.utm_source:
+      dashed_name: its-report-retention-rate-event-its-attribution-result-utm-source
+      description: UTM Source.
+      flat_name: its_report_retention_rate.event.its.attribution_result.utm_source
+      ignore_above: 1024
+      level: custom
+      name: event.its.attribution_result.utm_source
+      normalize: []
+      short: UTM Source.
+      type: keyword
     its_report_retention_rate.rr_d1:
       dashed_name: its-report-retention-rate-rr-d1
       description: Retention rate of d1.

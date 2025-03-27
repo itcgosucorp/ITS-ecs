@@ -50,4 +50,9 @@
       short: Retention rate of d150.
       description: >
         Retention rate of d150.
-    
+    - name: event.its.attribution_result.utm_source
+      level: custom
+      type: keyword
+      short: UTM Source.
+      description: >
+        UTM Source.

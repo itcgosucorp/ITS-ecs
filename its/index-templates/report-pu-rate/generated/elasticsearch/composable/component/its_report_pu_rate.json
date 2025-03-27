@@ -10,6 +10,22 @@
             "d0": {
               "type": "date"
             },
+            "event": {
+              "properties": {
+                "its": {
+                  "properties": {
+                    "attribution_result": {
+                      "properties": {
+                        "utm_source": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "pur_d1": {
               "type": "double"
             },

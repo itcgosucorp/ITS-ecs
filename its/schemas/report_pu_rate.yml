@@ -62,5 +62,10 @@
       short: PU rate of d90.
       description: >
         PU rate of d90.
-    
+    - name: event.its.attribution_result.utm_source
+      level: custom
+      type: keyword
+      short: UTM Source.
+      description: >
+        UTM Source.
     

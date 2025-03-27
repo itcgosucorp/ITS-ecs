@@ -33,6 +33,12 @@
       type: date
       description: Day 0.
       default_field: false
+    - name: event.its.attribution_result.utm_source
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Source.
+      default_field: false
     - name: pur_d1
       level: custom
       type: double
