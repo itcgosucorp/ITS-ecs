@@ -1,0 +1,5 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_mau,its_report_mau.count,long,custom,,,Total count.
+8.9.0,true,its_report_mau,its_report_mau.labels.app.keyword,keyword,custom,,,App code.
+8.9.0,true,its_report_mau,its_report_mau.labels.publisher.keyword,keyword,custom,,,Publisher Code.
