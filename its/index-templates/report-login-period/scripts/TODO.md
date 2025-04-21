@@ -1,0 +1,1 @@
+Viết script để chạy những step ở IMPORTANT.md
