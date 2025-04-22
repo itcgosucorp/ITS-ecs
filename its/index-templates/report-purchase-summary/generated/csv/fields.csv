@@ -1,0 +1,9 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.first_purchase_date,date,custom,,,First purchase date.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.labels.app.keyword,keyword,custom,,,App code.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.labels.publisher.keyword,keyword,custom,,,Publisher Code.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.last_purchase_date,date,custom,,,Last purchase date.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.total_amount,double,custom,,,Total amount.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.total_count,integer,custom,,,Total count.
+8.9.0,true,its_report_purchase_summary,its_report_purchase_summary.user.name,keyword,custom,,,User name.

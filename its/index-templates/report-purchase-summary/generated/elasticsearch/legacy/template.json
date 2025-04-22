@@ -1,0 +1,66 @@
+{
+  "index_patterns": [
+    "report_*_*_purchase_summary",
+    "test_report_*_*_purchase_summary"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "first_purchase_date": {
+        "type": "date"
+      },
+      "labels": {
+        "properties": {
+          "app": {
+            "properties": {
+              "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "publisher": {
+            "properties": {
+              "keyword": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "last_purchase_date": {
+        "type": "date"
+      },
+      "total_amount": {
+        "type": "double"
+      },
+      "total_count": {
+        "type": "integer"
+      },
+      "user": {
+        "properties": {
+          "name": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "refresh_interval": "2s"
+    }
+  }
+}
