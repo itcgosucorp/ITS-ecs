@@ -1,0 +1,30 @@
+{
+  "index_patterns": [
+    "device_info"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "browser_info": {
+        "type": "nested",
+        "properties": {
+          "user_agent": {
+            "type": "keyword"
+          },
+          "uuid": {
+            "type": "keyword"
+          }
+        }
+      },
+      "device_id": {
+        "type": "keyword"
+      },
+      "ip": {
+        "type": "ip"
+      },
+      "user_agent": {
+        "type": "keyword"
+      }
+    }
+  }
+}
