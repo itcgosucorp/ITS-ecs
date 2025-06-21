@@ -248,6 +248,7 @@
   "order": 1,
   "settings": {
     "index": {
+      "auto_expand_replicas": "false",
       "codec": "best_compression",
       "default_pipeline": "task_log_pipeline",
       "mapping": {
@@ -255,6 +256,7 @@
           "limit": 1000
         }
       },
+      "number_of_replicas": 0,
       "refresh_interval": "2s"
     }
   }

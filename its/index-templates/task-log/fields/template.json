@@ -10,7 +10,9 @@
             "limit": 2000
           }
         },
-        "default_pipeline": "task_log_pipeline"
+        "default_pipeline": "task_log_pipeline",
+        "number_of_replicas": 0,
+        "auto_expand_replicas": "false"
       }
     }
   }

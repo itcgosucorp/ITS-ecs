@@ -10,7 +10,9 @@
         }
       },
       "refresh_interval": "2s",
-      "default_pipeline": "metrics_its_login_mapping"
+      "default_pipeline": "metrics_its_login_mapping",
+      "number_of_replicas": 0,
+      "auto_expand_replicas": "false"
     }
   }
 }

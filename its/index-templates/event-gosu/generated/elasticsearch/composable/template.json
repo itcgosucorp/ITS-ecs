@@ -93,6 +93,7 @@
       }
     },
     "settings": {
+      "auto_expand_replicas": "false",
       "index": {
         "codec": "best_compression",
         "mapping": {
@@ -100,7 +101,8 @@
             "limit": 2000
           }
         }
-      }
+      },
+      "number_of_replicas": 0
     }
   }
 }

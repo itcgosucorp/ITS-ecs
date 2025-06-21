@@ -592,6 +592,138 @@
         look like this: `@timestamp` < `event.created` < `event.ingested`.'
       example: '2016-05-23T08:05:35.101Z'
       default_field: false
+    - name: its.attribution_result.ad_creative
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Creative.
+      default_field: false
+    - name: its.attribution_result.ad_creative_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Creative ID.
+      default_field: false
+    - name: its.attribution_result.ad_group
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Group.
+      default_field: false
+    - name: its.attribution_result.ad_group_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: AD Group ID.
+      default_field: false
+    - name: its.attribution_result.campaign_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Campaign ID.
+      default_field: false
+    - name: its.attribution_result.click_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Click ID.
+      default_field: false
+    - name: its.attribution_result.deeplink_url
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Deeplink URL.
+      default_field: false
+    - name: its.attribution_result.fbclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: FBCILID.
+      default_field: false
+    - name: its.attribution_result.gaid_raw
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: GAID Raw.
+      default_field: false
+    - name: its.attribution_result.gclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: GCLID.
+      default_field: false
+    - name: its.attribution_result.ifa_raw
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: IFA Raw.
+      default_field: false
+    - name: its.attribution_result.ip
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: IP.
+      default_field: false
+    - name: its.attribution_result.language
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Language.
+      default_field: false
+    - name: its.attribution_result.sub_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Sub ID.
+      default_field: false
+    - name: its.attribution_result.sub_id_1
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Sub ID 1.
+      default_field: false
+    - name: its.attribution_result.ttclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: TTCLID.
+      default_field: false
+    - name: its.attribution_result.user_agent
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: User Agent.
+      default_field: false
+    - name: its.attribution_result.utm_campaign
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Campaign.
+      default_field: false
+    - name: its.attribution_result.utm_content
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Content.
+      default_field: false
+    - name: its.attribution_result.utm_medium
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Medium.
+      default_field: false
+    - name: its.attribution_result.utm_source
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Source.
+      default_field: false
+    - name: its.attribution_result.utm_term
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: UTM Term.
+      default_field: false
     - name: its.campaign.content
       level: custom
       type: keyword
@@ -705,6 +837,12 @@
       ignore_above: 1024
       description: Channel of the payment.
       default_field: false
+    - name: its.payment.currency_unit
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Currency unit.
+      default_field: false
     - name: its.payment.office
       level: custom
       type: keyword
@@ -715,6 +853,381 @@
       level: custom
       type: double
       description: Payment amount in database.
+      default_field: false
+    - name: its.properties.ad_displayed_percent
+      level: custom
+      type: float
+      description: The maximum percentage of the ad unit that was visible on the device
+        screen(%).
+      default_field: false
+    - name: its.properties.ad_time_viewed
+      level: custom
+      type: float
+      description: How long the ad unit was visible on the screen(seconds).
+      default_field: false
+    - name: its.properties.application_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Application ID.
+      default_field: false
+    - name: its.properties.brand
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product Brand
+      default_field: false
+    - name: its.properties.campaign.ad_creative
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.ad_creative_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.ad_group
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.ad_group_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.campaign_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.click_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.deeplink_url
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.fbclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.gaid_raw
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.gclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.ifa_raw
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.ip
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.language
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.sub_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.sub_id_1
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.ttclid
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.user_agent
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.utm_campaign
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.utm_content
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.utm_medium
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.utm_source
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.campaign.utm_term
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink campaign.
+      default_field: false
+    - name: its.properties.category
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product's Category.
+      default_field: false
+    - name: its.properties.channel
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Channel Info.
+      default_field: false
+    - name: its.properties.character_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Character ID.
+      default_field: false
+    - name: its.properties.character_name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Character Name.
+      default_field: false
+    - name: its.properties.currency
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Cost currency.
+      default_field: false
+    - name: its.properties.custom_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Onelink ID.
+      default_field: false
+    - name: its.properties.device_os
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Device OS.
+      default_field: false
+    - name: its.properties.item_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Item ID.
+      default_field: false
+    - name: its.properties.keywords
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Keyword Info.
+      default_field: false
+    - name: its.properties.level
+      level: custom
+      type: integer
+      description: Level the user achieved.
+      default_field: false
+    - name: its.properties.order_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: ID of the transaction.
+      default_field: false
+    - name: its.properties.param_n_1
+      level: custom
+      type: float
+      description: Parameter type number 1.
+      default_field: false
+    - name: its.properties.param_n_2
+      level: custom
+      type: float
+      description: Parameter type number 2.
+      default_field: false
+    - name: its.properties.param_n_3
+      level: custom
+      type: float
+      description: Parameter type number 3.
+      default_field: false
+    - name: its.properties.param_n_4
+      level: custom
+      type: float
+      description: Parameter type number 4.
+      default_field: false
+    - name: its.properties.param_n_5
+      level: custom
+      type: float
+      description: Parameter type number 5.
+      default_field: false
+    - name: its.properties.param_s_1
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 1.
+      default_field: false
+    - name: its.properties.param_s_2
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 2.
+      default_field: false
+    - name: its.properties.param_s_3
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 3.
+      default_field: false
+    - name: its.properties.param_s_4
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 4.
+      default_field: false
+    - name: its.properties.param_s_5
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Parameter type string 5.
+      default_field: false
+    - name: its.properties.playable_played_length
+      level: custom
+      type: float
+      description: How long the playable element was played once fully loaded.
+      default_field: false
+    - name: its.properties.price
+      level: custom
+      type: float
+      description: Product's Price.
+      default_field: false
+    - name: its.properties.product_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product ID.
+      default_field: false
+    - name: its.properties.product_name
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product Name.
+      default_field: false
+    - name: its.properties.quantity
+      level: custom
+      type: integer
+      description: Quantity of Product.
+      default_field: false
+    - name: its.properties.redirect
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Redirect.
+      default_field: false
+    - name: its.properties.revenue
+      level: custom
+      type: float
+      description: Revenue.
+      default_field: false
+    - name: its.properties.reward
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Reward Info.
+      default_field: false
+    - name: its.properties.score
+      level: custom
+      type: integer
+      description: Score associated with the user's achievement.
+      default_field: false
+    - name: its.properties.server_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Server ID.
+      default_field: false
+    - name: its.properties.sku_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Product's SKU.
+      default_field: false
+    - name: its.properties.source_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Source ID.
+      default_field: false
+    - name: its.properties.task_id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task ID.
+      default_field: false
+    - name: its.properties.task_type
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Task's type Info.
+      default_field: false
+    - name: its.properties.video_played_length
+      level: custom
+      type: integer
+      description: How much of the video was viewed.
+      default_field: false
+    - name: its.properties.video_total_length
+      level: custom
+      type: integer
+      description: The total possible duration of the video.
+      default_field: false
+    - name: its.properties.vip_level
+      level: custom
+      type: integer
+      description: Vip level the user achieved.
+      default_field: false
+    - name: its.publisher.id
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Publisher ID.
       default_field: false
     - name: its.session_id
       level: custom

@@ -8,7 +8,8 @@
     "ecs_8.9.0_its_report_dau_by_os"
   ],
   "index_patterns": [
-    "report_*_*_dau_by_os"
+    "report_*_*_dau_by_os",
+    "report_*_*_mau_by_os"
   ],
   "priority": 1,
   "template": {
@@ -17,12 +18,14 @@
     },
     "settings": {
       "index": {
+        "auto_expand_replicas": "false",
         "codec": "best_compression",
         "mapping": {
           "total_fields": {
             "limit": 2000
           }
-        }
+        },
+        "number_of_replicas": 0
       }
     }
   }

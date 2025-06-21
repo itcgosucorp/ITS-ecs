@@ -10,7 +10,9 @@
             "limit": 2000
           }
         }
-      }
+      },
+      "number_of_replicas": 0,
+      "auto_expand_replicas": "false"
     }
   }
 }

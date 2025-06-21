@@ -19,13 +19,15 @@
     },
     "settings": {
       "index": {
+        "auto_expand_replicas": "false",
         "codec": "best_compression",
         "default_pipeline": "task_log_pipeline",
         "mapping": {
           "total_fields": {
             "limit": 2000
           }
-        }
+        },
+        "number_of_replicas": 0
       }
     }
   }

@@ -1,6 +1,7 @@
 {
   "index_patterns": [
-    "report_*_*_dau_by_os"
+    "report_*_*_dau_by_os",
+    "report_*_*_mau_by_os"
   ],
   "mappings": {
     "dynamic": false,
@@ -48,12 +49,14 @@
   "order": 1,
   "settings": {
     "index": {
+      "auto_expand_replicas": "false",
       "codec": "best_compression",
       "mapping": {
         "total_fields": {
           "limit": 1000
         }
       },
+      "number_of_replicas": 0,
       "refresh_interval": "2s"
     }
   }

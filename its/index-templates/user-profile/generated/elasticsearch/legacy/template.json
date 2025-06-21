@@ -298,6 +298,98 @@
           },
           "its": {
             "properties": {
+              "attribution_result": {
+                "properties": {
+                  "ad_creative": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "ad_creative_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "ad_group": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "ad_group_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "campaign_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "click_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "deeplink_url": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "fbclid": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "gaid_raw": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "gclid": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "ifa_raw": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "ip": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "language": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "sub_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "sub_id_1": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "ttclid": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "user_agent": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "utm_campaign": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "utm_content": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "utm_medium": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "utm_source": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "utm_term": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
               "campaign": {
                 "properties": {
                   "content": {
@@ -387,12 +479,272 @@
                     "ignore_above": 1024,
                     "type": "keyword"
                   },
+                  "currency_unit": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
                   "office": {
                     "ignore_above": 1024,
                     "type": "keyword"
                   },
                   "original_amount": {
                     "type": "double"
+                  }
+                }
+              },
+              "properties": {
+                "properties": {
+                  "ad_displayed_percent": {
+                    "type": "float"
+                  },
+                  "ad_time_viewed": {
+                    "type": "float"
+                  },
+                  "application_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "brand": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "campaign": {
+                    "properties": {
+                      "ad_creative": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "ad_creative_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "ad_group": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "ad_group_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "campaign_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "click_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "deeplink_url": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "fbclid": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "gaid_raw": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "gclid": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "ifa_raw": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "ip": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "language": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "sub_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "sub_id_1": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "ttclid": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "user_agent": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "utm_campaign": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "utm_content": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "utm_medium": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "utm_source": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "utm_term": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "category": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "channel": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "character_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "character_name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "currency": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "custom_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "device_os": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "item_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "keywords": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "level": {
+                    "type": "integer"
+                  },
+                  "order_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "param_n_1": {
+                    "type": "float"
+                  },
+                  "param_n_2": {
+                    "type": "float"
+                  },
+                  "param_n_3": {
+                    "type": "float"
+                  },
+                  "param_n_4": {
+                    "type": "float"
+                  },
+                  "param_n_5": {
+                    "type": "float"
+                  },
+                  "param_s_1": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "param_s_2": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "param_s_3": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "param_s_4": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "param_s_5": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "playable_played_length": {
+                    "type": "float"
+                  },
+                  "price": {
+                    "type": "float"
+                  },
+                  "product_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "product_name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "quantity": {
+                    "type": "integer"
+                  },
+                  "redirect": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "revenue": {
+                    "type": "float"
+                  },
+                  "reward": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "score": {
+                    "type": "integer"
+                  },
+                  "server_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "sku_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "source_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "task_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "task_type": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "video_played_length": {
+                    "type": "integer"
+                  },
+                  "video_total_length": {
+                    "type": "integer"
+                  },
+                  "vip_level": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "publisher": {
+                "properties": {
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
                   }
                 }
               },
@@ -1490,12 +1842,14 @@
   "order": 1,
   "settings": {
     "index": {
+      "auto_expand_replicas": "false",
       "codec": "best_compression",
       "mapping": {
         "total_fields": {
           "limit": 1000
         }
       },
+      "number_of_replicas": 0,
       "refresh_interval": "2s"
     }
   }
