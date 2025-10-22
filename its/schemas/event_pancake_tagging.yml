@@ -1,0 +1,176 @@
+---
+- name: event_pancake_tagging
+  title: Event Pancake Tagging
+  group: 1
+  type: group
+  root: false
+  short: EPT
+  description: >
+    Event Pancake Tagging fields for tracking pancake-related events including page information, tags, and conversations.
+  fields:
+    - name: pancake
+      level: custom
+      type: object
+      short: Pancake event information
+      description: >
+        Fields related to pancake events including page, tag, and conversation data.
+
+    - name: pancake.page
+      level: custom
+      type: object
+      short: Pancake page information
+      description: >
+        Information about the pancake page involved in the event.
+
+    - name: pancake.page.id
+      level: custom
+      type: keyword
+      short: Pancake page identifier
+      description: >
+        Unique identifier for the pancake page.
+      example: "page_12345"
+
+    - name: pancake.page.name
+      level: custom
+      type: keyword
+      short: Pancake page name
+      description: >
+        The name of the pancake page.
+      example: "My Pancake Page"
+      multi_fields:
+        - type: match_only_text
+          name: text
+
+    - name: pancake.page.platform
+      level: custom
+      type: keyword
+      short: Pancake page platform
+      description: >
+        The platform where the pancake page is hosted.
+      example: "facebook"
+
+    - name: pancake.page.username
+      level: custom
+      type: keyword
+      short: Pancake page username
+      description: >
+        The username associated with the pancake page.
+      example: "mypancakepage"
+
+    - name: pancake.page.timezone
+      level: custom
+      type: keyword
+      short: Pancake page timezone
+      description: >
+        The timezone setting for the pancake page.
+      example: "America/New_York"
+
+    - name: pancake.tag
+      level: custom
+      type: object
+      short: Pancake tag information
+      description: >
+        Information about the pancake tag involved in the event.
+
+    - name: pancake.tag.id
+      level: custom
+      type: keyword
+      short: Pancake tag identifier
+      description: >
+        Unique identifier for the pancake tag.
+      example: "tag_67890"
+
+    - name: pancake.tag.description
+      level: custom
+      type: keyword
+      short: Pancake tag description
+      description: >
+        Description of the pancake tag.
+      example: "Tag for promotional content"
+      multi_fields:
+        - type: match_only_text
+          name: text
+
+    - name: pancake.tag.name
+      level: custom
+      type: keyword
+      short: Pancake tag name
+      description: >
+        The name of the pancake tag.
+      example: "promo"
+      multi_fields:
+        - type: match_only_text
+          name: text
+
+    - name: pancake.conversation
+      level: custom
+      type: object
+      short: Pancake conversation information
+      description: >
+        Information about the pancake conversation involved in the event.
+
+    - name: pancake.conversation.id
+      level: custom
+      type: keyword
+      short: Pancake conversation identifier
+      description: >
+        Unique identifier for the pancake conversation.
+      example: "conv_abc123"
+
+    - name: pancake.conversation.type
+      level: custom
+      type: keyword
+      short: Pancake conversation type
+      description: >
+        The type of the pancake conversation.
+      example: "support"
+
+    - name: pancake.conversation.message_count
+      level: custom
+      type: long
+      short: Pancake conversation message count
+      description: >
+        The number of messages in the pancake conversation.
+      example: 5
+
+    - name: pancake.conversation.updated_at
+      level: custom
+      type: date
+      short: Pancake conversation last updated time
+      description: >
+        The timestamp when the pancake conversation was last updated.
+      example: "2023-10-15T14:30:00.000Z"
+
+    - name: pancake.conversation.inserted_at
+      level: custom
+      type: date
+      short: Pancake conversation creation time
+      description: >
+        The timestamp when the pancake conversation was created.
+      example: "2023-10-15T10:15:00.000Z"
+
+    - name: pancake.conversation.customers
+      level: custom
+      type: object
+      short: Pancake conversation customer information
+      description: >
+        Information about the customers involved in the pancake conversation.
+
+    - name: pancake.conversation.customers.name
+      level: custom
+      type: keyword
+      short: Pancake conversation customer name
+      description: >
+        The name of the customer in the pancake conversation.
+      example: "John Doe"
+      multi_fields:
+        - type: match_only_text
+          name: text
+
+    - name: pancake.conversation.customers.fb_id
+      level: custom
+      type: keyword
+      short: Pancake conversation customer Facebook ID
+      description: >
+        The Facebook ID of the customer in the pancake conversation.
+      example: "fb_123456789"

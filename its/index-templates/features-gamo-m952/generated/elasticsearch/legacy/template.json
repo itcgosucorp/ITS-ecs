@@ -1,0 +1,187 @@
+{
+  "index_patterns": [
+    "features_gamo_m952-*"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "ecs": {
+        "properties": {
+          "version": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      },
+      "event": {
+        "properties": {
+          "action": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "category": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "ingested": {
+            "type": "date"
+          },
+          "kind": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "original": {
+            "doc_values": false,
+            "index": false,
+            "type": "keyword"
+          },
+          "outcome": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "type": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      },
+      "features_gamo_m952": {
+        "properties": {
+          "avg_purchase": {
+            "type": "double"
+          },
+          "avg_weekly_login": {
+            "type": "double"
+          },
+          "churn_rate": {
+            "type": "double"
+          },
+          "count_purchase_on_day": {
+            "type": "long"
+          },
+          "days_since_last_login": {
+            "type": "long"
+          },
+          "days_since_last_purchase": {
+            "type": "long"
+          },
+          "days_since_register": {
+            "type": "long"
+          },
+          "diamond_std_login": {
+            "type": "double"
+          },
+          "first_login_date": {
+            "type": "date"
+          },
+          "frequency_purchase": {
+            "type": "double"
+          },
+          "gold_std_login": {
+            "type": "double"
+          },
+          "labels": {
+            "properties": {
+              "app": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "publisher": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "level_last_login": {
+            "type": "long"
+          },
+          "login_frequency": {
+            "type": "double"
+          },
+          "login_segmentation": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "ltv": {
+            "type": "double"
+          },
+          "max_purchase": {
+            "type": "double"
+          },
+          "num_day_login": {
+            "type": "long"
+          },
+          "num_login": {
+            "type": "long"
+          },
+          "num_product_buyed": {
+            "type": "long"
+          },
+          "num_purchase": {
+            "type": "long"
+          },
+          "popular_time_login": {
+            "type": "long"
+          },
+          "powerpoint_std_login": {
+            "type": "double"
+          },
+          "purchase_segmentation": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "silkcoin_std_login": {
+            "type": "double"
+          },
+          "std_amount_purchase": {
+            "type": "double"
+          },
+          "std_weekly_login": {
+            "type": "double"
+          },
+          "streak_login": {
+            "type": "long"
+          },
+          "total_purchase": {
+            "type": "double"
+          },
+          "total_purchase_on_life": {
+            "type": "double"
+          },
+          "user": {
+            "properties": {
+              "id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "name": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "vip_last_login": {
+            "type": "long"
+          }
+        }
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "auto_expand_replicas": "false",
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "number_of_replicas": 0,
+      "refresh_interval": "2s"
+    }
+  }
+}

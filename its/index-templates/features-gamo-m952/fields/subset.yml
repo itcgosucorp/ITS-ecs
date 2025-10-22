@@ -1,0 +1,20 @@
+---
+name: no-ecs-example
+fields:
+  # ECS basic fields
+  base:
+    fields:
+      "@timestamp": {}
+  ecs:
+    fields: "*"
+  event:
+    fields:
+      original: {}
+      kind: {}
+      category: {}
+      type: {}
+      outcome: {}
+      action: {}
+      ingested: {}
+  features_gamo_m952:
+    fields: "*"

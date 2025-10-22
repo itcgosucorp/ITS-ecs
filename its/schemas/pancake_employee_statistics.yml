@@ -1,0 +1,137 @@
+---
+- name: pancake_employee_statistics
+  title: Pancake Employee Statistics
+  group: 1
+  type: group
+  root: false
+  short: PES
+  description: >
+    Pancake Employee Statistics
+  fields:
+    - name: pancake
+      level: custom
+      type: object
+      short: Pancake event information
+      description: >
+        Fields related to pancake events including page, tag, and conversation data.
+
+    - name: pancake.page
+      level: custom
+      type: object
+      short: Pancake page information
+      description: >
+        Information about the pancake page involved in the event.
+
+    - name: pancake.page.id
+      level: custom
+      type: keyword
+      short: Pancake page identifier
+      description: >
+        Unique identifier for the pancake page.
+      example: "page_12345"
+
+    - name: pancake.page.name
+      level: custom
+      type: keyword
+      short: Pancake page name
+      description: >
+        The name of the pancake page.
+      example: "My Pancake Page"
+      multi_fields:
+        - type: match_only_text
+          name: text
+
+    - name: pancake.page.platform
+      level: custom
+      type: keyword
+      short: Pancake page platform
+      description: >
+        The platform where the pancake page is hosted.
+      example: "facebook"
+
+    - name: pancake.page.username
+      level: custom
+      type: keyword
+      short: Pancake page username
+      description: >
+        The username associated with the pancake page.
+      example: "mypancakepage"
+
+    - name: pancake.page.timezone
+      level: custom
+      type: keyword
+      short: Pancake page timezone
+      description: >
+        The timezone setting for the pancake page.
+      example: "America/New_York"
+
+    - name: pancake.metrics
+      level: custom
+      type: object
+      short: Pancake employee metrics
+      description: >
+        Employee performance metrics for pancake-related activities.
+
+    - name: pancake.metrics.average_response_time
+      level: custom
+      type: float
+      short: Average response time
+      description: >
+        The average time taken to respond to pancake-related requests.
+      example: 120.5
+
+    - name: pancake.metrics.comment_count
+      level: custom
+      type: long
+      short: Comment count
+      description: >
+        Total number of comments processed by the employee.
+      example: 25
+
+    - name: pancake.metrics.inbox_count
+      level: custom
+      type: long
+      short: Inbox count
+      description: >
+        Total number of inbox items processed by the employee.
+      example: 15
+
+    - name: pancake.metrics.phone_number_count
+      level: custom
+      type: long
+      short: Phone number count
+      description: >
+        Total number of phone numbers processed by the employee.
+      example: 8
+
+    - name: pancake.metrics.private_reply_count
+      level: custom
+      type: long
+      short: Private reply count
+      description: >
+        Total number of private replies sent by the employee.
+      example: 12
+
+    - name: pancake.metrics.unique_comment_count
+      level: custom
+      type: long
+      short: Unique comment count
+      description: >
+        Total number of unique comments processed by the employee.
+      example: 20
+
+    - name: pancake.metrics.unique_inbox_count
+      level: custom
+      type: long
+      short: Unique inbox count
+      description: >
+        Total number of unique inbox items processed by the employee.
+      example: 13
+
+    - name: pancake.metrics.total_response_time
+      level: custom
+      type: float
+      short: Total response time
+      description: >
+        The total cumulative response time for all pancake-related requests.
+      example: 3012.75

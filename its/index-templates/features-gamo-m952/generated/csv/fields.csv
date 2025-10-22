@@ -1,0 +1,44 @@
+ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
+8.9.0,true,base,@timestamp,date,core,,2016-05-23T08:05:34.853Z,Date/time when the event originated.
+8.9.0,true,ecs,ecs.version,keyword,core,,1.0.0,ECS version this event conforms to.
+8.9.0,true,event,event.action,keyword,core,,user-password-change,The action captured by the event.
+8.9.0,true,event,event.category,keyword,core,array,authentication,Event category. The second categorization field in the hierarchy.
+8.9.0,true,event,event.ingested,date,core,,2016-05-23T08:05:35.101Z,Timestamp when an event arrived in the central data store.
+8.9.0,true,event,event.kind,keyword,core,,alert,The kind of the event. The highest categorization field in the hierarchy.
+8.9.0,false,event,event.original,keyword,core,,Sep 19 08:26:10 host CEF:0&#124;Security&#124; threatmanager&#124;1.0&#124;100&#124; worm successfully stopped&#124;10&#124;src=10.0.0.1 dst=2.1.2.2spt=1232,Raw text message of entire event.
+8.9.0,true,event,event.outcome,keyword,core,,success,The outcome of the event. The lowest level categorization field in the hierarchy.
+8.9.0,true,event,event.type,keyword,core,array,,Event type. The third categorization field in the hierarchy.
+8.9.0,true,features_gamo_m952,features_gamo_m952.avg_purchase,double,custom,,,Average purchase amount
+8.9.0,true,features_gamo_m952,features_gamo_m952.avg_weekly_login,double,custom,,,Average weekly login count
+8.9.0,true,features_gamo_m952,features_gamo_m952.churn_rate,double,custom,,,User churn probability
+8.9.0,true,features_gamo_m952,features_gamo_m952.count_purchase_on_day,long,custom,,,Purchase count per day
+8.9.0,true,features_gamo_m952,features_gamo_m952.days_since_last_login,long,custom,,,Days since last login
+8.9.0,true,features_gamo_m952,features_gamo_m952.days_since_last_purchase,long,custom,,,Days since last purchase
+8.9.0,true,features_gamo_m952,features_gamo_m952.days_since_register,long,custom,,,Days since registration
+8.9.0,true,features_gamo_m952,features_gamo_m952.diamond_std_login,double,custom,,,Diamond standard login metric
+8.9.0,true,features_gamo_m952,features_gamo_m952.first_login_date,date,custom,,,Date of user's first login
+8.9.0,true,features_gamo_m952,features_gamo_m952.frequency_purchase,double,custom,,,Purchase frequency rate
+8.9.0,true,features_gamo_m952,features_gamo_m952.gold_std_login,double,custom,,,Gold standard login metric
+8.9.0,true,features_gamo_m952,features_gamo_m952.labels.app,keyword,custom,,,App code.
+8.9.0,true,features_gamo_m952,features_gamo_m952.labels.publisher,keyword,custom,,,Publisher Code.
+8.9.0,true,features_gamo_m952,features_gamo_m952.level_last_login,long,custom,,,User level at last login
+8.9.0,true,features_gamo_m952,features_gamo_m952.login_frequency,double,custom,,,Login frequency rate
+8.9.0,true,features_gamo_m952,features_gamo_m952.login_segmentation,keyword,custom,,,Login behavior segment
+8.9.0,true,features_gamo_m952,features_gamo_m952.ltv,double,custom,,,Customer Lifetime Value
+8.9.0,true,features_gamo_m952,features_gamo_m952.max_purchase,double,custom,,,Maximum single purchase amount
+8.9.0,true,features_gamo_m952,features_gamo_m952.num_day_login,long,custom,,,Number of unique days with login
+8.9.0,true,features_gamo_m952,features_gamo_m952.num_login,long,custom,,,Total number of logins
+8.9.0,true,features_gamo_m952,features_gamo_m952.num_product_buyed,long,custom,,,Number of unique products purchased
+8.9.0,true,features_gamo_m952,features_gamo_m952.num_purchase,long,custom,,,Total number of purchases
+8.9.0,true,features_gamo_m952,features_gamo_m952.popular_time_login,long,custom,,,Most popular login time (hour)
+8.9.0,true,features_gamo_m952,features_gamo_m952.powerpoint_std_login,double,custom,,,Powerpoint standard login metric
+8.9.0,true,features_gamo_m952,features_gamo_m952.purchase_segmentation,keyword,custom,,,Purchase behavior segment
+8.9.0,true,features_gamo_m952,features_gamo_m952.silkcoin_std_login,double,custom,,,Silkcoin standard login metric
+8.9.0,true,features_gamo_m952,features_gamo_m952.std_amount_purchase,double,custom,,,Standard deviation of purchase amounts
+8.9.0,true,features_gamo_m952,features_gamo_m952.std_weekly_login,double,custom,,,Standard deviation of weekly logins
+8.9.0,true,features_gamo_m952,features_gamo_m952.streak_login,long,custom,,,Consecutive login streak
+8.9.0,true,features_gamo_m952,features_gamo_m952.total_purchase,double,custom,,,Total purchase amount
+8.9.0,true,features_gamo_m952,features_gamo_m952.total_purchase_on_life,double,custom,,,Lifetime total purchase amount
+8.9.0,true,features_gamo_m952,features_gamo_m952.user.id,keyword,custom,,,Username.
+8.9.0,true,features_gamo_m952,features_gamo_m952.user.name,keyword,custom,,,User Name.
+8.9.0,true,features_gamo_m952,features_gamo_m952.vip_last_login,long,custom,,,VIP status at last login

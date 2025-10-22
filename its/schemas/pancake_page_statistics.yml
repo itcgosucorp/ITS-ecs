@@ -1,0 +1,161 @@
+---
+- name: pancake_page_statistics
+  title: Pancake Page Statistics
+  group: 1
+  type: group
+  root: false
+  short: PPS
+  description: >
+    Pancake Page Statistics
+  fields:
+    - name: pancake
+      level: custom
+      type: object
+      short: Pancake event information
+      description: >
+        Fields related to pancake events including page, tag, and conversation data.
+
+    - name: pancake.page
+      level: custom
+      type: object
+      short: Pancake page information
+      description: >
+        Information about the pancake page involved in the event.
+
+    - name: pancake.page.id
+      level: custom
+      type: keyword
+      short: Pancake page identifier
+      description: >
+        Unique identifier for the pancake page.
+      example: "page_12345"
+
+    - name: pancake.page.name
+      level: custom
+      type: keyword
+      short: Pancake page name
+      description: >
+        The name of the pancake page.
+      example: "My Pancake Page"
+      multi_fields:
+        - type: match_only_text
+          name: text
+
+    - name: pancake.page.platform
+      level: custom
+      type: keyword
+      short: Pancake page platform
+      description: >
+        The platform where the pancake page is hosted.
+      example: "facebook"
+
+    - name: pancake.page.username
+      level: custom
+      type: keyword
+      short: Pancake page username
+      description: >
+        The username associated with the pancake page.
+      example: "mypancakepage"
+
+    - name: pancake.page.timezone
+      level: custom
+      type: keyword
+      short: Pancake page timezone
+      description: >
+        The timezone setting for the pancake page.
+      example: "America/New_York"
+
+    - name: pancake.metrics
+      level: custom
+      type: object
+      short: Pancake metrics information
+      description: >
+        Various metrics and statistics for the pancake page.
+
+    - name: pancake.metrics.customer_comment_count
+      level: custom
+      type: long
+      short: Customer comment count
+      description: >
+        The total number of comments made by customers.
+      example: 150
+
+    - name: pancake.metrics.customer_inbox_count
+      level: custom
+      type: long
+      short: Customer inbox count
+      description: >
+        The total number of messages in customer inboxes.
+      example: 245
+
+    - name: pancake.metrics.inbox_interactive_count
+      level: custom
+      type: long
+      short: Interactive inbox count
+      description: >
+        The number of interactive messages in inboxes.
+      example: 89
+
+    - name: pancake.metrics.new_customer_count
+      level: custom
+      type: long
+      short: New customer count
+      description: >
+        The number of new customers.
+      example: 23
+
+    - name: pancake.metrics.new_inbox_count
+      level: custom
+      type: long
+      short: New inbox count
+      description: >
+        The number of new messages in inboxes.
+      example: 67
+
+    - name: pancake.metrics.page_comment_count
+      level: custom
+      type: long
+      short: Page comment count
+      description: >
+        The total number of comments on the page.
+      example: 312
+
+    - name: pancake.metrics.page_inbox_count
+      level: custom
+      type: long
+      short: Page inbox count
+      description: >
+        The total number of messages in the page inbox.
+      example: 198
+
+    - name: pancake.metrics.phone_number_count
+      level: custom
+      type: long
+      short: Phone number count
+      description: >
+        The total number of phone numbers collected.
+      example: 156
+
+    - name: pancake.metrics.today_uniq_website_referral
+      level: custom
+      type: long
+      short: Today unique website referrals
+      description: >
+        The number of unique website referrals for today.
+      example: 45
+
+    - name: pancake.metrics.today_website_guest_referral
+      level: custom
+      type: long
+      short: Today website guest referrals
+      description: >
+        The number of website guest referrals for today.
+      example: 78
+
+    - name: pancake.metrics.uniq_phone_number_count
+      level: custom
+      type: long
+      short: Unique phone number count
+      description: >
+        The number of unique phone numbers collected.
+      example: 134

@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "event_pancake_tagging": {
+          "properties": {
+            "pancake": {
+              "properties": {
+                "conversation": {
+                  "properties": {
+                    "customers": {
+                      "properties": {
+                        "fb_id": {
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        },
+                        "name": {
+                          "fields": {
+                            "text": {
+                              "type": "match_only_text"
+                            }
+                          },
+                          "ignore_above": 1024,
+                          "type": "keyword"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "inserted_at": {
+                      "type": "date"
+                    },
+                    "message_count": {
+                      "type": "long"
+                    },
+                    "type": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "updated_at": {
+                      "type": "date"
+                    }
+                  },
+                  "type": "object"
+                },
+                "page": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "fields": {
+                        "text": {
+                          "type": "match_only_text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "platform": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "timezone": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "username": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  },
+                  "type": "object"
+                },
+                "tag": {
+                  "properties": {
+                    "description": {
+                      "fields": {
+                        "text": {
+                          "type": "match_only_text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "fields": {
+                        "text": {
+                          "type": "match_only_text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

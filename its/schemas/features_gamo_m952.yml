@@ -1,0 +1,244 @@
+---
+- name: features_gamo_m952
+  title: Feature Insight GAMO M952
+  group: 1
+  type: group
+  root: false
+  short: Feature Insight GAMO M952
+  description: >
+    Feature Insight GAMO M952 user behavior analytics and predictions
+  fields:
+    - name: user.id
+      level: custom
+      type: keyword
+      short: Username.
+      description: >
+        Username.
+    - name: user.name
+      level: custom
+      type: keyword
+      short: User Name.
+      description: >
+        User Name.
+    - name: labels.publisher
+      level: custom
+      type: keyword
+      short: Publisher Code.
+      description: >
+        Publisher Code.
+    - name: labels.app
+      level: custom
+      type: keyword
+      short: App code.
+      description: >
+        App code.
+
+    - name: first_login_date
+      level: custom
+      type: date
+      short: Date of user's first login
+      description: >
+        The date when the user first logged into the system.
+
+    - name: num_login
+      level: custom
+      type: long
+      short: Total number of logins
+      description: >
+        Total count of user login sessions.
+
+    - name: num_day_login
+      level: custom
+      type: long
+      short: Number of unique days with login
+      description: >
+        Count of unique days when user logged in.
+
+    - name: login_frequency
+      level: custom
+      type: double
+      short: Login frequency rate
+      description: >
+        Frequency of user login activity calculated as logins per time period.
+
+    - name: avg_weekly_login
+      level: custom
+      type: double
+      short: Average weekly login count
+      description: >
+        Average number of logins per week.
+
+    - name: std_weekly_login
+      level: custom
+      type: double
+      short: Standard deviation of weekly logins
+      description: >
+        Standard deviation of weekly login counts.
+
+    - name: streak_login
+      level: custom
+      type: long
+      short: Consecutive login streak
+      description: >
+        Number of consecutive days with login activity.
+
+    - name: popular_time_login
+      level: custom
+      type: long
+      short: Most popular login time (hour)
+      description: >
+        Hour of day when user most frequently logs in (0-23).
+
+    - name: gold_std_login
+      level: custom
+      type: double
+      short: Gold standard login metric
+      description: >
+        Standardized gold-related login behavior metric.
+
+    - name: diamond_std_login
+      level: custom
+      type: double
+      short: Diamond standard login metric
+      description: >
+        Standardized diamond-related login behavior metric.
+
+    - name: silkcoin_std_login
+      level: custom
+      type: double
+      short: Silkcoin standard login metric
+      description: >
+        Standardized silkcoin-related login behavior metric.
+
+    - name: powerpoint_std_login
+      level: custom
+      type: double
+      short: Powerpoint standard login metric
+      description: >
+        Standardized powerpoint-related login behavior metric.
+
+    - name: level_last_login
+      level: custom
+      type: long
+      short: User level at last login
+      description: >
+        User's game level at the time of last login.
+
+    - name: vip_last_login
+      level: custom
+      type: long
+      short: VIP status at last login
+      description: >
+        User's VIP level at the time of last login.
+
+    - name: days_since_last_login
+      level: custom
+      type: long
+      short: Days since last login
+      description: >
+        Number of days elapsed since user's last login.
+
+    - name: total_purchase
+      level: custom
+      type: double
+      short: Total purchase amount
+      description: >
+        Total monetary value of all user purchases.
+
+    - name: num_purchase
+      level: custom
+      type: long
+      short: Total number of purchases
+      description: >
+        Total count of purchase transactions.
+
+    - name: max_purchase
+      level: custom
+      type: double
+      short: Maximum single purchase amount
+      description: >
+        Highest amount spent in a single purchase transaction.
+
+    - name: avg_purchase
+      level: custom
+      type: double
+      short: Average purchase amount
+      description: >
+        Average monetary value per purchase transaction.
+
+    - name: frequency_purchase
+      level: custom
+      type: double
+      short: Purchase frequency rate
+      description: >
+        Frequency of purchase activity calculated as purchases per time period.
+
+    - name: count_purchase_on_day
+      level: custom
+      type: long
+      short: Purchase count per day
+      description: >
+        Number of purchases made on a specific day.
+
+    - name: std_amount_purchase
+      level: custom
+      type: double
+      short: Standard deviation of purchase amounts
+      description: >
+        Standard deviation of purchase transaction amounts.
+
+    - name: days_since_last_purchase
+      level: custom
+      type: long
+      short: Days since last purchase
+      description: >
+        Number of days elapsed since user's last purchase.
+
+    - name: num_product_buyed
+      level: custom
+      type: long
+      short: Number of unique products purchased
+      description: >
+        Count of distinct products user has purchased.
+
+    - name: days_since_register
+      level: custom
+      type: long
+      short: Days since registration
+      description: >
+        Number of days elapsed since user registration.
+
+    - name: total_purchase_on_life
+      level: custom
+      type: double
+      short: Lifetime total purchase amount
+      description: >
+        Total monetary value of all purchases throughout user's lifetime.
+
+    - name: ltv
+      level: custom
+      type: double
+      short: Customer Lifetime Value
+      description: >
+        Predicted or calculated lifetime value of the customer.
+
+    - name: churn_rate
+      level: custom
+      type: double
+      short: User churn probability
+      description: >
+        Probability or rate indicating likelihood of user churning.
+
+    - name: login_segmentation
+      level: custom
+      type: keyword
+      short: Login behavior segment
+      description: >
+        User segment category based on login behavior patterns (e.g., "active", "casual", "inactive").
+
+    - name: purchase_segmentation
+      level: custom
+      type: keyword
+      short: Purchase behavior segment
+      description: >
+        User segment category based on purchase behavior patterns (e.g., "high_spender", "moderate", "low_spender").

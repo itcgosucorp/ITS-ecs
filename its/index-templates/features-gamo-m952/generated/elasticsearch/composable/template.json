@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "description": "Sample composable template that includes all ECS fields",
+    "ecs_version": "8.9.0"
+  },
+  "composed_of": [
+    "ecs_8.9.0_base",
+    "ecs_8.9.0_ecs",
+    "ecs_8.9.0_event",
+    "ecs_8.9.0_features_gamo_m952"
+  ],
+  "index_patterns": [
+    "features_gamo_m952-*"
+  ],
+  "priority": 100,
+  "template": {
+    "mappings": {
+      "dynamic": false
+    },
+    "settings": {
+      "index": {
+        "auto_expand_replicas": "false",
+        "codec": "best_compression",
+        "lifecycle": {
+          "name": "hot_to_cold_policy",
+          "rollover_alias": "features_gamo_m952"
+        },
+        "mapping": {
+          "total_fields": {
+            "limit": 2000
+          }
+        },
+        "number_of_replicas": 1,
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_hot"
+            }
+          }
+        }
+      }
+    }
+  }
+}

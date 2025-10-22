@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "pancake_page_statistics": {
+          "properties": {
+            "pancake": {
+              "properties": {
+                "metrics": {
+                  "properties": {
+                    "customer_comment_count": {
+                      "type": "long"
+                    },
+                    "customer_inbox_count": {
+                      "type": "long"
+                    },
+                    "inbox_interactive_count": {
+                      "type": "long"
+                    },
+                    "new_customer_count": {
+                      "type": "long"
+                    },
+                    "new_inbox_count": {
+                      "type": "long"
+                    },
+                    "page_comment_count": {
+                      "type": "long"
+                    },
+                    "page_inbox_count": {
+                      "type": "long"
+                    },
+                    "phone_number_count": {
+                      "type": "long"
+                    },
+                    "today_uniq_website_referral": {
+                      "type": "long"
+                    },
+                    "today_website_guest_referral": {
+                      "type": "long"
+                    },
+                    "uniq_phone_number_count": {
+                      "type": "long"
+                    }
+                  },
+                  "type": "object"
+                },
+                "page": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "fields": {
+                        "text": {
+                          "type": "match_only_text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "platform": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "timezone": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "username": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

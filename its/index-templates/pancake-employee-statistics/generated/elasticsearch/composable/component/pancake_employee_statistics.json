@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "ecs_version": "8.9.0"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "pancake_employee_statistics": {
+          "properties": {
+            "pancake": {
+              "properties": {
+                "metrics": {
+                  "properties": {
+                    "average_response_time": {
+                      "type": "float"
+                    },
+                    "comment_count": {
+                      "type": "long"
+                    },
+                    "inbox_count": {
+                      "type": "long"
+                    },
+                    "phone_number_count": {
+                      "type": "long"
+                    },
+                    "private_reply_count": {
+                      "type": "long"
+                    },
+                    "total_response_time": {
+                      "type": "float"
+                    },
+                    "unique_comment_count": {
+                      "type": "long"
+                    },
+                    "unique_inbox_count": {
+                      "type": "long"
+                    }
+                  },
+                  "type": "object"
+                },
+                "page": {
+                  "properties": {
+                    "id": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "name": {
+                      "fields": {
+                        "text": {
+                          "type": "match_only_text"
+                        }
+                      },
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "platform": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "timezone": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    },
+                    "username": {
+                      "ignore_above": 1024,
+                      "type": "keyword"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

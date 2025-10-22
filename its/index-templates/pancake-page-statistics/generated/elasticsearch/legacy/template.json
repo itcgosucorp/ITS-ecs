@@ -1,0 +1,1140 @@
+{
+  "index_patterns": [
+    "pancake_page_statistics-*"
+  ],
+  "mappings": {
+    "dynamic": false,
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "ecs": {
+        "properties": {
+          "version": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      },
+      "event": {
+        "properties": {
+          "action": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "category": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "ingested": {
+            "type": "date"
+          },
+          "kind": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "original": {
+            "doc_values": false,
+            "index": false,
+            "type": "keyword"
+          },
+          "outcome": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "type": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        }
+      },
+      "pancake_page_statistics": {
+        "properties": {
+          "pancake": {
+            "properties": {
+              "metrics": {
+                "properties": {
+                  "customer_comment_count": {
+                    "type": "long"
+                  },
+                  "customer_inbox_count": {
+                    "type": "long"
+                  },
+                  "inbox_interactive_count": {
+                    "type": "long"
+                  },
+                  "new_customer_count": {
+                    "type": "long"
+                  },
+                  "new_inbox_count": {
+                    "type": "long"
+                  },
+                  "page_comment_count": {
+                    "type": "long"
+                  },
+                  "page_inbox_count": {
+                    "type": "long"
+                  },
+                  "phone_number_count": {
+                    "type": "long"
+                  },
+                  "today_uniq_website_referral": {
+                    "type": "long"
+                  },
+                  "today_website_guest_referral": {
+                    "type": "long"
+                  },
+                  "uniq_phone_number_count": {
+                    "type": "long"
+                  }
+                },
+                "type": "object"
+              },
+              "page": {
+                "properties": {
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "fields": {
+                      "text": {
+                        "type": "match_only_text"
+                      }
+                    },
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "platform": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "timezone": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "username": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "user": {
+        "properties": {
+          "changes": {
+            "properties": {
+              "domain": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "email": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "full_name": {
+                "fields": {
+                  "text": {
+                    "type": "match_only_text"
+                  }
+                },
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "group": {
+                "properties": {
+                  "domain": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "its": {
+                "properties": {
+                  "birthday": {
+                    "type": "date"
+                  },
+                  "created_at": {
+                    "type": "date"
+                  },
+                  "delete_at": {
+                    "type": "date"
+                  },
+                  "email_verified": {
+                    "type": "boolean"
+                  },
+                  "gender": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "identities": {
+                    "properties": {
+                      "user": {
+                        "properties": {
+                          "domain": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "email": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "full_name": {
+                            "fields": {
+                              "text": {
+                                "type": "match_only_text"
+                              }
+                            },
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "group": {
+                            "properties": {
+                              "domain": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "id": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "name": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              }
+                            }
+                          },
+                          "hash": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "id": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "name": {
+                            "fields": {
+                              "text": {
+                                "type": "match_only_text"
+                              }
+                            },
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "risk": {
+                            "properties": {
+                              "calculated_level": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "calculated_score": {
+                                "type": "float"
+                              },
+                              "calculated_score_norm": {
+                                "type": "float"
+                              },
+                              "static_level": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "static_score": {
+                                "type": "float"
+                              },
+                              "static_score_norm": {
+                                "type": "float"
+                              }
+                            }
+                          },
+                          "roles": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          }
+                        }
+                      }
+                    },
+                    "type": "nested"
+                  },
+                  "is_guest": {
+                    "type": "boolean"
+                  },
+                  "login_at": {
+                    "type": "date"
+                  },
+                  "nemo_address": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "phone": {
+                    "properties": {
+                      "country": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "country_calling_code": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "extension": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "national_number": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "number": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "phone_verified": {
+                    "type": "boolean"
+                  },
+                  "register_app_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "register_source_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "status": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "traits": {
+                    "properties": {
+                      "anonymous_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "updated_at": {
+                    "type": "date"
+                  }
+                }
+              },
+              "name": {
+                "fields": {
+                  "text": {
+                    "type": "match_only_text"
+                  }
+                },
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "risk": {
+                "properties": {
+                  "calculated_level": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "calculated_score": {
+                    "type": "float"
+                  },
+                  "calculated_score_norm": {
+                    "type": "float"
+                  },
+                  "static_level": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "static_score": {
+                    "type": "float"
+                  },
+                  "static_score_norm": {
+                    "type": "float"
+                  }
+                }
+              },
+              "roles": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "domain": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "effective": {
+            "properties": {
+              "domain": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "email": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "full_name": {
+                "fields": {
+                  "text": {
+                    "type": "match_only_text"
+                  }
+                },
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "group": {
+                "properties": {
+                  "domain": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "its": {
+                "properties": {
+                  "birthday": {
+                    "type": "date"
+                  },
+                  "created_at": {
+                    "type": "date"
+                  },
+                  "delete_at": {
+                    "type": "date"
+                  },
+                  "email_verified": {
+                    "type": "boolean"
+                  },
+                  "gender": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "identities": {
+                    "properties": {
+                      "user": {
+                        "properties": {
+                          "domain": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "email": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "full_name": {
+                            "fields": {
+                              "text": {
+                                "type": "match_only_text"
+                              }
+                            },
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "group": {
+                            "properties": {
+                              "domain": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "id": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "name": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              }
+                            }
+                          },
+                          "hash": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "id": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "name": {
+                            "fields": {
+                              "text": {
+                                "type": "match_only_text"
+                              }
+                            },
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "risk": {
+                            "properties": {
+                              "calculated_level": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "calculated_score": {
+                                "type": "float"
+                              },
+                              "calculated_score_norm": {
+                                "type": "float"
+                              },
+                              "static_level": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "static_score": {
+                                "type": "float"
+                              },
+                              "static_score_norm": {
+                                "type": "float"
+                              }
+                            }
+                          },
+                          "roles": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          }
+                        }
+                      }
+                    },
+                    "type": "nested"
+                  },
+                  "is_guest": {
+                    "type": "boolean"
+                  },
+                  "login_at": {
+                    "type": "date"
+                  },
+                  "nemo_address": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "phone": {
+                    "properties": {
+                      "country": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "country_calling_code": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "extension": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "national_number": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "number": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "phone_verified": {
+                    "type": "boolean"
+                  },
+                  "register_app_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "register_source_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "status": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "traits": {
+                    "properties": {
+                      "anonymous_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "updated_at": {
+                    "type": "date"
+                  }
+                }
+              },
+              "name": {
+                "fields": {
+                  "text": {
+                    "type": "match_only_text"
+                  }
+                },
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "risk": {
+                "properties": {
+                  "calculated_level": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "calculated_score": {
+                    "type": "float"
+                  },
+                  "calculated_score_norm": {
+                    "type": "float"
+                  },
+                  "static_level": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "static_score": {
+                    "type": "float"
+                  },
+                  "static_score_norm": {
+                    "type": "float"
+                  }
+                }
+              },
+              "roles": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "email": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "full_name": {
+            "fields": {
+              "text": {
+                "type": "match_only_text"
+              }
+            },
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "group": {
+            "properties": {
+              "domain": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "name": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          },
+          "hash": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "id": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "its": {
+            "properties": {
+              "birthday": {
+                "type": "date"
+              },
+              "created_at": {
+                "type": "date"
+              },
+              "delete_at": {
+                "type": "date"
+              },
+              "email_verified": {
+                "type": "boolean"
+              },
+              "gender": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "identities": {
+                "properties": {
+                  "user": {
+                    "properties": {
+                      "domain": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "email": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "full_name": {
+                        "fields": {
+                          "text": {
+                            "type": "match_only_text"
+                          }
+                        },
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "group": {
+                        "properties": {
+                          "domain": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "id": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "name": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          }
+                        }
+                      },
+                      "hash": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "name": {
+                        "fields": {
+                          "text": {
+                            "type": "match_only_text"
+                          }
+                        },
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "risk": {
+                        "properties": {
+                          "calculated_level": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "calculated_score": {
+                            "type": "float"
+                          },
+                          "calculated_score_norm": {
+                            "type": "float"
+                          },
+                          "static_level": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "static_score": {
+                            "type": "float"
+                          },
+                          "static_score_norm": {
+                            "type": "float"
+                          }
+                        }
+                      },
+                      "roles": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  }
+                },
+                "type": "nested"
+              },
+              "is_guest": {
+                "type": "boolean"
+              },
+              "login_at": {
+                "type": "date"
+              },
+              "nemo_address": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "phone": {
+                "properties": {
+                  "country": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "country_calling_code": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "extension": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "national_number": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "number": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "phone_verified": {
+                "type": "boolean"
+              },
+              "register_app_id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "register_source_id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "status": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "traits": {
+                "properties": {
+                  "anonymous_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "updated_at": {
+                "type": "date"
+              }
+            }
+          },
+          "name": {
+            "fields": {
+              "text": {
+                "type": "match_only_text"
+              }
+            },
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "risk": {
+            "properties": {
+              "calculated_level": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "calculated_score": {
+                "type": "float"
+              },
+              "calculated_score_norm": {
+                "type": "float"
+              },
+              "static_level": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "static_score": {
+                "type": "float"
+              },
+              "static_score_norm": {
+                "type": "float"
+              }
+            }
+          },
+          "roles": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "target": {
+            "properties": {
+              "domain": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "email": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "full_name": {
+                "fields": {
+                  "text": {
+                    "type": "match_only_text"
+                  }
+                },
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "group": {
+                "properties": {
+                  "domain": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "id": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "its": {
+                "properties": {
+                  "birthday": {
+                    "type": "date"
+                  },
+                  "created_at": {
+                    "type": "date"
+                  },
+                  "delete_at": {
+                    "type": "date"
+                  },
+                  "email_verified": {
+                    "type": "boolean"
+                  },
+                  "gender": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "identities": {
+                    "properties": {
+                      "user": {
+                        "properties": {
+                          "domain": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "email": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "full_name": {
+                            "fields": {
+                              "text": {
+                                "type": "match_only_text"
+                              }
+                            },
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "group": {
+                            "properties": {
+                              "domain": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "id": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "name": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              }
+                            }
+                          },
+                          "hash": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "id": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "name": {
+                            "fields": {
+                              "text": {
+                                "type": "match_only_text"
+                              }
+                            },
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          },
+                          "risk": {
+                            "properties": {
+                              "calculated_level": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "calculated_score": {
+                                "type": "float"
+                              },
+                              "calculated_score_norm": {
+                                "type": "float"
+                              },
+                              "static_level": {
+                                "ignore_above": 1024,
+                                "type": "keyword"
+                              },
+                              "static_score": {
+                                "type": "float"
+                              },
+                              "static_score_norm": {
+                                "type": "float"
+                              }
+                            }
+                          },
+                          "roles": {
+                            "ignore_above": 1024,
+                            "type": "keyword"
+                          }
+                        }
+                      }
+                    },
+                    "type": "nested"
+                  },
+                  "is_guest": {
+                    "type": "boolean"
+                  },
+                  "login_at": {
+                    "type": "date"
+                  },
+                  "nemo_address": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "phone": {
+                    "properties": {
+                      "country": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "country_calling_code": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "extension": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "national_number": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      },
+                      "number": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "phone_verified": {
+                    "type": "boolean"
+                  },
+                  "register_app_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "register_source_id": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "status": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "traits": {
+                    "properties": {
+                      "anonymous_id": {
+                        "ignore_above": 1024,
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "updated_at": {
+                    "type": "date"
+                  }
+                }
+              },
+              "name": {
+                "fields": {
+                  "text": {
+                    "type": "match_only_text"
+                  }
+                },
+                "ignore_above": 1024,
+                "type": "keyword"
+              },
+              "risk": {
+                "properties": {
+                  "calculated_level": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "calculated_score": {
+                    "type": "float"
+                  },
+                  "calculated_score_norm": {
+                    "type": "float"
+                  },
+                  "static_level": {
+                    "ignore_above": 1024,
+                    "type": "keyword"
+                  },
+                  "static_score": {
+                    "type": "float"
+                  },
+                  "static_score_norm": {
+                    "type": "float"
+                  }
+                }
+              },
+              "roles": {
+                "ignore_above": 1024,
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "auto_expand_replicas": "false",
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields": {
+          "limit": 1000
+        }
+      },
+      "number_of_replicas": 0,
+      "refresh_interval": "2s"
+    }
+  }
+}

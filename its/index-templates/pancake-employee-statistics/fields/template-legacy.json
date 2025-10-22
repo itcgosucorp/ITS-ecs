@@ -1,0 +1,17 @@
+{
+    "index_patterns": ["pancake_employee_statistics-*"],
+    "order": 1,
+    "settings": {
+        "index": {
+            "codec": "best_compression",
+            "mapping": {
+                "total_fields": {
+                    "limit": 1000
+                }
+            },
+            "refresh_interval": "2s",
+            "number_of_replicas": 0,
+            "auto_expand_replicas": "false"
+        }
+    }
+}

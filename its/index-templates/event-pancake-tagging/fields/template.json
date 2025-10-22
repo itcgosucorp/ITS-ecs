@@ -1,0 +1,29 @@
+{
+    "index_patterns": ["event_pancake_tagging-*"],
+    "priority": 100,
+    "template": {
+        "settings": {
+            "index": {
+                "codec": "best_compression",
+                "mapping": {
+                    "total_fields": {
+                        "limit": 2000
+                    }
+                },
+                "number_of_replicas": 1,
+                "auto_expand_replicas": "false",
+                "lifecycle": {
+                    "name": "hot_to_cold_policy",
+                    "rollover_alias": "event_pancake_tagging"
+                },
+                "routing": {
+                    "allocation": {
+                        "include": {
+                            "_tier_preference": "data_hot"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
