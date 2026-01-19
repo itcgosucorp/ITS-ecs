@@ -712,6 +712,17 @@ features_gamo_m952.labels.publisher:
   normalize: []
   short: Publisher Code.
   type: keyword
+features_gamo_m952.level_churned:
+  dashed_name: features-gamo-m952-level-churned
+  description: Category indicating user's level at the time of churn (e.g., "Low Churn
+    Risk", "High Churn Risk").
+  flat_name: features_gamo_m952.level_churned
+  ignore_above: 1024
+  level: custom
+  name: level_churned
+  normalize: []
+  short: Churned user level category
+  type: keyword
 features_gamo_m952.level_last_login:
   dashed_name: features-gamo-m952-level-last-login
   description: User's game level at the time of last login.

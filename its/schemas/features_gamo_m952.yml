@@ -242,3 +242,10 @@
       short: Purchase behavior segment
       description: >
         User segment category based on purchase behavior patterns (e.g., "high_spender", "moderate", "low_spender").
+
+    - name: level_churned
+      level: custom
+      type: keyword
+      short: Churned user level category
+      description: >
+        Category indicating user's level at the time of churn (e.g., "Low Churn Risk", "High Churn Risk").

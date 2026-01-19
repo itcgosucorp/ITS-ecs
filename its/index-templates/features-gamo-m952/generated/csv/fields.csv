@@ -21,6 +21,7 @@ ECS_Version,Indexed,Field_Set,Field,Type,Level,Normalization,Example,Description
 8.9.0,true,features_gamo_m952,features_gamo_m952.gold_std_login,double,custom,,,Gold standard login metric
 8.9.0,true,features_gamo_m952,features_gamo_m952.labels.app,keyword,custom,,,App code.
 8.9.0,true,features_gamo_m952,features_gamo_m952.labels.publisher,keyword,custom,,,Publisher Code.
+8.9.0,true,features_gamo_m952,features_gamo_m952.level_churned,keyword,custom,,,Churned user level category
 8.9.0,true,features_gamo_m952,features_gamo_m952.level_last_login,long,custom,,,User level at last login
 8.9.0,true,features_gamo_m952,features_gamo_m952.login_frequency,double,custom,,,Login frequency rate
 8.9.0,true,features_gamo_m952,features_gamo_m952.login_segmentation,keyword,custom,,,Login behavior segment

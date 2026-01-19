@@ -260,6 +260,22 @@ type: keyword
 // ===============================================================
 
 |
+[[field-features-gamo-m952-level-churned]]
+<<field-features-gamo-m952-level-churned, features_gamo_m952.level_churned>>
+
+a| Category indicating user's level at the time of churn (e.g., "Low Churn Risk", "High Churn Risk").
+
+type: keyword
+
+
+
+
+
+| custom
+
+// ===============================================================
+
+|
 [[field-features-gamo-m952-level-last-login]]
 <<field-features-gamo-m952-level-last-login, features_gamo_m952.level_last_login>>
 

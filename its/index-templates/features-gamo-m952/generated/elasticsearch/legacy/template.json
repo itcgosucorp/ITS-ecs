@@ -95,6 +95,10 @@
               }
             }
           },
+          "level_churned": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
           "level_last_login": {
             "type": "long"
           },

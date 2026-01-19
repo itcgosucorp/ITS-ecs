@@ -237,6 +237,13 @@
       ignore_above: 1024
       description: Publisher Code.
       default_field: false
+    - name: level_churned
+      level: custom
+      type: keyword
+      ignore_above: 1024
+      description: Category indicating user's level at the time of churn (e.g., "Low
+        Churn Risk", "High Churn Risk").
+      default_field: false
     - name: level_last_login
       level: custom
       type: long
